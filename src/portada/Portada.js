@@ -1,8 +1,8 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import logo from '../logo.svg';
+import './Portada.css';
 
-function App() {
+function Portada() {
   return (
     <div className="App">
       <header className="App-header">
@@ -23,4 +23,4 @@ function App() {
   );
 }
 
-export default App;
+export default Portada;
