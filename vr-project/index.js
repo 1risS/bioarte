@@ -2,19 +2,31 @@ import React from 'react';
 import {
   AppRegistry,
   StyleSheet,
-  Text,
   View,
+  Text,
+  VrButton,
+  NativeModules
 } from 'react-360';
+
+function onclick () {
+  NativeModules.LinkingManager.openURL('http://localhost:3000');
+
+}
 
 export default class vr_project extends React.Component {
   render() {
     return (
       <View style={styles.panel}>
-        <View style={styles.greetingBox}>
-          <Text style={styles.greeting}>
-            Muestra Bioarte
+         {/* <View style={styles.greetingBox}>
+           <Text style={styles.greeting}>
+             Muestra Bioarte
+           </Text>
+         </View> */}
+        <VrButton onButtonPress={onclick}>
+          <Text style={styles.backToReact}>
+            DE VUELTA A REACT
           </Text>
-        </View>
+        </VrButton>
       </View>
     );
   }
@@ -38,6 +50,16 @@ const styles = StyleSheet.create({
   greeting: {
     fontSize: 30,
   },
+  test: {
+    fontSize: 50,
+    padding: 70,
+    backgroundColor: '#000000',
+    borderColor: '#639dda',
+    borderWidth: 2,
+  },
+  backToReact: {
+      fontSize: 30,
+  }
 });
 
 AppRegistry.registerComponent('vr_project', () => vr_project);
