@@ -2,7 +2,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Controller, Scene } from 'react-scrollmagic';
-import logo from '../../images/logo512.png'
+import logo from '../../images/logo512.png';
+import { Title } from '../../components/Title';
 
 const SectionWipesStyled = styled.div`
     overflow: hidden;
@@ -95,6 +96,8 @@ const SectionWipesStyled = styled.div`
     }
 `;
 
+
+
 const SectionWipes = () => (
   <SectionWipesStyled>
     <Controller globalSceneOptions={{ triggerHook: 'onLeave' }}>
@@ -102,7 +105,7 @@ const SectionWipes = () => (
         <div className="panel one">
           <div className="elementsContainer">
             <img alt="logo" className="fest_logo" src={logo} />
-            <div className="name">FESTIVAL BIOARTE</div>
+            <Title>FESTIVAL BIOARTE</Title>
           </div>
         </div>
       </Scene>
