@@ -4,7 +4,7 @@ const Title = styled.h1`
   font-size: 3rem;
   font-family: "Open Sans";
   font-weight: 400;
-  color: ${(props) => props.theme.colors.fg1};
+  color: ${(props) => props.theme.colors.fg};
 `;
 
 const LightTitle = styled(Title)`
