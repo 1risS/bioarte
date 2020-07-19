@@ -1,14 +1,10 @@
-import React from 'react'
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-} from "react-router-dom";
-import { ThemeProvider } from 'styled-components';
-import theme from './theme';
+import React from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { ThemeProvider } from "styled-components";
+import theme from "./theme";
 
-import Portada from './pages/portada'
-import Error404 from './pages/404'
+import Portada from "./pages/portada";
+import Error404 from "./pages/404";
 
 function App() {
   return (
@@ -26,7 +22,7 @@ function App() {
         </div>
       </Router>
     </ThemeProvider>
-  )
+  );
 }
 
 export default App;
