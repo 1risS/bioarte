@@ -3,8 +3,8 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { ThemeProvider } from "styled-components";
 import theme from "./theme";
 
-import Portada from "./pages/portada";
 import Error404 from "./pages/404";
+import Bienvenida from "./pages/bienvenida";
 
 function App() {
   return (
@@ -13,7 +13,7 @@ function App() {
         <div className="App">
           <Switch>
             <Route exact path="/">
-              <Portada />
+              <Bienvenida />
             </Route>
             <Route path="*">
               <Error404 />
