@@ -1,6 +1,7 @@
 import React from 'react';
 import MagicScrollTest from './MagicScrollTest'
-import './index.css';
+// import FramerMotionTest from './FramerMotionTest'
+// import './index.css';
 
 function Portada() {
   return (

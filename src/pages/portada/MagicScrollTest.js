@@ -96,88 +96,88 @@ const SectionWipesStyled = styled.div`
 `;
 
 const SectionWipes = () => (
-    <SectionWipesStyled>
-        <Controller globalSceneOptions={{ triggerHook: 'onLeave' }}>
-            <Scene pin>
-                <div className="panel one">
-                    <div className="elementsContainer">
-                        <img alt="logo" className="fest_logo" src={logo} />
-                        <div className="name">FESTIVAL BIOARTE</div>
-                    </div>
-                </div>
-            </Scene>
-            <Scene pin>
-                <div className="panel two">
-                    <div className="textContainer">
-                        <h1>Párrafo explicando el nombre</h1>
-                        <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h2>
-                        <h1>Párrafo explicando el origen del proyecto</h1>
-                        <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h2>
-                    </div>
-                </div>
-            </Scene>
-            <Scene pin>
-                <div className="panel three">
-                    <div className="textContainer">
-                        <h1>Párrafo explicando la experiencia - ( landing page a recorrer y 4 áreas a explorar, qué hay en cada lugar) </h1>
-                        <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h2>
-                    </div>
-                </div>
-            </Scene>
-            <Scene pin>
-                <div className="panel four">
-                    <div className="textContainer">
-                        <h1>Párrafo explicando cómo navegar el sitio </h1>
-                        <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h2>
-                    </div>
-                </div>
-            </Scene>
-            <Scene pin>
-                <div className="panel four">
-                    <div className="textContainerFour">
-                        <h1>Call to actión - fráse de cierre </h1>
-                        <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h2>
-                        <a className="go360" href="http://localhost:8081/index.html">IR A LA EXPERIENCIA 360</a>
-                        <div className="sponsorsContainer">
-                            <img alt="logo" className="fest_logo" src={logo} />
-                            <img alt="logo" className="fest_logo" src={logo} />
-                            <img alt="logo" className="fest_logo" src={logo} />
-                            <img alt="logo" className="fest_logo" src={logo} />
-                        </div>
-                    </div>
-                </div>
-            </Scene>
-            {/* <Scene
-            triggerHook="onLeave"
-            duration="300%"
-            pin
+  <SectionWipesStyled>
+    <Controller globalSceneOptions={{ triggerHook: 'onLeave' }}>
+      <Scene pin>
+        <div className="panel one">
+          <div className="elementsContainer">
+            <img alt="logo" className="fest_logo" src={logo} />
+            <div className="name">FESTIVAL BIOARTE</div>
+          </div>
+        </div>
+      </Scene>
+      <Scene pin>
+        <div className="panel two">
+          <div className="textContainer">
+            <h1>Párrafo explicando el nombre</h1>
+            <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h2>
+            <h1>Párrafo explicando el origen del proyecto</h1>
+            <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h2>
+          </div>
+        </div>
+      </Scene>
+      <Scene pin>
+        <div className="panel three">
+          <div className="textContainer">
+            <h1>Párrafo explicando la experiencia - ( landing page a recorrer y 4 áreas a explorar, qué hay en cada lugar) </h1>
+            <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h2>
+          </div>
+        </div>
+      </Scene>
+      <Scene pin>
+        <div className="panel four">
+          <div className="textContainer">
+            <h1>Párrafo explicando cómo navegar el sitio </h1>
+            <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h2>
+          </div>
+        </div>
+      </Scene>
+      <Scene pin>
+        <div className="panel four">
+          <div className="textContainerFour">
+            <h1>Call to actión - fráse de cierre </h1>
+            <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h2>
+            <a className="go360" href="http://localhost:8081/index.html">IR A LA EXPERIENCIA 360</a>
+            <div className="sponsorsContainer">
+              <img alt="logo" className="fest_logo" src={logo} />
+              <img alt="logo" className="fest_logo" src={logo} />
+              <img alt="logo" className="fest_logo" src={logo} />
+              <img alt="logo" className="fest_logo" src={logo} />
+            </div>
+          </div>
+        </div>
+      </Scene>
+      {/* <Scene
+        triggerHook="onLeave"
+        duration="300%"
+        pin
+      >
+        <Timeline
+          wrapper={<div id="pinContainer" />}
         >
-            <Timeline
-            wrapper={<div id="pinContainer" />}
-            >
-            <section className="panel blue"><span>Panel</span></section>
-            <Tween
-                from={{ x: '-100%' }}
-                to={{ x: '0%' }}
-            >
-                <section className="panel turqoise"><span>Panel</span></section>
-            </Tween>
-            <Tween
-                from={{ x: '100%' }}
-                to={{ x: '0%' }}
-            >
-                <section className="panel green"><span>Panel</span></section>
-            </Tween>
-            <Tween
-                from={{ y: '-100%' }}
-                to={{ y: '0%' }}
-            >
-                <section className="panel bordeaux"><span>Panel</span></section>
-            </Tween>
-            </Timeline>
-        </Scene> */}
-        </Controller>
-    </SectionWipesStyled>
+          <section className="panel blue"><span>Panel</span></section>
+          <Tween
+            from={{ x: '-100%' }}
+            to={{ x: '0%' }}
+          >
+            <section className="panel turqoise"><span>Panel</span></section>
+          </Tween>
+          <Tween
+            from={{ x: '100%' }}
+            to={{ x: '0%' }}
+          >
+            <section className="panel green"><span>Panel</span></section>
+          </Tween>
+          <Tween
+            from={{ y: '-100%' }}
+            to={{ y: '0%' }}
+          >
+            <section className="panel bordeaux"><span>Panel</span></section>
+          </Tween>
+        </Timeline>
+      </Scene> */}
+    </Controller>
+  </SectionWipesStyled>
 );
 
 export default SectionWipes;
