@@ -3,10 +3,8 @@ import MagicScrollTest from './MagicScrollTest'
 // import FramerMotionTest from './FramerMotionTest'
 // import './index.css';
 
-function Portada() {
-  return (
-    <MagicScrollTest />
-  );
-}
+const Portada = () => (
+  <MagicScrollTest />
+)
 
 export default Portada;

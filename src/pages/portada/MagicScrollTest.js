@@ -96,8 +96,6 @@ const SectionWipesStyled = styled.div`
     }
 `;
 
-
-
 const SectionWipes = () => (
   <SectionWipesStyled>
     <Controller globalSceneOptions={{ triggerHook: 'onLeave' }}>
