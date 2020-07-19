@@ -1,10 +1,10 @@
 import React from 'react';
 import './Portada.css';
-import SplitText from './magicScrollTest/MagicScrollTest'
+import MagicScrollTest from './magicScrollTest/MagicScrollTest'
 
 function Portada() {
   return (
-    <SplitText />
+    <MagicScrollTest />
   );
 }
 
