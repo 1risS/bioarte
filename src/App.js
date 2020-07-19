@@ -4,24 +4,28 @@ import {
   Switch,
   Route,
 } from "react-router-dom";
+import { ThemeProvider } from 'styled-components';
+import theme from './theme';
 
 import Portada from './pages/portada'
 import Error404 from './pages/404'
 
 function App() {
   return (
-    <div className="App">
+    <ThemeProvider theme={theme}>
       <Router>
-        <Switch>
-          <Route exact path="/">
-            <Portada />
-          </Route>
-          <Route path="*">
-            <Error404 />
-          </Route>
-        </Switch>
+        <div className="App">
+          <Switch>
+            <Route exact path="/">
+              <Portada />
+            </Route>
+            <Route path="*">
+              <Error404 />
+            </Route>
+          </Switch>
+        </div>
       </Router>
-    </div>
+    </ThemeProvider>
   )
 }
 
