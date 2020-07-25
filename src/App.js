@@ -5,6 +5,7 @@ import theme from "./theme";
 
 import Error404 from "./pages/404";
 import Bienvenida from "./pages/bienvenida";
+import Academia from "./pages/academia";
 
 function App() {
   return (
@@ -14,6 +15,9 @@ function App() {
           <Switch>
             <Route exact path="/">
               <Bienvenida />
+            </Route>
+            <Route exact path="/academia">
+              <Academia />
             </Route>
             <Route path="*">
               <Error404 />
