@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, Link } from "react";
 import styled from "styled-components";
 import logo from "../images/logo192.png";
 
@@ -126,10 +126,11 @@ const BotonVerMas = styled.div`
 `;
 
 const Entrada = ({ horario, titulo, detalle }) => {
-  const [expanded, setExpanded] = useState(false);
+  // const [expanded, setExpanded] = useState(false);
 
   const expandDetalle = () => {
-    setExpanded(!expanded);
+    // setExpanded(!expanded);
+    return <Link to="biotecnologia/artista1dia1" />;
   };
 
   return (
@@ -137,7 +138,7 @@ const Entrada = ({ horario, titulo, detalle }) => {
       <Horario>{horario}</Horario>
       <ActividadContainer>
         <Titulo onClick={expandDetalle}>{titulo}</Titulo>
-        <DetalleContainer expanded={expanded}>
+        <DetalleContainer>
           <img src={logo} alt="Logo" />
           <DetalleTexto>
             <ActividadTitulo>TIPO ACTIVIDAD: Título actividad</ActividadTitulo>

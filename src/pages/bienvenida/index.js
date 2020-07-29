@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 import logo from "../../images/logo512.png";
 
@@ -120,7 +121,8 @@ const Bienvenida = () => (
         tempor incididunt ut labore et dolore magna aliqua.
       </SectionContent>
       <a href="http://localhost:8081/index.html">IR A LA EXPERIENCIA 360</a>
-      <a href="http://localhost:8081/academia">IR A UNA AGENDA</a>
+      <Link to="/academia">IR A ACADEMIA</Link>
+      <Link to="/biotecnologia"> IR A BIOTECNOLOGIA </Link>
     </Descripcion>
 
     <SponsorsSection>
