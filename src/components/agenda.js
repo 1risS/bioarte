@@ -91,40 +91,10 @@ const ActividadContainer = styled.div`
   flex-direction: column;
   margin-left: 2em;
 `
-
-// const DetalleContainer = styled.div`
-//   display: inherit;
-//   margin-left: 4em;
-//   margin-top: 1em;
-//   overflow: auto;
-//   max-height: ${props => (props.expanded ? "30rem" : "0")};
-//   opacity: ${props => (props.expanded ? "100%" : "0")};
-//   transition-property: max-height, opacity;
-//   transition-duration: 0.8s;
-//   transition-timing-function: easeOutExpo;
-//   width: 100%;
-// `
-
-// const DetalleTexto = styled.div`
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: space-evenly;
-//   margin-left: 2em;
-//   align-items: center;
-// `
-// const ActividadTitulo = styled.div`
-//   font-family: ${props => props.theme.fontSizes.h1};
-//   font-weight: ${props => props.theme.fontWeights.extraBold};
-//   margin: 0.5em 0.5em 0.5em 0em;
-// `
-// const BotonVerMas = styled.div`
-//   font-family: ${props => props.theme.fontSizes.h2};
-//   background-color: ${props => props.theme.colors.bg2};
-//   padding: 0.5em;
-//   border-radius: 20px;
-//   text-align: center;
-//   width: 6em;
-// `
+const StyledLink = styled(Link)`
+  color: black;
+  text-decoration: none;
+`
 
 const Entrada = ({ horario, titulo, detalle }) => {
   // const [expanded, setExpanded] = useState(false);
@@ -133,16 +103,9 @@ const Entrada = ({ horario, titulo, detalle }) => {
     <EntradaContainer>
       <Horario>{horario}</Horario>
       <ActividadContainer>
-        <Link to="biotecnologia/artista1dia1">
+        <StyledLink to="first-talk">
           <Titulo>{titulo}</Titulo>
-        </Link>
-        {/* <DetalleContainer>
-          <img src={logo} alt="Logo" />
-          <DetalleTexto>
-            <ActividadTitulo>TIPO ACTIVIDAD: Título actividad</ActividadTitulo>
-            <BotonVerMas>Ver más</BotonVerMas>
-          </DetalleTexto>
-        </DetalleContainer> */}
+        </StyledLink>
       </ActividadContainer>
     </EntradaContainer>
   )
