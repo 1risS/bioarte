@@ -124,9 +124,7 @@ const IndexPage = () => (
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </SectionContent>
-        <a href="http://localhost:8081/index.html">IR A LA EXPERIENCIA 360</a>
-        <Link to="/academia">IR A ACADEMIA</Link>
-        <Link to="/biotecnologia"> IR A BIOTECNOLOGIA </Link>
+        <a href="http://localhost:8000/pano">IR A LA EXPERIENCIA 360</a>
       </Descripcion>
 
       <SponsorsSection>

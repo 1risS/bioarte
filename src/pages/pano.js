@@ -47,12 +47,16 @@ const PanoPage = () => {
     infospotC.addHoverText("Exhibición")
     infospotC.addEventListener("click", irExhibicion)
 
-    const infospotD = new Infospot()
+    const infospotD = new Infospot(
+      600,
+      "https://images-na.ssl-images-amazon.com/images/I/61mtx+420hL._AC_US436_QL65_.jpg"
+    )
     infospotD.position.set(-4973.56, -35.64, -477.86)
-    infospotD.addHoverText("Historia")
+    infospotD.addHoverText("Historia", 0)
     infospotD.addEventListener("click", irHistoria)
 
     const panorama = new ImagePanorama("images/hall_of_finfish.jpg")
+
     panorama.add(infospot)
     panorama.add(infospotB)
     panorama.add(infospotC)
