@@ -3,6 +3,9 @@ import Agenda from "../components/agenda"
 import styled from "styled-components"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Loadable from "@loadable/component"
+
+const LoadableMapa = Loadable(() => import("../components/mapa"))
 
 const AcademiaHeader = styled.div`
   height: 10em;
@@ -15,6 +18,7 @@ const AcademiaPage = () => {
       <SEO title="Academia" />
       <AcademiaHeader>ACTIVIDADES ACADEMIA</AcademiaHeader>
       <Agenda />
+      <LoadableMapa />
     </Layout>
   )
 }
