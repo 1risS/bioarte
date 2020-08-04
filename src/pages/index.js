@@ -124,7 +124,7 @@ const IndexPage = () => (
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </SectionContent>
-        <a href="http://localhost:8000/pano">IR A LA EXPERIENCIA 360</a>
+        <Link to="/pano">IR A LA EXPERIENCIA 360</Link>
       </Descripcion>
 
       <SponsorsSection>
