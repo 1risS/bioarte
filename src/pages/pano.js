@@ -85,7 +85,7 @@ const PanoPage = () => {
         this.scale.y /= 2
       })
 
-      const panorama = new Panolens.ImagePanorama("images/hall_of_finfish.jpg")
+      const panorama = new Panolens.ImagePanorama("/images/hall_of_finfish.jpg")
 
       panorama.add(infospot)
       panorama.add(infospotB)
