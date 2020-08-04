@@ -54,6 +54,37 @@ const PanoPage = () => {
     infospotD.position.set(-4973.56, -35.64, -477.86)
     infospotD.addHoverText("Historia", 0)
     infospotD.addEventListener("click", irHistoria)
+    // infospotD.addEventListener("click", function () {})
+    infospotD.addEventListener("hoverenter", function (event) {
+      this.material.opacity = 0.6
+      this.material.color.set(0x00ff00 * Math.random())
+      this.scale.x *= 2
+      this.scale.y *= 2
+    })
+    infospotD.addEventListener("hoverleave", function (event) {
+      this.material.opacity = 1
+      this.material.color.set(0xffffff)
+      this.scale.x /= 2
+      this.scale.y /= 2
+    })
+
+    const infospotE = new Infospot(
+      600,
+      "https://images-na.ssl-images-amazon.com/images/I/61mtx+420hL._AC_US436_QL65_.jpg?1"
+    )
+    infospotE.position.set(-4533.7, -970.58, 1846.35)
+    infospotE.addEventListener("hoverenter", function (event) {
+      this.material.opacity = 1
+      this.material.color.set(0x00ff00 * Math.random())
+      this.scale.x *= 2
+      this.scale.y *= 2
+    })
+    infospotE.addEventListener("hoverleave", function (event) {
+      this.material.opacity = 1
+      this.material.color.set(0xffffff)
+      this.scale.x /= 2
+      this.scale.y /= 2
+    })
 
     const panorama = new ImagePanorama("images/hall_of_finfish.jpg")
 
@@ -61,6 +92,8 @@ const PanoPage = () => {
     panorama.add(infospotB)
     panorama.add(infospotC)
     panorama.add(infospotD)
+    panorama.add(infospotE)
+
     const viewer = new Viewer({ output: "console" })
     viewer.add(panorama)
   })
