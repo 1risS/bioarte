@@ -79,7 +79,7 @@ const PanoPage = () => {
         this.scale.y *= 2
       })
       infospotE.addEventListener("hoverleave", function (event) {
-        this.material.opacity = 1
+        this.material.opacity = 0.01
         this.material.color.set(0xffffff)
         this.scale.x /= 2
         this.scale.y /= 2
