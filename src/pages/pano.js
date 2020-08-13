@@ -99,7 +99,19 @@ const PanoPage = () => {
 
         objectScene.scale.multiplyScalar(100)
         // position: x (+: left; -: right), y (+:up, -:down), z (+:far, -:close)
-        objectScene.position.set(70, 0, 500)
+        objectScene.position.set(140, 0, 100)
+        objectScene.rotation.set(Math.PI / 2, 9, 5)
+
+        panorama.add(objectScene)
+      })
+
+      const loader2 = new GLTFLoader()
+      loader.load("/images/fuego.gltf", gltf => {
+        const objectScene = gltf.scene
+
+        objectScene.scale.multiplyScalar(100)
+        // position: x (+: left; -: right), y (+:up, -:down), z (+:far, -:close)
+        objectScene.position.set(-20, 0, 600)
         objectScene.rotation.set(Math.PI / 2, 2, -2)
 
         panorama.add(objectScene)
