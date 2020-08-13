@@ -1,8 +1,9 @@
 import React from "react"
 import styled from "styled-components"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import Logo from "../images/logo192.png"
+import Layout from "../../components/layout"
+import SEO from "../../components/seo"
+import Logo from "../../images/logo192.png"
+import { Link } from "gatsby"
 
 const C = styled.div`
   display: flex;
@@ -46,7 +47,9 @@ const ExhibicionPage = () => {
         <ExhibicionHeader>EXHIBICION</ExhibicionHeader>
         <ArtistasContainer id="CONTAINER">
           <RowContainer>
-            <Foto src={Logo}></Foto>
+            <Link to="detalleArtista1">
+              <Foto src={Logo}></Foto>
+            </Link>
             <Foto src={Logo}></Foto>
             <Foto src={Logo}></Foto>
           </RowContainer>
