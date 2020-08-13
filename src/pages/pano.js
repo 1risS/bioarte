@@ -22,7 +22,7 @@ const PanoPage = () => {
   }
 
   const irExhibicion = () => {
-    window.location.href = "/exibicion"
+    window.location.href = "/exhibicion"
   }
 
   const irHistoria = () => {

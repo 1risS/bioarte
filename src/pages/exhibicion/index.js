@@ -50,13 +50,23 @@ const ExhibicionPage = () => {
             <Link to="detalleArtista1">
               <Foto src={Logo}></Foto>
             </Link>
-            <Foto src={Logo}></Foto>
-            <Foto src={Logo}></Foto>
+            <Link to="detalleArtista2">
+              <Foto src={Logo}></Foto>
+            </Link>
+            <Link to="detalleArtista3">
+              <Foto src={Logo}></Foto>
+            </Link>
           </RowContainer>
           <RowContainer>
-            <Foto src={Logo}></Foto>
-            <Foto src={Logo}></Foto>
-            <Foto src={Logo}></Foto>
+            <Link to="detalleArtista4">
+              <Foto src={Logo}></Foto>
+            </Link>
+            <Link to="detalleArtista5">
+              <Foto src={Logo}></Foto>
+            </Link>
+            <Link to="detalleArtista6">
+              <Foto src={Logo}></Foto>
+            </Link>
           </RowContainer>
         </ArtistasContainer>
       </C>
