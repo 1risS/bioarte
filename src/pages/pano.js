@@ -73,7 +73,7 @@ const PanoPage = () => {
       // infospotD.addEventListener("click", function () {})
 
       const infospotE = new Panolens.Infospot(600, "/images/Deer-Little.jpg?2")
-      infospotE.position.set(-4533.7, -970.58, 1846.35)
+      infospotE.position.set(-4533.7, -670.58, 1846.35)
       infospotE.addEventListener("hoverenter", function (event) {
         this.material.opacity = 1
       })
@@ -107,17 +107,20 @@ const PanoPage = () => {
       })
       infospotF.addEventListener("hoverleave", function (event) {})
 
+      let swan
+
       const infospotI = new Panolens.Infospot(600, "/images/Deer-Little.jpg?6")
-      infospotI.position.set(-4533, 1583.49, 1846.35)
-      infospotI.addEventListener("hoverenter", function (event) {
-        swan._show()
+      infospotI.position.set(-4533, -1500, 1846.35)
+      infospotI.addEventListener("click", function (event) {
+        console.log("click")
+        swan.children[0].material.opacity = 1
+        swan.children[0].material.transparent = false
       })
       infospotI.addEventListener("hoverleave", function (event) {})
 
       const loader = new GLTFLoader()
       let objectScene
 
-      let swan
       loader.load("/images/Swan.gltf", gltf => {
         const objectScene = gltf.scene
         swan = objectScene
@@ -127,6 +130,9 @@ const PanoPage = () => {
         objectScene.position.set(80, 0, 200)
         objectScene.rotation.set(0, 2.7, 0)
         window.swan = swan
+
+        objectScene.children[0].material.transparent = true
+        objectScene.children[0].material.opacity = 0.01
 
         panorama.add(objectScene)
       })
@@ -202,6 +208,7 @@ const PanoPage = () => {
       panorama.add(infospotF)
       panorama.add(infospotG)
       panorama.add(infospotH)
+      panorama.add(infospotI)
 
       panorama.add(new Three.PointLight(0xffffff, 0.9))
 
