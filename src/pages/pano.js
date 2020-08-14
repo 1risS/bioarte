@@ -43,13 +43,13 @@ const PanoPage = () => {
         autoHideInfospot: false,
       })
 
-      const rotationRadius = 400
-      const audioSphere = new Three.Mesh(
-        new Three.SphereGeometry(50, 16, 16),
-        new Three.MeshStandardMaterial({
-          shading: Three.FlatShading,
-        })
-      )
+      // const rotationRadius = 400
+      // const audioSphere = new Three.Mesh(
+      //   new Three.SphereGeometry(50, 16, 16),
+      //   new Three.MeshStandardMaterial({
+      //     shading: Three.FlatShading,
+      //   })
+      // )
 
       const infospot = new Panolens.Infospot()
       infospot.position.set(5000.0, -665.23, -3996.49)
@@ -57,17 +57,17 @@ const PanoPage = () => {
       infospot.addEventListener("click", irAcademia)
 
       const infospotB = new Panolens.Infospot()
-      infospotB.position.set(1466.45, -665.23, 4668.5)
+      infospotB.position.set(2500, -665.23, -3996.49)
       infospotB.addHoverText("Biotecnología")
       infospotB.addEventListener("click", irBiotecnologia)
 
       const infospotC = new Panolens.Infospot()
-      infospotC.position.set(-3584.58, -665.23, 3441.91)
+      infospotC.position.set(-2500, -665.23, -3996.49)
       infospotC.addHoverText("Exhibición")
       infospotC.addEventListener("click", irExhibicion)
 
       const infospotD = new Panolens.Infospot()
-      infospotD.position.set(-4973.56, -35.64, -477.86)
+      infospotD.position.set(-5000, -665.23, -3996.49)
       infospotD.addHoverText("Historia")
       infospotD.addEventListener("click", irHistoria)
       // infospotD.addEventListener("click", function () {})
@@ -85,12 +85,12 @@ const PanoPage = () => {
       infospotE.show = () => {}
 
       const infospotH = new Panolens.Infospot(600, "/images/Deer-Little.jpg?5")
-      infospotH.position.set(-3687.95, 1694.15, 2904.36)
+      infospotH.position.set(-4533.7, 2000, 1846.35)
       infospotH._show = infospotH.show
       infospotH.show = () => {}
 
       const infospotG = new Panolens.Infospot(600, "/images/Deer-Little.jpg?4")
-      infospotG.position.set(-4278.27, 1148.77, 2305.97)
+      infospotG.position.set(-4533.7, 1148.77, 1846.35)
       infospotG._show = infospotG.show
       infospotG.show = () => {}
       infospotG.addEventListener("hoverenter", function (event) {
@@ -101,13 +101,13 @@ const PanoPage = () => {
       })
 
       const infospotF = new Panolens.Infospot(600, "/images/Deer-Little.jpg?3")
-      infospotF.position.set(-4533, 226.19, 1846.35)
+      infospotF.position.set(-4533.7, 226.19, 1846.35)
       infospotF.addEventListener("hoverenter", function (event) {
         infospotG._show()
       })
       infospotF.addEventListener("hoverleave", function (event) {})
 
-      const infospotI = new Panolens.Infospot(600, "/images/Deer-Little.jpg?3")
+      const infospotI = new Panolens.Infospot(600, "/images/Deer-Little.jpg?6")
       infospotI.position.set(-4533, 1583.49, 1846.35)
       infospotI.addEventListener("hoverenter", function (event) {
         swan._show()
@@ -124,7 +124,7 @@ const PanoPage = () => {
 
         objectScene.scale.multiplyScalar(100)
         // position: x (+: left; -: right), y (+:up, -:down), z (+:far, -:close)
-        objectScene.position.set(60, 0, 100)
+        objectScene.position.set(80, 0, 200)
         objectScene.rotation.set(0, 2.7, 0)
         window.swan = swan
 
