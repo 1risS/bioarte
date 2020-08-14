@@ -1,6 +1,7 @@
 import React, { useEffect } from "react"
 import SEO from "../components/seo"
 import { createGlobalStyle } from "styled-components"
+import { object } from "prop-types"
 
 const GlobalStyle = createGlobalStyle`
   html, body {
@@ -37,6 +38,11 @@ const PanoPage = () => {
         "three/examples/jsm/loaders/GLTFLoader"
       )
 
+      const viewer = new Panolens.Viewer({
+        output: "console",
+        autoHideInfospot: false,
+      })
+
       const rotationRadius = 400
       const audioSphere = new Three.Mesh(
         new Three.SphereGeometry(50, 16, 16),
@@ -60,52 +66,71 @@ const PanoPage = () => {
       infospotC.addHoverText("Exhibición")
       infospotC.addEventListener("click", irExhibicion)
 
-      const infospotD = new Panolens.Infospot(600, "/images/Deer-Little.jpg")
+      const infospotD = new Panolens.Infospot()
       infospotD.position.set(-4973.56, -35.64, -477.86)
-      infospotD.addHoverText("Historia", 0)
+      infospotD.addHoverText("Historia")
       infospotD.addEventListener("click", irHistoria)
       // infospotD.addEventListener("click", function () {})
-      infospotD.addEventListener("hoverenter", function (event) {
-        this.material.opacity = 0.6
-        this.material.color.set(0x00ff00 * Math.random())
-        this.scale.x *= 2
-        this.scale.y *= 2
-      })
-      infospotD.addEventListener("hoverleave", function (event) {
-        this.material.opacity = 1
-        this.material.color.set(0xffffff)
-        this.scale.x /= 2
-        this.scale.y /= 2
-      })
 
       const infospotE = new Panolens.Infospot(600, "/images/Deer-Little.jpg?2")
       infospotE.position.set(-4533.7, -970.58, 1846.35)
       infospotE.addEventListener("hoverenter", function (event) {
         this.material.opacity = 1
-        this.material.color.set(0x00ff00 * Math.random())
-        this.scale.x *= 2
-        this.scale.y *= 2
       })
       infospotE.addEventListener("hoverleave", function (event) {
         this.material.opacity = 0.01
-        this.material.color.set(0xffffff)
-        this.scale.x /= 2
-        this.scale.y /= 2
+      })
+      // hidden always
+      infospotE._show = infospotE.show
+      infospotE.show = () => {}
+
+      const infospotH = new Panolens.Infospot(600, "/images/Deer-Little.jpg?5")
+      infospotH.position.set(-3687.95, 1694.15, 2904.36)
+      infospotH._show = infospotH.show
+      infospotH.show = () => {}
+
+      const infospotG = new Panolens.Infospot(600, "/images/Deer-Little.jpg?4")
+      infospotG.position.set(-4278.27, 1148.77, 2305.97)
+      infospotG._show = infospotG.show
+      infospotG.show = () => {}
+      infospotG.addEventListener("hoverenter", function (event) {
+        infospotH._show()
+      })
+      infospotG.addEventListener("hoverleave", function (event) {
+        infospotH.hide()
       })
 
+      const infospotF = new Panolens.Infospot(600, "/images/Deer-Little.jpg?3")
+      infospotF.position.set(-4533, 226.19, 1846.35)
+      infospotF.addEventListener("hoverenter", function (event) {
+        infospotG._show()
+      })
+      infospotF.addEventListener("hoverleave", function (event) {})
+
+      const infospotI = new Panolens.Infospot(600, "/images/Deer-Little.jpg?3")
+      infospotI.position.set(-4533, 1583.49, 1846.35)
+      infospotI.addEventListener("hoverenter", function (event) {
+        swan._show()
+      })
+      infospotI.addEventListener("hoverleave", function (event) {})
+
       const loader = new GLTFLoader()
+      let objectScene
+
+      let swan
       loader.load("/images/Swan.gltf", gltf => {
         const objectScene = gltf.scene
+        swan = objectScene
 
         objectScene.scale.multiplyScalar(100)
         // position: x (+: left; -: right), y (+:up, -:down), z (+:far, -:close)
-        objectScene.position.set(140, 0, 100)
-        objectScene.rotation.set(Math.PI / 2, 9, 5)
+        objectScene.position.set(60, 0, 100)
+        objectScene.rotation.set(0, 2.7, 0)
+        window.swan = swan
 
         panorama.add(objectScene)
       })
 
-      const loader2 = new GLTFLoader()
       loader.load("/images/fuego.gltf", gltf => {
         const objectScene = gltf.scene
 
@@ -113,6 +138,56 @@ const PanoPage = () => {
         // position: x (+: left; -: right), y (+:up, -:down), z (+:far, -:close)
         objectScene.position.set(-20, 0, 600)
         objectScene.rotation.set(Math.PI / 2, 2, -2)
+
+        // rotacion
+        const raycaster = new Three.Raycaster()
+        const mouse = new Three.Vector2()
+        let lastMPos = {}
+        const originalRotation = {
+          x: objectScene.rotation.x,
+          y: objectScene.rotation.y,
+          z: objectScene.rotation.z,
+        }
+        let resetTimer
+
+        document.addEventListener(`mousemove`, function (event) {
+          if (!objectScene) return
+
+          mouse.x = (event.clientX / window.innerWidth) * 2 - 1
+          mouse.y = -(event.clientY / window.innerHeight) * 2 + 1
+
+          raycaster.setFromCamera(mouse, viewer.camera)
+          const intersects = raycaster.intersectObject(objectScene, true)
+
+          if (intersects.length > 0) {
+            if (resetTimer) clearTimeout(resetTimer)
+
+            console.log("estoy sobre el swan")
+            //you can only calculate the distance if therer already was a mouse event
+
+            if (typeof lastMPos.x != "undefined") {
+              //calculate how far the mouse has moved
+              var deltaX = lastMPos.x - event.clientX
+              var deltaY = lastMPos.y - event.clientY
+
+              //rotate your object accordingly
+              objectScene.rotation.z += deltaX * 0.05
+              objectScene.rotation.y += deltaY * 0.05
+            }
+
+            //save current mouse Position for next time
+            lastMPos = {
+              x: event.clientX,
+              y: event.clientY,
+            }
+          } else {
+            resetTimer = setTimeout(() => {
+              objectScene.rotation.x = originalRotation.x
+              objectScene.rotation.y = originalRotation.y
+              objectScene.rotation.z = originalRotation.z
+            }, 1500)
+          }
+        })
 
         panorama.add(objectScene)
       })
@@ -124,10 +199,12 @@ const PanoPage = () => {
       panorama.add(infospotC)
       panorama.add(infospotD)
       panorama.add(infospotE)
+      panorama.add(infospotF)
+      panorama.add(infospotG)
+      panorama.add(infospotH)
 
       panorama.add(new Three.PointLight(0xffffff, 0.9))
 
-      const viewer = new Panolens.Viewer({ output: "console" })
       viewer.add(panorama)
 
       // viewer.addUpdateCallback(function () {
@@ -138,6 +215,7 @@ const PanoPage = () => {
       //   )
       // })
     }
+
     run()
   }, [])
 
