@@ -8,6 +8,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 // import { useStaticQuery, graphql } from "gatsby"
+import { CookiesProvider } from "react-cookie"
 import { ThemeProvider } from "styled-components"
 import { GlobalStyle, theme } from "../theme/global-style"
 
@@ -25,13 +26,15 @@ const Layout = ({ children }) => {
   // `)
 
   return (
-    <ThemeProvider theme={theme}>
-      <GlobalStyle />
-      {/* <Header siteTitle={data.site.siteMetadata.title} /> */}
-      <div>
-        <main>{children}</main>
-      </div>
-    </ThemeProvider>
+    <CookiesProvider>
+      <ThemeProvider theme={theme}>
+        <GlobalStyle />
+        {/* <Header siteTitle={data.site.siteMetadata.title} /> */}
+        <div>
+          <main>{children}</main>
+        </div>
+      </ThemeProvider>
+    </CookiesProvider>
   )
 }
 

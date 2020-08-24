@@ -1,5 +1,5 @@
 import { Link } from "gatsby"
-import React from "react"
+import React, { useEffect, useState } from "react"
 import styled from "styled-components"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -66,75 +66,96 @@ const SponsorLogo = styled.img`
   height: 6rem;
 `
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title="BioArte" />
-    <BienvenidaContainer id="bienvenidaContainer">
-      <Presentacion>
-        <HeroImage src={logo} />
-        <HeroTitle> FESTIVAL BIOARTE </HeroTitle>
-      </Presentacion>
+const Homero = styled.img`
+  width: 500px;
+  position: absolute;
+  left: ${props => (props.right ? "calc(100% - 500px)" : 0)};
+  transition-property: left, top;
+  transition-delay: 1s;
+  transition-duration: 4s;
+`
 
-      <Descripcion>
-        <SectionTitle>Párrafo explicando el nombre</SectionTitle>
-        <SectionContent>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
-        </SectionContent>
-        <SectionTitle>Párrafo explicando el origen del proyecto</SectionTitle>
-        <SectionContent>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
-        </SectionContent>
-        <SectionTitle>
-          Párrafo explicando la experiencia <br></br>( landing page a recorrer
-          <br />4 áreas a explorar, qué hay en cada lugar)
-        </SectionTitle>
-        <SectionContent>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
-        </SectionContent>
-        <SectionTitle>Párrafo explicando cómo navegar el sitio</SectionTitle>
-        <SectionContent>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
-        </SectionContent>
-        <SectionTitle>Call to action - frase de cierre</SectionTitle>
-        <SectionContent>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        </SectionContent>
-        <Link to="/pano">IR A LA EXPERIENCIA 360</Link>
-      </Descripcion>
+const IndexPage = () => {
+  const [homeroRight, setHomeroRight] = useState(false)
 
-      <SponsorsSection>
-        <SponsorLogo src={logo} />
-        <SponsorLogo src={logo} />
-        <SponsorLogo src={logo} />
-        <SponsorLogo src={logo} />
-      </SponsorsSection>
-    </BienvenidaContainer>
-  </Layout>
-)
+  useEffect(() => {
+    setHomeroRight(true)
+  }, [])
+
+  return (
+    <Layout>
+      <SEO title="BioArte" />
+      <BienvenidaContainer id="bienvenidaContainer">
+        <Presentacion>
+          <HeroImage src={logo} />
+          <HeroTitle> FESTIVAL BIOARTE </HeroTitle>
+          <Homero
+            right={homeroRight}
+            src="http://paralelo32.com.ar/wp-content/uploads/2017/08/2.gif"
+          />
+        </Presentacion>
+
+        <Descripcion>
+          <SectionTitle>Párrafo explicando el nombre</SectionTitle>
+          <SectionContent>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </SectionContent>
+          <SectionTitle>Párrafo explicando el origen del proyecto</SectionTitle>
+          <SectionContent>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </SectionContent>
+          <SectionTitle>
+            Párrafo explicando la experiencia <br></br>( landing page a recorrer
+            <br />4 áreas a explorar, qué hay en cada lugar)
+          </SectionTitle>
+          <SectionContent>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </SectionContent>
+          <SectionTitle>Párrafo explicando cómo navegar el sitio</SectionTitle>
+          <SectionContent>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </SectionContent>
+          <SectionTitle>Call to action - frase de cierre</SectionTitle>
+          <SectionContent>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </SectionContent>
+          <Link to="/pano">IR A LA EXPERIENCIA 360</Link>
+        </Descripcion>
+
+        <SponsorsSection>
+          <SponsorLogo src={logo} />
+          <SponsorLogo src={logo} />
+          <SponsorLogo src={logo} />
+          <SponsorLogo src={logo} />
+        </SponsorsSection>
+      </BienvenidaContainer>
+    </Layout>
+  )
+}
 
 export default IndexPage

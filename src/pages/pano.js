@@ -1,7 +1,8 @@
 import React, { useEffect } from "react"
 import SEO from "../components/seo"
 import { createGlobalStyle } from "styled-components"
-import { object } from "prop-types"
+import Layout from "../components/layout"
+import { useCookies } from "react-cookie"
 
 const GlobalStyle = createGlobalStyle`
   html, body {
@@ -30,6 +31,8 @@ const PanoPage = () => {
     window.location.href = "/historia"
   }
 
+  const [cookies, setCookie] = useCookies()
+
   useEffect(() => {
     const run = async () => {
       const Panolens = await import("panolens")
@@ -43,13 +46,7 @@ const PanoPage = () => {
         autoHideInfospot: false,
       })
 
-      // const rotationRadius = 400
-      // const audioSphere = new Three.Mesh(
-      //   new Three.SphereGeometry(50, 16, 16),
-      //   new Three.MeshStandardMaterial({
-      //     shading: Three.FlatShading,
-      //   })
-      // )
+      // PORTALES A LAS SUBPAGINAS
 
       const infospot = new Panolens.Infospot()
       infospot.position.set(5000.0, -665.23, -3996.49)
@@ -70,8 +67,10 @@ const PanoPage = () => {
       infospotD.position.set(-5000, -665.23, -3996.49)
       infospotD.addHoverText("Historia")
       infospotD.addEventListener("click", irHistoria)
-      // infospotD.addEventListener("click", function () {})
 
+      // OBJETOS E IMAGENES
+
+      // Imagen oculta que se revela al hacer hover
       const infospotE = new Panolens.Infospot(600, "/images/Deer-Little.jpg?2")
       infospotE.position.set(-4533.7, -670.58, 1846.35)
       infospotE.addEventListener("hoverenter", function (event) {
@@ -84,11 +83,13 @@ const PanoPage = () => {
       infospotE._show = infospotE.show
       infospotE.show = () => {}
 
+      // Imagen mostrada cuando se hace hover sobre otra (infospotG)
       const infospotH = new Panolens.Infospot(600, "/images/Deer-Little.jpg?5")
       infospotH.position.set(-4533.7, 2000, 1846.35)
       infospotH._show = infospotH.show
       infospotH.show = () => {}
 
+      // Imagen que muestra otra (infospotH) al hacer hover y es mostrada al hacer hover en otra (infospotF)
       const infospotG = new Panolens.Infospot(600, "/images/Deer-Little.jpg?4")
       infospotG.position.set(-4533.7, 1148.77, 1846.35)
       infospotG._show = infospotG.show
@@ -100,6 +101,7 @@ const PanoPage = () => {
         infospotH.hide()
       })
 
+      //Imagen que muestra otra (infospotG) al hacerle hover
       const infospotF = new Panolens.Infospot(600, "/images/Deer-Little.jpg?3")
       infospotF.position.set(-4533.7, 226.19, 1846.35)
       infospotF.addEventListener("hoverenter", function (event) {
@@ -107,6 +109,7 @@ const PanoPage = () => {
       })
       infospotF.addEventListener("hoverleave", function (event) {})
 
+      // Objeto 3D cisne mostrado al hacer click sobre una imagen (infospotI)
       let swan
 
       const infospotI = new Panolens.Infospot(600, "/images/Deer-Little.jpg?6")
@@ -137,6 +140,7 @@ const PanoPage = () => {
         panorama.add(objectScene)
       })
 
+      // objeto 3D fuego con rotación según hover
       loader.load("/images/fuego.gltf", gltf => {
         const objectScene = gltf.scene
 
@@ -198,6 +202,16 @@ const PanoPage = () => {
         panorama.add(objectScene)
       })
 
+      //Imagen mostrada al obtener cookie de Academia
+
+      // const infospotJ = new Panolens.Infospot()
+      // infospotJ.position.set(971.48, -1472.22, 4348.18)
+      // infospotJ.addHoverText("Academia (oculta)")
+
+      const infospotJ = new Panolens.Infospot(600, "/images/Deer-Little.jpg?7")
+      infospotJ.position.set(5000.0, -465.23, -3196.49)
+      infospotJ.addHoverText("AcademiaCookie")
+
       const panorama = new Panolens.ImagePanorama("/images/hall_of_finfish.jpg")
 
       panorama.add(infospot)
@@ -209,28 +223,23 @@ const PanoPage = () => {
       panorama.add(infospotG)
       panorama.add(infospotH)
       panorama.add(infospotI)
+      if (cookies.AcademiaVisited) {
+        panorama.add(infospotJ)
+      }
 
       panorama.add(new Three.PointLight(0xffffff, 0.9))
 
       viewer.add(panorama)
-
-      // viewer.addUpdateCallback(function () {
-      //   audioSphere.position.set(
-      //     rotationRadius * Math.cos(Date.now() * 0.0005),
-      //     0,
-      //     rotationRadius * Math.sin(Date.now() * 0.0005)
-      //   )
-      // })
     }
 
     run()
   }, [])
 
   return (
-    <div>
+    <Layout>
       <GlobalStyle />
       <SEO title="BioArte" />
-    </div>
+    </Layout>
   )
 }
 
