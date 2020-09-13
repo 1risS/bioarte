@@ -6,6 +6,9 @@ import Loadable from "@loadable/component"
 import { useCookies } from "react-cookie"
 import logo from "../images/logo192.png"
 import Agenda from "../components/agenda"
+import fondoHeader from "../images/Academia/academia_bg.jpg"
+import logoFestival from "../images/Academia/logo libélula.png"
+import bannerHubs from "../images/Academia/Mozilla Hubs.png"
 
 const LoadableMapa = Loadable(() => import("../components/mapa"))
 
@@ -18,10 +21,12 @@ const AcademiaHeaderContainer = styled.div`
   width: auto;
   height: 45rem;
   flex-direction: column;
-  background-color: black;
   padding-left: 3rem;
   padding-right: 1rem;
+  background-image: url(${fondoHeader});
+  background-size: 140%;
 `
+
 const NavBar = styled.div`
   display: flex;
   flex-direction: row;
@@ -37,8 +42,8 @@ const LogoContainer = styled.div`
 `
 
 const Logo = styled.img`
-  height: 4rem;
-  width: 4rem;
+  height: 3rem;
+  width: 3rem;
   margin-right: 3rem;
   align-self: center;
 `
@@ -50,25 +55,28 @@ const Placeholder1 = styled.img`
 const ContadoresContainer = styled.div`
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  width: 70%;
-  align-self: center;
+  justify-content: flex-start;
 `
 
 const HorasNavegacion = styled.div`
+  background-color: #dbe6d3;
   font-family: ${props => props.theme.fontFamily};
   font-weight: ${props => props.theme.fontWeights.light};
   color: white;
   font-size: 1rem;
   align-self: center;
   // margin-right: 10rem;
+  flex-basis: 20rem;
 `
 
 const CantidadVisitantes = styled.div`
+  background-color: #dbe6d3;
   font-family: ${props => props.theme.fontFamily};
   font-weight: ${props => props.theme.fontWeights.light};
   color: white;
   font-size: 1rem;
+  flex-grow: 4;
+  align-self: flex-start;
 `
 
 const Texto = styled.div`
@@ -88,9 +96,9 @@ const Subtexto = styled.div`
   color: white;
   align-self: center;
 `
-const Placeholder2 = styled.img`
-  height: 8rem;
-  width: 8rem;
+const BannerHubs = styled.img`
+  height: 6rem;
+  width: 6rem;
   align-self: flex-end;
   margin-top: 3rem;
 `
@@ -116,7 +124,7 @@ const AcademiaPage = () => {
         <AcademiaHeaderContainer>
           <NavBar>
             <LogoContainer>
-              <Logo src={logo}></Logo>
+              <Logo src={logoFestival}></Logo>
               <Placeholder1 src={logo}></Placeholder1>
             </LogoContainer>
             <ContadoresContainer>
@@ -126,7 +134,7 @@ const AcademiaPage = () => {
           </NavBar>
           <Texto>ACADEMIA</Texto>
           <Subtexto>Acompañanos a conocer</Subtexto>
-          <Placeholder2 src={logo}></Placeholder2>
+          <BannerHubs src={bannerHubs}></BannerHubs>
         </AcademiaHeaderContainer>
         <Agenda />
         <LoadableMapa />
