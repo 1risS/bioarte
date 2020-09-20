@@ -19,20 +19,21 @@ const AcademiaContainer = styled.div`
 const AcademiaHeaderContainer = styled.div`
   display: flex;
   width: auto;
-  height: 45rem;
+  height: 32rem;
   flex-direction: column;
   padding-left: 3rem;
   padding-right: 1rem;
   background-image: url(${fondoHeader});
-  background-size: 140%;
+  background-size: 100%;
 `
 
 const NavBar = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   margin-top: 1rem;
+  margin-bottom: -2rem;
 `
 const LogoContainer = styled.div`
   display: flex;
@@ -55,37 +56,40 @@ const Placeholder1 = styled.img`
 const ContadoresContainer = styled.div`
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: space-evenly;
+  flex-basis: 150rem;
 `
 
 const HorasNavegacion = styled.div`
+  width: 150px;
+  border-radius: 8px;
+  text-align: center;
   background-color: #dbe6d3;
   font-family: ${props => props.theme.fontFamily};
   font-weight: ${props => props.theme.fontWeights.light};
-  color: white;
+  color: #414141;
   font-size: 1rem;
-  align-self: center;
-  // margin-right: 10rem;
-  flex-basis: 20rem;
 `
 
 const CantidadVisitantes = styled.div`
+  width: 150px;
+  border-radius: 8px;
+  text-align: center;
   background-color: #dbe6d3;
   font-family: ${props => props.theme.fontFamily};
   font-weight: ${props => props.theme.fontWeights.light};
-  color: white;
+  color: #414141;
   font-size: 1rem;
-  flex-grow: 4;
-  align-self: flex-start;
 `
 
 const Texto = styled.div`
   font-family: ${props => props.theme.fontFamily};
-  font-size: 13rem;
+  font-size: 10rem;
+  font-weight: bold;
   color: white;
   align-self: center;
-  margin-top: 10rem;
-  line-height: initial;
+  margin-top: 5rem;
+  /*line-height: initial;*/
 `
 
 const Subtexto = styled.div`
@@ -100,7 +104,7 @@ const BannerHubs = styled.img`
   height: 6rem;
   width: 6rem;
   align-self: flex-end;
-  margin-top: 3rem;
+  margin-bottom: 3rem;
 `
 const AgendaContainer = styled.div`
   display: flex;
