@@ -212,7 +212,7 @@ const PanoPage = () => {
       infospotJ.position.set(5000.0, -465.23, -3196.49)
       infospotJ.addHoverText("AcademiaCookie")
 
-      const panorama = new Panolens.ImagePanorama("/images/hall_of_finfish.jpg")
+      const panorama = new Panolens.ImagePanorama("/images/Test_01.jpg")
 
       panorama.add(infospot)
       panorama.add(infospotB)
