@@ -2,7 +2,9 @@ import React from "react"
 import styled from "styled-components"
 import Layout from "../../components/layout"
 import SEO from "../../components/seo"
-import Logo from "../../images/logo192.png"
+import logo from "../../images/logo192.png"
+import logoFestival from "../../images/Academia/logo libélula.png"
+import fondoHeader from "../../images/Exhibicion/colony_header.jpg"
 import { Link } from "gatsby"
 
 const C = styled.div`
@@ -10,9 +12,51 @@ const C = styled.div`
   flex-direction: column;
 `
 
-const ExhibicionHeader = styled.div`
-  height: 10em;
-  width: 100%;
+const ExhibicionContainer = styled.div`
+  background-color: ${props => props.theme.colors.bg1};
+`
+
+const ExhibicionHeaderContainer = styled.div`
+  display: flex;
+  width: auto;
+  height: 32rem;
+  flex-direction: column;
+  padding-left: 3rem;
+  padding-right: 1rem;
+  background-image: url(${fondoHeader});
+  background-size: 100%;
+`
+
+const NavBar = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 1rem;
+  margin-bottom: -2rem;
+`
+const LogoContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 30%;
+`
+
+const Logo = styled.img`
+  height: 3rem;
+  width: 3rem;
+  margin-right: 3rem;
+  align-self: center;
+`
+
+const Texto = styled.div`
+  font-family: ${props => props.theme.fontFamily};
+  font-size: 10rem;
+  font-weight: bold;
+  color: white;
+  align-self: center;
+  margin-top: 5rem;
+  /*line-height: initial;*/
 `
 
 const ArtistasContainer = styled.div`
@@ -39,33 +83,80 @@ const RowContainer = styled.div`
   margin: 3rem 0rem 3rem 0rem;
 `
 
+const Placeholder1 = styled.img`
+  height: 3rem;
+  width: 3rem;
+  align-self: center;
+`
+
+const ContadoresContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-basis: 150rem;
+`
+
+const HorasNavegacion = styled.div`
+  width: 150px;
+  border-radius: 8px;
+  text-align: center;
+  background-color: #dbe6d3;
+  font-family: ${props => props.theme.fontFamily};
+  font-weight: ${props => props.theme.fontWeights.light};
+  color: #414141;
+  font-size: 1rem;
+`
+
+const CantidadVisitantes = styled.div`
+  width: 150px;
+  border-radius: 8px;
+  text-align: center;
+  background-color: #dbe6d3;
+  font-family: ${props => props.theme.fontFamily};
+  font-weight: ${props => props.theme.fontWeights.light};
+  color: #414141;
+  font-size: 1rem;
+`
+
 const ExhibicionPage = () => {
   return (
     <Layout>
       <C>
         <SEO title="Excibición" />
-        <ExhibicionHeader>EXHIBICION</ExhibicionHeader>
+        <ExhibicionHeaderContainer>
+          <NavBar>
+            <LogoContainer>
+              <Logo src={logoFestival}></Logo>
+              <Placeholder1 src={logo}></Placeholder1>
+            </LogoContainer>
+            <ContadoresContainer>
+              <HorasNavegacion>1950</HorasNavegacion>
+              <CantidadVisitantes>30000</CantidadVisitantes>
+            </ContadoresContainer>
+          </NavBar>
+          <Texto>BIOARTE</Texto>
+        </ExhibicionHeaderContainer>
         <ArtistasContainer id="CONTAINER">
           <RowContainer>
             <Link to="detalleArtista1">
-              <Foto src={Logo}></Foto>
+              <Foto src={logo}></Foto>
             </Link>
             <Link to="detalleArtista2">
-              <Foto src={Logo}></Foto>
+              <Foto src={logo}></Foto>
             </Link>
             <Link to="detalleArtista3">
-              <Foto src={Logo}></Foto>
+              <Foto src={logo}></Foto>
             </Link>
           </RowContainer>
           <RowContainer>
             <Link to="detalleArtista4">
-              <Foto src={Logo}></Foto>
+              <Foto src={logo}></Foto>
             </Link>
             <Link to="detalleArtista5">
-              <Foto src={Logo}></Foto>
+              <Foto src={logo}></Foto>
             </Link>
             <Link to="detalleArtista6">
-              <Foto src={Logo}></Foto>
+              <Foto src={logo}></Foto>
             </Link>
           </RowContainer>
         </ArtistasContainer>
