@@ -6,6 +6,9 @@ import Loadable from "@loadable/component"
 import { useCookies } from "react-cookie"
 import logo from "../images/logo192.png"
 import Agenda from "../components/agenda"
+import fondoHeader from "../images/Academia/academia_bg.jpg"
+import logoFestival from "../images/Academia/logo libélula.png"
+import bannerHubs from "../images/Academia/Mozilla Hubs.png"
 
 const LoadableMapa = Loadable(() => import("../components/mapa"))
 
@@ -16,18 +19,21 @@ const AcademiaContainer = styled.div`
 const AcademiaHeaderContainer = styled.div`
   display: flex;
   width: auto;
-  height: 45rem;
+  height: 32rem;
   flex-direction: column;
-  background-color: black;
   padding-left: 3rem;
   padding-right: 1rem;
+  background-image: url(${fondoHeader});
+  background-size: 100%;
 `
+
 const NavBar = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   margin-top: 1rem;
+  margin-bottom: -2rem;
 `
 const LogoContainer = styled.div`
   display: flex;
@@ -37,8 +43,8 @@ const LogoContainer = styled.div`
 `
 
 const Logo = styled.img`
-  height: 4rem;
-  width: 4rem;
+  height: 3rem;
+  width: 3rem;
   margin-right: 3rem;
   align-self: center;
 `
@@ -50,34 +56,40 @@ const Placeholder1 = styled.img`
 const ContadoresContainer = styled.div`
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  width: 70%;
-  align-self: center;
+  justify-content: space-evenly;
+  flex-basis: 150rem;
 `
 
 const HorasNavegacion = styled.div`
+  width: 150px;
+  border-radius: 8px;
+  text-align: center;
+  background-color: #dbe6d3;
   font-family: ${props => props.theme.fontFamily};
   font-weight: ${props => props.theme.fontWeights.light};
-  color: white;
+  color: #414141;
   font-size: 1rem;
-  align-self: center;
-  // margin-right: 10rem;
 `
 
 const CantidadVisitantes = styled.div`
+  width: 150px;
+  border-radius: 8px;
+  text-align: center;
+  background-color: #dbe6d3;
   font-family: ${props => props.theme.fontFamily};
   font-weight: ${props => props.theme.fontWeights.light};
-  color: white;
+  color: #414141;
   font-size: 1rem;
 `
 
 const Texto = styled.div`
   font-family: ${props => props.theme.fontFamily};
-  font-size: 13rem;
+  font-size: 10rem;
+  font-weight: bold;
   color: white;
   align-self: center;
-  margin-top: 10rem;
-  line-height: initial;
+  margin-top: 5rem;
+  /*line-height: initial;*/
 `
 
 const Subtexto = styled.div`
@@ -88,11 +100,11 @@ const Subtexto = styled.div`
   color: white;
   align-self: center;
 `
-const Placeholder2 = styled.img`
-  height: 8rem;
-  width: 8rem;
+const BannerHubs = styled.img`
+  height: 6rem;
+  width: 6rem;
   align-self: flex-end;
-  margin-top: 3rem;
+  margin-bottom: 3rem;
 `
 const AgendaContainer = styled.div`
   display: flex;
@@ -116,7 +128,7 @@ const AcademiaPage = () => {
         <AcademiaHeaderContainer>
           <NavBar>
             <LogoContainer>
-              <Logo src={logo}></Logo>
+              <Logo src={logoFestival}></Logo>
               <Placeholder1 src={logo}></Placeholder1>
             </LogoContainer>
             <ContadoresContainer>
@@ -126,7 +138,7 @@ const AcademiaPage = () => {
           </NavBar>
           <Texto>ACADEMIA</Texto>
           <Subtexto>Acompañanos a conocer</Subtexto>
-          <Placeholder2 src={logo}></Placeholder2>
+          <BannerHubs src={bannerHubs}></BannerHubs>
         </AcademiaHeaderContainer>
         <Agenda />
         <LoadableMapa />
