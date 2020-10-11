@@ -3,6 +3,11 @@ import styled from "styled-components"
 import Layout from "../../components/layout"
 import SEO from "../../components/seo"
 import logo from "../../images/logo192.png"
+import img01 from "../../images/Exhibicion/cantera/cantera.png"
+import img02 from "../../images/Exhibicion/fargas/fargas.png"
+import img03 from "../../images/Exhibicion/artista03/03.png"
+import img04 from "../../images/Exhibicion/artista04/04.png"
+import img05 from "../../images/Exhibicion/artista05/05.png"
 import logoFestival from "../../images/Academia/logo libélula.png"
 import fondoHeader from "../../images/Exhibicion/colony_header.jpg"
 import { Link } from "gatsby"
@@ -10,6 +15,7 @@ import { Link } from "gatsby"
 const C = styled.div`
   display: flex;
   flex-direction: column;
+  background-color: ${props => props.theme.colors.bg1};
 `
 
 const ExhibicionContainer = styled.div`
@@ -66,13 +72,15 @@ const ArtistasContainer = styled.div`
   align-self: center;
   justify-content: center;
   width: 60%;
-  height: 100%
+  height: 30%;
   margin: 2rem 2rem 2rem 2rem;
   background-color: ${props => props.theme.colors.bg1};
 `
 const Foto = styled.img`
   display: inherit;
   align-self: center;
+  height: 150px;
+  width: 150px;
   order: 3;
 `
 const RowContainer = styled.div`
@@ -139,24 +147,44 @@ const ExhibicionPage = () => {
         <ArtistasContainer id="CONTAINER">
           <RowContainer>
             <Link to="detalleArtista1">
-              <Foto src={logo}></Foto>
+              <Foto src={img02}></Foto>
             </Link>
             <Link to="detalleArtista2">
-              <Foto src={logo}></Foto>
+              <Foto src={img03}></Foto>
             </Link>
             <Link to="detalleArtista3">
-              <Foto src={logo}></Foto>
+              <Foto src={img01}></Foto>
+            </Link>
+            <Link to="detalleArtista4">
+              <Foto src={img04}></Foto>
             </Link>
           </RowContainer>
           <RowContainer>
             <Link to="detalleArtista4">
-              <Foto src={logo}></Foto>
+              <Foto src={img05}></Foto>
             </Link>
             <Link to="detalleArtista5">
-              <Foto src={logo}></Foto>
+              <Foto src={img02}></Foto>
             </Link>
             <Link to="detalleArtista6">
-              <Foto src={logo}></Foto>
+              <Foto src={img03}></Foto>
+            </Link>
+            <Link to="detalleArtista6">
+              <Foto src={img01}></Foto>
+            </Link>
+          </RowContainer>
+          <RowContainer>
+            <Link to="detalleArtista4">
+              <Foto src={img04}></Foto>
+            </Link>
+            <Link to="detalleArtista5">
+              <Foto src={img05}></Foto>
+            </Link>
+            <Link to="detalleArtista6">
+              <Foto src={img02}></Foto>
+            </Link>
+            <Link to="detalleArtista6">
+              <Foto src={img03}></Foto>
             </Link>
           </RowContainer>
         </ArtistasContainer>
