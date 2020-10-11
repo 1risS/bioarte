@@ -31,6 +31,7 @@ const ExhibicionHeaderContainer = styled.div`
   padding-right: 1rem;
   background-image: url(${fondoHeader});
   background-size: 100%;
+  margin-bottom: 7rem;
 `
 
 const NavBar = styled.div`
@@ -65,22 +66,33 @@ const Texto = styled.div`
   /*line-height: initial;*/
 `
 
+const TextoArt = styled.div`
+  font-family: ${props => props.theme.fontFamily};
+  font-size: 2rem;
+  font-weight: bold;
+  color: black;
+  align-self: right;
+  margin-top: 5rem;
+  margin-left: 22rem;
+  /*line-height: initial;*/
+`
+
 const ArtistasContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
   align-self: center;
   justify-content: center;
-  width: 60%;
-  height: 30%;
+  width: 54%;
+  height: 100%;
   margin: 2rem 2rem 2rem 2rem;
   background-color: ${props => props.theme.colors.bg1};
 `
 const Foto = styled.img`
   display: inherit;
   align-self: center;
-  height: 150px;
-  width: 150px;
+  height: 180px;
+  width: 180px;
   order: 3;
 `
 const RowContainer = styled.div`
@@ -88,7 +100,7 @@ const RowContainer = styled.div`
   flex-direction: row;
   width: 100%;
   justify-content: space-evenly;
-  margin: 3rem 0rem 3rem 0rem;
+  margin: 0.3rem 0rem 0.3rem 0rem;
 `
 
 const Placeholder1 = styled.img`
@@ -188,6 +200,7 @@ const ExhibicionPage = () => {
             </Link>
           </RowContainer>
         </ArtistasContainer>
+        <TextoArt>Artistas</TextoArt>
       </C>
     </Layout>
   )
