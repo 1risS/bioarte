@@ -79,7 +79,7 @@ const PanoPage = () => {
       infospotE.addEventListener("hoverleave", function (event) {
         this.material.opacity = 0.01
       })
-      // hidden always
+      // // hidden always
       infospotE._show = infospotE.show
       infospotE.show = () => {}
 
@@ -218,14 +218,14 @@ const PanoPage = () => {
       panorama.add(infospotB)
       panorama.add(infospotC)
       panorama.add(infospotD)
-      panorama.add(infospotE)
-      panorama.add(infospotF)
-      panorama.add(infospotG)
-      panorama.add(infospotH)
-      panorama.add(infospotI)
-      if (cookies.AcademiaVisited) {
-        panorama.add(infospotJ)
-      }
+      // panorama.add(infospotE)
+      // panorama.add(infospotF)
+      // panorama.add(infospotG)
+      // panorama.add(infospotH)
+      // panorama.add(infospotI)
+      // if (cookies.AcademiaVisited) {
+      //   panorama.add(infospotJ)
+      // }
 
       panorama.add(new Three.PointLight(0xffffff, 0.9))
 

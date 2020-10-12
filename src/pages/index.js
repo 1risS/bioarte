@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react"
 import styled from "styled-components"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import logo from "../images/logo512.png"
+import logo from "../../static/images/BIOSlogo.png"
 
 const BienvenidaContainer = styled.div`
   display: flex;
@@ -29,7 +29,7 @@ const HeroTitle = styled.div`
   display: inherit;
   align-self: center;
   margin: 2rem 2rem 2rem 2rem;
-  font-size: ${props => props.theme.fontSizes.h1};
+  font-size: 3rem;
 `
 
 const Descripcion = styled.section`
@@ -75,6 +75,11 @@ const Homero = styled.img`
   transition-duration: 4s;
 `
 
+const LinkWrapper = styled.div`
+  text-align: center;
+  margin: 5rem;
+`
+
 const IndexPage = () => {
   const [homeroRight, setHomeroRight] = useState(false)
 
@@ -88,11 +93,11 @@ const IndexPage = () => {
       <BienvenidaContainer id="bienvenidaContainer">
         <Presentacion>
           <HeroImage src={logo} />
-          <HeroTitle> FESTIVAL BIOARTE </HeroTitle>
-          <Homero
+          <HeroTitle> BIOS </HeroTitle>
+          {/* <Homero
             right={homeroRight}
             src="http://paralelo32.com.ar/wp-content/uploads/2017/08/2.gif"
-          />
+          /> */}
         </Presentacion>
 
         <Descripcion>
@@ -144,7 +149,9 @@ const IndexPage = () => {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </SectionContent>
-          <Link to="/pano">IR A LA EXPERIENCIA 360</Link>
+          <LinkWrapper>
+            <Link to="/pano">IR A LA EXPERIENCIA 360</Link>
+          </LinkWrapper>
         </Descripcion>
 
         <SponsorsSection>
