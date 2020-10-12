@@ -98,7 +98,7 @@ const IndexPage = () => {
         <Presentacion>
           <HeroImage src={logo} />
           <HeroTitle> BIOS </HeroTitle>
-          <Homero right={homeroRight} src="/static/sunflower.gif" />
+          <Homero right={homeroRight} src="/sunflower.gif" />
         </Presentacion>
 
         <Descripcion>
