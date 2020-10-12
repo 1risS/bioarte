@@ -20,7 +20,7 @@ const AcademiaContainer = styled.div`
 const AcademiaHeaderContainer = styled.div`
   display: flex;
   width: auto;
-  height: 32rem;
+  height: 100vh;
   flex-direction: column;
   padding-left: 3rem;
   padding-right: 1rem;
@@ -89,7 +89,7 @@ const Texto = styled.div`
   font-weight: bold;
   color: white;
   align-self: center;
-  margin-top: 5rem;
+  margin-top: 25vh;
   /*line-height: initial;*/
 `
 
@@ -109,7 +109,9 @@ const BannerHubs = styled.img`
 `
 
 const AgendaContainer = styled.div`
-  width: 60%;
+  width: 55%;
+  margin-top: 4em;
+  margin-bottom: 4em;
 `
 
 const Section = styled.section`
@@ -151,7 +153,7 @@ const AcademiaPage = () => {
               <CantidadVisitantes>30000</CantidadVisitantes>
             </ContadoresContainer>
           </NavBar>
-          <Texto>ACADEMIA</Texto>
+          <Texto>Academia</Texto>
           <Subtexto>Acompañanos a conocer</Subtexto>
           <BannerHubs src={bannerHubs}></BannerHubs>
         </AcademiaHeaderContainer>

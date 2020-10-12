@@ -1,5 +1,8 @@
 import React, { useState } from "react"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faDotCircle, faCheckCircle } from "@fortawesome/free-regular-svg-icons"
 import styled from "styled-components"
+import placeholder from "../images/placeholder.png"
 
 const days = ["19/3", "20/3", "21/3", "22/3"]
 const eventsPerDay = days.map(() => [
@@ -42,9 +45,18 @@ const eventsPerDay = days.map(() => [
 ])
 
 const EntryContainer = styled.div`
-  background-color: white;
+  background-color: ${props =>
+    props.expanded ? props.theme.colors.greens[1] : "#fff"};
   display: flex;
   flex-direction: row;
+  padding: 1em;
+  margin: 0.75em 0;
+  cursor: pointer;
+
+  & h1,
+  & svg {
+    color: ${props => props.expanded && "#fff"};
+  }
 `
 const InfoContainer = styled.div`
   display: flex;
@@ -56,63 +68,86 @@ const TimeSpeakerContainer = styled.div`
 `
 const ActivityContainer = styled.div`
   display: flex;
+  flex-direction: column;
 `
 
 const Time = styled.h1`
-  color: black;
+  color: ${props => props.theme.colors.greens[1]};
   font-family: ${props => props.theme.fontFamily};
-  font-weight: ${props => props.theme.fontWeights.light};
-  font-size: 1.5rem;
-  color: white;
+  font-weight: ${props => props.theme.fontWeights.semiBold};
+  font-size: 1.25rem;
   align-self: center;
 `
 
-const Icono = styled.img`
-height = 50px;
-width= 50px;
+const Bullet = styled(({ className }) => (
+  <FontAwesomeIcon className={className} icon={faDotCircle} />
+))`
+  font-size: 1.25rem;
+  color: ${props => props.theme.colors.greens[1]};
+  margin: 0.25em;
+  margin-right: 0.5em;
 `
 
 const Speaker = styled.h1`
-  color: black;
+  color: ${props => props.theme.colors.greens[1]};
   font-family: ${props => props.theme.fontFamily};
-  font-weight: ${props => props.theme.fontWeights.light};
+  font-weight: ${props => props.theme.fontWeights.semiBold};
+  align-self: center;
+  margin-left: 2rem;
 `
 
 const Title = styled.h1`
   color: black;
   font-family: ${props => props.theme.fontFamily};
-  font-weight: ${props => props.theme.fontWeights.light};
-`
-
-const ActivityType = styled.img`
-height = 50px;
-width= 50px;
+  font-weight: ${props => props.theme.fontWeights.semiBold};
+  font-size: 1.65rem;
+  cursor: pointer;
+  padding: 0.5em 0;
 `
 
 const EntryList = styled.div`
   display: flex;
+  flex-direction: column;
 `
 
-const Entry = ({ time, speaker, title }) => {
-  // const [expanded, setExpanded] = useState(false);
+const Detail = styled.p`
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 1.5em;
+
+  & > p {
+    color: #fff;
+    font-size: 0.875rem;
+    flex-grow: 1;
+    padding: 0 4em 0 1em;
+  }
+  & > img {
+    height: 110px;
+    width: 150px;
+  }
+`
+
+const Entry = ({ time, speaker, title, detail }) => {
+  const [expanded, setExpanded] = useState(false)
 
   return (
-    <EntryContainer>
+    <EntryContainer expanded={expanded} onClick={() => setExpanded(!expanded)}>
+      <Bullet />
       <InfoContainer>
         <TimeSpeakerContainer>
-          <Time>
-            <Icono></Icono>
-            {time}
-          </Time>
+          <Time>{time.slice(0, 2)}hs</Time>
           <Speaker>{speaker}</Speaker>
         </TimeSpeakerContainer>
         <ActivityContainer>
-          {/* <StyledLink to="first-talk"> */}
           <Title>{title}</Title>
-          {/* </StyledLink> */}
+          {expanded && (
+            <Detail>
+              <img src={placeholder} />
+              <p>{detail}</p>
+            </Detail>
+          )}
         </ActivityContainer>
       </InfoContainer>
-      <ActivityType></ActivityType>
     </EntryContainer>
   )
 }
@@ -121,19 +156,22 @@ const DateTabsContainer = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin-bottom: 2rem;
 `
 
 const DateTab = styled.span`
-  background-color: ${props => (props.selected ? "#508f44" : "#000")};
+  background-color: ${props =>
+    props.selected ? props.theme.colors.greens[1] : "#000"};
   color: #fff;
   border-radius: 16px;
-  padding: 0.25rem;
+  padding: 0.25em 0.5em;
   cursor: pointer;
-  width: 5rem;
+  width: 8rem;
   text-align: center;
+  font-weight: bold;
 
   &:hover {
-    background-color: #5fab51;
+    background-color: ${props => props.theme.colors.greens[0]};
   }
 `
 
@@ -153,19 +191,17 @@ const Agenda = () => {
   return (
     <>
       <DateTabs days={days} value={day} onClick={day => setDay(day)} />
-      {/* <EntryList>
+      <EntryList>
         {eventsPerDay[day].map((event, i) => (
           <Entry
             key={i}
             time={event.time}
             speaker={event.speaker}
             title={event.title}
-            // detail={
-            //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
-            // }
+            detail={event.desc}
           />
         ))}
-      </EntryList> */}
+      </EntryList>
     </>
   )
 }
