@@ -9,6 +9,7 @@ import Agenda from "../components/agenda"
 import fondoHeader from "../images/Academia/academia_bg.jpg"
 import logoFestival from "../images/Academia/logo libélula.png"
 import bannerHubs from "../images/Academia/Mozilla Hubs.png"
+import Placeholder from "../../static/images/Icon-Placeholder-1.png"
 
 const LoadableMapa = Loadable(() => import("../components/mapa"))
 
@@ -112,6 +113,13 @@ const AgendaContainer = styled.div`
   overflow: scroll;
 `
 
+const MapaContainer = styled.div`
+  height: 20rem;
+  width: 20rem;
+  align-self: center;
+  margin: 0;
+`
+
 // ponemos una cookie para saber si le usuarix pasó por acá
 const AcademiaPage = () => {
   const [cookies, setCookie] = useCookies(["AcademiaVisited"])
@@ -129,7 +137,7 @@ const AcademiaPage = () => {
           <NavBar>
             <LogoContainer>
               <Logo src={logoFestival}></Logo>
-              <Placeholder1 src={logo}></Placeholder1>
+              <Placeholder1 src={Placeholder}></Placeholder1>
             </LogoContainer>
             <ContadoresContainer>
               <HorasNavegacion>1950</HorasNavegacion>
@@ -141,7 +149,9 @@ const AcademiaPage = () => {
           <BannerHubs src={bannerHubs}></BannerHubs>
         </AcademiaHeaderContainer>
         <Agenda />
-        <LoadableMapa />
+        <MapaContainer>
+          <LoadableMapa />
+        </MapaContainer>
       </AcademiaContainer>
     </Layout>
   )
