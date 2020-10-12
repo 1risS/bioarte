@@ -30,6 +30,7 @@ const HeroTitle = styled.div`
   align-self: center;
   margin: 2rem 2rem 2rem 2rem;
   font-size: 3rem;
+  color: ${props => props.theme.colors.oranges[2]};
 `
 
 const Descripcion = styled.section`
@@ -40,7 +41,8 @@ const Descripcion = styled.section`
   flex-direction: column;
   justify-content: center;
   align-self: center;
-  padding: 2rem 2rem 2rem 2rem;
+  padding: 8rem 4rem 6rem 4rem;
+  color: ${props => props.theme.colors.oranges[2]};
 `
 
 const SectionContent = styled.div`
@@ -48,18 +50,20 @@ const SectionContent = styled.div`
   flex-direction: column;
   justify-content: center;
   padding: 2rem 2rem 2rem 2rem;
+  margin-bottom: 5rem;
 `
 
 const SectionTitle = styled.h2`
   font-weight: 400;
   display: inherit;
   align-self: center;
+  margin-top: 5rem;
 `
 
 const SponsorsSection = styled.section`
   display: inherit;
   justify-content: space-evenly;
-  margin: 3rem 3rem 3rem 3rem;
+  margin: 6rem 3rem 8rem 3rem;
 `
 
 const SponsorLogo = styled.img`
@@ -94,10 +98,7 @@ const IndexPage = () => {
         <Presentacion>
           <HeroImage src={logo} />
           <HeroTitle> BIOS </HeroTitle>
-          {/* <Homero
-            right={homeroRight}
-            src="http://paralelo32.com.ar/wp-content/uploads/2017/08/2.gif"
-          /> */}
+          <Homero right={homeroRight} src="/static/sunflower.gif" />
         </Presentacion>
 
         <Descripcion>
