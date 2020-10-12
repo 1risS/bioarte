@@ -107,10 +107,17 @@ const BannerHubs = styled.img`
   align-self: flex-end;
   margin-bottom: 3rem;
 `
+
 const AgendaContainer = styled.div`
+  width: 60%;
+`
+
+const Section = styled.section`
   display: flex;
-  flex-direction: column;
-  overflow: scroll;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem 2rem 2rem 2rem;
+  background-color: ${props => props.theme.colors.bg1};
 `
 
 const MapaContainer = styled.div`
@@ -148,7 +155,11 @@ const AcademiaPage = () => {
           <Subtexto>Acompañanos a conocer</Subtexto>
           <BannerHubs src={bannerHubs}></BannerHubs>
         </AcademiaHeaderContainer>
-        <Agenda />
+        <Section>
+          <AgendaContainer>
+            <Agenda />
+          </AgendaContainer>
+        </Section>
         <MapaContainer>
           <LoadableMapa />
         </MapaContainer>
