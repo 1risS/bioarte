@@ -29,23 +29,23 @@ export default class Mapa extends Component {
     const position = [this.state.lat, this.state.lng]
 
     return (
-      <MapCont>
-        <Map center={position} zoom={this.state.zoom} style={{ height: 400 }}>
-          <TileLayer
-            attribution='&amp;copy <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-            url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-          />
-          <Marker position={position}>
-            <Popup>
-              Universidad de Londres. <br />{" "}
-              <a href="https://london.ac.uk/" target="blank">
-                Ir a la web
-              </a>
-              .
-            </Popup>
-          </Marker>
-        </Map>
-      </MapCont>
+      // <MapCont>
+      <Map center={position} zoom={this.state.zoom} style={{ height: 400 }}>
+        <TileLayer
+          attribution='&amp;copy <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+          url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+        />
+        <Marker position={position}>
+          <Popup>
+            Universidad de Londres. <br />{" "}
+            <a href="https://london.ac.uk/" target="blank">
+              Ir a la web
+            </a>
+            .
+          </Popup>
+        </Marker>
+      </Map>
+      // </MapCont>
     )
   }
 }

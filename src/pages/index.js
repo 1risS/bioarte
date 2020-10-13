@@ -3,13 +3,14 @@ import React, { useEffect, useState } from "react"
 import styled from "styled-components"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import logo from "../../static/images/BIOSlogo.png"
+import logo from "../../static/images/welcome/WelcomePage_V02.png"
 
 const BienvenidaContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
   aling-items: center;
+  width: 100%;
 `
 
 const Presentacion = styled.section`
@@ -21,8 +22,7 @@ const Presentacion = styled.section`
 
 const HeroImage = styled.img`
   display: inherit;
-  width: 20%;
-  align-self: center;
+  width: 100%;
 `
 
 const HeroTitle = styled.div`
@@ -30,34 +30,41 @@ const HeroTitle = styled.div`
   align-self: center;
   margin: 2rem 2rem 2rem 2rem;
   font-size: 3rem;
-  color: ${props => props.theme.colors.oranges[2]};
+  color: white;
 `
 
 const Descripcion = styled.section`
   min-height: 100vh;
   width: 60%;
-  background-color: ${props => props.theme.colors.bg1};
+  background-color: black;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-self: center;
-  padding: 8rem 4rem 6rem 4rem;
-  color: ${props => props.theme.colors.oranges[2]};
+  padding: 0rem;
+  color: white;
+`
+
+const Text = styled.div`
+  display: flex;
+  flex-direction: column;
+  padding: 0rem 6rem 0rem 6rem;
 `
 
 const SectionContent = styled.div`
   display: inherit;
   flex-direction: column;
-  justify-content: center;
-  padding: 2rem 2rem 2rem 2rem;
-  margin-bottom: 5rem;
+  justify-content: flex-start;
+  text-align: justify;
+  margin: 2rem 0rem 2rem 0rem;
+  color: white;
 `
 
 const SectionTitle = styled.h2`
   font-weight: 400;
   display: inherit;
-  align-self: center;
-  margin-top: 5rem;
+  text-align: left;
+  margin-top: 0rem;
 `
 
 const SponsorsSection = styled.section`
@@ -81,7 +88,19 @@ const Homero = styled.img`
 
 const LinkWrapper = styled.div`
   text-align: center;
-  margin: 5rem;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  padding: 1rem 0rem 3rem 0rem;
+  text-decoration: none;
+  color: white;
+  font-width: 900;
+`
+
+const StyledLink = styled(Link)`
+  text-decoration: none;
+  color: white;
+  font-weight: 900;
 `
 
 const IndexPage = () => {
@@ -95,72 +114,99 @@ const IndexPage = () => {
     <Layout>
       <SEO title="BioArte" />
       <BienvenidaContainer id="bienvenidaContainer">
-        <Presentacion>
-          <HeroImage src={logo} />
-          <HeroTitle> BIOS </HeroTitle>
-          <Homero right={homeroRight} src="/sunflower.gif" />
-        </Presentacion>
-
         <Descripcion>
-          <SectionTitle>Párrafo explicando el nombre</SectionTitle>
-          <SectionContent>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
-          </SectionContent>
-          <SectionTitle>Párrafo explicando el origen del proyecto</SectionTitle>
-          <SectionContent>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
-          </SectionContent>
-          <SectionTitle>
-            Párrafo explicando la experiencia <br></br>( landing page a recorrer
-            <br />4 áreas a explorar, qué hay en cada lugar)
-          </SectionTitle>
-          <SectionContent>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
-          </SectionContent>
-          <SectionTitle>Párrafo explicando cómo navegar el sitio</SectionTitle>
-          <SectionContent>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
-          </SectionContent>
-          <SectionTitle>Call to action - frase de cierre</SectionTitle>
-          <SectionContent>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </SectionContent>
+          <HeroImage src={logo} />
+          <Text>
+            <SectionTitle>Párrafo explicando el nombre</SectionTitle>
+            <SectionContent>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </SectionContent>
+            <SectionTitle>
+              Párrafo explicando el origen del proyecto
+            </SectionTitle>
+            <SectionContent>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </SectionContent>
+            <SectionTitle>Párrafo explicando la experiencia</SectionTitle>
+            <SectionContent>
+              Landing page a recorrer 4 áreas a explorar, qué hay en cada lugar.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </SectionContent>
+            <SectionTitle>
+              Párrafo explicando cómo navegar el sitio
+            </SectionTitle>
+            <SectionContent>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </SectionContent>
+            <SectionTitle>Call to action - frase de cierre</SectionTitle>
+            <SectionContent>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </SectionContent>
+          </Text>
           <LinkWrapper>
-            <Link to="/pano">IR A LA EXPERIENCIA 360</Link>
+            <StyledLink to="/pano">IR A LA EXPERIENCIA 360</StyledLink>
           </LinkWrapper>
         </Descripcion>
 
-        <SponsorsSection>
+        {/* <SponsorsSection>
           <SponsorLogo src={logo} />
           <SponsorLogo src={logo} />
           <SponsorLogo src={logo} />
           <SponsorLogo src={logo} />
-        </SponsorsSection>
+        </SponsorsSection> */}
       </BienvenidaContainer>
     </Layout>
   )

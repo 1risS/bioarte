@@ -162,9 +162,9 @@ const AcademiaPage = () => {
             <Agenda />
           </AgendaContainer>
         </Section>
-        <MapaContainer>
-          <LoadableMapa />
-        </MapaContainer>
+        {/* <MapaContainer> */}
+        <LoadableMapa />
+        {/* </MapaContainer> */}
       </AcademiaContainer>
     </Layout>
   )
