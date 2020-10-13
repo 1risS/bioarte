@@ -218,78 +218,79 @@ const ExhibicionPage = () => {
               </Link>
             </RowPairs>
             <RowPairs>
-              <ContainerHoverDiv>
-                <Link to="detalleArtista3">
+              <Link to="detalleArtista3">
+                <ContainerHoverDiv>
                   <Foto src={img01}></Foto>
                   <HoverDiv></HoverDiv>
-                </Link>
-              </ContainerHoverDiv>
-              <ContainerHoverDiv>
-                <Link to="detalleArtista4">
+                </ContainerHoverDiv>
+              </Link>
+
+              <Link to="detalleArtista4">
+                <ContainerHoverDiv>
                   <Foto src={img04}></Foto>
                   <HoverDiv></HoverDiv>
-                </Link>
-              </ContainerHoverDiv>
+                </ContainerHoverDiv>
+              </Link>
             </RowPairs>
           </RowContainer>
           <RowContainer>
             <RowPairs>
-              <ContainerHoverDiv>
-                <Link to="detalleArtista4">
+              <Link to="detalleArtista4">
+                <ContainerHoverDiv>
                   <Foto src={img05}></Foto>
                   <HoverDiv></HoverDiv>
-                </Link>
-              </ContainerHoverDiv>
-              <ContainerHoverDiv>
-                <Link to="detalleArtista5">
+                </ContainerHoverDiv>
+              </Link>
+              <Link to="detalleArtista5">
+                <ContainerHoverDiv>
                   <Foto src={img02}></Foto>
                   <HoverDiv></HoverDiv>
-                </Link>
-              </ContainerHoverDiv>
+                </ContainerHoverDiv>
+              </Link>
             </RowPairs>
             <RowPairs>
-              <ContainerHoverDiv>
-                <Link to="detalleArtista6">
+              <Link to="detalleArtista6">
+                <ContainerHoverDiv>
                   <Foto src={img03}></Foto>
                   <HoverDiv></HoverDiv>
-                </Link>
-              </ContainerHoverDiv>
-              <ContainerHoverDiv>
-                <Link to="detalleArtista6">
+                </ContainerHoverDiv>
+              </Link>
+              <Link to="detalleArtista6">
+                <ContainerHoverDiv>
                   <Foto src={img01}></Foto>
                   <HoverDiv></HoverDiv>
-                </Link>
-              </ContainerHoverDiv>
+                </ContainerHoverDiv>
+              </Link>
             </RowPairs>
           </RowContainer>
           <RowContainer>
             <RowPairs>
-              <ContainerHoverDiv>
-                <Link to="detalleArtista4">
+              <Link to="detalleArtista4">
+                <ContainerHoverDiv>
                   <Foto src={img04}></Foto>
                   <HoverDiv></HoverDiv>
-                </Link>
-              </ContainerHoverDiv>
-              <ContainerHoverDiv>
-                <Link to="detalleArtista5">
+                </ContainerHoverDiv>
+              </Link>
+              <Link to="detalleArtista5">
+                <ContainerHoverDiv>
                   <Foto src={img05}></Foto>
                   <HoverDiv></HoverDiv>
-                </Link>
-              </ContainerHoverDiv>
+                </ContainerHoverDiv>
+              </Link>
             </RowPairs>
             <RowPairs>
-              <ContainerHoverDiv>
-                <Link to="detalleArtista6">
+              <Link to="detalleArtista6">
+                <ContainerHoverDiv>
                   <Foto src={img02}></Foto>
                   <HoverDiv></HoverDiv>
-                </Link>
-              </ContainerHoverDiv>
-              <ContainerHoverDiv>
-                <Link to="detalleArtista6">
+                </ContainerHoverDiv>
+              </Link>
+              <Link to="detalleArtista6">
+                <ContainerHoverDiv>
                   <Foto src={img03}></Foto>
                   <HoverDiv></HoverDiv>
-                </Link>
-              </ContainerHoverDiv>
+                </ContainerHoverDiv>
+              </Link>
             </RowPairs>
           </RowContainer>
         </ArtistasContainer>
