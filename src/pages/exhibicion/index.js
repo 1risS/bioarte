@@ -97,7 +97,7 @@ const HoverDiv = styled.div`
   left: 0px;
   top: 0px;
   &:hover {
-    background-color: #92ad40;
+    background-color: rgba(255, 125, 0, 0.5);
   }
 `
 const ContainerHoverDiv = styled.div`
@@ -211,53 +211,85 @@ const ExhibicionPage = () => {
                 </ContainerHoverDiv>
               </Link>
               <Link to="detalleArtista2">
-                <Foto src={img03}></Foto>
-                {/* <HoverDiv></HoverDiv> */}
+                <ContainerHoverDiv>
+                  <Foto src={img03}></Foto>
+                  <HoverDiv></HoverDiv>
+                </ContainerHoverDiv>
               </Link>
             </RowPairs>
             <RowPairs>
-              <Link to="detalleArtista3">
-                <Foto src={img01}></Foto>
-              </Link>
-              <Link to="detalleArtista4">
-                <Foto src={img04}></Foto>
-              </Link>
-            </RowPairs>
-          </RowContainer>
-          <RowContainer>
-            <RowPairs>
-              <Link to="detalleArtista4">
-                <Foto src={img05}></Foto>
-              </Link>
-              <Link to="detalleArtista5">
-                <Foto src={img02}></Foto>
-              </Link>
-            </RowPairs>
-            <RowPairs>
-              <Link to="detalleArtista6">
-                <Foto src={img03}></Foto>
-              </Link>
-              <Link to="detalleArtista6">
-                <Foto src={img01}></Foto>
-              </Link>
+              <ContainerHoverDiv>
+                <Link to="detalleArtista3">
+                  <Foto src={img01}></Foto>
+                  <HoverDiv></HoverDiv>
+                </Link>
+              </ContainerHoverDiv>
+              <ContainerHoverDiv>
+                <Link to="detalleArtista4">
+                  <Foto src={img04}></Foto>
+                  <HoverDiv></HoverDiv>
+                </Link>
+              </ContainerHoverDiv>
             </RowPairs>
           </RowContainer>
           <RowContainer>
             <RowPairs>
-              <Link to="detalleArtista4">
-                <Foto src={img04}></Foto>
-              </Link>
-              <Link to="detalleArtista5">
-                <Foto src={img05}></Foto>
-              </Link>
+              <ContainerHoverDiv>
+                <Link to="detalleArtista4">
+                  <Foto src={img05}></Foto>
+                  <HoverDiv></HoverDiv>
+                </Link>
+              </ContainerHoverDiv>
+              <ContainerHoverDiv>
+                <Link to="detalleArtista5">
+                  <Foto src={img02}></Foto>
+                  <HoverDiv></HoverDiv>
+                </Link>
+              </ContainerHoverDiv>
             </RowPairs>
             <RowPairs>
-              <Link to="detalleArtista6">
-                <Foto src={img02}></Foto>
-              </Link>
-              <Link to="detalleArtista6">
-                <Foto src={img03}></Foto>
-              </Link>
+              <ContainerHoverDiv>
+                <Link to="detalleArtista6">
+                  <Foto src={img03}></Foto>
+                  <HoverDiv></HoverDiv>
+                </Link>
+              </ContainerHoverDiv>
+              <ContainerHoverDiv>
+                <Link to="detalleArtista6">
+                  <Foto src={img01}></Foto>
+                  <HoverDiv></HoverDiv>
+                </Link>
+              </ContainerHoverDiv>
+            </RowPairs>
+          </RowContainer>
+          <RowContainer>
+            <RowPairs>
+              <ContainerHoverDiv>
+                <Link to="detalleArtista4">
+                  <Foto src={img04}></Foto>
+                  <HoverDiv></HoverDiv>
+                </Link>
+              </ContainerHoverDiv>
+              <ContainerHoverDiv>
+                <Link to="detalleArtista5">
+                  <Foto src={img05}></Foto>
+                  <HoverDiv></HoverDiv>
+                </Link>
+              </ContainerHoverDiv>
+            </RowPairs>
+            <RowPairs>
+              <ContainerHoverDiv>
+                <Link to="detalleArtista6">
+                  <Foto src={img02}></Foto>
+                  <HoverDiv></HoverDiv>
+                </Link>
+              </ContainerHoverDiv>
+              <ContainerHoverDiv>
+                <Link to="detalleArtista6">
+                  <Foto src={img03}></Foto>
+                  <HoverDiv></HoverDiv>
+                </Link>
+              </ContainerHoverDiv>
             </RowPairs>
           </RowContainer>
         </ArtistasContainer>
