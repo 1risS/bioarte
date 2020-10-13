@@ -100,6 +100,14 @@ const HoverDiv = styled.div`
     background-color: #92ad40;
   }
 `
+const ContainerHoverDiv = styled.div`
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: inherit;
+  justify-content: space-around;
+`
+
 const Foto = styled.img`
   display: inherit;
   align-self: center;
@@ -122,7 +130,6 @@ const RowContainer = styled.div`
   }
 `
 const RowPairs = styled.div`
-  position: relative;
   display: inherit;
   flex-direction: row;
   width: 100%;
@@ -198,8 +205,10 @@ const ExhibicionPage = () => {
           <RowContainer>
             <RowPairs>
               <Link to="detalleArtista1">
-                <Foto src={img02}></Foto>
-                <HoverDiv></HoverDiv>
+                <ContainerHoverDiv>
+                  <Foto src={img02}></Foto>
+                  <HoverDiv></HoverDiv>
+                </ContainerHoverDiv>
               </Link>
               <Link to="detalleArtista2">
                 <Foto src={img03}></Foto>
