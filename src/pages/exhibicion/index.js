@@ -88,19 +88,45 @@ const ArtistasContainer = styled.div`
   margin: 2rem 2rem 2rem 2rem;
   background-color: ${props => props.theme.colors.bg1};
 `
+
+const HoverDiv = styled.div`
+  float: left;
+  height: 180px;
+  width: 180px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  &:hover {
+    background-color: #92ad40;
+  }
+`
 const Foto = styled.img`
   display: inherit;
   align-self: center;
   height: 180px;
   width: 180px;
   order: 3;
+  ${Link}:hover & {
+    fill: rebeccapurple;
+  }
 `
+
 const RowContainer = styled.div`
   display: inherit;
   flex-direction: row;
   width: 100%;
-  justify-content: space-evenly;
+  justify-content: flex-start;
   margin: 0.3rem 0rem 0.3rem 0rem;
+  @media (max-width: 800px) {
+    flex-direction: column;
+  }
+`
+const RowPairs = styled.div`
+  position: relative;
+  display: inherit;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-around;
 `
 
 const Placeholder1 = styled.img`
@@ -138,6 +164,18 @@ const CantidadVisitantes = styled.div`
   font-size: 1rem;
 `
 
+const BioContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: center;
+  justify-content: center;
+  width: 54%;
+  height: 100%;
+  margin: 2rem 2rem 2rem 2rem;
+  background-color: ${props => props.theme.colors.bg1};
+`
+
 const ExhibicionPage = () => {
   return (
     <Layout>
@@ -158,49 +196,64 @@ const ExhibicionPage = () => {
         </ExhibicionHeaderContainer>
         <ArtistasContainer id="CONTAINER">
           <RowContainer>
-            <Link to="detalleArtista1">
-              <Foto src={img02}></Foto>
-            </Link>
-            <Link to="detalleArtista2">
-              <Foto src={img03}></Foto>
-            </Link>
-            <Link to="detalleArtista3">
-              <Foto src={img01}></Foto>
-            </Link>
-            <Link to="detalleArtista4">
-              <Foto src={img04}></Foto>
-            </Link>
+            <RowPairs>
+              <Link to="detalleArtista1">
+                <Foto src={img02}></Foto>
+                <HoverDiv></HoverDiv>
+              </Link>
+              <Link to="detalleArtista2">
+                <Foto src={img03}></Foto>
+                {/* <HoverDiv></HoverDiv> */}
+              </Link>
+            </RowPairs>
+            <RowPairs>
+              <Link to="detalleArtista3">
+                <Foto src={img01}></Foto>
+              </Link>
+              <Link to="detalleArtista4">
+                <Foto src={img04}></Foto>
+              </Link>
+            </RowPairs>
           </RowContainer>
           <RowContainer>
-            <Link to="detalleArtista4">
-              <Foto src={img05}></Foto>
-            </Link>
-            <Link to="detalleArtista5">
-              <Foto src={img02}></Foto>
-            </Link>
-            <Link to="detalleArtista6">
-              <Foto src={img03}></Foto>
-            </Link>
-            <Link to="detalleArtista6">
-              <Foto src={img01}></Foto>
-            </Link>
+            <RowPairs>
+              <Link to="detalleArtista4">
+                <Foto src={img05}></Foto>
+              </Link>
+              <Link to="detalleArtista5">
+                <Foto src={img02}></Foto>
+              </Link>
+            </RowPairs>
+            <RowPairs>
+              <Link to="detalleArtista6">
+                <Foto src={img03}></Foto>
+              </Link>
+              <Link to="detalleArtista6">
+                <Foto src={img01}></Foto>
+              </Link>
+            </RowPairs>
           </RowContainer>
           <RowContainer>
-            <Link to="detalleArtista4">
-              <Foto src={img04}></Foto>
-            </Link>
-            <Link to="detalleArtista5">
-              <Foto src={img05}></Foto>
-            </Link>
-            <Link to="detalleArtista6">
-              <Foto src={img02}></Foto>
-            </Link>
-            <Link to="detalleArtista6">
-              <Foto src={img03}></Foto>
-            </Link>
+            <RowPairs>
+              <Link to="detalleArtista4">
+                <Foto src={img04}></Foto>
+              </Link>
+              <Link to="detalleArtista5">
+                <Foto src={img05}></Foto>
+              </Link>
+            </RowPairs>
+            <RowPairs>
+              <Link to="detalleArtista6">
+                <Foto src={img02}></Foto>
+              </Link>
+              <Link to="detalleArtista6">
+                <Foto src={img03}></Foto>
+              </Link>
+            </RowPairs>
           </RowContainer>
         </ArtistasContainer>
         <TextoArt>Artistas</TextoArt>
+        <BioContainer></BioContainer>
       </C>
     </Layout>
   )
