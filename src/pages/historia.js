@@ -17,11 +17,25 @@ const Header = styled.h1`
 
 const Subtitulo = styled.h2``
 
+const TimelineCont = styled.div`
+  width: 100%;
+`
+
 const LineaDeTiempo = () => {
   return (
     <Container>
       <Header>Hitos principales en el Bioarte</Header>
-      <Subtitulo>(Acá hay que implementar una línea de tiempo)</Subtitulo>
+      <TimelineCont>
+        <iframe
+          src="https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1rs7WEGSPGYaGZ3zqiFY5bPqKAbPwRJEWYa3c81mSLzk&font=Default&lang=es&initial_zoom=2&height=650"
+          width="100%"
+          height="650"
+          webkitallowfullscreen
+          mozallowfullscreen
+          allowfullscreen
+          frameborder="0"
+        ></iframe>
+      </TimelineCont>
     </Container>
   )
 }

@@ -120,7 +120,13 @@ const Section = styled.section`
   align-items: center;
   justify-content: center;
   margin: 2rem 0rem 0rem 0rem;
-  padding: 0rem 0rem 5rem 0rem;
+`
+const SectionMapa = styled.section`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem 0rem 0rem 0rem;
+  padding: 0rem 0rem 4rem 0rem;
 `
 
 const MapaPlaceholder = styled.img`
@@ -159,10 +165,10 @@ const AcademiaPage = () => {
             <Agenda />
           </AgendaContainer>
         </Section>
-        <Section>
+        <SectionMapa>
           {/* <LoadableMapa /> */}
           <MapaPlaceholder src={mapaPlaceholder} />
-        </Section>
+        </SectionMapa>
       </AcademiaContainer>
     </Layout>
   )
