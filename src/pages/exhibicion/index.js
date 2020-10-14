@@ -40,7 +40,7 @@ const ExhibicionContainer = styled.div`
 const ExhibicionHeaderContainer = styled.div`
   display: flex;
   width: auto;
-  height: 50rem;
+  height: 45rem;
   flex-direction: column;
   padding-left: 3rem;
   padding-right: 1rem;
