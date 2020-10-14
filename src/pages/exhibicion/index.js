@@ -3,11 +3,24 @@ import styled from "styled-components"
 import Layout from "../../components/layout"
 import SEO from "../../components/seo"
 import logo from "../../images/logo192.png"
-import img01 from "../../images/Exhibicion/cantera/cantera.png"
-import img02 from "../../images/Exhibicion/fargas/fargas.png"
-import img03 from "../../images/Exhibicion/artista03/03.png"
-import img04 from "../../images/Exhibicion/artista04/04.png"
-import img05 from "../../images/Exhibicion/artista05/05.png"
+import art01 from "../../images/Exhibicion/01Cantera/01Cantera.png"
+import art02 from "../../images/Exhibicion/02Ferrari/01ferrari.png"
+import art03 from "../../images/Exhibicion/03Duhalde/01duhalde.png"
+import art04 from "../../images/Exhibicion/04Fargas/01fargas.png"
+import art05 from "../../images/Exhibicion/05Marinaro/01marinaro.png"
+import art06 from "../../images/Exhibicion/06Paoletti/01paoletti.png"
+//import art07 from "../../images/Exhibicion/03Duhalde/01duhalde.png"
+import art08 from "../../images/Exhibicion/08Olmedo/01olmedo.png"
+//import art09 from "../../images/Exhibicion/03Duhalde/01duhalde.png"
+import art10 from "../../images/Exhibicion/10Olalde/01olalde.png"
+//import art11 from "../../images/Exhibicion/03Duhalde/01duhalde.png"
+import art12 from "../../images/Exhibicion/12Valente/01valente.png"
+import art13 from "../../images/Exhibicion/13Caterbetti/01catterbetti.png"
+//import art14 from "../../images/Exhibicion/03Duhalde/01duhalde.png"
+//import art15 from "../../images/Exhibicion/03Duhalde/01duhalde.png"
+//import art16 from "../../images/Exhibicion/03Duhalde/01duhalde.png"
+import art17 from "../../images/Exhibicion/17Bergottini/01bergottini.png"
+
 import logoFestival from "../../images/Academia/logo libélula.png"
 import fondoHeader from "../../images/Exhibicion/colony_header.jpg"
 import { Link } from "gatsby"
@@ -30,7 +43,8 @@ const ExhibicionHeaderContainer = styled.div`
   padding-left: 3rem;
   padding-right: 1rem;
   background-image: url(${fondoHeader});
-  background-size: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
   margin-bottom: 7rem;
 `
 
@@ -46,7 +60,7 @@ const LogoContainer = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  width: 30%;
+  max-width: 100%;
 `
 
 const Logo = styled.img`
@@ -57,8 +71,9 @@ const Logo = styled.img`
 `
 
 const Texto = styled.div`
+  display: flex;
   font-family: ${props => props.theme.fontFamily};
-  font-size: 10rem;
+  font-size: 10vw;
   font-weight: bold;
   color: white;
   align-self: center;
@@ -71,9 +86,10 @@ const TextoArt = styled.div`
   font-size: 2rem;
   font-weight: bold;
   color: black;
-  align-self: right;
   margin-top: 5rem;
-  margin-left: 22rem;
+  display: flex;
+  margin-right: 34%;
+  justify-content: center;
   /*line-height: initial;*/
 `
 
@@ -83,7 +99,7 @@ const ArtistasContainer = styled.div`
   align-items: center;
   align-self: center;
   justify-content: center;
-  width: 54%;
+  width: 43%;
   height: 100%;
   margin: 2rem 2rem 2rem 2rem;
   background-color: ${props => props.theme.colors.bg1};
@@ -106,6 +122,7 @@ const ContainerHoverDiv = styled.div`
   width: 100%;
   display: inherit;
   justify-content: space-around;
+  margin-top: 0.4rem;
 `
 
 const Foto = styled.img`
@@ -119,12 +136,28 @@ const Foto = styled.img`
   }
 `
 
-const RowContainer = styled.div`
+const ColContainer = styled.div`
   display: inherit;
   flex-direction: row;
   width: 100%;
-  justify-content: flex-start;
+  justify-content: center;
   margin: 0.3rem 0rem 0.3rem 0rem;
+  @media (max-width: 800px) {
+    flex-direction: column;
+  }
+`
+const ColPairs = styled.div`
+  display: inherit;
+  flex-direction: column;
+  width: 100%;
+  margin: 0.3rem 0;
+`
+
+const RowContainer = styled.div`
+  display: inherit;
+  flex-direction: row;
+  width: 90%;
+  justify-content: space-around;
   @media (max-width: 800px) {
     flex-direction: column;
   }
@@ -135,11 +168,17 @@ const RowPairs = styled.div`
   width: 100%;
   justify-content: space-around;
 `
+const Column = styled.div`
+  display: inherit;
+  flex-direction: column;
+  margin: 0.3rem;
+`
 
 const Placeholder1 = styled.img`
   height: 3rem;
   width: 3rem;
   align-self: center;
+  margin-right: 1rem;
 `
 
 const ContadoresContainer = styled.div`
@@ -150,7 +189,8 @@ const ContadoresContainer = styled.div`
 `
 
 const HorasNavegacion = styled.div`
-  width: 150px;
+  max-width: 150px;
+  width: 100%;
   border-radius: 8px;
   text-align: center;
   background-color: #dbe6d3;
@@ -161,7 +201,8 @@ const HorasNavegacion = styled.div`
 `
 
 const CantidadVisitantes = styled.div`
-  width: 150px;
+  max-width: 150px;
+  width: 100%;
   border-radius: 8px;
   text-align: center;
   background-color: #dbe6d3;
@@ -204,93 +245,115 @@ const ExhibicionPage = () => {
         <ArtistasContainer id="CONTAINER">
           <RowContainer>
             <RowPairs>
-              <Link to="detalleArtista1">
-                <ContainerHoverDiv>
-                  <Foto src={img02}></Foto>
-                  <HoverDiv></HoverDiv>
-                </ContainerHoverDiv>
-              </Link>
-              <Link to="detalleArtista2">
-                <ContainerHoverDiv>
-                  <Foto src={img03}></Foto>
-                  <HoverDiv></HoverDiv>
-                </ContainerHoverDiv>
-              </Link>
-            </RowPairs>
-            <RowPairs>
-              <Link to="detalleArtista3">
-                <ContainerHoverDiv>
-                  <Foto src={img01}></Foto>
-                  <HoverDiv></HoverDiv>
-                </ContainerHoverDiv>
-              </Link>
+              <Column>
+                <Link to="detalleArtista1">
+                  <ContainerHoverDiv>
+                    <Foto src={art01}></Foto>
+                    <HoverDiv></HoverDiv>
+                  </ContainerHoverDiv>
+                </Link>
+                <Link to="detalleArtista2">
+                  <ContainerHoverDiv>
+                    <Foto src={art02}></Foto>
+                    <HoverDiv></HoverDiv>
+                  </ContainerHoverDiv>
+                </Link>
+                <Link to="detalleArtista3">
+                  <ContainerHoverDiv>
+                    <Foto src={art03}></Foto>
+                    <HoverDiv></HoverDiv>
+                  </ContainerHoverDiv>
+                </Link>
+                <Link to="detalleArtista4">
+                  <ContainerHoverDiv>
+                    <Foto src={art04}></Foto>
+                    <HoverDiv></HoverDiv>
+                  </ContainerHoverDiv>
+                </Link>
+              </Column>
 
-              <Link to="detalleArtista4">
-                <ContainerHoverDiv>
-                  <Foto src={img04}></Foto>
-                  <HoverDiv></HoverDiv>
-                </ContainerHoverDiv>
-              </Link>
+              <Column>
+                <Link to="detalleArtista1">
+                  <ContainerHoverDiv>
+                    <Foto src={art05}></Foto>
+                    <HoverDiv></HoverDiv>
+                  </ContainerHoverDiv>
+                </Link>
+                <Link to="detalleArtista2">
+                  <ContainerHoverDiv>
+                    <Foto src={art06}></Foto>
+                    <HoverDiv></HoverDiv>
+                  </ContainerHoverDiv>
+                </Link>
+                <Link to="detalleArtista3">
+                  <ContainerHoverDiv>
+                    <Foto src={art08}></Foto>
+                    <HoverDiv></HoverDiv>
+                  </ContainerHoverDiv>
+                </Link>
+                <Link to="detalleArtista4">
+                  <ContainerHoverDiv>
+                    <Foto src={art10}></Foto>
+                    <HoverDiv></HoverDiv>
+                  </ContainerHoverDiv>
+                </Link>
+              </Column>
             </RowPairs>
-          </RowContainer>
-          <RowContainer>
+
             <RowPairs>
-              <Link to="detalleArtista4">
-                <ContainerHoverDiv>
-                  <Foto src={img05}></Foto>
-                  <HoverDiv></HoverDiv>
-                </ContainerHoverDiv>
-              </Link>
-              <Link to="detalleArtista5">
-                <ContainerHoverDiv>
-                  <Foto src={img02}></Foto>
-                  <HoverDiv></HoverDiv>
-                </ContainerHoverDiv>
-              </Link>
-            </RowPairs>
-            <RowPairs>
-              <Link to="detalleArtista6">
-                <ContainerHoverDiv>
-                  <Foto src={img03}></Foto>
-                  <HoverDiv></HoverDiv>
-                </ContainerHoverDiv>
-              </Link>
-              <Link to="detalleArtista6">
-                <ContainerHoverDiv>
-                  <Foto src={img01}></Foto>
-                  <HoverDiv></HoverDiv>
-                </ContainerHoverDiv>
-              </Link>
-            </RowPairs>
-          </RowContainer>
-          <RowContainer>
-            <RowPairs>
-              <Link to="detalleArtista4">
-                <ContainerHoverDiv>
-                  <Foto src={img04}></Foto>
-                  <HoverDiv></HoverDiv>
-                </ContainerHoverDiv>
-              </Link>
-              <Link to="detalleArtista5">
-                <ContainerHoverDiv>
-                  <Foto src={img05}></Foto>
-                  <HoverDiv></HoverDiv>
-                </ContainerHoverDiv>
-              </Link>
-            </RowPairs>
-            <RowPairs>
-              <Link to="detalleArtista6">
-                <ContainerHoverDiv>
-                  <Foto src={img02}></Foto>
-                  <HoverDiv></HoverDiv>
-                </ContainerHoverDiv>
-              </Link>
-              <Link to="detalleArtista6">
-                <ContainerHoverDiv>
-                  <Foto src={img03}></Foto>
-                  <HoverDiv></HoverDiv>
-                </ContainerHoverDiv>
-              </Link>
+              <Column>
+                <Link to="detalleArtista1">
+                  <ContainerHoverDiv>
+                    <Foto src={art12}></Foto>
+                    <HoverDiv></HoverDiv>
+                  </ContainerHoverDiv>
+                </Link>
+                <Link to="detalleArtista2">
+                  <ContainerHoverDiv>
+                    <Foto src={art13}></Foto>
+                    <HoverDiv></HoverDiv>
+                  </ContainerHoverDiv>
+                </Link>
+                <Link to="detalleArtista3">
+                  <ContainerHoverDiv>
+                    <Foto src={art17}></Foto>
+                    <HoverDiv></HoverDiv>
+                  </ContainerHoverDiv>
+                </Link>
+                <Link to="detalleArtista4">
+                  <ContainerHoverDiv>
+                    <Foto src={art04}></Foto>
+                    <HoverDiv></HoverDiv>
+                  </ContainerHoverDiv>
+                </Link>
+              </Column>
+
+              <Column>
+                <Link to="detalleArtista1">
+                  <ContainerHoverDiv>
+                    <Foto src={art01}></Foto>
+                    <HoverDiv></HoverDiv>
+                  </ContainerHoverDiv>
+                </Link>
+                <Link to="detalleArtista2">
+                  <ContainerHoverDiv>
+                    <Foto src={art02}></Foto>
+                    <HoverDiv></HoverDiv>
+                  </ContainerHoverDiv>
+                </Link>
+                <Link to="detalleArtista3">
+                  <ContainerHoverDiv>
+                    <Foto src={art03}></Foto>
+                    <HoverDiv></HoverDiv>
+                  </ContainerHoverDiv>
+                </Link>
+                <Link to="detalleArtista4">
+                  <ContainerHoverDiv>
+                    <Foto src={art04}></Foto>
+                    <HoverDiv></HoverDiv>
+                  </ContainerHoverDiv>
+                </Link>
+              </Column>
             </RowPairs>
           </RowContainer>
         </ArtistasContainer>
