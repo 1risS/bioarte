@@ -44,27 +44,31 @@ const PanoPage = () => {
       const viewer = new Panolens.Viewer({
         output: "console",
         autoHideInfospot: false,
+        cameraFov: 55,
       })
+
+      viewer.OrbitControls.noZoom = true
+      viewer.camera.position.set(Math.PI, 0, 0)
 
       // PORTALES A LAS SUBPAGINAS
 
       const infospot = new Panolens.Infospot()
-      infospot.position.set(5000.0, -665.23, -3996.49)
+      infospot.position.set(4719.43, -1113.57, 1187.03)
       infospot.addHoverText("Academia")
       infospot.addEventListener("click", irAcademia)
 
       const infospotB = new Panolens.Infospot()
-      infospotB.position.set(2500, -665.23, -3996.49)
+      infospotB.position.set(3975.85, -914.34, 2884.46)
       infospotB.addHoverText("Biotecnología")
       infospotB.addEventListener("click", irBiotecnologia)
 
       const infospotC = new Panolens.Infospot()
-      infospotC.position.set(-2500, -665.23, -3996.49)
+      infospotC.position.set(4798.29, -1153.87, -758.279)
       infospotC.addHoverText("Exhibición")
       infospotC.addEventListener("click", irExhibicion)
 
       const infospotD = new Panolens.Infospot()
-      infospotD.position.set(-5000, -665.23, -3996.49)
+      infospotD.position.set(4234.1, -1110.68, -2409.32)
       infospotD.addHoverText("Historia")
       infospotD.addEventListener("click", irHistoria)
 
@@ -172,7 +176,7 @@ const PanoPage = () => {
           if (intersects.length > 0) {
             if (resetTimer) clearTimeout(resetTimer)
 
-            console.log("estoy sobre el swan")
+            //console.log("estoy sobre el swan")
             //you can only calculate the distance if therer already was a mouse event
 
             if (typeof lastMPos.x != "undefined") {
@@ -199,7 +203,7 @@ const PanoPage = () => {
           }
         })
 
-        panorama.add(objectScene)
+        //panorama.add(objectScene)
       })
 
       //Imagen mostrada al obtener cookie de Academia
@@ -212,9 +216,7 @@ const PanoPage = () => {
       infospotJ.position.set(5000.0, -465.23, -3196.49)
       infospotJ.addHoverText("AcademiaCookie")
 
-      const panorama = new Panolens.ImagePanorama(
-        "/static/images/360/Version_00.png"
-      )
+      const panorama = new Panolens.ImagePanorama("/images/vr/Version_00.jpg")
 
       panorama.add(infospot)
       panorama.add(infospotB)
