@@ -10,6 +10,7 @@ import fondoHeader from "../images/Academia/academia_bg.jpg"
 import logoFestival from "../images/Academia/logo libélula.png"
 import bannerHubs from "../images/Academia/Mozilla Hubs.png"
 import Placeholder from "../../static/images/Icon-Placeholder-1.png"
+import mapaPlaceholder from "../../static/images/academia/universidades_mapa.png"
 
 const LoadableMapa = Loadable(() => import("../components/mapa"))
 
@@ -118,17 +119,13 @@ const Section = styled.section`
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 2rem 2rem 2rem 2rem;
-  background-color: ${props => props.theme.colors.bg1};
+  margin: 2rem 0rem 0rem 0rem;
+  padding: 0rem 0rem 5rem 0rem;
 `
 
-const MapaContainer = styled.div`
-  height: 20rem;
-  width: 20rem;
-  align-self: center;
-  margin: 0;
+const MapaPlaceholder = styled.img`
+  height: 50vh;
 `
-
 // ponemos una cookie para saber si le usuarix pasó por acá
 const AcademiaPage = () => {
   const [cookies, setCookie] = useCookies(["AcademiaVisited"])
@@ -162,9 +159,10 @@ const AcademiaPage = () => {
             <Agenda />
           </AgendaContainer>
         </Section>
-        {/* <MapaContainer> */}
-        <LoadableMapa />
-        {/* </MapaContainer> */}
+        <Section>
+          {/* <LoadableMapa /> */}
+          <MapaPlaceholder src={mapaPlaceholder} />
+        </Section>
       </AcademiaContainer>
     </Layout>
   )

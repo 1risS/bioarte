@@ -5,44 +5,115 @@ import styled from "styled-components"
 import placeholder from "../images/placeholder.png"
 
 const days = ["19/3", "20/3", "21/3", "22/3"]
-const eventsPerDay = days.map(() => [
-  {
-    time: "18:00",
-    title: "Los secretos del BioTextil",
-    speaker: "Ana Laura Cantera",
-    desc:
-      "Artista bioelectrónica, investigadora y docente. Magister en " +
-      "Artes Electrónicas graduada con honores en la Universidad de " +
-      "Tres de Febrero, Licenciada y Profesora en Artes Visuales egresada.",
-  },
-  {
-    time: "19:00",
-    title: "Los secretos del BioTextil",
-    speaker: "Ana Laura Cantera",
-    desc:
-      "Artista bioelectrónica, investigadora y docente. Magister en " +
-      "Artes Electrónicas graduada con honores en la Universidad de " +
-      "Tres de Febrero, Licenciada y Profesora en Artes Visuales egresada.",
-  },
-  {
-    time: "20:00",
-    title: "Los secretos del BioTextil",
-    speaker: "Ana Laura Cantera",
-    desc:
-      "Artista bioelectrónica, investigadora y docente. Magister en " +
-      "Artes Electrónicas graduada con honores en la Universidad de " +
-      "Tres de Febrero, Licenciada y Profesora en Artes Visuales egresada.",
-  },
-  {
-    time: "21:00",
-    title: "Los secretos del BioTextil",
-    speaker: "Ana Laura Cantera",
-    desc:
-      "Artista bioelectrónica, investigadora y docente. Magister en " +
-      "Artes Electrónicas graduada con honores en la Universidad de " +
-      "Tres de Febrero, Licenciada y Profesora en Artes Visuales egresada.",
-  },
-])
+const eventsPerDay = [
+  [
+    {
+      time: "18:00",
+      title: "Los secretos del BioTextil",
+      speaker: "Ana Laura Cantera",
+      desc:
+        "Artista bioelectrónica, investigadora y docente. Magister en " +
+        "Artes Electrónicas graduada con honores en la Universidad de " +
+        "Tres de Febrero, Licenciada y Profesora en Artes Visuales egresada.",
+    },
+    {
+      time: "19:00",
+      title: "Los secretos del BioTextil",
+      speaker: "Ana Laura Cantera",
+      desc:
+        "Artista bioelectrónica, investigadora y docente. Magister en " +
+        "Artes Electrónicas graduada con honores en la Universidad de " +
+        "Tres de Febrero, Licenciada y Profesora en Artes Visuales egresada.",
+    },
+    {
+      time: "20:00",
+      title: "Los secretos del BioTextil",
+      speaker: "Ana Laura Cantera",
+      desc:
+        "Artista bioelectrónica, investigadora y docente. Magister en " +
+        "Artes Electrónicas graduada con honores en la Universidad de " +
+        "Tres de Febrero, Licenciada y Profesora en Artes Visuales egresada.",
+    },
+    {
+      time: "21:00",
+      title: "Los secretos del BioTextil",
+      speaker: "Ana Laura Cantera",
+      desc:
+        "Artista bioelectrónica, investigadora y docente. Magister en " +
+        "Artes Electrónicas graduada con honores en la Universidad de " +
+        "Tres de Febrero, Licenciada y Profesora en Artes Visuales egresada.",
+    },
+  ],
+  [
+    {
+      time: "18:00",
+      title: "Los secretos del BioTextil (día 2)",
+      speaker: "Ana Laura Cantera",
+      desc:
+        "Artista bioelectrónica, investigadora y docente. Magister en " +
+        "Artes Electrónicas graduada con honores en la Universidad de " +
+        "Tres de Febrero, Licenciada y Profesora en Artes Visuales egresada.",
+    },
+    {
+      time: "19:00",
+      title: "Los secretos del BioTextil (día 2)",
+      speaker: "Ana Laura Cantera",
+      desc:
+        "Artista bioelectrónica, investigadora y docente. Magister en " +
+        "Artes Electrónicas graduada con honores en la Universidad de " +
+        "Tres de Febrero, Licenciada y Profesora en Artes Visuales egresada.",
+    },
+  ],
+  [
+    {
+      time: "18:00",
+      title: "Los secretos del BioTextil (día 3)",
+      speaker: "Ana Laura Cantera",
+      desc:
+        "Artista bioelectrónica, investigadora y docente. Magister en " +
+        "Artes Electrónicas graduada con honores en la Universidad de " +
+        "Tres de Febrero, Licenciada y Profesora en Artes Visuales egresada.",
+    },
+    {
+      time: "19:00",
+      title: "Los secretos del BioTextil (día 3)",
+      speaker: "Ana Laura Cantera",
+      desc:
+        "Artista bioelectrónica, investigadora y docente. Magister en " +
+        "Artes Electrónicas graduada con honores en la Universidad de " +
+        "Tres de Febrero, Licenciada y Profesora en Artes Visuales egresada.",
+    },
+  ],
+  [
+    {
+      time: "18:00",
+      title: "Los secretos del BioTextil (día 4)",
+      speaker: "Ana Laura Cantera",
+      desc:
+        "Artista bioelectrónica, investigadora y docente. Magister en " +
+        "Artes Electrónicas graduada con honores en la Universidad de " +
+        "Tres de Febrero, Licenciada y Profesora en Artes Visuales egresada.",
+    },
+    {
+      time: "19:00",
+      title: "Los secretos del BioTextil (día 4)",
+      speaker: "Ana Laura Cantera",
+      desc:
+        "Artista bioelectrónica, investigadora y docente. Magister en " +
+        "Artes Electrónicas graduada con honores en la Universidad de " +
+        "Tres de Febrero, Licenciada y Profesora en Artes Visuales egresada.",
+    },
+    {
+      time: "20:00",
+      title: "Los secretos del BioTextil (día 4)",
+      speaker: "Ana Laura Cantera",
+      desc:
+        "Artista bioelectrónica, investigadora y docente. Magister en " +
+        "Artes Electrónicas graduada con honores en la Universidad de " +
+        "Tres de Febrero, Licenciada y Profesora en Artes Visuales egresada.",
+    },
+  ],
+]
 
 const EntryContainer = styled.div`
   background-color: ${props =>
