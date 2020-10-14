@@ -25,6 +25,8 @@ import logoFestival from "../../images/Academia/logo libélula.png"
 import fondoHeader from "../../images/Exhibicion/colony_header.jpg"
 import { Link } from "gatsby"
 
+import like from "../../../static/images/exhibicion/likelike.png"
+
 const C = styled.div`
   display: flex;
   flex-direction: column;
@@ -38,7 +40,7 @@ const ExhibicionContainer = styled.div`
 const ExhibicionHeaderContainer = styled.div`
   display: flex;
   width: auto;
-  height: 32rem;
+  height: 50rem;
   flex-direction: column;
   padding-left: 3rem;
   padding-right: 1rem;
@@ -77,7 +79,7 @@ const Texto = styled.div`
   font-weight: bold;
   color: white;
   align-self: center;
-  margin-top: 5rem;
+  margin-top: 12rem;
   /*line-height: initial;*/
 `
 
@@ -224,6 +226,12 @@ const BioContainer = styled.div`
   background-color: ${props => props.theme.colors.bg1};
 `
 
+const LikeLikeCont = styled.div`
+  margin-left: 10rem;
+`
+
+const Like = styled.img``
+
 const ExhibicionPage = () => {
   return (
     <Layout>
@@ -241,6 +249,9 @@ const ExhibicionPage = () => {
             </ContadoresContainer>
           </NavBar>
           <Texto>BIOARTE</Texto>
+          <LikeLikeCont>
+            <Like src={like} />
+          </LikeLikeCont>
         </ExhibicionHeaderContainer>
         <ArtistasContainer id="CONTAINER">
           <RowContainer>
