@@ -11,6 +11,7 @@ const BienvenidaContainer = styled.div`
   justify-content: center;
   aling-items: center;
   width: 100%;
+  background-color: black;
 `
 
 const Presentacion = styled.section`
