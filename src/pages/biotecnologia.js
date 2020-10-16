@@ -9,6 +9,13 @@ import Placeholder from "../../static/images/Icon-Placeholder-1.png"
 import carousel from "../../static/images/biotecnologia/empresa.jpg"
 import botonAdelante from "../../static/images/biotecnologia/flechita_der.png"
 import botonAtras from "../../static/images/biotecnologia/flechita_izq.png"
+import logoEmp1 from "../../static/images/biotecnologia/logoEmpresas/arbolito.png"
+import logoEmp2 from "../../static/images/biotecnologia/logoEmpresas/argenomics.png"
+import logoEmp3 from "../../static/images/biotecnologia/logoEmpresas/bago.png"
+import logoEmp4 from "../../static/images/biotecnologia/logoEmpresas/biotenk.png"
+import logoEmp5 from "../../static/images/biotecnologia/logoEmpresas/ecofertil.png"
+import logoEmp6 from "../../static/images/biotecnologia/logoEmpresas/gema.png"
+import logoEmp7 from "../../static/images/biotecnologia/logoEmpresas/nitragin.png"
 
 const BiotecnologiaCont = styled.div`
   background-color: ${props => props.theme.colors.bg1};
@@ -99,8 +106,9 @@ const AgendaCont = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 55%;
   margin: 10rem 0rem 4rem 0rem;
+  max-width: 1164px;
+  width: 100%;
 `
 
 const Section = styled.section`
@@ -115,9 +123,13 @@ const SectionCarousel = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 70%;
+  width: 100%;
   justify-content: center;
   background-color: ${props => props.theme.colors.bg1};
+`
+const SubSectionCarousel = styled.div`
+  max-width: 1164px;
+  width: 100%;
 `
 
 const Title = styled.p`
@@ -125,12 +137,12 @@ const Title = styled.p`
   font-size: 3rem;
   font-weight: bold;
   color: black;
+  margin: 1.5rem 0;
 `
 
 const CarouselCont = styled.div`
   display: flex;
   flex-direction: row;
-  margin 3rem;
 `
 
 const ImagenEmpresa = styled.img``
@@ -138,15 +150,104 @@ const ImagenEmpresa = styled.img``
 const EmpresaCont = styled.div`
   display: flex;
   flex-direction: column;
+  max-width: 576px;
+  width: 100%;
 `
 const Botonera = styled.div`
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  margin-top: 0.0875rem;
 `
 
-const BotonAtras = styled.img``
+const BotonAtras = styled.img`
+  margin-right: 3rem;
+`
 
 const BotonAdelante = styled.img``
+
+const Slidebar = styled.div`
+  height: 0.25rem;
+  margin: 2rem;
+  background-color: #005a32;
+`
+
+const InfoEmpresa = styled.div`
+  width: 100%;
+  height: 179px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: ;
+`
+
+const InfoEmpCol1 = styled.div`
+  display: flex;
+  flex-direction: column;
+  padding: 0 2.125rem;
+  justify-content: center;
+`
+
+const InfoEmpCol2 = styled.div`
+  display: flex;
+  justify-content: flex-end;
+  max-width: 217px;
+  width: 100%;
+`
+
+const UbicacionEmpresa = styled.p`
+  padding: 0.5rem 1.5rem;
+  margin: 1rem 0;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  border: solid #005a32 0.15rem;
+  border-radius: 5rem;
+  align-self: start;
+`
+
+const NombreEmpresa = styled.h1`
+  font-size: 2em;
+`
+
+const InfoCol2 = styled.p`
+  padding-top: 1.5rem;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #9a9b9a;
+`
+
+const DetalleEmpresa = styled.div`
+  height: 240px;
+`
+
+const TextoDetalleEmpresa = styled.p`
+  font-family: inherit;
+  padding: 30px 40px;
+  font-size: 1.35em;
+`
+
+const Footer = styled.section`
+  height: 300px;
+  max-width: 1164px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+`
+
+const LogosFooter = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 3rem;
+`
+
+const LogoEmpresaCont = styled.img`
+  margin: auto 0;
+  display: flex;
+`
 
 const BiotecnologiaPage = () => {
   return (
@@ -172,17 +273,48 @@ const BiotecnologiaPage = () => {
           </AgendaCont>
         </Section>
         <SectionCarousel>
-          <Title>Empresas</Title>
-          <CarouselCont>
-            <ImagenEmpresa src={carousel} />
-            <EmpresaCont>
-              <Botonera>
-                <BotonAtras src={botonAtras}></BotonAtras>
-                <BotonAdelante src={botonAdelante}></BotonAdelante>
-              </Botonera>
-            </EmpresaCont>
-          </CarouselCont>
+          <SubSectionCarousel>
+            <Title>Empresas</Title>
+            <CarouselCont>
+              <ImagenEmpresa src={carousel} />
+              <EmpresaCont>
+                <Botonera>
+                  <BotonAtras src={botonAtras}></BotonAtras>
+                  <BotonAdelante src={botonAdelante}></BotonAdelante>
+                </Botonera>
+                <Slidebar></Slidebar>
+                <InfoEmpresa>
+                  <InfoEmpCol1>
+                    <UbicacionEmpresa>Buenos Aires</UbicacionEmpresa>
+                    <NombreEmpresa>Biogénesis Bagó</NombreEmpresa>
+                  </InfoEmpCol1>
+                  <InfoEmpCol2>
+                    <InfoCol2> 03 - 36 </InfoCol2>
+                  </InfoEmpCol2>
+                </InfoEmpresa>
+                <DetalleEmpresa>
+                  <TextoDetalleEmpresa>
+                    Artista bioelectrónica, investigadora y docente. Magister en
+                    Artes Electrónicas graduada con honores en la Universidad
+                    Nacional de Tres de Febrero, Licenciada y Profesora en Artes
+                    Visuales egresada
+                  </TextoDetalleEmpresa>
+                </DetalleEmpresa>
+              </EmpresaCont>
+            </CarouselCont>
+          </SubSectionCarousel>
         </SectionCarousel>
+        <Footer>
+          <LogosFooter>
+            <LogoEmpresaCont src={logoEmp1}></LogoEmpresaCont>
+            <LogoEmpresaCont src={logoEmp2}></LogoEmpresaCont>
+            <LogoEmpresaCont src={logoEmp3}></LogoEmpresaCont>
+            <LogoEmpresaCont src={logoEmp4}></LogoEmpresaCont>
+            <LogoEmpresaCont src={logoEmp5}></LogoEmpresaCont>
+            <LogoEmpresaCont src={logoEmp6}></LogoEmpresaCont>
+            <LogoEmpresaCont src={logoEmp7}></LogoEmpresaCont>
+          </LogosFooter>
+        </Footer>
       </BiotecnologiaCont>
     </Layout>
   )
