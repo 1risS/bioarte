@@ -6,7 +6,9 @@ import SEO from "../components/seo"
 import bannerBg from "../../static/images/biotecnologia/biotecnologia_banner_bg.png"
 import logoFestival from "../images/Academia/logo libélula.png"
 import Placeholder from "../../static/images/Icon-Placeholder-1.png"
-import carousel from "../../static/images/biotecnologia/carousel-empresas.png"
+import carousel from "../../static/images/biotecnologia/empresa.jpg"
+import botonAdelante from "../../static/images/biotecnologia/flechita_der.png"
+import botonAtras from "../../static/images/biotecnologia/flechita_izq.png"
 
 const BiotecnologiaCont = styled.div`
   background-color: ${props => props.theme.colors.bg1};
@@ -109,17 +111,42 @@ const Section = styled.section`
   background-color: ${props => props.theme.colors.bg1};
 `
 
-const CarouselCont = styled.div`
-  margin-top: 3rem;
-`
 const SectionCarousel = styled.section`
   display: flex;
+  flex-direction: column;
   align-items: center;
+  width: 70%;
   justify-content: center;
   background-color: ${props => props.theme.colors.bg1};
 `
 
-const Content = styled.img``
+const Title = styled.p`
+  font-family: ${props => props.theme.fontFamily};
+  font-size: 3rem;
+  font-weight: bold;
+  color: black;
+`
+
+const CarouselCont = styled.div`
+  display: flex;
+  flex-direction: row;
+  margin 3rem;
+`
+
+const ImagenEmpresa = styled.img``
+
+const EmpresaCont = styled.div`
+  display: flex;
+  flex-direction: column;
+`
+const Botonera = styled.div`
+  display: flex;
+  flex-direction: row;
+`
+
+const BotonAtras = styled.img``
+
+const BotonAdelante = styled.img``
 
 const BiotecnologiaPage = () => {
   return (
@@ -145,8 +172,15 @@ const BiotecnologiaPage = () => {
           </AgendaCont>
         </Section>
         <SectionCarousel>
+          <Title>Empresas</Title>
           <CarouselCont>
-            <Content src={carousel}></Content>
+            <ImagenEmpresa src={carousel} />
+            <EmpresaCont>
+              <Botonera>
+                <BotonAtras src={botonAtras}></BotonAtras>
+                <BotonAdelante src={botonAdelante}></BotonAdelante>
+              </Botonera>
+            </EmpresaCont>
           </CarouselCont>
         </SectionCarousel>
       </BiotecnologiaCont>
