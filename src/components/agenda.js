@@ -123,6 +123,7 @@ const EntryContainer = styled.div`
   padding: 1em;
   margin: 0.75em 0;
   cursor: pointer;
+  transition: background-color 300ms;
 
   & h1,
   & svg {
@@ -179,12 +180,18 @@ const Title = styled.h1`
 const EntryList = styled.div`
   display: flex;
   flex-direction: column;
+  overflow: scroll;
+  height: 28rem;
 `
 
 const Detail = styled.p`
   display: flex;
   flex-direction: row;
-  margin-bottom: 1.5em;
+  margin-bottom: ${props => (props.expanded ? "1.5em" : 0)};
+  height: ${props => (props.expanded ? "100%" : 0)};
+  opacity: ${props => (props.expanded ? 1 : 0)};
+  overflow: hidden;
+  transition: opacity 300ms;
 
   & > p {
     color: #fff;
@@ -211,12 +218,10 @@ const Entry = ({ time, speaker, title, detail }) => {
         </TimeSpeakerContainer>
         <ActivityContainer>
           <Title>{title}</Title>
-          {expanded && (
-            <Detail>
-              <img src={placeholder} />
-              <p>{detail}</p>
-            </Detail>
-          )}
+          <Detail expanded={expanded}>
+            <img src={placeholder} />
+            <p>{detail}</p>
+          </Detail>
         </ActivityContainer>
       </InfoContainer>
     </EntryContainer>
