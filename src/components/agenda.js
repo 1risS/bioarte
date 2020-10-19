@@ -245,6 +245,7 @@ const DateTab = styled.span`
   width: 8rem;
   text-align: center;
   font-weight: bold;
+  transition: 300ms;
 
   &:hover {
     background-color: ${props => props.theme.colors.greens[0]};
