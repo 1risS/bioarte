@@ -25,7 +25,7 @@ import logoFestival from "../../images/Academia/logo libélula.png"
 import fondoHeader from "../../images/Exhibicion/colony_header.jpg"
 import { Link } from "gatsby"
 
-import like from "../../../static/images/exhibicion/likelike.png"
+import like from "../../../static/images/exhibicion/likelikeRounded.png"
 
 const C = styled.div`
   display: flex;
@@ -228,6 +228,8 @@ const BioContainer = styled.div`
 
 const LikeLikeCont = styled.div`
   margin-left: 10rem;
+  align-self: flex-end;
+  margin: 0rem 4rem 3rem 0rem;
 `
 
 const Like = styled.img``
