@@ -1,5 +1,6 @@
 import React, { useState } from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { TransitionGroup, CSSTransition } from "react-transition-group"
 import { faDotCircle, faCheckCircle } from "@fortawesome/free-regular-svg-icons"
 import styled from "styled-components"
 import placeholder from "../images/placeholder.png"
@@ -128,6 +129,25 @@ const EntryContainer = styled.div`
   & h1,
   & svg {
     color: ${props => props.expanded && "#fff"};
+  }
+
+  &.entry-enter {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  &.entry-enter-active {
+    opacity: 1;
+    transform: translateX(0%);
+    transition: opacity 500ms ease-in, transform 500ms ease-in;
+  }
+  &.entry-exit {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+  &.entry-exit-active {
+    opacity: 0;
+    transform: translateX(100%);
+    transition: opacity 500ms ease-in, transform 500ms ease-in;
   }
 `
 const InfoContainer = styled.div`
@@ -269,15 +289,19 @@ const Agenda = () => {
     <>
       <DateTabs days={days} value={day} onClick={day => setDay(day)} />
       <EntryList>
-        {eventsPerDay[day].map((event, i) => (
-          <Entry
-            key={i}
-            time={event.time}
-            speaker={event.speaker}
-            title={event.title}
-            detail={event.desc}
-          />
-        ))}
+        <TransitionGroup>
+          {eventsPerDay[day].map((event, i) => (
+            <CSSTransition key={`${day}-${i}`} timeout={500} classNames="entry">
+              <Entry
+                key={`${day}-${i}`}
+                time={event.time}
+                speaker={event.speaker}
+                title={event.title}
+                detail={event.desc}
+              />
+            </CSSTransition>
+          ))}
+        </TransitionGroup>
       </EntryList>
     </>
   )
