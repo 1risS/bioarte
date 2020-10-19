@@ -50,17 +50,22 @@ const PanoPage = () => {
       viewer.OrbitControls.noZoom = true
       viewer.camera.position.set(Math.PI, 0, 0)
 
+      const [cx, cy] = [5, 5]
+
       // Crea infospot para las subpáginas
       const createInfoSpot = (hoverText, position, onClick) => {
         const infospot = new Panolens.Infospot()
         infospot.position.set(...position)
         infospot.addHoverText(hoverText)
-        infospot.addEventListener("click", onClick)
+        infospot.addEventListener("click", () => {
+          console.log("click")
+          onClick()
+        })
         infospot.addEventListener("hover", function (event) {
           // console.log(event.mouseEvent)
           if (this.cursorEl) {
-            this.cursorEl.style.top = `${event.mouseEvent.y - 35}px`
-            this.cursorEl.style.left = `${event.mouseEvent.x - 35}px`
+            this.cursorEl.style.top = `${event.mouseEvent.y + cy}px`
+            this.cursorEl.style.left = `${event.mouseEvent.x + cx}px`
           }
         })
         infospot.addEventListener("hoverenter", function (event) {
@@ -71,8 +76,8 @@ const PanoPage = () => {
 
             this.cursorEl.src = "/images/BIOSlogo.png"
             this.cursorEl.style.position = "absolute"
-            this.cursorEl.style.top = `${event.mouseEvent.y - 35}px`
-            this.cursorEl.style.left = `${event.mouseEvent.x - 35}px`
+            this.cursorEl.style.top = `${event.mouseEvent.y + cy}px`
+            this.cursorEl.style.left = `${event.mouseEvent.x + cx}px`
             this.cursorEl.style.zIndex = 1000
           }
         })
@@ -83,7 +88,7 @@ const PanoPage = () => {
             console.log("removed")
           }
         })
-        infospot.setCursorHoverStyle("none")
+        //infospot.setCursorHoverStyle("none")
 
         return infospot
       }
