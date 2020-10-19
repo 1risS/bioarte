@@ -2,7 +2,7 @@ import React, { useEffect } from "react"
 import SEO from "../components/seo"
 import { createGlobalStyle } from "styled-components"
 import Layout from "../components/layout"
-import { useCookies } from "react-cookie"
+// import { useCookies } from "react-cookie"
 
 const GlobalStyle = createGlobalStyle`
   html, body {
@@ -31,7 +31,7 @@ const PanoPage = () => {
     window.location.href = "/historia"
   }
 
-  const [cookies, setCookie] = useCookies()
+  // const [cookies, setCookie] = useCookies()
 
   useEffect(() => {
     const run = async () => {
@@ -50,27 +50,69 @@ const PanoPage = () => {
       viewer.OrbitControls.noZoom = true
       viewer.camera.position.set(Math.PI, 0, 0)
 
+      // Crea infospot para las subpáginas
+      const createInfoSpot = (hoverText, position, onClick) => {
+        const infospot = new Panolens.Infospot()
+        infospot.position.set(...position)
+        infospot.addHoverText(hoverText)
+        infospot.addEventListener("click", onClick)
+        infospot.addEventListener("hover", function (event) {
+          // console.log(event.mouseEvent)
+          if (this.cursorEl) {
+            this.cursorEl.style.top = `${event.mouseEvent.y - 35}px`
+            this.cursorEl.style.left = `${event.mouseEvent.x - 35}px`
+          }
+        })
+        infospot.addEventListener("hoverenter", function (event) {
+          if (!this.cursorEl) {
+            this.cursorEl = document.createElement("img")
+            this.container.appendChild(this.cursorEl)
+            console.log("created")
+
+            this.cursorEl.src = "/images/BIOSlogo.png"
+            this.cursorEl.style.position = "absolute"
+            this.cursorEl.style.top = `${event.mouseEvent.y - 35}px`
+            this.cursorEl.style.left = `${event.mouseEvent.x - 35}px`
+            this.cursorEl.style.zIndex = 1000
+          }
+        })
+        infospot.addEventListener("hoverleave", function (event) {
+          if (this.cursorEl) {
+            this.container.removeChild(this.cursorEl)
+            this.cursorEl = null
+            console.log("removed")
+          }
+        })
+        infospot.setCursorHoverStyle("none")
+
+        return infospot
+      }
+
       // PORTALES A LAS SUBPAGINAS
 
-      const infospot = new Panolens.Infospot()
-      infospot.position.set(4719.43, -1113.57, 1187.03)
-      infospot.addHoverText("Academia")
-      infospot.addEventListener("click", irAcademia)
+      const infospot = createInfoSpot(
+        "Academia",
+        [4719.43, -1113.57, 1187.03],
+        irAcademia
+      )
 
-      const infospotB = new Panolens.Infospot()
-      infospotB.position.set(3975.85, -914.34, 2884.46)
-      infospotB.addHoverText("Biotecnología")
-      infospotB.addEventListener("click", irBiotecnologia)
+      const infospotB = createInfoSpot(
+        "Biotecnología",
+        [3975.85, -914.34, 2884.46],
+        irBiotecnologia
+      )
 
-      const infospotC = new Panolens.Infospot()
-      infospotC.position.set(4798.29, -1153.87, -758.279)
-      infospotC.addHoverText("Exhibición")
-      infospotC.addEventListener("click", irExhibicion)
+      const infospotC = createInfoSpot(
+        "Exhibición",
+        [4798.29, -1153.87, -758.279],
+        irExhibicion
+      )
 
-      const infospotD = new Panolens.Infospot()
-      infospotD.position.set(4234.1, -1110.68, -2409.32)
-      infospotD.addHoverText("Historia")
-      infospotD.addEventListener("click", irHistoria)
+      const infospotD = createInfoSpot(
+        "Historia",
+        [4234.1, -1110.68, -2409.32],
+        irHistoria
+      )
 
       // OBJETOS E IMAGENES
 
