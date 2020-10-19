@@ -12,10 +12,9 @@ const BienvenidaContainer = styled.div`
   height: 100vh;
   background-color: black;
   background-image: url(${logo});
-  background-size: 100%;
+  background-size: 90%;
   background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: left;
+  background-position: center;
 `
 const LinkWrapper = styled.div``
 
@@ -38,19 +37,29 @@ const ContDerContainer = styled.div`
 `
 
 const DivDer = styled.div`
-  margin: 0rem 1rem 4rem 15rem;
+  margin: 0rem 1rem 4rem 23rem;
+  opacity: 0.1;
+  transition: 1s;
+  &:hover {
+    opacity: 1;
+  }
 `
 
 const DivDerEmpty = styled.div`
-  height: 25%;
+  height: 33%;
 `
 
 const DivIzq = styled.div`
-  margin: 1rem 20rem 3rem 1rem;
+  margin: 1rem 25rem 3rem 1rem;
+  opacity: 0.1;
+  transition: 1s;
+  &:hover {
+    opacity: 1;
+  }
 `
 
 const DivIzqEmpty = styled.div`
-  height: 33%;
+  height: 25%;
 `
 
 const Title = styled.p`
