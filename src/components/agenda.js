@@ -130,25 +130,6 @@ const EntryContainer = styled.div`
   & svg {
     color: ${props => props.expanded && "#fff"};
   }
-
-  &.entry-enter {
-    opacity: 0;
-    transform: translateX(-100%);
-  }
-  &.entry-enter-active {
-    opacity: 1;
-    transform: translateX(0%);
-    transition: opacity 500ms ease-in, transform 500ms ease-in;
-  }
-  &.entry-exit {
-    opacity: 1;
-    transform: translateX(0%);
-  }
-  &.entry-exit-active {
-    opacity: 0;
-    transform: translateX(100%);
-    transition: opacity 500ms ease-in, transform 500ms ease-in;
-  }
 `
 const InfoContainer = styled.div`
   display: flex;
@@ -197,11 +178,36 @@ const Title = styled.h1`
   padding: 0.5em 0;
 `
 
+const EntryListContainer = styled.div`
+  position: relative;
+  height: 28rem;
+`
+
 const EntryList = styled.div`
   display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
   flex-direction: column;
-  overflow: scroll;
   height: 28rem;
+  overflow: scroll;
+
+  &.entry-list-enter {
+    opacity: 0;
+  }
+  &.entry-list-enter-active {
+    opacity: 1;
+    transition: opacity 500ms ease-in;
+  }
+  &.entry-list-exit {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+  &.entry-list-exit-active {
+    opacity: 0;
+    transform: translateX(20%);
+    transition: opacity 500ms ease-in, transform 500ms ease-in;
+  }
 `
 
 const Detail = styled.p`
@@ -285,24 +291,28 @@ const DateTabs = ({ days, value, onClick }) => (
 const Agenda = () => {
   const [day, setDay] = useState(0)
 
+  const currentEvents = eventsPerDay[day]
+
   return (
     <>
       <DateTabs days={days} value={day} onClick={day => setDay(day)} />
-      <EntryList>
+      <EntryListContainer>
         <TransitionGroup>
-          {eventsPerDay[day].map((event, i) => (
-            <CSSTransition key={`${day}-${i}`} timeout={500} classNames="entry">
-              <Entry
-                key={`${day}-${i}`}
-                time={event.time}
-                speaker={event.speaker}
-                title={event.title}
-                detail={event.desc}
-              />
-            </CSSTransition>
-          ))}
+          <CSSTransition key={day} timeout={500} classNames="entry-list">
+            <EntryList>
+              {currentEvents.map((event, i) => (
+                <Entry
+                  key={`${day}-${i}`}
+                  time={event.time}
+                  speaker={event.speaker}
+                  title={event.title}
+                  detail={event.desc}
+                />
+              ))}
+            </EntryList>
+          </CSSTransition>
         </TransitionGroup>
-      </EntryList>
+      </EntryListContainer>
     </>
   )
 }
