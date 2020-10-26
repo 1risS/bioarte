@@ -10,6 +10,7 @@ import logoFestival from "../images/Academia/logo libélula.png"
 import bannerHubs from "../images/Academia/Mozilla Hubs.png"
 import Placeholder from "../../static/images/Icon-Placeholder-1.png"
 import mapaPlaceholder from "../../static/images/academia/universidades_mapa.png"
+import mapa from "../components/mapaMapbox"
 
 const LoadableMapa = Loadable(() => import("../components/mapa"))
 
