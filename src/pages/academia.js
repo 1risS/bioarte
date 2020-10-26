@@ -94,6 +94,15 @@ const Texto = styled.div`
   /*line-height: initial;*/
 `
 
+const TextoDark = styled.div`
+  font-family: ${props => props.theme.fontFamily};
+  font-size: 4rem;
+  font-weight: bold;
+  color: black;
+  align-self: center;
+  margin-top: 25vh;
+`
+
 const Subtexto = styled.div`
   font-family: ${props => props.theme.fontFamily};
   font-weight: ${props => props.theme.fontWeights.light};
@@ -132,6 +141,34 @@ const SectionMapa = styled.section`
 const MapaPlaceholder = styled.img`
   height: 50vh;
 `
+
+const InfoContainer = styled.div`
+  background-color: green;
+  padding: 1em;
+  height: 400px;
+  width: 340px;
+`
+
+const DateTab = styled.span`
+  background-color: white;
+  color: #fff;
+  border-radius: 16px;
+  padding: 0.25em 0.5em;
+  cursor: pointer;
+  width: 8rem;
+`
+
+const inputUniv = styled.input`
+  border-radius: 16px;
+  border: none;
+  width: 50px;
+`
+
+const UniversidadesContainer = styled.div`
+  width: 1000px;
+  height: 600px;
+`
+
 // ponemos una cookie para saber si le usuarix pasó por acá
 const AcademiaPage = () => {
   const [cookies, setCookie] = useCookies(["AcademiaVisited"])
@@ -165,10 +202,19 @@ const AcademiaPage = () => {
             <Agenda />
           </AgendaContainer>
         </Section>
-        <SectionMapa>
-          {/* <LoadableMapa /> */}
-          <Mapbox></Mapbox>
-        </SectionMapa>
+        <Section>
+          <UniversidadesContainer>
+            <TextoDark>Universidades</TextoDark>
+            <SectionMapa>
+              <InfoContainer>
+                <DateTab>
+                  <input type="text" />
+                </DateTab>
+              </InfoContainer>
+              <Mapbox></Mapbox>
+            </SectionMapa>
+          </UniversidadesContainer>
+        </Section>
       </AcademiaContainer>
     </Layout>
   )

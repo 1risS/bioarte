@@ -18,8 +18,8 @@ export default function App() {
   const [viewport, setViewport] = useState({
     latitude: -34.5829196,
     longitude: -58.4294226,
-    width: "500px",
-    height: "500px",
+    width: "650px",
+    height: "400px",
     zoom: 10,
   })
   const [selectedUni, setSelectedUni] = useState(null)
