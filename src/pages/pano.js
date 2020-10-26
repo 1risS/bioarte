@@ -2,6 +2,7 @@ import React, { useEffect } from "react"
 import SEO from "../components/seo"
 import { createGlobalStyle } from "styled-components"
 import Layout from "../components/layout"
+import styled from "styled-components"
 // import { useCookies } from "react-cookie"
 
 const GlobalStyle = createGlobalStyle`
@@ -12,6 +13,16 @@ const GlobalStyle = createGlobalStyle`
     overflow: hidden;
     background-color: #000;
   }
+`
+
+const Progress = styled.div`
+  width: 0;
+  height: 5px;
+  position: fixed;
+  top: 0;
+  background: #fff;
+  -webkit-transition: opacity 0.5s ease;
+  transition: opacity 0.5s ease;
 `
 
 const PanoPage = () => {
@@ -263,7 +274,26 @@ const PanoPage = () => {
       infospotJ.position.set(5000.0, -465.23, -3196.49)
       infospotJ.addHoverText("AcademiaCookie")
 
+      // barra de progreso al cargar la vista 360
+
+      const progressElement = document.getElementById("progress")
+
+      function onEnter(event) {
+        progressElement.style.width = 0
+        progressElement.style.opacity = 1
+      }
+
+      function onProgress(event) {
+        const progress = (event.progress.loaded / event.progress.total) * 100
+        progressElement.style.width = progress + "%"
+        if (progress === 100) {
+          progressElement.style.opacity = 0
+        }
+      }
+
       const panorama = new Panolens.ImagePanorama("/images/vr/Version_00.jpg")
+      panorama.addEventListener("progress", onProgress)
+      panorama.addEventListener("enter", onEnter)
 
       panorama.add(infospot)
       panorama.add(infospotB)
@@ -290,6 +320,7 @@ const PanoPage = () => {
     <Layout>
       <GlobalStyle />
       <SEO title="BioArte" />
+      <Progress id="progress" />
     </Layout>
   )
 }
