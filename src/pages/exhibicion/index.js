@@ -83,18 +83,6 @@ const Texto = styled.div`
   /*line-height: initial;*/
 `
 
-const TextoArt = styled.div`
-  font-family: ${props => props.theme.fontFamily};
-  font-size: 2rem;
-  font-weight: bold;
-  color: black;
-  margin-top: 5rem;
-  display: flex;
-  margin-right: 34%;
-  justify-content: center;
-  /*line-height: initial;*/
-`
-
 const ArtistasContainer = styled.div`
   display: flex;
   flex-direction: column;
@@ -370,7 +358,7 @@ const ExhibicionPage = () => {
             </RowPairs>
           </RowContainer>
         </ArtistasContainer>
-        <TextoArt>Artistas</TextoArt>
+
         <BioContainer></BioContainer>
       </C>
     </Layout>
