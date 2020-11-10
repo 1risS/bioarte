@@ -177,6 +177,7 @@ const NombreObra = styled.div`
 `
 const Parrafo = styled.div`
   padding-top: 1em;
+  font-size: 20px;
 `
 const Titulo = styled.div`
   font-weight: bold;
@@ -197,11 +198,16 @@ const MargenDerecho = styled.div`
 `
 const DetalleObra = styled.div`
   display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-around;
   max-width: 1152px;
+  margin: 0 20% 0 20%;
 `
 
 const DescripcionContainer = styled.div`
   padding: 1em;
+  align-content: flex-start;
   text-align: justify;
 `
 
@@ -209,7 +215,9 @@ const FlechaSlider = styled.img`
   height: 80px;
   width: 80px;
 `
-const FotoObra = styled.img``
+const FotoObra = styled.img`
+  padding: 2rem 0 0 0;
+`
 
 // ponemos una cookie para saber si le usuarix pasó por acá
 
@@ -296,7 +304,7 @@ const DetalleArtista1 = () => {
               <FlechaSlider src={flechaSlider}></FlechaSlider>
             </MargenIzquierdo>
             <DetalleObra>
-              <FotoObra src={fotoObra}></FotoObra>
+              <FotoObra src={fotoObra} height="30%"></FotoObra>
               <DescripcionContainer>
                 <Parrafo>
                   Displaced, es una instalación robótica sobre los
