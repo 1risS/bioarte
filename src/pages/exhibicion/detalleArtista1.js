@@ -115,16 +115,16 @@ const DAMain = styled.div`
 `
 const BioArtistaContainer = styled.div`
   display: flex;
-  justify-content: space-around;
-  margin-top: 1em;
-  margin-bottom: 1em;
+  flex-direction: row;
+  justify-content: center;
+  padding: 1rem;
 `
 
 const LibelulaContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  width: 20%;
+  width: 20% !important;
 `
 
 const Libelulaimg = styled.img`
@@ -140,10 +140,7 @@ const BioArtista = styled.div`
   max-width: 1152px;
   width: 100%;
   align-self: center;
-`
-
-const ColumnaCV = styled.div`
-  width: 20%;
+  margin: 0 20% 0 0;
 `
 
 const BioHeader = styled.div`
@@ -324,7 +321,6 @@ const DetalleArtista1 = () => {
                 </Parrafo>
               </BioTexto>
             </BioArtista>
-            <ColumnaCV></ColumnaCV>
           </BioArtistaContainer>
           <FotoObraContainer>
             <NombreObra>
