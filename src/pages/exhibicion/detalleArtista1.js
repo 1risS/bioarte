@@ -330,10 +330,10 @@ const DetalleArtista1 = () => {
 
           <DetalleObraContainer>
             <MargenIzquierdo>
-              <FlechaSlider src={flechaSlider}></FlechaSlider>
+              {/* <FlechaSlider src={flechaSlider}></FlechaSlider> */}
             </MargenIzquierdo>
             <DetalleObra>
-              <FotoObra src={fotoObra} height="30%"></FotoObra>
+              <FotoObra src={fotoObra} height="50%"></FotoObra>
               <DescripcionContainer>
                 <Parrafo>
                   Displaced, es una instalación robótica sobre los
@@ -353,10 +353,14 @@ const DetalleArtista1 = () => {
                   bioplásticos realizados con yerba mate, remolacha, porotos y
                   pelo humano.
                 </Parrafo>
+                <Parrafo>
+                  El proyecto fue realizado mediante la construcción de una
+                  estructura de piezas impresas en 3d en PLA...
+                </Parrafo>
               </DescripcionContainer>
             </DetalleObra>
             <MargenDerecho>
-              <FlechaSlider src={flechaSlider}></FlechaSlider>
+              {/* <FlechaSlider src={flechaSlider}></FlechaSlider> */}
             </MargenDerecho>
           </DetalleObraContainer>
         </DAMain>
