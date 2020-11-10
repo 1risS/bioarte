@@ -179,6 +179,7 @@ const Parrafo = styled.div`
   font-size: 16px;
 `
 const Titulo = styled.div`
+  margin-top: 13px;
   font-weight: bold;
 `
 
@@ -273,7 +274,7 @@ const DetalleArtista1 = () => {
               <BioHeader>Ana Laura Cantera</BioHeader>
               <BioTexto>
                 <TituloBio>
-                  <Titulo>Biografía:</Titulo>
+                  <Titulo>Biografía</Titulo>
                   <CVCont>
                     <CV src={cv} />
                   </CVCont>
