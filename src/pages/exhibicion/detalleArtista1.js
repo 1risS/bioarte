@@ -116,7 +116,7 @@ const DAMain = styled.div`
 const BioArtistaContainer = styled.div`
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   padding: 1rem;
 `
 
@@ -125,13 +125,12 @@ const LibelulaContainer = styled.div`
   flex-direction: column;
   justify-content: flex-end;
   width: 20% !important;
+  margin: 4rem;
 `
 
 const Libelulaimg = styled.img`
-  height: 269px;
-  width: 228px;
-  margin-left: 2em;
-  margin-bottom: 2em;
+  height: 249px;
+  width: 208px;
 `
 
 const BioArtista = styled.div`
@@ -177,7 +176,7 @@ const NombreObra = styled.div`
 `
 const Parrafo = styled.div`
   padding-top: 1em;
-  font-size: 20px;
+  font-size: 16px;
 `
 const Titulo = styled.div`
   font-weight: bold;
@@ -344,17 +343,6 @@ const DetalleArtista1 = () => {
                   naturales causados por el cambio climático: inundaciones,
                   sequías, terremotos, tsunamis, desmontes, minería y
                   contaminación de recursos hídricos.
-                </Parrafo>
-                <Parrafo>
-                  La obra, es un robot bípedo con morfología y comportamiento
-                  inspirado en un pájaro, realizado con piel de biomateriales.
-                  Su caminar es forzado, difícil, pero constante. Se desplaza en
-                  territorios nuevos conociéndolos y absorbiendo sus
-                  características, dejando atrás su historia y rutina y
-                  debiéndose adaptar a los nuevos cambios para sobrevivir. El
-                  organismo evita amenazas, y por lo tanto en su caminar se
-                  distancia de los humanos que lo llevaron a la
-                  reterritorialización.
                 </Parrafo>
                 ​
                 <Parrafo>
