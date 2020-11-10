@@ -155,10 +155,44 @@ const DateTab = styled.span`
   width: 8rem;
 `
 
+// const inputUniv = styled.input.attrs(props => ({
+//   type: "text",
+//   size: props.small ? 5 : undefined,
+// }))`
+//   border-radius: 3px;
+//   border: 1px solid palevioletred;
+//   display: block;
+//   margin: 0 0 1em;
+//   padding: ${props => props.padding};
+
+//   ::placeholder {
+//     color: palevioletred;
+//   }
+// `
+
 const inputUniv = styled.input`
-  border-radius: 16px;
-  border: none;
-  width: 50px;
+  height: 36px;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 4px;
+  background-color: white;
+  border: 1px solid grey;
+  padding-left: 10px;
+  line-height: normal;
+  font-size: 18px;
+  color: black;
+
+  &::placeholder {
+    color: grey;
+    opacity: 0.4;
+  }
+`
+
+const inputContainer = styled.div`
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: left;
 `
 
 const UniversidadesContainer = styled.div`
