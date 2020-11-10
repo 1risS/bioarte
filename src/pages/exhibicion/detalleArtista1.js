@@ -115,16 +115,16 @@ const DAMain = styled.div`
 `
 const BioArtistaContainer = styled.div`
   display: flex;
-  justify-content: space-around;
-  margin-top: 1em;
-  margin-bottom: 1em;
+  flex-direction: row;
+  justify-content: center;
+  padding: 1rem;
 `
 
 const LibelulaContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  width: 20%;
+  width: 20% !important;
 `
 
 const Libelulaimg = styled.img`
@@ -140,10 +140,7 @@ const BioArtista = styled.div`
   max-width: 1152px;
   width: 100%;
   align-self: center;
-`
-
-const ColumnaCV = styled.div`
-  width: 20%;
+  margin: 0 20% 0 0;
 `
 
 const BioHeader = styled.div`
@@ -180,6 +177,7 @@ const NombreObra = styled.div`
 `
 const Parrafo = styled.div`
   padding-top: 1em;
+  font-size: 20px;
 `
 const Titulo = styled.div`
   margin-top: 13px;
@@ -201,11 +199,16 @@ const MargenDerecho = styled.div`
 `
 const DetalleObra = styled.div`
   display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-around;
   max-width: 1152px;
+  margin: 0 20% 0 20%;
 `
 
 const DescripcionContainer = styled.div`
   padding: 1em;
+  align-content: flex-start;
   text-align: justify;
 `
 
@@ -213,7 +216,9 @@ const FlechaSlider = styled.img`
   height: 80px;
   width: 80px;
 `
-const FotoObra = styled.img``
+const FotoObra = styled.img`
+  padding: 2rem 0 0 0;
+`
 
 const LikeLikeCont = styled.div`
   margin-left: 10rem;
@@ -317,7 +322,6 @@ const DetalleArtista1 = () => {
                 </Parrafo>
               </BioTexto>
             </BioArtista>
-            <ColumnaCV></ColumnaCV>
           </BioArtistaContainer>
           <FotoObraContainer>
             <NombreObra>
@@ -330,7 +334,7 @@ const DetalleArtista1 = () => {
               <FlechaSlider src={flechaSlider}></FlechaSlider>
             </MargenIzquierdo>
             <DetalleObra>
-              <FotoObra src={fotoObra}></FotoObra>
+              <FotoObra src={fotoObra} height="30%"></FotoObra>
               <DescripcionContainer>
                 <Parrafo>
                   Displaced, es una instalación robótica sobre los

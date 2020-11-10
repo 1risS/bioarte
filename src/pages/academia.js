@@ -9,10 +9,7 @@ import fondoHeader from "../images/Academia/academia_bg.jpg"
 import logoFestival from "../images/Academia/logo libélula.png"
 import bannerHubs from "../images/Academia/Mozilla Hubs.png"
 import Placeholder from "../../static/images/Icon-Placeholder-1.png"
-import mapaPlaceholder from "../../static/images/academia/universidades_mapa.png"
 import Mapbox from "../components/mapaMapbox"
-
-const LoadableMapa = Loadable(() => import("../components/mapa"))
 
 const AcademiaContainer = styled.div`
   background-color: ${props => props.theme.colors.bg1};
@@ -100,7 +97,7 @@ const TextoDark = styled.div`
   font-weight: bold;
   color: black;
   align-self: center;
-  margin-top: 25vh;
+  margin-top: 0;
 `
 
 const Subtexto = styled.div`
