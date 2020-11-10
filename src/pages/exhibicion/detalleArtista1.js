@@ -88,7 +88,7 @@ const Texto = styled.div`
   font-weight: bold;
   color: white;
   align-self: center;
-
+  margin-bottom: -0.2em;
   max-height: 750px;
   padding-top: 25vh;
   /*line-height: initial;*/
