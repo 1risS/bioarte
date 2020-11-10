@@ -22,7 +22,7 @@ import art13 from "../../images/Exhibicion/13Caterbetti/01catterbetti.png"
 import art17 from "../../images/Exhibicion/17Bergottini/01Bergottini.png"
 
 import logoFestival from "../../images/Academia/logo libélula.png"
-import fondoHeader from "../../images/Exhibicion/colony_header.jpg"
+import fondoHeader from "../../images/DetalleArtistas/Banner_Exhibition_0.png"
 import { Link } from "gatsby"
 
 import like from "../../../static/images/exhibicion/likelikeRounded.png"
@@ -73,13 +73,14 @@ const Logo = styled.img`
 `
 
 const Texto = styled.div`
-  display: flex;
   font-family: ${props => props.theme.fontFamily};
-  font-size: 10vw;
+  font-size: 14rem;
   font-weight: bold;
   color: white;
   align-self: center;
-  margin-top: 12rem;
+
+  max-height: 750px;
+  padding-top: 25vh;
   /*line-height: initial;*/
 `
 

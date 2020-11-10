@@ -11,6 +11,8 @@ import libelula from "../../images/DetalleArtistas/Dragonfly.png"
 import fondoObra from "../../images/DetalleArtistas/ObraExhibicion_Cantera.png"
 import flechaSlider from "../../images/DetalleArtistas/Btn-CiircleArrow_Normal.png"
 import fotoObra from "../../images/DetalleArtistas/Displaced_Cantera_1_de-10.png"
+import like from "../../../static/images/exhibicion/likelikeRounded.png"
+import cv from "../../images/DetalleArtistas/Btn_Cv-Click.png"
 
 const DAContainer = styled.div`
   background-color: ${props => props.theme.colors.bg1};
@@ -18,13 +20,14 @@ const DAContainer = styled.div`
 const DAHeaderContainer = styled.div`
   display: flex;
   width: auto;
-  height: 750px;
+  height: 45rem;
   flex-direction: column;
   padding-left: 3rem;
   padding-right: 1rem;
   background-image: url(${fondoHeader});
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
+  margin-bottom: 7rem;
 `
 const NavBar = styled.div`
   display: flex;
@@ -211,6 +214,28 @@ const FlechaSlider = styled.img`
 `
 const FotoObra = styled.img``
 
+const LikeLikeCont = styled.div`
+  margin-left: 10rem;
+  align-self: flex-end;
+  margin: 0rem 4rem 3rem 0rem;
+`
+
+const Like = styled.img``
+
+const CVCont = styled.div`
+  margin-left: 10rem;
+  align-self: flex-end;
+  margin: 0rem 0rem 3rem 0rem;
+`
+
+const CV = styled.img``
+
+const TituloBio = styled.div`
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+`
 // ponemos una cookie para saber si le usuarix pasó por acá
 
 const DetalleArtista1 = () => {
@@ -229,8 +254,11 @@ const DetalleArtista1 = () => {
               <CantidadVisitantes>30000</CantidadVisitantes>
             </ContadoresContainer>
           </NavBar>
-          <Texto>Bioarte</Texto>
-          <BannerHubs src={bannerHubs}></BannerHubs>
+          <Texto>BIOARTE</Texto>
+          <LikeLikeCont>
+            <Like src={like} />
+          </LikeLikeCont>
+          {/* <BannerHubs src={bannerHubs}></BannerHubs> */}
         </DAHeaderContainer>
         <DAMain>
           <BioArtistaContainer>
@@ -240,7 +268,12 @@ const DetalleArtista1 = () => {
             <BioArtista>
               <BioHeader>Ana Laura Cantera</BioHeader>
               <BioTexto>
-                <Titulo>Biografía:</Titulo>
+                <TituloBio>
+                  <Titulo>Biografía:</Titulo>
+                  <CVCont>
+                    <CV src={cv} />
+                  </CVCont>
+                </TituloBio>
                 <Parrafo>
                   Artista bioelectrónica, investigadora y docente. Magister en
                   Artes Electrónicas graduada con honores en la Universidad
@@ -283,7 +316,7 @@ const DetalleArtista1 = () => {
                 </Parrafo>
               </BioTexto>
             </BioArtista>
-            <ColumnaCV>CV</ColumnaCV>
+            <ColumnaCV></ColumnaCV>
           </BioArtistaContainer>
           <FotoObraContainer>
             <NombreObra>
