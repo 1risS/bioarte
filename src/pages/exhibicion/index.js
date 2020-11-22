@@ -40,7 +40,7 @@ const ExhibicionContainer = styled.div`
 const ExhibicionHeaderContainer = styled.div`
   display: flex;
   width: auto;
-  height: 45rem;
+  height: 100vh;
   flex-direction: column;
   padding-left: 3rem;
   padding-right: 1rem;
@@ -55,7 +55,7 @@ const NavBar = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  margin-top: 1rem;
+  margin-top: 2rem;
   margin-bottom: -2rem;
 `
 const LogoContainer = styled.div`
@@ -63,6 +63,7 @@ const LogoContainer = styled.div`
   flex-direction: row;
   justify-content: flex-start;
   max-width: 100%;
+  margin-right: 15em;
 `
 
 const Logo = styled.img`
@@ -179,28 +180,68 @@ const ContadoresContainer = styled.div`
   flex-basis: 150rem;
 `
 
-const HorasNavegacion = styled.div`
+const TimerNavegacionContainer = styled.div``
+
+const TimerNavegacion = styled.div`
   max-width: 150px;
   width: 100%;
-  border-radius: 8px;
+
   text-align: center;
-  background-color: #dbe6d3;
   font-family: ${props => props.theme.fontFamily};
   font-weight: ${props => props.theme.fontWeights.light};
-  color: #414141;
-  font-size: 1rem;
+  color: #fff;
+
+  display: flex;
+`
+
+const TiempoContainer = styled.div`
+  margin-left: 1em;
+  margin-right: 1em;
+`
+
+const Horas = styled.div`
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 0 0.2em 0 0.2em;
+`
+const Min = styled.div`
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 0 0.2em 0 0.2em;
+`
+
+const Seg = styled.div`
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 0 0.2em 0 0.2em;
+`
+
+const CantidadVisitantesContainer = styled.div`
+  max-width: 150px;
+  width: 100%;
+  text-align: center;
+  font-family: ${props => props.theme.fontFamily};
+  font-weight: ${props => props.theme.fontWeights.light};
+  color: #fff;
+  margin-left: 10em;
+`
+
+const TextoContadores = styled.div`
+  font-weight: lighter;
+  font-size: 1em;
 `
 
 const CantidadVisitantes = styled.div`
-  max-width: 150px;
-  width: 100%;
-  border-radius: 8px;
-  text-align: center;
-  background-color: #dbe6d3;
-  font-family: ${props => props.theme.fontFamily};
-  font-weight: ${props => props.theme.fontWeights.light};
-  color: #414141;
-  font-size: 1rem;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-size: 1.5rem;
+  font-weight: bold;
 `
 
 const BioContainer = styled.div`
@@ -234,12 +275,27 @@ const ExhibicionPage = () => {
               <Logo src={logoFestival}></Logo>
               <Placeholder1 src={logo}></Placeholder1>
             </LogoContainer>
-            <ContadoresContainer>
-              <HorasNavegacion>1950</HorasNavegacion>
+
+            <TimerNavegacion>
+              <TiempoContainer>
+                <Horas>01</Horas>
+                <TextoContadores>Hs.</TextoContadores>
+              </TiempoContainer>
+              <TiempoContainer>
+                <Min>00</Min>
+                <TextoContadores>Min.</TextoContadores>
+              </TiempoContainer>
+              <TiempoContainer>
+                <Seg>00</Seg>
+                <TextoContadores>Seg.</TextoContadores>
+              </TiempoContainer>
+            </TimerNavegacion>
+            <CantidadVisitantesContainer>
               <CantidadVisitantes>30000</CantidadVisitantes>
-            </ContadoresContainer>
+              <TextoContadores>Visitantes</TextoContadores>
+            </CantidadVisitantesContainer>
           </NavBar>
-          <Texto>BIOARTE</Texto>
+          <Texto>Bioarte</Texto>
           <LikeLikeCont>
             <Like src={like} />
           </LikeLikeCont>
