@@ -1,11 +1,15 @@
 import React, { useState, useEffect } from "react"
-import ReactMapGL, { Marker, Popup } from "react-map-gl"
-import * as uniData from "../data/organizaciones.json"
+import ReactMapGL, { Marker, Popup, FlyToInterpolator } from "react-map-gl"
+import * as uniData from "../data/universidades.json"
 import pin from "../images/pin.png"
 import styled from "styled-components"
 
 let REACT_APP_MAPBOX_TOKEN =
   "pk.eyJ1IjoiY2F0YWhhY2hlIiwiYSI6ImNrZ3BsNnoxYTA3dHYyenIzOXBjNnE2M20ifQ.8jOX6CUIDqlnBoMjkxtH1A"
+
+const MapContainer = styled.div`
+  position: relative;
+`
 
 const MarkerBtn = styled.button`
   background: none;
@@ -13,18 +17,96 @@ const MarkerBtn = styled.button`
   cursor: pointer;
 `
 
+const controlMargin = "0.5em"
+
 const ControlGroup = styled.div`
-  position: fixed;
-  zindex: 1000;
-  top: ${props => (props.top ? "1em" : null)};
-  left: ${props => (props.left ? "1em" : null)};
-  bottom: ${props => (props.bottom ? "1em" : null)};
-  right: ${props => (props.right ? "1em" : null)};
+  position: absolute;
+  z-index: 1000;
+  top: ${props => (props.top ? controlMargin : null)};
+  left: ${props => (props.left ? controlMargin : null)};
+  bottom: ${props => (props.bottom ? controlMargin : null)};
+  right: ${props => (props.right ? controlMargin : null)};
 `
 
-const MarkerSearchControl = () => {
-  return <input className={className} type="text" />
+const SearchControl = ({ features = [], onSelect }) => {
+  const [query, setQuery] = useState("")
+  const [results, setResults] = useState([])
+
+  const searchFor = query => {
+    return features.filter(feat =>
+      ["Institución", "Facultad"].some(key => {
+        const property = feat.properties[key]
+        return (
+          property && property.toLowerCase().indexOf(query.toLowerCase()) >= 0
+        )
+      })
+    )
+  }
+
+  const onInputChange = e => {
+    const query = e.target.value
+    setQuery(query)
+    if (query !== "") {
+      const results = searchFor(query)
+      setResults(results)
+    } else {
+      setResults([])
+    }
+  }
+
+  const onItemSelect = item => {
+    console.log("select item:", item)
+    setQuery("")
+    setResults([])
+    onSelect(item.geometry.coordinates, item)
+  }
+
+  return (
+    <>
+      <SearchControlInput onChange={onInputChange} value={query} />
+      {results.length > 0 && (
+        <SearchControlResults onItemSelect={onItemSelect}>
+          {results}
+        </SearchControlResults>
+      )}
+    </>
+  )
 }
+
+const SearchControlInput = styled(({ className, onChange, value }) => (
+  <input className={className} value={value} onChange={onChange} type="text" />
+))`
+  border-radius: 0.25em;
+  border: solid 1px #888;
+  font-size: 1em;
+  padding: 0.5em 0.5em;
+`
+
+const SearchControlResults = styled(
+  ({ className, children = [], onItemSelect }) => {
+    return (
+      <ul className={className}>
+        {children.map((item, i) => (
+          <li key={i} onClick={() => onItemSelect(item)}>
+            {item.properties["Institución"]} - {item.properties["Facultad"]}
+          </li>
+        ))}
+      </ul>
+    )
+  }
+)`
+  background-color: #fff;
+  width: 200px;
+  height: 200px;
+
+  & li {
+    cursor: pointer;
+  }
+
+  & li:hover {
+    background-color: #ccc;
+  }
+`
 
 export default function MapboxMap() {
   const [viewport, setViewport] = useState({
@@ -35,6 +117,17 @@ export default function MapboxMap() {
     zoom: 10,
   })
   const [selectedUni, setSelectedUni] = useState(null)
+
+  const onSearchItemSelect = ([longitude, latitude], item) => {
+    setViewport({
+      longitude,
+      latitude,
+      zoom: 14,
+      transitionInterpolator: new FlyToInterpolator({ speed: 1.2 }),
+      transitionDuration: "auto",
+    })
+    setSelectedUni(item)
+  }
 
   useEffect(() => {
     const listener = e => {
@@ -50,7 +143,13 @@ export default function MapboxMap() {
   }, [])
 
   return (
-    <div>
+    <MapContainer>
+      <ControlGroup top left>
+        <SearchControl
+          features={uniData.features}
+          onSelect={onSearchItemSelect}
+        />
+      </ControlGroup>
       <ReactMapGL
         {...viewport}
         mapboxApiAccessToken={REACT_APP_MAPBOX_TOKEN}
@@ -61,9 +160,9 @@ export default function MapboxMap() {
       >
         {uniData.features.map(university => (
           <Marker
-            key={university.properties.institucion_id}
-            latitude={university.geometry.coordinates[0]}
-            longitude={university.geometry.coordinates[1]}
+            key={university.properties.id}
+            longitude={university.geometry.coordinates[0]}
+            latitude={university.geometry.coordinates[1]}
           >
             <MarkerBtn
               onClick={e => {
@@ -78,21 +177,21 @@ export default function MapboxMap() {
 
         {selectedUni ? (
           <Popup
-            latitude={selectedUni.geometry.coordinates[0]}
-            longitude={selectedUni.geometry.coordinates[1]}
+            longitude={selectedUni.geometry.coordinates[0]}
+            latitude={selectedUni.geometry.coordinates[1]}
             onClose={() => {
               setSelectedUni(null)
             }}
           >
             <div>
-              <h2>{selectedUni.properties.nombre}</h2>
-              <p>{selectedUni.properties.dpt_descripcion}</p>
+              <a target="_blank" href={selectedUni.properties["Web Site"]}>
+                <h2>{selectedUni.properties["Facultad"]}</h2>
+              </a>
+              <h3>{selectedUni.properties["Institución"]}</h3>
             </div>
           </Popup>
         ) : null}
-
-        <MarkerSearchInput />
       </ReactMapGL>
-    </div>
+    </MapContainer>
   )
 }
