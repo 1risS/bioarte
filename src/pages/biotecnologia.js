@@ -94,7 +94,7 @@ const CantidadVisitantes = styled.div`
 
 const Texto = styled.div`
   font-family: ${props => props.theme.fontFamily};
-  font-size: 10rem;
+  font-size: 7rem;
   font-weight: bold;
   color: white;
   align-self: center;
@@ -106,7 +106,7 @@ const AgendaCont = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 10rem 0rem 4rem 0rem;
+  margin: 5rem 0rem 4rem 0rem;
   max-width: 1164px;
   width: 100%;
 `
@@ -114,8 +114,10 @@ const AgendaCont = styled.div`
 const Section = styled.section`
   display: flex;
   align-items: center;
+  align-self: center;
   justify-content: center;
   margin: 2rem 2rem 2rem 2rem;
+  width: 60%;
   background-color: ${props => props.theme.colors.bg1};
 `
 
@@ -123,7 +125,8 @@ const SectionCarousel = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
+  align-self: center;
+  width: 60%;
   justify-content: center;
   background-color: ${props => props.theme.colors.bg1};
 `
