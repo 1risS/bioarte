@@ -76,9 +76,10 @@ def parse_and_generate(*, input_file, output_file):
     res = []
     with open(input_file, 'r') as f:
         reader = csv.DictReader(f)
-        for row in reader:
+        for i, row in enumerate(reader):
             keys = ['Institución', 'Facultad', 'Web Site']
             properties = {k: row[k] for k in keys}
+            properties['id'] = i
             if row['Localizacion (decimal)']:
                 coords = parse_decimal(row['Localizacion (decimal)'])
             else:
