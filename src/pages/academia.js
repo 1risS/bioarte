@@ -9,7 +9,7 @@ import fondoHeader from "../images/Academia/academia_bg.jpg"
 import logoFestival from "../images/Academia/logo libélula.png"
 import bannerHubs from "../images/Academia/Mozilla Hubs.png"
 import Placeholder from "../../static/images/Icon-Placeholder-1.png"
-import Mapbox from "../components/mapaMapbox"
+import MapboxMap from "../components/MapboxMap"
 
 const AcademiaContainer = styled.div`
   background-color: ${props => props.theme.colors.bg1};
@@ -237,12 +237,12 @@ const AcademiaPage = () => {
           <UniversidadesContainer>
             <TextoDark>Universidades</TextoDark>
             <SectionMapa>
-              <InfoContainer>
+              {/* <InfoContainer>
                 <DateTab>
                   <input type="text" />
                 </DateTab>
-              </InfoContainer>
-              <Mapbox></Mapbox>
+              </InfoContainer> */}
+              <MapboxMap />
             </SectionMapa>
           </UniversidadesContainer>
         </Section>

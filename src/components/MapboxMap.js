@@ -1,4 +1,3 @@
-import { func } from "prop-types"
 import React, { useState, useEffect } from "react"
 import ReactMapGL, { Marker, Popup } from "react-map-gl"
 import * as uniData from "../data/organizaciones.json"
@@ -14,11 +13,24 @@ const MarkerBtn = styled.button`
   cursor: pointer;
 `
 
-export default function App() {
+const ControlGroup = styled.div`
+  position: fixed;
+  zindex: 1000;
+  top: ${props => (props.top ? "1em" : null)};
+  left: ${props => (props.left ? "1em" : null)};
+  bottom: ${props => (props.bottom ? "1em" : null)};
+  right: ${props => (props.right ? "1em" : null)};
+`
+
+const MarkerSearchControl = () => {
+  return <input className={className} type="text" />
+}
+
+export default function MapboxMap() {
   const [viewport, setViewport] = useState({
     latitude: -34.5829196,
     longitude: -58.4294226,
-    width: "650px",
+    width: "1000px",
     height: "400px",
     zoom: 10,
   })
@@ -78,6 +90,8 @@ export default function App() {
             </div>
           </Popup>
         ) : null}
+
+        <MarkerSearchInput />
       </ReactMapGL>
     </div>
   )

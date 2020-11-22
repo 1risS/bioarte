@@ -83,7 +83,10 @@ def parse_and_generate(*, input_file, output_file):
                 coords = parse_decimal(row['Localizacion (decimal)'])
             else:
                 coords = parse_degree(row['Localizacion'])
-            res.append((coords, properties))
+
+            # Only append features with valid coordinates
+            if coords:
+                res.append((coords, properties))
     write_geojson(res, output_file)
 
 

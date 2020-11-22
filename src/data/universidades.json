@@ -3,78 +3,6 @@
   "features": [
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [] },
-      "properties": {
-        "Instituci\u00f3n": "TECNICATURAS",
-        "Facultad": "",
-        "Web Site": ""
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [] },
-      "properties": {
-        "Instituci\u00f3n": "Congregaci\u00f3n Hermanos Maristas Instituto Agrot\u00e9cnico \"San Jos\u00e9 Obrero\"",
-        "Facultad": "",
-        "Web Site": "www.agrotecnicomarista.com.ar"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [] },
-      "properties": {
-        "Instituci\u00f3n": "ESEADE",
-        "Facultad": "\u00c1rea Negocio Farmac\u00e9utico - Posgrado",
-        "Web Site": "www.eseade.edu.ar"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [] },
-      "properties": {
-        "Instituci\u00f3n": "Establecimiento Educativo\u00a0BAC-SPINOZA",
-        "Facultad": "",
-        "Web Site": "www.bac-edu.com.ar"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [] },
-      "properties": {
-        "Instituci\u00f3n": "Instituci\u00f3n Superior Albert Sabin",
-        "Facultad": "",
-        "Web Site": "www.albertsabin.edu.ar"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [] },
-      "properties": {
-        "Instituci\u00f3n": "Instituto Superior de Tecnolog\u00eda y Pedagog\u00eda ORT Argentina",
-        "Facultad": "",
-        "Web Site": "www.ort.edu.ar"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [] },
-      "properties": {
-        "Instituci\u00f3n": "Instituto Superior San Juan Bautista de La Salle ",
-        "Facultad": "",
-        "Web Site": "www.lasalleterciario.com.ar"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [] },
-      "properties": {
-        "Instituci\u00f3n": "UNIVERSIDADES",
-        "Facultad": "",
-        "Web Site": ""
-      }
-    },
-    {
-      "type": "Feature",
       "geometry": {
         "type": "Point",
         "coordinates": [-58.38166666666667, -34.61666666666667]
@@ -99,24 +27,6 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [] },
-      "properties": {
-        "Instituci\u00f3n": "Universidad Cat\u00f3lica Argentina",
-        "Facultad": "Instituto de Bioetica",
-        "Web Site": "http://uca.edu.ar/es/facultades/instituto-de-bioetica"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [] },
-      "properties": {
-        "Instituci\u00f3n": "Universidad Cat\u00f3lica Argentina",
-        "Facultad": "Facultad de Ciencias medicas",
-        "Web Site": "http://uca.edu.ar/es/facultades/facultad-de-ciencias-medicas/doctorado/doctorado-en-ciencias-biomedicas"
-      }
-    },
-    {
-      "type": "Feature",
       "geometry": {
         "type": "Point",
         "coordinates": [-58.443888888888885, -34.56388888888888]
@@ -125,15 +35,6 @@
         "Instituci\u00f3n": "Universidad de Belgrano",
         "Facultad": "Facultad de Ciencias Exactas y Naturales",
         "Web Site": "www.ub.edu.ar"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [] },
-      "properties": {
-        "Instituci\u00f3n": "Universidad de Buenos Aires ",
-        "Facultad": "Facultad de Agronom\u00eda",
-        "Web Site": "http://epg.agro.uba.ar/"
       }
     },
     {
@@ -198,24 +99,6 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [] },
-      "properties": {
-        "Instituci\u00f3n": "Universidad Caece ",
-        "Facultad": "Departamento de Ciencias Biol\u00f3gicas",
-        "Web Site": "www.caece.edu.ar"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [] },
-      "properties": {
-        "Instituci\u00f3n": "Universidad Caece ",
-        "Facultad": "Departamento de Sistemas",
-        "Web Site": "http://www.ucaece.edu.ar/carreras/departamento-de-sistemas/licenciatura-en-nanotecnologia/"
-      }
-    },
-    {
-      "type": "Feature",
       "geometry": {
         "type": "Point",
         "coordinates": [-58.390277777777776, -34.614444444444445]
@@ -228,15 +111,6 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [] },
-      "properties": {
-        "Instituci\u00f3n": "Universidad Maim\u00f3nides",
-        "Facultad": "Facultad de Ciencias de la Salud",
-        "Web Site": "www.maimonides.edu"
-      }
-    },
-    {
-      "type": "Feature",
       "geometry": {
         "type": "Point",
         "coordinates": [-58.367777777777775, -34.60333333333333]
@@ -245,346 +119,6 @@
         "Instituci\u00f3n": "ITBA",
         "Facultad": "Ingenieria",
         "Web Site": "https://www.itba.edu.ar/grado/bioingenieria/"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [] },
-      "properties": {
-        "Instituci\u00f3n": "Instituto Universitario del Hospital Italiano de Buenos Aires",
-        "Facultad": "",
-        "Web Site": "https://ingenieriabiomedica.hospitalitaliano.edu.ar/?campaignid=10803207255&adgroupid=109381040067&adid=455403716547&gclid=Cj0KCQjw-O35BRDVARIsAJU5mQXuALuV1lV9tJbmor8aBXdNEGXj5vuD-5tZmCwkFbh-6VR9qSXBRZgaAnfpEALw_wcB"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [] },
-      "properties": {
-        "Instituci\u00f3n": "UTN ",
-        "Facultad": "FRBA",
-        "Web Site": "https://www.frba.utn.edu.ar/posgrado/maestria-en-procesos-biotecnologicos/"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [] },
-      "properties": {
-        "Instituci\u00f3n": "Universidad de Mor\u00f3n",
-        "Facultad": "Facultad de Ciencias Exactas, Qu\u00edmicas y Naturales",
-        "Web Site": "www.unimoron.edu.ar"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [] },
-      "properties": {
-        "Instituci\u00f3n": "Universidad de Mor\u00f3n",
-        "Facultad": "Facultad de Ciencias Exactas, Qu\u00edmicas y Naturales",
-        "Web Site": "www.unimoron.edu.ar"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [] },
-      "properties": {
-        "Instituci\u00f3n": "Universidad Nacional de Quilmes",
-        "Facultad": "Dpto. de Ciencia y Tecnolog\u00eda",
-        "Web Site": "www.unq.edu.ar"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [] },
-      "properties": {
-        "Instituci\u00f3n": "Universidad Nacional de General San Mart\u00edn",
-        "Facultad": "Escuela Ciencia y Tecnolog\u00eda",
-        "Web Site": "www.unsam.edu.ar"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [] },
-      "properties": {
-        "Instituci\u00f3n": "Universidad Nacional de General San Mart\u00edn",
-        "Facultad": "Instituto de Investigaciones Biotecnol\u00f3gicas",
-        "Web Site": "www.unsam.edu.ar"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [] },
-      "properties": {
-        "Instituci\u00f3n": "Universidad Nacional de General San Mart\u00edn",
-        "Facultad": "Instituto de Investigaciones Biotecnol\u00f3gicas",
-        "Web Site": "www.unsam.edu.ar"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [] },
-      "properties": {
-        "Instituci\u00f3n": "Universidad Nacional de Moreno. ",
-        "Facultad": "",
-        "Web Site": ""
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [] },
-      "properties": {
-        "Instituci\u00f3n": "Universidad Nacional de Hurlingham",
-        "Facultad": "",
-        "Web Site": ""
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [] },
-      "properties": {
-        "Instituci\u00f3n": "Universidad Nacional Arturo Jauretche",
-        "Facultad": "",
-        "Web Site": ""
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [] },
-      "properties": {
-        "Instituci\u00f3n": "Universidad Nacional de La Plata",
-        "Facultad": "Facultad de Ciencias Exactas",
-        "Web Site": "www.unlp.edu.ar"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [] },
-      "properties": {
-        "Instituci\u00f3n": "Universidad Nacional de Luj\u00e1n",
-        "Facultad": "Ciencias Biol\u00f3gicas",
-        "Web Site": "www.unlu.edu.ar"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [] },
-      "properties": {
-        "Instituci\u00f3n": "Universidad Nacional de Mar del Plata ",
-        "Facultad": "Facultad de Ciencias Exactas y Naturales",
-        "Web Site": "www.mdp.edu.ar"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [] },
-      "properties": {
-        "Instituci\u00f3n": "Universidad Nacional del Sur",
-        "Facultad": "Dpto. de Biolog\u00eda, Bioqu\u00edmica y Farmacia",
-        "Web Site": "www.uns.edu.ar"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [] },
-      "properties": {
-        "Instituci\u00f3n": "Universidad Nacional del Centro de la Provincia de Bs. As.",
-        "Facultad": "Facultad de Ciencias Veterinarias",
-        "Web Site": "www.unicen.edu.ar"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [] },
-      "properties": {
-        "Instituci\u00f3n": "Universidad de San Andres",
-        "Facultad": "Programa Abierto Modalidad On Line",
-        "Web Site": "https://exed.udesa.edu.ar/programas-abiertos/healthtech"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [] },
-      "properties": {
-        "Instituci\u00f3n": "Universidad Nacional del Noroeste de la provincia de Buenos Aires (UNNOBA) ",
-        "Facultad": "Escuela de Ciencias Agrarias, Naturales y Ambientales",
-        "Web Site": "www.unnoba.edu.ar"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [] },
-      "properties": { "Instituci\u00f3n": "", "Facultad": "", "Web Site": "" }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [] },
-      "properties": { "Instituci\u00f3n": "", "Facultad": "", "Web Site": "" }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [] },
-      "properties": {
-        "Instituci\u00f3n": "Universidad del Chaco Austral",
-        "Facultad": "",
-        "Web Site": "www.uncaus.edu.ar"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [] },
-      "properties": {
-        "Instituci\u00f3n": "Universidad Nacional de C\u00f3rdoba ",
-        "Facultad": "Facultad de Ciencias Exactas, F\u00edsicas y Naturales",
-        "Web Site": "http://www.exa.unrc.edu.ar/page/?actionId=5534"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [] },
-      "properties": {
-        "Instituci\u00f3n": "Universidad Nacional de C\u00f3rdoba ",
-        "Facultad": "Facultad de Ciencias Qu\u00edmicas",
-        "Web Site": "www.fcq.unc.edu.ar"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [] },
-      "properties": {
-        "Instituci\u00f3n": "Universidad Nacional de C\u00f3rdoba ",
-        "Facultad": "",
-        "Web Site": ""
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [] },
-      "properties": {
-        "Instituci\u00f3n": "Universidad Nacional de C\u00f3rdoba ",
-        "Facultad": "Facultad de Ciencias Qu\u00edmicas",
-        "Web Site": "www.fcq.unc.edu.ar"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [] },
-      "properties": {
-        "Instituci\u00f3n": "Universidad Nacional de R\u00edo Cuarto ",
-        "Facultad": "Facultad de Ciencias Exactas, F\u00edsico-qu\u00edmicas y Naturales",
-        "Web Site": "http://www.exa.unrc.edu.ar/page/?actionId=5534"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [] },
-      "properties": {
-        "Instituci\u00f3n": "Universidad Nacional de R\u00edo Cuarto ",
-        "Facultad": "Facultad de Ciencias Exactas, F\u00edsico-qu\u00edmicas y Naturales",
-        "Web Site": "http://www.exa.unrc.edu.ar/page/?actionId=5535"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [] },
-      "properties": {
-        "Instituci\u00f3n": "Universidad Nacional de Rosario ",
-        "Facultad": "Facultad de Ciencias Bioqu\u00edmicas y Farmac\u00e9uticas",
-        "Web Site": "www.unr.edu.ar/cgrado"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [] },
-      "properties": {
-        "Instituci\u00f3n": "Universidad Nacional de Rosario ",
-        "Facultad": "Facultad de Ciencias Bioqu\u00edmicas y Farmac\u00e9uticas",
-        "Web Site": "www.fbioyf.unr.edu.ar"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [] },
-      "properties": {
-        "Instituci\u00f3n": "Universidad Nacional de Rosario ",
-        "Facultad": "Instituto de INvestigacion en Ciencias Agrarias",
-        "Web Site": ""
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [] },
-      "properties": {
-        "Instituci\u00f3n": "Universidad Nacional del Litoral",
-        "Facultad": "Escuela Universitaria de An\u00e1lisis de Alimentos",
-        "Web Site": "www.unl.edu.ar"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [] },
-      "properties": {
-        "Instituci\u00f3n": "Universidad Nacional del Litoral",
-        "Facultad": "Facultad de Bioqu\u00edmica y Ciencias Biol\u00f3gicas",
-        "Web Site": "http://www.exa.unrc.edu.ar/page/?actionId=5534"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [] },
-      "properties": { "Instituci\u00f3n": "", "Facultad": "", "Web Site": "" }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [] },
-      "properties": {
-        "Instituci\u00f3n": "Universidad Nacional de Entre Rios",
-        "Facultad": "",
-        "Web Site": ""
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [] },
-      "properties": {
-        "Instituci\u00f3n": "Universidad Nacional de Misiones",
-        "Facultad": "Facultad de Ciencias Exactas, Qu\u00edmicas y Naturales",
-        "Web Site": "www.fceqyn.unam.edu.ar"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [] },
-      "properties": { "Instituci\u00f3n": "", "Facultad": "", "Web Site": "" }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [] },
-      "properties": { "Instituci\u00f3n": "", "Facultad": "", "Web Site": "" }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [] },
-      "properties": {
-        "Instituci\u00f3n": "Universidad Nacional de Salta",
-        "Facultad": "Facultad de Ciencias Naturales",
-        "Web Site": "www.unsa.edu.ar"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [] },
-      "properties": {
-        "Instituci\u00f3n": "Universidad Nacional de San Luis",
-        "Facultad": "Facultad de Qu\u00edmica, Bioqu\u00edmica y Farmacia",
-        "Web Site": "www.ingreso.unsl.edu.ar"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [] },
-      "properties": {
-        "Instituci\u00f3n": "Universidad Nacional de San Luis",
-        "Facultad": "Facultad de Qu\u00edmica, Bioqu\u00edmica y Farmacia",
-        "Web Site": "www.ingreso.unsl.edu.ar"
       }
     },
     {
@@ -625,15 +159,6 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [] },
-      "properties": {
-        "Instituci\u00f3n": "Universidad Maza ",
-        "Facultad": "",
-        "Web Site": "https://www.umaza.edu.ar/especializacion-en-esterilizacion-y-dispositivos-biomedicos"
-      }
-    },
-    {
-      "type": "Feature",
       "geometry": {
         "type": "Point",
         "coordinates": [-65.23138888888889, -26.842222222222222]
@@ -670,20 +195,6 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [] },
-      "properties": {
-        "Instituci\u00f3n": "Universidad Nacional de Tucum\u00e1n. ",
-        "Facultad": "Posgrado",
-        "Web Site": ""
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [] },
-      "properties": { "Instituci\u00f3n": "", "Facultad": "", "Web Site": "" }
-    },
-    {
-      "type": "Feature",
       "geometry": { "type": "Point", "coordinates": [-67.094224, -39.095437] },
       "properties": {
         "Instituci\u00f3n": "Universidad Nacional de R\u00edo Negro.",
@@ -698,29 +209,6 @@
         "Instituci\u00f3n": "Universidad Nacional de R\u00edo Negro.",
         "Facultad": "Ciencias Aplicadas",
         "Web Site": "https://www.unrn.edu.ar"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [] },
-      "properties": { "Instituci\u00f3n": "", "Facultad": "", "Web Site": "" }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [] },
-      "properties": {
-        "Instituci\u00f3n": "Posibles Speakers",
-        "Facultad": "",
-        "Web Site": ""
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [] },
-      "properties": {
-        "Instituci\u00f3n": "UP",
-        "Facultad": "Ingenieria",
-        "Web Site": "https://www.palermo.edu/ingenieria/2020/septiembre/biofabricacion-3d.html?codp=351400&id2=254290444&hashid2=c0da56bd738d3cb5977e460b658b8abe"
       }
     }
   ]
