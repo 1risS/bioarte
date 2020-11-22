@@ -25,6 +25,52 @@ const Progress = styled.div`
   transition: opacity 0.5s ease;
 `
 
+const LoadingContainer = styled.div`
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #000;
+  transition: opacity 1s ease;
+`
+
+const LoadingBox = styled.div`
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  transition: all 1s ease-out;
+`
+
+const LoadingMessage = styled.div`
+  color: #ffffff;
+  width: 100%;
+  text-align: center;
+  font-size: 30px;
+  margin-top: -75px;
+  margin-bottom: 2rem;
+  // text-transform: uppercase;
+`
+
+const ProgressBar = styled.div`
+  position: relative;
+  left: 40%;
+  text-align: center;
+  background: transparent;
+  //border: 4px solid rgba(255, 255, 255, 1);
+  width: 20%;
+  height: 50px;
+  margin-left: -5px;
+`
+
+const Bar = styled.div`
+  background: rgba(255, 255, 255, 1);
+  width: 0%;
+  height: 30px;
+  margin: 5px;
+  transition: width 0.1s ease;
+`
+
 const PanoPage = () => {
   const irAcademia = () => {
     window.location.href = "/academia"
@@ -277,6 +323,9 @@ const PanoPage = () => {
       // barra de progreso al cargar la vista 360
 
       const progressElement = document.getElementById("progress")
+      const loadingContainerElement = document.getElementById(
+        "loadingContainer"
+      )
 
       function onEnter(event) {
         progressElement.style.width = 0
@@ -285,9 +334,15 @@ const PanoPage = () => {
 
       function onProgress(event) {
         const progress = (event.progress.loaded / event.progress.total) * 100
-        progressElement.style.width = progress + "%"
+        console.log("progress:", progress)
         if (progress === 100) {
-          progressElement.style.opacity = 0
+          console.log("finished!")
+          progressElement.style.width = "100%"
+          setInterval(() => {
+            loadingContainerElement.style.opacity = 0
+          }, 500)
+        } else {
+          progressElement.style.width = progress + "%"
         }
       }
 
@@ -320,7 +375,17 @@ const PanoPage = () => {
     <Layout>
       <GlobalStyle />
       <SEO title="BioArte" />
-      <Progress id="progress" />
+      {/* <Progress id="progress"> </Progress> */}
+      <LoadingContainer id="loadingContainer">
+        <LoadingBox id="loadingBox">
+          <LoadingMessage id="message">
+            Estamos preparando tu experiencia...
+          </LoadingMessage>
+          <ProgressBar id="progressbar">
+            <Bar id="progress"></Bar>
+          </ProgressBar>
+        </LoadingBox>
+      </LoadingContainer>
     </Layout>
   )
 }
