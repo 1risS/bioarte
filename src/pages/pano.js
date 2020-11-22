@@ -338,9 +338,12 @@ const PanoPage = () => {
         if (progress === 100) {
           console.log("finished!")
           progressElement.style.width = "100%"
-          setInterval(() => {
+          setTimeout(() => {
             loadingContainerElement.style.opacity = 0
           }, 500)
+          setTimeout(() => {
+            loadingContainerElement.style.display = "none"
+          }, 1500)
         } else {
           progressElement.style.width = progress + "%"
         }
