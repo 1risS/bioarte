@@ -27,6 +27,23 @@ const ControlGroup = styled.div`
   bottom: ${props => (props.bottom ? controlMargin : null)};
   right: ${props => (props.right ? controlMargin : null)};
 `
+const SearchContainer = styled.div`
+  height: 400px;
+  width: 400px;
+  background-color: #96bc8f;
+`
+const SearchFooter = styled.div`
+  height: 30px;
+  width: 400px;
+  background-color: #508f44;
+  margin-top: 370px;
+`
+const SearchMapContainer = styled.div`
+  height: 400px;
+  width: 1000px;
+  display: flex;
+  align-items: center;
+`
 
 const SearchControl = ({ features = [], onSelect }) => {
   const [query, setQuery] = useState("")
@@ -76,10 +93,12 @@ const SearchControl = ({ features = [], onSelect }) => {
 const SearchControlInput = styled(({ className, onChange, value }) => (
   <input className={className} value={value} onChange={onChange} type="text" />
 ))`
-  border-radius: 0.25em;
+  border-radius: 1em;
   border: solid 1px #888;
   font-size: 1em;
   padding: 0.5em 0.5em;
+  margin-left: 3em;
+  width: 300px;
 `
 
 const SearchControlResults = styled(
@@ -98,6 +117,7 @@ const SearchControlResults = styled(
   background-color: #fff;
   width: 200px;
   height: 200px;
+  font-size: 12px;
 
   & li {
     cursor: pointer;
@@ -112,7 +132,7 @@ export default function MapboxMap() {
   const [viewport, setViewport] = useState({
     latitude: -34.5829196,
     longitude: -58.4294226,
-    width: "1000px",
+    width: "600px",
     height: "400px",
     zoom: 10,
   })
@@ -144,54 +164,59 @@ export default function MapboxMap() {
 
   return (
     <MapContainer>
-      <ControlGroup top left>
-        <SearchControl
-          features={uniData.features}
-          onSelect={onSearchItemSelect}
-        />
-      </ControlGroup>
-      <ReactMapGL
-        {...viewport}
-        mapboxApiAccessToken={REACT_APP_MAPBOX_TOKEN}
-        mapStyle="mapbox://styles/catahache/ckgpmul5a1c7419p426g1ara8"
-        onViewportChange={viewport => {
-          setViewport(viewport)
-        }}
-      >
-        {uniData.features.map(university => (
-          <Marker
-            key={university.properties.id}
-            longitude={university.geometry.coordinates[0]}
-            latitude={university.geometry.coordinates[1]}
-          >
-            <MarkerBtn
-              onClick={e => {
-                e.preventDefault()
-                setSelectedUni(university)
+      <SearchMapContainer>
+        <SearchContainer>
+          <ControlGroup top left>
+            <SearchControl
+              features={uniData.features}
+              onSelect={onSearchItemSelect}
+            />
+          </ControlGroup>
+          <SearchFooter></SearchFooter>
+        </SearchContainer>
+        <ReactMapGL
+          {...viewport}
+          mapboxApiAccessToken={REACT_APP_MAPBOX_TOKEN}
+          mapStyle="mapbox://styles/catahache/ckgpmul5a1c7419p426g1ara8"
+          onViewportChange={viewport => {
+            setViewport(viewport)
+          }}
+        >
+          {uniData.features.map(university => (
+            <Marker
+              key={university.properties.id}
+              longitude={university.geometry.coordinates[0]}
+              latitude={university.geometry.coordinates[1]}
+            >
+              <MarkerBtn
+                onClick={e => {
+                  e.preventDefault()
+                  setSelectedUni(university)
+                }}
+              >
+                <img src={pin} alt="pin" />
+              </MarkerBtn>
+            </Marker>
+          ))}
+
+          {selectedUni ? (
+            <Popup
+              longitude={selectedUni.geometry.coordinates[0]}
+              latitude={selectedUni.geometry.coordinates[1]}
+              onClose={() => {
+                setSelectedUni(null)
               }}
             >
-              <img src={pin} alt="pin" />
-            </MarkerBtn>
-          </Marker>
-        ))}
-
-        {selectedUni ? (
-          <Popup
-            longitude={selectedUni.geometry.coordinates[0]}
-            latitude={selectedUni.geometry.coordinates[1]}
-            onClose={() => {
-              setSelectedUni(null)
-            }}
-          >
-            <div>
-              <a target="_blank" href={selectedUni.properties["Web Site"]}>
-                <h2>{selectedUni.properties["Facultad"]}</h2>
-              </a>
-              <h3>{selectedUni.properties["Institución"]}</h3>
-            </div>
-          </Popup>
-        ) : null}
-      </ReactMapGL>
+              <div>
+                <a target="_blank" href={selectedUni.properties["Web Site"]}>
+                  <h2>{selectedUni.properties["Facultad"]}</h2>
+                </a>
+                <h3>{selectedUni.properties["Institución"]}</h3>
+              </div>
+            </Popup>
+          ) : null}
+        </ReactMapGL>
+      </SearchMapContainer>
     </MapContainer>
   )
 }
