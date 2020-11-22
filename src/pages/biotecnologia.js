@@ -63,33 +63,68 @@ const Placeholder1 = styled.img`
   width: 3rem;
   align-self: center;
 `
-const ContadoresContainer = styled.div`
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  flex-basis: 150rem;
-`
+const TimerNavegacionContainer = styled.div``
 
-const HorasNavegacion = styled.div`
-  width: 150px;
-  border-radius: 8px;
+const TimerNavegacion = styled.div`
+  max-width: 150px;
+  width: 100%;
+
   text-align: center;
-  background-color: #dbe6d3;
   font-family: ${props => props.theme.fontFamily};
   font-weight: ${props => props.theme.fontWeights.light};
-  color: #414141;
-  font-size: 1rem;
+  color: #fff;
+
+  display: flex;
+`
+
+const TiempoContainer = styled.div`
+  margin-left: 1em;
+  margin-right: 1em;
+`
+
+const Horas = styled.div`
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 0 0.2em 0 0.2em;
+`
+const Min = styled.div`
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 0 0.2em 0 0.2em;
+`
+
+const Seg = styled.div`
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 0 0.2em 0 0.2em;
+`
+
+const CantidadVisitantesContainer = styled.div`
+  max-width: 150px;
+  width: 100%;
+  text-align: center;
+  font-family: ${props => props.theme.fontFamily};
+  font-weight: ${props => props.theme.fontWeights.light};
+  color: #fff;
+  margin-left: 10em;
+`
+
+const TextoContadores = styled.div`
+  font-weight: lighter;
+  font-size: 1em;
 `
 
 const CantidadVisitantes = styled.div`
-  width: 150px;
-  border-radius: 8px;
-  text-align: center;
-  background-color: #dbe6d3;
-  font-family: ${props => props.theme.fontFamily};
-  font-weight: ${props => props.theme.fontWeights.light};
-  color: #414141;
-  font-size: 1rem;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-size: 1.5rem;
+  font-weight: bold;
 `
 
 const Texto = styled.div`
@@ -263,10 +298,24 @@ const BiotecnologiaPage = () => {
               <Logo src={logoFestival}></Logo>
               <Placeholder1 src={Placeholder}></Placeholder1>
             </LogoContainer>
-            <ContadoresContainer>
-              <HorasNavegacion>1950</HorasNavegacion>
+            <TimerNavegacion>
+              <TiempoContainer>
+                <Horas>01</Horas>
+                <TextoContadores>Hs.</TextoContadores>
+              </TiempoContainer>
+              <TiempoContainer>
+                <Min>00</Min>
+                <TextoContadores>Min.</TextoContadores>
+              </TiempoContainer>
+              <TiempoContainer>
+                <Seg>00</Seg>
+                <TextoContadores>Seg.</TextoContadores>
+              </TiempoContainer>
+            </TimerNavegacion>
+            <CantidadVisitantesContainer>
               <CantidadVisitantes>30000</CantidadVisitantes>
-            </ContadoresContainer>
+              <TextoContadores>Visitantes</TextoContadores>
+            </CantidadVisitantesContainer>
           </NavBar>
           <Texto>Biotecnología</Texto>
         </BiotecnologiaHeaderCont>
