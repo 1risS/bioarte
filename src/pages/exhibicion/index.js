@@ -259,7 +259,7 @@ const BioContainer = styled.div`
 const LikeLikeCont = styled.div`
   margin-left: 10rem;
   align-self: flex-end;
-  margin: 0rem 4rem 3rem 0rem;
+  margin: 10rem 4rem 0rem 0rem;
 `
 
 const Like = styled.img``
