@@ -203,6 +203,7 @@ const Botonera = styled.div`
 
 const BotonAtras = styled.img`
   margin-right: 3rem;
+  height: 5em;
 
   &:hover {
     background-color: #005a32;
@@ -211,6 +212,7 @@ const BotonAtras = styled.img`
 `
 
 const BotonAdelante = styled.img`
+  height: 5em;
   &:hover {
     background-color: #005a32;
     border-radius: 100px;
@@ -219,7 +221,7 @@ const BotonAdelante = styled.img`
 
 const Slidebar = styled.div`
   height: 0.25rem;
-  margin: 2rem;
+  margin: 1rem;
   background-color: #005a32;
 `
 
@@ -277,7 +279,7 @@ const DetalleEmpresa = styled.div`
 
 const TextoDetalleEmpresa = styled.p`
   font-family: inherit;
-  padding: 30px 40px;
+  padding: 1.5em 1.7em;
   font-size: 0.9em;
 `
 
@@ -296,7 +298,7 @@ const LogosFooter = styled.div`
   flex-direction: row;
   justify-content: space-evenly;
   height: auto;
-  padding: 1rem;
+  padding-bottom: 1rem;
   background: linear-gradient(
     90deg,
     rgba(231, 232, 230, 1) 0%,
