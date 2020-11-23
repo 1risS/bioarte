@@ -5,7 +5,7 @@ import { faDotCircle, faCheckCircle } from "@fortawesome/free-regular-svg-icons"
 import styled from "styled-components"
 import placeholder from "../images/placeholder.png"
 
-const days = ["19/3", "20/3", "21/3", "22/3"]
+const days = ["19/03", "20/03", "21/03", "22/03"]
 const eventsPerDay = [
   [
     {
@@ -265,13 +265,15 @@ const DateTab = styled.span`
   background-color: ${props =>
     props.selected ? props.theme.colors.greens[1] : "#000"};
   color: #fff;
-  border-radius: 16px;
-  padding: 0.25em 0.5em;
+  border-radius: 50px;
+  padding: 0 0.5em;
   cursor: pointer;
-  width: 8rem;
+  width: 10rem;
   text-align: center;
   font-weight: bold;
   transition: 300ms;
+  font-style: italic;
+  font-size: 1.5em;
 
   &:hover {
     background-color: ${props => props.theme.colors.greens[0]};

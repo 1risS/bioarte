@@ -197,7 +197,7 @@ const EmpresaCont = styled.div`
 const Botonera = styled.div`
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: center;
   margin-top: 0.0875rem;
 `
 
@@ -255,18 +255,18 @@ const UbicacionEmpresa = styled.p`
   border: solid #005a32 0.15rem;
   border-radius: 5rem;
   align-self: start;
-  font-size: 0.9rem;
+  font-size: 1.2rem;
 `
 
 const NombreEmpresa = styled.h1`
-  font-size: 1.6rem;
+  font-size: 2rem;
   margin: 0.5rem 0rem 2rem 2.5rem;
   width: 100%;
 `
 
 const InfoCol2 = styled.p`
   padding-top: 1rem;
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   font-weight: ${props => props.theme.fontWeights.semiBold};
   color: #9a9b9a;
 `
@@ -278,14 +278,14 @@ const DetalleEmpresa = styled.div`
 const TextoDetalleEmpresa = styled.p`
   font-family: inherit;
   padding: 30px 40px;
-  font-size: 0.9em;
+  font-size: 1.4em;
 `
 
 const Footer = styled.section`
   // height: 300px;
   // max-width: 1164px;
   width: 100%;
-  margin: 0 auto;
+  margin: 7em auto;
   display: flex;
   justify-content: center;
 `
@@ -308,15 +308,16 @@ const LogosFooter = styled.div`
 const LogoEmpresaCont = styled.div`
   margin: auto 0;
   display: flex;
-  height: 5rem;
 `
 
-const LogoEmpresa = styled.img``
+const LogoEmpresa = styled.img`
+  height: 7.5em;
+`
 
 const HoverDiv = styled.div`
   position: absolute;
-  height: 130px;
-  width: 130px;
+  height: 7.5em;
+  width: 7.5em;
   background-color: rgba(0, 0, 0, 0);
   border-radius: 100px;
 
