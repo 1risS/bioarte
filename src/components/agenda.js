@@ -180,7 +180,7 @@ const Title = styled.h1`
 
 const EntryListContainer = styled.div`
   position: relative;
-  height: 41rem;
+  height: 75vh;
 `
 
 const EntryList = styled.div`
@@ -189,8 +189,8 @@ const EntryList = styled.div`
   top: 0;
   left: 0;
   flex-direction: column;
-  height: 41rem;
-  overflow: scroll;
+  height: 75vh;
+  overflow-y: scroll;
 
   &.entry-list-enter {
     opacity: 0;
