@@ -205,6 +205,7 @@ export default function MapboxMap() {
             <Popup
               longitude={selectedUni.geometry.coordinates[0]}
               latitude={selectedUni.geometry.coordinates[1]}
+              closeOnClick={false}
               onClose={() => {
                 setSelectedUni(null)
               }}
