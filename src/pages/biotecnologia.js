@@ -290,6 +290,7 @@ const Footer = styled.section`
   margin: 0em auto;
   display: flex;
   justify-content: center;
+  padding-bottom: 1rem;
 `
 
 const LogosFooter = styled.div`
@@ -298,7 +299,7 @@ const LogosFooter = styled.div`
   flex-direction: row;
   justify-content: space-evenly;
   height: auto;
-  padding-bottom: 1rem;
+
   background: linear-gradient(
     90deg,
     rgba(231, 232, 230, 1) 0%,
