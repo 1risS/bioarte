@@ -255,18 +255,18 @@ const UbicacionEmpresa = styled.p`
   border: solid #005a32 0.15rem;
   border-radius: 5rem;
   align-self: start;
-  font-size: 1.2rem;
+  font-size: 0.9rem;
 `
 
 const NombreEmpresa = styled.h1`
-  font-size: 2rem;
+  font-size: 1.6rem;
   margin: 0.5rem 0rem 2rem 2.5rem;
   width: 100%;
 `
 
 const InfoCol2 = styled.p`
   padding-top: 1rem;
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   font-weight: ${props => props.theme.fontWeights.semiBold};
   color: #9a9b9a;
 `
@@ -278,7 +278,7 @@ const DetalleEmpresa = styled.div`
 const TextoDetalleEmpresa = styled.p`
   font-family: inherit;
   padding: 30px 40px;
-  font-size: 1.4em;
+  font-size: 0.9em;
 `
 
 const Footer = styled.section`
