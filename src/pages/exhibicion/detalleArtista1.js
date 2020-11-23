@@ -272,7 +272,24 @@ const CVCont = styled.div`
   margin: 0rem 0rem 3rem 0rem;
 `
 
-const CV = styled.img``
+const CV = styled.div`
+  width: 49px;
+  height: 49px;
+  background-color: #508f44;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+
+  &:hover {
+    background-color: #bed6a3;
+  }
+`
+
+const CVText = styled.div`
+  color: #fff;
+  font-size: 1.5em;
+  padding-top: 0.25em;
+`
 
 const TituloBio = styled.div`
   display: flex;
@@ -330,7 +347,9 @@ const DetalleArtista1 = () => {
                 <TituloBio>
                   <Titulo>Biografía</Titulo>
                   <CVCont>
-                    <CV src={cv} />
+                    <CV>
+                      <CVText>CV</CVText>
+                    </CV>
                   </CVCont>
                 </TituloBio>
                 <Parrafo>
