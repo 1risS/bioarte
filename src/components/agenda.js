@@ -190,7 +190,7 @@ const EntryList = styled.div`
   left: 0;
   flex-direction: column;
   height: 75vh;
-  overflow-y: scroll;
+  overflow-y: auto;
 
   &.entry-list-enter {
     opacity: 0;
