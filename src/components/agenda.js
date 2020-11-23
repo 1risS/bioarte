@@ -268,7 +268,7 @@ const DateTab = styled.span`
   border-radius: 50px;
   padding: 0 0.5em;
   cursor: pointer;
-  width: 10rem;
+  width: 9rem;
   text-align: center;
   font-weight: bold;
   transition: 300ms;
