@@ -200,9 +200,19 @@ const Botonera = styled.div`
 
 const BotonAtras = styled.img`
   margin-right: 3rem;
+
+  &:hover {
+    background-color: #005a32;
+    border-radius: 100px;
+  }
 `
 
-const BotonAdelante = styled.img``
+const BotonAdelante = styled.img`
+  &:hover {
+    background-color: #005a32;
+    border-radius: 100px;
+  }
+`
 
 const Slidebar = styled.div`
   height: 0.25rem;
@@ -282,9 +292,23 @@ const LogosFooter = styled.div`
   margin: 3rem;
 `
 
-const LogoEmpresaCont = styled.img`
+const LogoEmpresaCont = styled.div`
   margin: auto 0;
   display: flex;
+`
+
+const LogoEmpresa = styled.img``
+
+const HoverDiv = styled.div`
+  position: absolute;
+  height: 130px;
+  width: 130px;
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 100px;
+
+  &:hover {
+    background-color: rgba(0, 90, 50, 0.5);
+  }
 `
 
 const BiotecnologiaPage = () => {
@@ -358,13 +382,34 @@ const BiotecnologiaPage = () => {
         </SectionCarousel>
         <Footer>
           <LogosFooter>
-            <LogoEmpresaCont src={logoEmp1}></LogoEmpresaCont>
-            <LogoEmpresaCont src={logoEmp2}></LogoEmpresaCont>
-            <LogoEmpresaCont src={logoEmp3}></LogoEmpresaCont>
-            <LogoEmpresaCont src={logoEmp4}></LogoEmpresaCont>
-            <LogoEmpresaCont src={logoEmp5}></LogoEmpresaCont>
-            <LogoEmpresaCont src={logoEmp6}></LogoEmpresaCont>
-            <LogoEmpresaCont src={logoEmp7}></LogoEmpresaCont>
+            <LogoEmpresaCont>
+              <LogoEmpresa src={logoEmp1}></LogoEmpresa>
+              <HoverDiv></HoverDiv>
+            </LogoEmpresaCont>
+            <LogoEmpresaCont>
+              <LogoEmpresa src={logoEmp2}></LogoEmpresa>
+              <HoverDiv></HoverDiv>
+            </LogoEmpresaCont>
+            <LogoEmpresaCont>
+              <LogoEmpresa src={logoEmp3}></LogoEmpresa>
+              <HoverDiv></HoverDiv>
+            </LogoEmpresaCont>
+            <LogoEmpresaCont>
+              <LogoEmpresa src={logoEmp4}></LogoEmpresa>
+              <HoverDiv></HoverDiv>
+            </LogoEmpresaCont>
+            <LogoEmpresaCont>
+              <LogoEmpresa src={logoEmp5}></LogoEmpresa>
+              <HoverDiv></HoverDiv>
+            </LogoEmpresaCont>
+            <LogoEmpresaCont>
+              <LogoEmpresa src={logoEmp6}></LogoEmpresa>
+              <HoverDiv></HoverDiv>
+            </LogoEmpresaCont>
+            <LogoEmpresaCont>
+              <LogoEmpresa src={logoEmp7}></LogoEmpresa>
+              <HoverDiv></HoverDiv>
+            </LogoEmpresaCont>
           </LogosFooter>
         </Footer>
       </BiotecnologiaCont>
