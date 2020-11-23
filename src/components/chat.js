@@ -1,10 +1,6 @@
-import React, { useEffect, useState } from "react"
+import React, { useEffect, useState, useRef } from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import {
-  faWindowMinimize,
-  faWindowMaximize,
-  faTimes,
-} from "@fortawesome/free-solid-svg-icons"
+import { faTimes } from "@fortawesome/free-solid-svg-icons"
 import styled from "styled-components"
 import firebase from "gatsby-plugin-firebase"
 
@@ -126,18 +122,28 @@ const Name = styled.span`
 
 const Content = styled.span``
 
-const Messages = styled(({ className, children }) => (
-  <div className={className}>
-    <ul>
-      {children.map(message => (
-        <li key={message.timestamp}>
-          <Name color="blue">{message.name}</Name>:{" "}
-          <Content>{message.content}</Content>
-        </li>
-      ))}
-    </ul>
-  </div>
-))`
+const Messages = styled(({ className, children }) => {
+  const divEl = useRef(null)
+
+  // Make sure to scroll to bottom whenever children changes
+  // i.e. there are new messages...
+  useEffect(() => {
+    divEl.current.scrollTop = divEl.current.scrollHeight
+  }, [children])
+
+  return (
+    <div ref={divEl} className={className}>
+      <ul>
+        {children.map(message => (
+          <li key={message.timestamp}>
+            <Name color="blue">{message.name}</Name>:{" "}
+            <Content>{message.content}</Content>
+          </li>
+        ))}
+      </ul>
+    </div>
+  )
+})`
   height: 200px;
   overflow-y: auto;
 
