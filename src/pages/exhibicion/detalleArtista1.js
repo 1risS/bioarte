@@ -9,6 +9,7 @@ import Placeholder from "../../../static/images/Icon-Placeholder-1.png"
 import bannerHubs from "../../images/Academia/Mozilla Hubs.png"
 import fondoHeader from "../../images/DetalleArtistas/Banner_Exhibition_0.png"
 import libelula from "../../images/DetalleArtistas/Dragonfly.png"
+import globoDialogo from "../../images/DetalleArtistas/SpeechBalloon_0.png"
 import fondoObra from "../../images/DetalleArtistas/ObraExhibicion_Cantera.png"
 import flechaSlider from "../../images/DetalleArtistas/Btn-CiircleArrow_Normal.png"
 import fotoObra from "../../images/DetalleArtistas/Displaced_Cantera_1_de-10.png"
@@ -169,6 +170,8 @@ const Libelulaimg = styled.img`
   width: 208px;
 `
 
+const GloboDialogo = styled.img``
+
 const BioArtista = styled.div`
   display: flex;
   flex-direction: column;
@@ -318,6 +321,7 @@ const DetalleArtista1 = () => {
         <DAMain>
           <BioArtistaContainer>
             <LibelulaContainer>
+              <GloboDialogo src={globoDialogo}></GloboDialogo>
               <Libelulaimg src={libelula}></Libelulaimg>
             </LibelulaContainer>
             <BioArtista>
