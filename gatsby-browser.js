@@ -5,3 +5,6 @@
  */
 
 import "leaflet/dist/leaflet.css"
+
+import "firebase/auth"
+import "firebase/database"

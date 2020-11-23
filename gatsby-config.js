@@ -1,3 +1,13 @@
+const process = require("process");
+
+const firebaseConfig = {
+  apiKey: process.env.FIREBASE_API_KEY,
+  appId: process.env.FIREBASE_APP_ID,
+  authDomain: process.env.FIREBASE_AUTH_DOMAIN,
+  databaseURL: process.env.FIREBASE_DATABASE_URL,
+  projectId: process.env.FIREBASE_PROJECT_ID
+}
+
 module.exports = {
   siteMetadata: {
     title: `Gatsby Default Starter`,
@@ -40,6 +50,12 @@ module.exports = {
       options: {
         fonts: [`Open Sans\:400,700`],
         display: "swap",
+      },
+    },
+    {
+      resolve: "gatsby-plugin-firebase",
+      options: {
+        credentials: firebaseConfig,
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
