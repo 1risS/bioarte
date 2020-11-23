@@ -167,7 +167,7 @@ const SectionCarousel = styled.section`
 `
 const SubSectionCarousel = styled.div`
   max-width: 1164px;
-  width: 100%;
+  width: auto;
 `
 
 const Title = styled.p`
@@ -183,18 +183,21 @@ const CarouselCont = styled.div`
   flex-direction: row;
 `
 
-const ImagenEmpresa = styled.img``
+const ImagenEmpresa = styled.img`
+  width: 50%;
+  height: 49%;
+`
 
 const EmpresaCont = styled.div`
   display: flex;
   flex-direction: column;
   max-width: 576px;
-  width: 100%;
+  width: auto;
 `
 const Botonera = styled.div`
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-evenly;
   margin-top: 0.0875rem;
 `
 
@@ -222,29 +225,29 @@ const Slidebar = styled.div`
 
 const InfoEmpresa = styled.div`
   width: 100%;
-  height: 179px;
+  height: auto;
   background-color: #fff;
   display: flex;
-  flex-direction: row;
-  justify-content: ;
+  flex-direction: column;
+  padding: 0.5rem 0rem 0rem 0rem;
 `
 
 const InfoEmpCol1 = styled.div`
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   padding: 0 2.125rem;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: flex-start;
 `
 
 const InfoEmpCol2 = styled.div`
   display: flex;
   justify-content: flex-end;
-  max-width: 217px;
   width: 100%;
 `
 
 const UbicacionEmpresa = styled.p`
-  padding: 0.5rem 1.5rem;
+  padding: 0.3rem 1rem 0.3rem 1rem;
   margin: 1rem 0;
   display: flex;
   justify-content: center;
@@ -252,16 +255,19 @@ const UbicacionEmpresa = styled.p`
   border: solid #005a32 0.15rem;
   border-radius: 5rem;
   align-self: start;
+  font-size: 0.9rem;
 `
 
 const NombreEmpresa = styled.h1`
-  font-size: 2em;
+  font-size: 1.6rem;
+  margin: 0.5rem 0rem 2rem 2.5rem;
+  width: 100%;
 `
 
 const InfoCol2 = styled.p`
-  padding-top: 1.5rem;
-  font-size: 2rem;
-  font-weight: bold;
+  padding-top: 1rem;
+  font-size: 1.5rem;
+  font-weight: ${props => props.theme.fontWeights.semiBold};
   color: #9a9b9a;
 `
 
@@ -272,12 +278,12 @@ const DetalleEmpresa = styled.div`
 const TextoDetalleEmpresa = styled.p`
   font-family: inherit;
   padding: 30px 40px;
-  font-size: 1.35em;
+  font-size: 0.9em;
 `
 
 const Footer = styled.section`
-  height: 300px;
-  max-width: 1164px;
+  // height: 300px;
+  // max-width: 1164px;
   width: 100%;
   margin: 0 auto;
   display: flex;
@@ -285,16 +291,24 @@ const Footer = styled.section`
 `
 
 const LogosFooter = styled.div`
-  width: 100%;
+  width: 60%;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  margin: 3rem;
+  justify-content: space-evenly;
+  height: auto;
+  padding: 1rem;
+  background: linear-gradient(
+    90deg,
+    rgba(231, 232, 230, 1) 0%,
+    rgba(231, 232, 230, 1) 75%,
+    rgba(196, 215, 219, 1) 100%
+  );
 `
 
 const LogoEmpresaCont = styled.div`
   margin: auto 0;
   display: flex;
+  height: 5rem;
 `
 
 const LogoEmpresa = styled.img``
@@ -362,10 +376,10 @@ const BiotecnologiaPage = () => {
                 <InfoEmpresa>
                   <InfoEmpCol1>
                     <UbicacionEmpresa>Buenos Aires</UbicacionEmpresa>
-                    <NombreEmpresa>Biogénesis Bagó</NombreEmpresa>
+                    <InfoCol2> 03 - 36 </InfoCol2>
                   </InfoEmpCol1>
                   <InfoEmpCol2>
-                    <InfoCol2> 03 - 36 </InfoCol2>
+                    <NombreEmpresa>Biogénesis Bagó</NombreEmpresa>
                   </InfoEmpCol2>
                 </InfoEmpresa>
                 <DetalleEmpresa>
