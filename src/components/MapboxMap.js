@@ -93,12 +93,17 @@ const SearchControl = ({ features = [], onSelect }) => {
 const SearchControlInput = styled(({ className, onChange, value }) => (
   <input className={className} value={value} onChange={onChange} type="text" />
 ))`
-  border-radius: 1em;
+  border-radius: 1rem;
   border: solid 1px #888;
   font-size: 1em;
   padding: 0.5em 0.5em;
   margin-left: 2.8em;
+  margin-top: 1rem;
   width: 300px;
+
+  &:focus {
+    outline: none;
+  }
 `
 
 const SearchControlResults = styled(
@@ -116,11 +121,13 @@ const SearchControlResults = styled(
   }
 )`
   background-color: #fff;
-  width: 200px;
   height: 300px;
   font-size: 12px;
   overflow: scroll;
   padding: 0.5em;
+  margin-left: 2.8rem;
+  width: 300px;
+  border: solid 1px #888;
 
   & li {
     cursor: pointer;
