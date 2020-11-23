@@ -31,12 +31,14 @@ const SearchContainer = styled.div`
   height: 400px;
   width: 400px;
   background-color: ${props => props.theme.colors.greens[0]};
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 `
 const SearchFooter = styled.div`
   height: 30px;
   width: 400px;
   background-color: ${props => props.theme.colors.greens[1]};
-  margin-top: 370px;
 `
 const SearchMapContainer = styled.div`
   height: 400px;
@@ -97,11 +99,6 @@ const SearchControlInput = styled(({ className, onChange, value }) => (
   border: solid 1px #888;
   font-size: 1em;
   padding: 0.5em 0.5em;
-<<<<<<< HEAD
-  width: 300px;
-  margin-top: 1em;
-  margin-left: 2.8em;
-=======
   margin-left: 2.8em;
   margin-top: 1rem;
   width: 300px;
@@ -109,7 +106,6 @@ const SearchControlInput = styled(({ className, onChange, value }) => (
   &:focus {
     outline: none;
   }
->>>>>>> 415a05b4d2ffe01992ac2302ea976a0c662225f5
 `
 
 const SearchControlResults = styled(
@@ -128,16 +124,11 @@ const SearchControlResults = styled(
 )`
   background-color: #fff;
   height: 300px;
+  width: 300px;
   font-size: 12px;
   overflow: scroll;
   padding: 0.5em;
-<<<<<<< HEAD
   margin-left: 4em;
-=======
-  margin-left: 2.8rem;
-  width: 300px;
-  border: solid 1px #888;
->>>>>>> 415a05b4d2ffe01992ac2302ea976a0c662225f5
 
   & li {
     cursor: pointer;
@@ -190,7 +181,7 @@ export default function MapboxMap() {
     <MapContainer>
       <SearchMapContainer>
         <SearchContainer>
-          <ControlGroup top left>
+          <ControlGroup top center>
             <SearchControl
               features={uniData.features}
               onSelect={onSearchItemSelect}
