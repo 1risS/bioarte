@@ -285,7 +285,7 @@ const Footer = styled.section`
   // height: 300px;
   // max-width: 1164px;
   width: 100%;
-  margin: 7em auto;
+  margin: 0em auto;
   display: flex;
   justify-content: center;
 `
@@ -311,13 +311,13 @@ const LogoEmpresaCont = styled.div`
 `
 
 const LogoEmpresa = styled.img`
-  height: 7.5em;
+  height: 6.5em;
 `
 
 const HoverDiv = styled.div`
   position: absolute;
-  height: 7.5em;
-  width: 7.5em;
+  height: 6.5em;
+  width: 6.5em;
   background-color: rgba(0, 0, 0, 0);
   border-radius: 100px;
 
