@@ -6,6 +6,8 @@ import firebase from "gatsby-plugin-firebase"
 
 const ErrorMessage = styled.p`
   color: red;
+  font-size: 0.8rem;
+  margin: 0.5em 0;
 `
 
 const maxMessages = 100
@@ -19,6 +21,11 @@ const ChatBarButton = styled(props => <FontAwesomeIcon {...props} />)`
   color: #fff;
   cursor: pointer;
   margin: 0.25em;
+  box-shadow: 0;
+
+  &:hover {
+    color: #000;
+  }
 `
 
 const ChatBar = styled(
@@ -36,7 +43,8 @@ const ChatBar = styled(
   background-color: #518f44;
   padding: 0.5em 0.75em 0.5em 0.75em;
   border-radius: 1rem 1rem 0 0;
-  cursor: pointer;
+  cursor: ${props => (props.collapsed ? "pointer" : "normal")};
+  box-shadow: 0px 5px 5px #00000040;
 
   .right {
     float: right;
@@ -48,7 +56,7 @@ const ChatBar = styled(
   }
 `
 
-const ChatMessages = ({ authenticated }) => {
+const ChatMessages = styled(({ className, authenticated }) => {
   const [messages, setMessages] = useState([])
   const [readError, setReadError] = useState(null)
   const [writeError, setWriteError] = useState(null)
@@ -85,7 +93,11 @@ const ChatMessages = ({ authenticated }) => {
 
   const onSubmit = async e => {
     e.preventDefault()
+
+    if (!authenticated) return
+
     setWriteError(null)
+    setContent("")
 
     try {
       await firebase.database().ref("chats").push({
@@ -94,33 +106,45 @@ const ChatMessages = ({ authenticated }) => {
         uid: currentUser.uid,
         name: currentUser.displayName,
       })
-      setContent("")
     } catch (error) {
       setWriteError(error.message)
     }
   }
 
   return (
-    <>
+    <div className={className}>
       <Messages>{messages}</Messages>
       {readError && <ErrorMessage>{readError}</ErrorMessage>}
       <form onSubmit={onSubmit}>
         <input onChange={onChange} value={content} disabled={!authenticated} />
         {writeError && <ErrorMessage>{writeError}</ErrorMessage>}
-        <button type="submit" disabled={!authenticated}>
-          Send
-        </button>
       </form>
-    </>
+    </div>
   )
-}
+})`
+  input {
+    margin-top: 0.75rem;
+    width: 100%;
+    padding: 0.5em;
+    font-size: 1rem;
+    border-radius: 0.5em;
+    border: 0;
+  }
+  input:focus {
+    outline: none;
+  }
+`
 
-const Name = styled.span`
+const Name = styled.p`
   color: ${props => props.color};
   font-weight: bold;
 `
 
-const Content = styled.span``
+const Content = styled.div`
+  background-color: #bed6a4;
+  border-radius: 0.5rem;
+  padding: 0.5em;
+`
 
 const Messages = styled(({ className, children }) => {
   const divEl = useRef(null)
@@ -136,7 +160,7 @@ const Messages = styled(({ className, children }) => {
       <ul>
         {children.map(message => (
           <li key={message.timestamp}>
-            <Name color="blue">{message.name}</Name>:{" "}
+            <Name color="#000">{message.name}</Name>
             <Content>{message.content}</Content>
           </li>
         ))}
@@ -144,29 +168,43 @@ const Messages = styled(({ className, children }) => {
     </div>
   )
 })`
-  height: 200px;
+  height: 300px;
   overflow-y: auto;
 
   li {
+    display: block;
     color: #000;
+    margin-bottom: 0.5em;
   }
 `
 
-const Login = ({ onGoogleSignInClick }) => (
-  <div>
+const Login = styled(({ className, onGoogleSignInClick }) => (
+  <div className={className}>
     <p>
       Para utilizar el chat debes iniciar sesión con alguno de estos servicios:
     </p>
     <button onClick={onGoogleSignInClick}>Iniciar con Google</button>
   </div>
-)
+))`
+  p {
+    font-size: 0.8rem;
+  }
+`
 
 const ChatContainer = styled.div`
   position: fixed;
   right: 2em;
-  width: 300px;
+  width: ${props => (props.collapsed ? "auto" : "350px")};
   bottom: 0;
   background-color: #fff2cd;
+  border-radius: 1rem 1rem 0 0;
+  & {
+    box-shadow: 5px 5px 5px #00000040;
+  }
+`
+
+const ChatContent = styled.div`
+  padding: 1em;
 `
 
 const Chat = () => {
@@ -176,6 +214,7 @@ const Chat = () => {
   const [collapsed, setCollapsed] = useState(false)
 
   useEffect(() => {
+    setErrorMessage(null)
     firebase.auth().onAuthStateChanged(user => {
       if (user) {
         setAuthenticated(true)
@@ -185,7 +224,7 @@ const Chat = () => {
         setLoading(false)
       }
     })
-  })
+  }, [])
 
   const onCollapseClick = () => {
     setCollapsed(true)
@@ -204,24 +243,29 @@ const Chat = () => {
   }
 
   return (
-    <ChatContainer>
+    <ChatContainer collapsed={collapsed}>
       <ChatBar
         collapsed={collapsed}
         onCollapseClick={onCollapseClick}
         onExpandClick={onExpandClick}
       />
-      {!collapsed &&
-        (loading ? (
-          <span>Cargando...</span>
-        ) : (
-          <>
-            {!authenticated && (
-              <Login onGoogleSignInClick={onGoogleSignInClick} />
-            )}
-            <ChatMessages authenticated={authenticated} />
-            <ErrorMessage>{errorMessage}</ErrorMessage>
-          </>
-        ))}
+      {!collapsed && (
+        <ChatContent>
+          {loading ? (
+            <span>Cargando...</span>
+          ) : (
+            <>
+              {!authenticated && (
+                <>
+                  <Login onGoogleSignInClick={onGoogleSignInClick} />
+                  <ErrorMessage>{errorMessage}</ErrorMessage>
+                </>
+              )}
+              <ChatMessages authenticated={authenticated} />
+            </>
+          )}
+        </ChatContent>
+      )}
     </ChatContainer>
   )
 }
