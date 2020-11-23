@@ -146,7 +146,7 @@ const BannerHubs = styled.img`
   height: 6rem;
   width: 6rem;
   align-self: flex-end;
-  margin: 8rem 3rem 2rem 2rem; ;
+  margin: 5rem 3rem 2rem 2rem; ;
 `
 
 const AgendaContainer = styled.div`
