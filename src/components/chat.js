@@ -1,4 +1,10 @@
 import React, { useEffect, useState } from "react"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import {
+  faWindowMinimize,
+  faWindowMaximize,
+  faTimes,
+} from "@fortawesome/free-solid-svg-icons"
 import styled from "styled-components"
 import firebase from "gatsby-plugin-firebase"
 
@@ -13,10 +19,37 @@ const signInWithGoogle = () => {
   return firebase.auth().signInWithPopup(provider)
 }
 
-const ChatHeader = styled.span`
-  font-size: 1.1em;
-  font-weight: bold;
-  color: white;
+const ChatBarButton = styled(props => <FontAwesomeIcon {...props} />)`
+  color: #fff;
+  cursor: pointer;
+  margin: 0.25em;
+`
+
+const ChatBar = styled(
+  ({ className, collapsed = false, onCollapseClick, onExpandClick }) => (
+    <div className={className} onClick={() => collapsed && onExpandClick()}>
+      <span>Chat</span>
+      {!collapsed && (
+        <div className="right">
+          <ChatBarButton icon={faTimes} onClick={onCollapseClick} />
+        </div>
+      )}
+    </div>
+  )
+)`
+  background-color: #518f44;
+  padding: 0.5em 0.75em 0.5em 0.75em;
+  border-radius: 1rem 1rem 0 0;
+  cursor: pointer;
+
+  .right {
+    float: right;
+  }
+
+  span {
+    font-weight: bold;
+    color: #fff;
+  }
 `
 
 const ChatMessages = ({ authenticated }) => {
@@ -73,7 +106,6 @@ const ChatMessages = ({ authenticated }) => {
 
   return (
     <>
-      <ChatHeader>Chat</ChatHeader>
       <Messages>{messages}</Messages>
       {readError && <ErrorMessage>{readError}</ErrorMessage>}
       <form onSubmit={onSubmit}>
@@ -110,7 +142,7 @@ const Messages = styled(({ className, children }) => (
   overflow-y: auto;
 
   li {
-    color: white;
+    color: #000;
   }
 `
 
@@ -128,13 +160,14 @@ const ChatContainer = styled.div`
   right: 2em;
   width: 300px;
   bottom: 0;
-  background-color: green;
+  background-color: #fff2cd;
 `
 
 const Chat = () => {
   const [loading, setLoading] = useState(true)
   const [authenticated, setAuthenticated] = useState(false)
   const [errorMessage, setErrorMessage] = useState("")
+  const [collapsed, setCollapsed] = useState(false)
 
   useEffect(() => {
     firebase.auth().onAuthStateChanged(user => {
@@ -148,6 +181,14 @@ const Chat = () => {
     })
   })
 
+  const onCollapseClick = () => {
+    setCollapsed(true)
+  }
+
+  const onExpandClick = () => {
+    setCollapsed(false)
+  }
+
   const onGoogleSignInClick = async () => {
     try {
       await signInWithGoogle()
@@ -158,17 +199,23 @@ const Chat = () => {
 
   return (
     <ChatContainer>
-      {loading ? (
-        <span>Cargando...</span>
-      ) : (
-        <>
-          {!authenticated && (
-            <Login onGoogleSignInClick={onGoogleSignInClick} />
-          )}
-          <ChatMessages authenticated={authenticated} />
-          <ErrorMessage>{errorMessage}</ErrorMessage>
-        </>
-      )}
+      <ChatBar
+        collapsed={collapsed}
+        onCollapseClick={onCollapseClick}
+        onExpandClick={onExpandClick}
+      />
+      {!collapsed &&
+        (loading ? (
+          <span>Cargando...</span>
+        ) : (
+          <>
+            {!authenticated && (
+              <Login onGoogleSignInClick={onGoogleSignInClick} />
+            )}
+            <ChatMessages authenticated={authenticated} />
+            <ErrorMessage>{errorMessage}</ErrorMessage>
+          </>
+        ))}
     </ChatContainer>
   )
 }
