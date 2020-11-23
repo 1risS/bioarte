@@ -97,8 +97,9 @@ const SearchControlInput = styled(({ className, onChange, value }) => (
   border: solid 1px #888;
   font-size: 1em;
   padding: 0.5em 0.5em;
-  margin-left: 2.8em;
   width: 300px;
+  margin-top: 1em;
+  margin-left: 2.8em;
 `
 
 const SearchControlResults = styled(
@@ -120,6 +121,7 @@ const SearchControlResults = styled(
   font-size: 12px;
   overflow: scroll;
   padding: 0.5em;
+  margin-left: 4em;
 
   & li {
     cursor: pointer;
@@ -179,7 +181,7 @@ export default function MapboxMap() {
         <ReactMapGL
           {...viewport}
           mapboxApiAccessToken={REACT_APP_MAPBOX_TOKEN}
-          mapStyle="mapbox://styles/catahache/ckgpmul5a1c7419p426g1ara8"
+          mapStyle="mapbox://styles/catahache/ckhtxig0t182319nzro2le33u"
           onViewportChange={viewport => {
             setViewport(viewport)
           }}
