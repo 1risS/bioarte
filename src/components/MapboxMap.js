@@ -107,7 +107,8 @@ const SearchControlResults = styled(
       <ul className={className}>
         {children.map((item, i) => (
           <li key={i} onClick={() => onItemSelect(item)}>
-            {item.properties["Institución"]} - {item.properties["Facultad"]}
+            <strong>{item.properties["Institución"]}</strong> -{" "}
+            {item.properties["Facultad"]}
           </li>
         ))}
       </ul>
@@ -123,6 +124,10 @@ const SearchControlResults = styled(
 
   & li {
     cursor: pointer;
+  }
+
+  & li strong {
+    font-weight: bold;
   }
 
   & li:hover {
