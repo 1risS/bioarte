@@ -93,13 +93,23 @@ const SearchControl = ({ features = [], onSelect }) => {
 const SearchControlInput = styled(({ className, onChange, value }) => (
   <input className={className} value={value} onChange={onChange} type="text" />
 ))`
-  border-radius: 1em;
+  border-radius: 1rem;
   border: solid 1px #888;
   font-size: 1em;
   padding: 0.5em 0.5em;
+<<<<<<< HEAD
   width: 300px;
   margin-top: 1em;
   margin-left: 2.8em;
+=======
+  margin-left: 2.8em;
+  margin-top: 1rem;
+  width: 300px;
+
+  &:focus {
+    outline: none;
+  }
+>>>>>>> 415a05b4d2ffe01992ac2302ea976a0c662225f5
 `
 
 const SearchControlResults = styled(
@@ -108,7 +118,8 @@ const SearchControlResults = styled(
       <ul className={className}>
         {children.map((item, i) => (
           <li key={i} onClick={() => onItemSelect(item)}>
-            {item.properties["Institución"]} - {item.properties["Facultad"]}
+            <strong>{item.properties["Institución"]}</strong> -{" "}
+            {item.properties["Facultad"]}
           </li>
         ))}
       </ul>
@@ -116,15 +127,24 @@ const SearchControlResults = styled(
   }
 )`
   background-color: #fff;
-  width: 200px;
   height: 300px;
   font-size: 12px;
   overflow: scroll;
   padding: 0.5em;
+<<<<<<< HEAD
   margin-left: 4em;
+=======
+  margin-left: 2.8rem;
+  width: 300px;
+  border: solid 1px #888;
+>>>>>>> 415a05b4d2ffe01992ac2302ea976a0c662225f5
 
   & li {
     cursor: pointer;
+  }
+
+  & li strong {
+    font-weight: bold;
   }
 
   & li:hover {
