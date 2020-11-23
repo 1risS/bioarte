@@ -30,12 +30,12 @@ const ControlGroup = styled.div`
 const SearchContainer = styled.div`
   height: 400px;
   width: 400px;
-  background-color: #96bc8f;
+  background-color: ${props => props.theme.colors.greens[0]};
 `
 const SearchFooter = styled.div`
   height: 30px;
   width: 400px;
-  background-color: #508f44;
+  background-color: ${props => props.theme.colors.greens[1]};
   margin-top: 370px;
 `
 const SearchMapContainer = styled.div`
@@ -97,7 +97,7 @@ const SearchControlInput = styled(({ className, onChange, value }) => (
   border: solid 1px #888;
   font-size: 1em;
   padding: 0.5em 0.5em;
-  margin-left: 3em;
+  margin-left: 2.8em;
   width: 300px;
 `
 
@@ -116,15 +116,17 @@ const SearchControlResults = styled(
 )`
   background-color: #fff;
   width: 200px;
-  height: 200px;
+  height: 300px;
   font-size: 12px;
+  overflow: scroll;
+  padding: 0.5em;
 
   & li {
     cursor: pointer;
   }
 
   & li:hover {
-    background-color: #ccc;
+    background-color: ${props => props.theme.colors.greens[1]};
   }
 `
 
