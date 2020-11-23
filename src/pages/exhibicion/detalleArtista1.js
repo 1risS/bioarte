@@ -2,6 +2,7 @@ import React, { useEffect } from "react"
 import styled from "styled-components"
 import Layout from "../../components/layout"
 import SEO from "../../components/seo"
+import Chat from "../../components/chat"
 import { useCookies } from "react-cookie"
 import logoFestival from "../../images/Academia/logo libélula.png"
 import Placeholder from "../../../static/images/Icon-Placeholder-1.png"
@@ -414,6 +415,7 @@ const DetalleArtista1 = () => {
           </DetalleObraContainer>
         </DAMain>
       </DAContainer>
+      <Chat />
     </Layout>
   )
 }

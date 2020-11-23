@@ -13,6 +13,12 @@ const signInWithGoogle = () => {
   return firebase.auth().signInWithPopup(provider)
 }
 
+const ChatHeader = styled.span`
+  font-size: 1.1em;
+  font-weight: bold;
+  color: white;
+`
+
 const ChatMessages = ({ authenticated }) => {
   const [messages, setMessages] = useState([])
   const [readError, setReadError] = useState(null)
@@ -67,7 +73,7 @@ const ChatMessages = ({ authenticated }) => {
 
   return (
     <>
-      <span>Mensajes:</span>
+      <ChatHeader>Chat</ChatHeader>
       <Messages>{messages}</Messages>
       {readError && <ErrorMessage>{readError}</ErrorMessage>}
       <form onSubmit={onSubmit}>
@@ -83,6 +89,7 @@ const ChatMessages = ({ authenticated }) => {
 
 const Name = styled.span`
   color: ${props => props.color};
+  font-weight: bold;
 `
 
 const Content = styled.span``
@@ -99,10 +106,11 @@ const Messages = styled(({ className, children }) => (
     </ul>
   </div>
 ))`
-  .name {
-    font-weight: bold;
-  }
-  .content {
+  height: 200px;
+  overflow-y: auto;
+
+  li {
+    color: white;
   }
 `
 
@@ -114,6 +122,14 @@ const Login = ({ onGoogleSignInClick }) => (
     <button onClick={onGoogleSignInClick}>Iniciar con Google</button>
   </div>
 )
+
+const ChatContainer = styled.div`
+  position: fixed;
+  right: 2em;
+  width: 300px;
+  bottom: 0;
+  background-color: green;
+`
 
 const Chat = () => {
   const [loading, setLoading] = useState(true)
@@ -141,7 +157,7 @@ const Chat = () => {
   }
 
   return (
-    <>
+    <ChatContainer>
       {loading ? (
         <span>Cargando...</span>
       ) : (
@@ -153,7 +169,7 @@ const Chat = () => {
           <ErrorMessage>{errorMessage}</ErrorMessage>
         </>
       )}
-    </>
+    </ChatContainer>
   )
 }
 
