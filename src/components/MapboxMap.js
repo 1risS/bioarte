@@ -124,11 +124,14 @@ const SearchControlResults = styled(
 )`
   background-color: #fff;
   height: 300px;
-  width: 300px;
+  width: 272px;
   font-size: 12px;
-  overflow: scroll;
+  overflow: auto;
+  overflow-y: overlay;
   padding: 0.5em;
-  margin-left: 4em;
+  margin-left: 4.9em;
+  box-shadow: inset -3px -8px 4px 4px rgb(255, 255, 255),
+    inset 0 2px 4px 0px rgba(50, 50, 50, 0.75);
 
   & li {
     cursor: pointer;
