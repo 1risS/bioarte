@@ -105,7 +105,7 @@ const PanoPage = () => {
       })
 
       viewer.OrbitControls.noZoom = true
-      viewer.camera.position.set(Math.PI, 0, 0)
+      viewer.camera.position.set(Math.PI, -0.1, 0.05)
 
       const [cx, cy] = [5, 5]
 
