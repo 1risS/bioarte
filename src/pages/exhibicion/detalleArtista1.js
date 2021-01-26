@@ -153,7 +153,6 @@ const DAMain = styled.div`
 const BioArtistaContainer = styled.div`
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   padding: 1rem;
 `
 
@@ -161,13 +160,14 @@ const LibelulaContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  align-items: center;
   width: 20% !important;
   margin: 4rem;
 `
 
 const Libelulaimg = styled.img`
-  height: 249px;
-  width: 208px;
+  height: 270px;
+  width: 230px;
 `
 
 const GloboDialogo = styled.img``
@@ -184,14 +184,14 @@ const BioArtista = styled.div`
 const BioHeader = styled.div`
   background-color: #ec6b42;
   color: #fff;
-  font-size: 2em;
+  font-size: 40pt;
   padding-left: 1em;
 `
 
 const BioTexto = styled.div`
   background-color: #fff;
   margin-top: 1em;
-  padding: 1em 2em;
+  padding: 32.25pt 24pt 32.25pt 24pt;
 `
 const FotoObraContainer = styled.div`
   background-image: url(${fondoObra});
@@ -215,16 +215,25 @@ const NombreObra = styled.div`
 `
 const Parrafo = styled.div`
   padding-top: 1em;
-  font-size: 16px;
+  font-size: 16pt;
 `
+const ParrafoFormacion = styled.div`
+  padding-top: 1em;
+  font-size: 16pt;
+  font-style: italic;
+  text-decoration: underline;
+`
+
 const Titulo = styled.div`
   margin-top: 13px;
-  font-weight: bold;
+  font-weight: semibold;
+  font-size: 25pt;
 `
 
 const DetalleObraContainer = styled.div`
   display: flex;
   padding: 1em 0;
+  margin-bottom: 3rem;
 `
 
 const MargenIzquierdo = styled.div`
@@ -241,11 +250,12 @@ const DetalleObra = styled.div`
   align-content: center;
   justify-content: space-around;
   max-width: 1152px;
-  margin: 0 20% 0 20%;
+  margin: 0;
+  background-color: white;
 `
 
 const DescripcionContainer = styled.div`
-  padding: 1em;
+  padding: 2rem;
   align-content: flex-start;
   text-align: justify;
 `
@@ -254,9 +264,7 @@ const FlechaSlider = styled.img`
   height: 80px;
   width: 80px;
 `
-const FotoObra = styled.img`
-  padding: 2rem 0 0 0;
-`
+const FotoObra = styled.img``
 
 const LikeLikeCont = styled.div`
   margin-left: 10rem;
@@ -297,6 +305,51 @@ const TituloBio = styled.div`
   flex-direction: row;
   justify-content: space-between;
 `
+const ProcedenciaFotosContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+`
+const TituloWebCont = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 1rem 0rem 1rem 0rem;
+`
+
+const TituloObra = styled.div`
+  font-size: 24pt;
+  font-style: italic;
+`
+
+const LinkWeb = styled.a`
+  font-size: 12pt;
+  color: #ec6b42;
+`
+
+const CiudadPais = styled.div`
+  font-size: 14pt;
+  font-family: ${props => props.theme.fontFamily};
+  border: 2px solid #ec6b42;
+  border-radius: 23px;
+  text-align: center;
+  padding: 10px;
+  width: 290px;
+`
+const CantFotos = styled.div`
+  font-size: 14pt;
+  text-decoration: underline;
+  color: #ec6b42;
+`
+const ParrafoObra = styled.div`
+  font-size: 14pt;
+`
+const Footer = styled.div`
+  height: 12rem;
+  background-color: #272d28;
+`
+
 // ponemos una cookie para saber si le usuarix pasó por acá
 
 const DetalleArtista1 = () => {
@@ -352,36 +405,19 @@ const DetalleArtista1 = () => {
                     </CV>
                   </CVCont>
                 </TituloBio>
-                <Parrafo>
+                <ParrafoFormacion>
                   Artista bioelectrónica, investigadora y docente. Magister en
                   Artes Electrónicas graduada con honores en la Universidad
                   Nacional de Tres de Febrero, Licenciada y Profesora en Artes
                   Visuales egresada de la Universidad Nacional de las Artes
-                  (UNA). En sus producciones artísticas trabaja con los
-                  conceptos de naturaleza y territorio como interfaz mediante
-                  electrónica y organismos no-humanos. Obtuvo recientemente la
-                  beca Global Community Bio Fellows, desarrollada en el MIT y la
-                  ELAP Emerging Leaders in the Americas Program (Concordia
-                  University-Montreal). Es co-fundadora de Mycocrea -
-                  Laboratorio de biomateriales y del colectivo de arte y
-                  biorobótica Robotícula, junto a Demián Ferrari.
-                </Parrafo>
+                  (UNA).
+                </ParrafoFormacion>
                 <Parrafo>
-                  Ha exhibido sus obras en Argentina, Brasil, Venezuela, Canadá,
-                  México, Irán, Israel, Mongolia, Francia, España, entre otros.
-                  Se desempeña como docente y coordinadora de la Maestría en
-                  Tecnología y Estética de las Artes Electrónicas de la UNTREF.
-                </Parrafo>
-                <Parrafo>
-                  Artista bioelectrónica, investigadora y docente. Magister en
-                  Artes Electrónicas graduada con honores en la Universidad
-                  Nacional de Tres de Febrero, Licenciada y Profesora en Artes
-                  Visuales egresada de la Universidad Nacional de las Artes
-                  (UNA). En sus producciones artísticas trabaja con los
-                  conceptos de naturaleza y territorio como interfaz mediante
-                  electrónica y organismos no-humanos. Obtuvo recientemente la
-                  beca Global Community Bio Fellows, desarrollada en el MIT y la
-                  ELAP Emerging Leaders in the Americas Program (Concordia
+                  En sus producciones artísticas trabaja con los conceptos de
+                  naturaleza y territorio como interfaz mediante electrónica y
+                  organismos no-humanos. Obtuvo recientemente la beca Global
+                  Community Bio Fellows, desarrollada en el MIT y la ELAP
+                  Emerging Leaders in the Americas Program (Concordia
                   University-Montreal). Es co-fundadora de Mycocrea -
                   Laboratorio de biomateriales y del colectivo de arte y
                   biorobótica Robotícula, junto a Demián Ferrari.
@@ -406,30 +442,42 @@ const DetalleArtista1 = () => {
               {/* <FlechaSlider src={flechaSlider}></FlechaSlider> */}
             </MargenIzquierdo>
             <DetalleObra>
-              <FotoObra src={fotoObra} height="50%"></FotoObra>
+              <FotoObra src={fotoObra} height="880px" width="576px"></FotoObra>
               <DescripcionContainer>
-                <Parrafo>
-                  Displaced, es una instalación robótica sobre los
-                  desplazamientos vinculados a los desastres climáticos, a las
-                  migraciones forzadas, los destinos inciertos y la
-                  incertidumbre. Desde 2009, se estima que una persona por
-                  segundo es obligada a abandonar su hábitat por fenómenos
-                  naturales causados por el cambio climático: inundaciones,
-                  sequías, terremotos, tsunamis, desmontes, minería y
-                  contaminación de recursos hídricos.
-                </Parrafo>
-                ​
-                <Parrafo>
-                  El proyecto fue realizado mediante la construcción de una
-                  estructura de piezas impresas en 3d en PLA, servomotores,
-                  arduino, componentes electrónicos,etc. Fue revestido en
-                  bioplásticos realizados con yerba mate, remolacha, porotos y
-                  pelo humano.
-                </Parrafo>
-                <Parrafo>
-                  El proyecto fue realizado mediante la construcción de una
-                  estructura de piezas impresas en 3d en PLA...
-                </Parrafo>
+                <ProcedenciaFotosContainer>
+                  <CiudadPais>Buenos Aires, Argentina</CiudadPais>
+                  <CantFotos>1/10</CantFotos>
+                </ProcedenciaFotosContainer>
+                <TituloWebCont>
+                  <TituloObra>Displaced</TituloObra>
+                  <LinkWeb>Web</LinkWeb>
+                </TituloWebCont>
+                <ParrafoObra>
+                  Se trata de una instalación robótica sobre los desplazamientos
+                  vinculados a los desastres climáticos, a las migraciones
+                  forzadas, los destinos inciertos y la incertidumbre. Desde
+                  2009, se estima que una persona por segundo es obligada a
+                  abandonar su hábitat por fenómenos naturales causados por el
+                  cambio climático: inundaciones, sequías, terremotos, tsunamis,
+                  desmontes, minería y contaminación de recursos hídricos.
+                </ParrafoObra>
+                <ParrafoObra>
+                  Se trata de una instalación robótica sobre los desplazamientos
+                  vinculados a los desastres climáticos, a las migraciones
+                  forzadas, los destinos inciertos y la incertidumbre. Desde
+                  2009, se estima que una persona por segundo es obligada a
+                  abandonar su hábitat por fenómenos naturales causados por el
+                  cambio climático: inundaciones, sequías, terremotos, tsunamis,
+                  desmontes, minería y contaminación de recursos hídricos.
+                </ParrafoObra>
+                <ParrafoObra>
+                  Se trata de una instalación robótica sobre los desplazamientos
+                  vinculados a los desastres climáticos, a las migraciones
+                  forzadas, los destinos inciertos y la incertidumbre.Desde
+                  2009, se estima que una persona por segundo es obligada a
+                  abandonar su hábitat por fenómenos naturales causados por el
+                  cambio climático: inundacio...
+                </ParrafoObra>
               </DescripcionContainer>
             </DetalleObra>
             <MargenDerecho>
@@ -438,6 +486,7 @@ const DetalleArtista1 = () => {
           </DetalleObraContainer>
         </DAMain>
       </DAContainer>
+      <Footer></Footer>
       <Chat />
     </Layout>
   )
