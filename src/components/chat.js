@@ -211,7 +211,7 @@ const Chat = () => {
   const [loading, setLoading] = useState(true)
   const [authenticated, setAuthenticated] = useState(false)
   const [errorMessage, setErrorMessage] = useState("")
-  const [collapsed, setCollapsed] = useState(false)
+  const [collapsed, setCollapsed] = useState(true)
 
   useEffect(() => {
     setErrorMessage(null)

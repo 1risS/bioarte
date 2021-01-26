@@ -11,7 +11,10 @@ import fondoHeader from "../../images/DetalleArtistas/Banner_Exhibition_0.png"
 import libelula from "../../images/DetalleArtistas/Dragonfly.png"
 import globoDialogo from "../../images/DetalleArtistas/SpeechBalloon_0.png"
 import fondoObra from "../../images/DetalleArtistas/ObraExhibicion_Cantera.png"
-import flechaSlider from "../../images/DetalleArtistas/Btn-CiircleArrow_Normal.png"
+import flechaSliderIzqNormal from "../../images/DetalleArtistas/Btn-CiircleArrow_Normal.png"
+import flechaSliderDerNormal from "../../images/DetalleArtistas/Btn-CiircleArrow_Normal_DER.png"
+import flechaSliderIzqPressed from "../../images/DetalleArtistas/Btn-CiircleArrow_Click.png"
+import flechaSliderDerPressed from "../../images/DetalleArtistas/Btn-CiircleArrow_Click.png"
 import fotoObra from "../../images/DetalleArtistas/Displaced_Cantera_1_de-10.png"
 import like from "../../../static/images/exhibicion/likelikeRounded.png"
 import cv from "../../images/DetalleArtistas/Btn_Cv-Click.png"
@@ -22,7 +25,7 @@ const DAContainer = styled.div`
 const DAHeaderContainer = styled.div`
   display: flex;
   width: auto;
-  height: 45rem;
+  height: 750px;
   flex-direction: column;
   padding-left: 3rem;
   padding-right: 1rem;
@@ -237,11 +240,17 @@ const DetalleObraContainer = styled.div`
 `
 
 const MargenIzquierdo = styled.div`
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
   margin-left: auto;
   width: 20%;
 `
 const MargenDerecho = styled.div`
   margin-right: auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
   width: 20%;
 `
 const DetalleObra = styled.div`
@@ -258,11 +267,22 @@ const DescripcionContainer = styled.div`
   padding: 2rem;
   align-content: flex-start;
   text-align: justify;
+  width: 600px;
 `
 
-const FlechaSlider = styled.img`
+const FlechaSlider = styled.div`
+  background: url(${props =>
+      props.left ? flechaSliderIzqNormal : flechaSliderDerNormal})
+    no-repeat;
   height: 80px;
   width: 80px;
+  margin: 2rem;
+  cursor: pointer;
+  &:hover {
+    background: url(${props =>
+        props.left ? flechaSliderIzqPressed : flechaSliderDerPressed})
+      no-repeat;
+  }
 `
 const FotoObra = styled.img``
 
@@ -386,7 +406,6 @@ const DetalleArtista1 = () => {
           <LikeLikeCont>
             <Like src={like} />
           </LikeLikeCont>
-          {/* <BannerHubs src={bannerHubs}></BannerHubs> */}
         </DAHeaderContainer>
         <DAMain>
           <BioArtistaContainer>
@@ -439,7 +458,7 @@ const DetalleArtista1 = () => {
 
           <DetalleObraContainer>
             <MargenIzquierdo>
-              {/* <FlechaSlider src={flechaSlider}></FlechaSlider> */}
+              <FlechaSlider left src={flechaSliderIzqNormal}></FlechaSlider>
             </MargenIzquierdo>
             <DetalleObra>
               <FotoObra src={fotoObra} height="880px" width="576px"></FotoObra>
@@ -481,7 +500,7 @@ const DetalleArtista1 = () => {
               </DescripcionContainer>
             </DetalleObra>
             <MargenDerecho>
-              {/* <FlechaSlider src={flechaSlider}></FlechaSlider> */}
+              <FlechaSlider src={flechaSliderDerNormal}></FlechaSlider>
             </MargenDerecho>
           </DetalleObraContainer>
         </DAMain>
