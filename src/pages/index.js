@@ -4,6 +4,7 @@ import styled from "styled-components"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import logo from "../../static/images/welcome/WelcomePage_V02.png"
+// import TagManager from "react-gtm-module"
 
 const BienvenidaContainer = styled.div`
   display: flex;
@@ -65,12 +66,19 @@ const DivIzqEmpty = styled.div`
 const Title = styled.p`
   font-family: ${props => props.theme.fontFamily};
   color: white;
+  font-weight: bold;
 `
 
 const Desc = styled.p`
   font-family: ${props => props.theme.fontFamily};
   color: white;
 `
+
+// const tagManagerArgs = {
+//   gtmId: "GTM-5W8X7HR",
+// }
+
+// TagManager.initialize(tagManagerArgs)
 
 const IndexPage = () => {
   return (
@@ -80,42 +88,55 @@ const IndexPage = () => {
         <ContenidoIzqContainer>
           <DivIzqEmpty></DivIzqEmpty>
           <DivIzq>
-            <Title>Párrafo explicando el origen del proyecto</Title>
+            <Title>PRESENTACIÓN</Title>
             <Desc>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
+              PROYECTO BIOS cruza arte, ciencia y tecnología. Bios es el
+              concepto elegido en la antigua grecia para designar la vida física
+              y en la polis. El término muta, se re-configura y evoluciona,
+              crece se cuela en los intersticios de la filosofía, la ciencia, la
+              tecnologia, la política, el arte, indaga, se cuestiona, construye
+              y dialoga.
             </Desc>
           </DivIzq>
           <DivIzq>
-            <Title>Párrafo explicando la estructura del sitio</Title>
+            <Title>ORGANIZACIÓN</Title>
             <Desc>
-              Landing a recorrer, 4 áreas a explorar, qué hay en cada lugar.
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Proyecto Bios contiene cinco áreas:<br></br>
+              Exhibición de Bioarte - panorama nacional y obras inéditas
+              <br></br>
+              Academia – mapa universidades de biotecnología. Agenda de
+              actividades<br></br>
+              Biotecnología - introducción al campo de investigación y
+              desarrollo local. Agenda de actividades<br></br>
+              Acerca del BioArte: Timeline. Diferentes aproximaciones al bioarte
             </Desc>
           </DivIzq>
         </ContenidoIzqContainer>
         <ContDerContainer>
           <DivDerEmpty></DivDerEmpty>
           <DivDer>
-            <Title>Párrafo explicando el nombre</Title>
+            <Title>QUIÉN LO HACE</Title>
             <Desc>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
+              Producción y coordinación general: Objeto a <br></br>
+              Experiencia web: Iris Saladino (programacion) y Laura Palavecino
+              (arte e interactividad)<br></br>
+              Área Academia: Guillermo Winnicki<br></br>
+              Área Acerca del Bioarte: Natalia Mataweki, Lucia Stubrin y Objeto
+              a<br></br>
+              Dream Room: Marie Claire Flanagan
             </Desc>
           </DivDer>
 
           <DivDer>
-            <Title>Párrafo explicando cómo navegar</Title>
+            <Title>CÓMO NAVEGAR</Title>
             <Desc>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
+              Al ingresar a la web se encontrarán con una recreación en modelo
+              3D del laboratorio original del C3 que podrán recorrer, e
+              interactuar con algunos de sus habitantes y objetos utilizando el
+              mouse (INDICAR MODOS DE INTERACCION). En la mesa principal de
+              trabajo verán destacados cinco elementos que al ser cliqueados los
+              llevarán a las distintas áreas de Proyecto Bios. ¡Les invitamos a
+              disfrutar de la experiencia Proyecto Bios!
             </Desc>
           </DivDer>
           <DivDer>

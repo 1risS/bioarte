@@ -349,7 +349,7 @@ const PanoPage = () => {
         }
       }
 
-      const panorama = new Panolens.ImagePanorama("/images/vr/Version_00.jpg")
+      const panorama = new Panolens.ImagePanorama("/images/vr/Version_01.jpg")
       panorama.addEventListener("progress", onProgress)
       panorama.addEventListener("enter", onEnter)
 
