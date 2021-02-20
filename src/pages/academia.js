@@ -232,6 +232,7 @@ const inputContainer = styled.div`
 const UniversidadesContainer = styled.div`
   width: 1000px;
   height: 600px;
+  margin-top: 4rem;
 `
 
 // ponemos una cookie para saber si le usuarix pasó por acá
@@ -277,11 +278,6 @@ const AcademiaPage = () => {
           <BannerHubs src={bannerHubs}></BannerHubs>
         </AcademiaHeaderContainer>
         <Section>
-          <AgendaContainer>
-            <Agenda />
-          </AgendaContainer>
-        </Section>
-        <Section>
           <UniversidadesContainer>
             <TextoDark>Universidades</TextoDark>
             <SectionMapa>
@@ -293,6 +289,11 @@ const AcademiaPage = () => {
               <MapboxMap />
             </SectionMapa>
           </UniversidadesContainer>
+        </Section>
+        <Section>
+          <AgendaContainer>
+            <Agenda />
+          </AgendaContainer>
         </Section>
       </AcademiaContainer>
     </Layout>

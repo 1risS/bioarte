@@ -5,113 +5,233 @@ import { faDotCircle, faCheckCircle } from "@fortawesome/free-regular-svg-icons"
 import styled from "styled-components"
 import placeholder from "../images/placeholder.png"
 
-const days = ["19/03", "20/03", "21/03", "22/03"]
+const days = ["05/04", "06/04", "07/04", "08/04", "09/04"]
 const eventsPerDay = [
   [
     {
-      time: "18:00",
-      title: "Los secretos del BioTextil",
-      speaker: "Ana Laura Cantera",
+      time: "15:00",
+      title: "Presentación BIOS",
+      speaker: "Equipo BIOS + C3",
       desc:
-        "Artista bioelectrónica, investigadora y docente. Magister en " +
-        "Artes Electrónicas graduada con honores en la Universidad de " +
-        "Tres de Febrero, Licenciada y Profesora en Artes Visuales egresada.",
+        "Guadalupe, Laura, Iris, Tomas, Lujan, Susana" +
+        "presentan el proyecto BIOS " +
+        "",
+    },
+    {
+      time: "16:00",
+      title: "ARTE: Biorobótica",
+      speaker: "Ana Laura Cantera, Damián Ferrari, Daniel Álvarez Olmedo",
+      desc: "??????????",
+    },
+    {
+      time: "17:00",
+      title: "BIOTECNOLOGÍA: Casos de Biotecnología",
+      speaker: "FAN",
+      desc: "?????????????",
+    },
+    {
+      time: "18:00",
+      title: "ACADEMIA: 'Biotecnologia roja : Cs. Medicas, Salud, Genetica' ",
+      speaker: "UBA+UNAM+UNOBA+UNIMORON",
+      desc: "?????????????",
     },
     {
       time: "19:00",
-      title: "Los secretos del BioTextil",
-      speaker: "Ana Laura Cantera",
-      desc:
-        "Artista bioelectrónica, investigadora y docente. Magister en " +
-        "Artes Electrónicas graduada con honores en la Universidad de " +
-        "Tres de Febrero, Licenciada y Profesora en Artes Visuales egresada.",
-    },
-    {
-      time: "20:00",
-      title: "Los secretos del BioTextil",
-      speaker: "Ana Laura Cantera",
-      desc:
-        "Artista bioelectrónica, investigadora y docente. Magister en " +
-        "Artes Electrónicas graduada con honores en la Universidad de " +
-        "Tres de Febrero, Licenciada y Profesora en Artes Visuales egresada.",
-    },
-    {
-      time: "21:00",
-      title: "Los secretos del BioTextil",
-      speaker: "Ana Laura Cantera",
-      desc:
-        "Artista bioelectrónica, investigadora y docente. Magister en " +
-        "Artes Electrónicas graduada con honores en la Universidad de " +
-        "Tres de Febrero, Licenciada y Profesora en Artes Visuales egresada.",
+      title: "Inauguración muestra virtual con LikeLike",
+      speaker: "Equipo BIOS",
+      desc: "?????????????",
     },
   ],
   [
     {
+      time: "15:00",
+      title: "ACADEMIA: Creación de empresas de base tecnológica",
+      speaker: "UNQ + UNL",
+      desc: "???????",
+    },
+    {
+      time: "16:00",
+      title: "BIOTECNOLOGÍA: Salud humana",
+      speaker: "Gemmabiotech, Roche, Bayer, Biosidus",
+      desc: "??????????",
+    },
+    {
+      time: "17:00",
+      title: "BIOTECNOLOGÍA: Producción insumos industriales: Novozymes",
+      speaker: "Gemmabiotech, Roche, Bayer, Biosidus",
+      desc: "??????????",
+    },
+    {
       time: "18:00",
-      title: "Los secretos del BioTextil (día 2)",
-      speaker: "Ana Laura Cantera",
-      desc:
-        "Artista bioelectrónica, investigadora y docente. Magister en " +
-        "Artes Electrónicas graduada con honores en la Universidad de " +
-        "Tres de Febrero, Licenciada y Profesora en Artes Visuales egresada.",
+      title: "Taller Claudia Valente en Mozila hub",
+      speaker: "Claudia Valente",
+      desc: "??????????",
+    },
+    {
+      time: "18:50",
+      title: "Filler",
+      speaker: "Filler",
+      desc: "??????????",
     },
     {
       time: "19:00",
-      title: "Los secretos del BioTextil (día 2)",
-      speaker: "Ana Laura Cantera",
-      desc:
-        "Artista bioelectrónica, investigadora y docente. Magister en " +
-        "Artes Electrónicas graduada con honores en la Universidad de " +
-        "Tres de Febrero, Licenciada y Profesora en Artes Visuales egresada.",
+      title: "Lanzamiento Libro Lucia Stubrin",
+      speaker: "Lucia Stubrin",
+      desc: "??????????",
     },
   ],
   [
     {
+      time: "15:00",
+      title: "BIOTECNOLOGÍA: una vision al futuro",
+      speaker: "BIFE + Kheiron Biotech + myDNAmap ",
+      desc: "????????????????",
+    },
+    {
+      time: "16:00",
+      title:
+        "ACADEMIA: Biotecnologia Industrial (Blanca) Biocombustibles + Enzimas",
+      speaker: "UNER + UBA + UNL + UNRN",
+      desc: "??????????",
+    },
+    {
+      time: "17:00",
+      title: "ARTE: Agar Art y Modelado Molecular",
+      speaker:
+        "Gabriel Gutkind, Daniela Cejas, Laura Echarren, Federico Coscio, Pablo Power",
+      desc: "??????????",
+    },
+    {
       time: "18:00",
-      title: "Los secretos del BioTextil (día 3)",
-      speaker: "Ana Laura Cantera",
-      desc:
-        "Artista bioelectrónica, investigadora y docente. Magister en " +
-        "Artes Electrónicas graduada con honores en la Universidad de " +
-        "Tres de Febrero, Licenciada y Profesora en Artes Visuales egresada.",
+      title: "BIOTECNOLOGÍA: Salud y Reproduccion animal",
+      speaker:
+        "Biotecnofe - Foro Argentino de Genética Bovina - Biochemiq - Bioinnovo - Biogenesis Bagó",
+      desc: "??????????",
+    },
+    {
+      time: "18:50",
+      title: "Performance del corazón en el celular",
+      speaker: "???????????",
+      desc: "??????????",
     },
     {
       time: "19:00",
-      title: "Los secretos del BioTextil (día 3)",
-      speaker: "Ana Laura Cantera",
-      desc:
-        "Artista bioelectrónica, investigadora y docente. Magister en " +
-        "Artes Electrónicas graduada con honores en la Universidad de " +
-        "Tres de Febrero, Licenciada y Profesora en Artes Visuales egresada.",
+      title: "ARTE: Historia del BioArte",
+      speaker: "Natalia Matewecki",
+      desc: "??????????",
     },
   ],
   [
     {
+      time: "15:00",
+      title: "ARTE: Biomateriales, biosensado y biosonificacion",
+      speaker: "Veronica, Ana Paula, Electrobiota, Oliverio",
+      desc: "????????????????",
+    },
+    {
+      time: "16:00",
+      title: "BIOTECNOLOGÍA: Mejoramiento cultivos y transgenicos",
+      speaker: "ArgenBio",
+      desc: "??????????",
+    },
+    {
+      time: "17:00",
+      title: "ACADEMIA: Biofabricacion de Organos",
+      speaker: "UP, CAECE, U Favaloro Video BIotecX - Life SI",
+      desc: "??????????",
+    },
+    {
       time: "18:00",
-      title: "Los secretos del BioTextil (día 4)",
-      speaker: "Ana Laura Cantera",
-      desc:
-        "Artista bioelectrónica, investigadora y docente. Magister en " +
-        "Artes Electrónicas graduada con honores en la Universidad de " +
-        "Tres de Febrero, Licenciada y Profesora en Artes Visuales egresada.",
+      title: "ARTE: performance",
+      speaker: "micra",
+      desc: "??????????",
+    },
+    {
+      time: "18:40",
+      title: "YouTube La Hiperactina",
+      speaker: "???????",
+      desc: "??????????",
     },
     {
       time: "19:00",
-      title: "Los secretos del BioTextil (día 4)",
-      speaker: "Ana Laura Cantera",
-      desc:
-        "Artista bioelectrónica, investigadora y docente. Magister en " +
-        "Artes Electrónicas graduada con honores en la Universidad de " +
-        "Tres de Febrero, Licenciada y Profesora en Artes Visuales egresada.",
+      title: "Mesa redonda",
+      speaker: "artistas / academia / empresas",
+      desc: "??????????",
     },
     {
-      time: "20:00",
-      title: "Los secretos del BioTextil (día 4)",
-      speaker: "Ana Laura Cantera",
-      desc:
-        "Artista bioelectrónica, investigadora y docente. Magister en " +
-        "Artes Electrónicas graduada con honores en la Universidad de " +
-        "Tres de Febrero, Licenciada y Profesora en Artes Visuales egresada.",
+      time: "15:00",
+      title: "ARTE: Biomateriales, biosensado y biosonificacion",
+      speaker: "Veronica, Ana Paula, Electrobiota, Oliverio",
+      desc: "????????????????",
+    },
+    {
+      time: "16:00",
+      title: "BIOTECNOLOGÍA: Mejoramiento cultivos y transgenicos",
+      speaker: "ArgenBio",
+      desc: "??????????",
+    },
+    {
+      time: "17:00",
+      title: "ACADEMIA: Biofabricacion de Organos",
+      speaker: "UP, CAECE, U Favaloro Video BIotecX - Life SI",
+      desc: "??????????",
+    },
+    {
+      time: "18:00",
+      title: "ARTE: performance",
+      speaker: "micra",
+      desc: "??????????",
+    },
+    {
+      time: "19:00",
+      title: "Mesa redonda",
+      speaker: "artistas / academia / empresas",
+      desc: "??????????",
+    },
+  ],
+  [
+    {
+      time: "15:00",
+      title: "ACADEMIA: Bioeconomía",
+      speaker: "Fernando Vilella",
+      desc: "????????????????",
+    },
+    {
+      time: "16:00",
+      title: "ARTE: Taller Bioarte Joaquin Fargas en Mozilla hub",
+      speaker: "Joaquin Fargas",
+      desc: "??????????",
+    },
+    {
+      time: "16:40",
+      title: "Bioinformática",
+      speaker: "UTN",
+      desc: "??????????",
+    },
+    {
+      time: "17:00",
+      title: "ARTE: mesa de Universidades",
+      speaker:
+        "Untref Biolab, Lab Latam BioArte UAI, UMSA, Modera Lucia Stubrin",
+      desc: "??????????",
+    },
+    {
+      time: "18:00",
+      title: "BIOTECNOLOGÍA: startups",
+      speaker: "GridX + Beeflow + Algaebio+ + Einsted",
+      desc: "??????????",
+    },
+    {
+      time: "18:50",
+      title: "Filler",
+      speaker: "Filler",
+      desc: "??????????",
+    },
+    {
+      time: "19:00",
+      title: "Cierre",
+      speaker: "Pablo Lapadula",
+      desc: "??????????",
     },
   ],
 ]
