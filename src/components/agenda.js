@@ -301,6 +301,11 @@ const Title = styled.h1`
 const EntryListContainer = styled.div`
   position: relative;
   height: 75vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 `
 
 const EntryList = styled.div`
@@ -311,6 +316,7 @@ const EntryList = styled.div`
   flex-direction: column;
   height: 75vh;
   overflow-y: auto;
+  width: 100%;
 
   &.entry-list-enter {
     opacity: 0;

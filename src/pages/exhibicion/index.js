@@ -57,6 +57,7 @@ const NavBar = styled.div`
   justify-content: space-around;
   margin-top: 2rem;
   margin-bottom: -2rem;
+  width: 100vw;
 `
 const LogoContainer = styled.div`
   display: flex;
@@ -273,10 +274,10 @@ const ExhibicionPage = () => {
           <NavBar>
             <LogoContainer>
               <Logo src={logoFestival}></Logo>
-              <Placeholder1 src={logo}></Placeholder1>
+              {/* <Placeholder1 src={logo}></Placeholder1> */}
             </LogoContainer>
 
-            <TimerNavegacion>
+            {/* <TimerNavegacion>
               <TiempoContainer>
                 <Horas>01</Horas>
                 <TextoContadores>Hs.</TextoContadores>
@@ -289,7 +290,7 @@ const ExhibicionPage = () => {
                 <Seg>00</Seg>
                 <TextoContadores>Seg.</TextoContadores>
               </TiempoContainer>
-            </TimerNavegacion>
+            </TimerNavegacion> */}
             <CantidadVisitantesContainer>
               <CantidadVisitantes>30000</CantidadVisitantes>
               <TextoContadores>Visitantes</TextoContadores>

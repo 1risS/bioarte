@@ -57,7 +57,6 @@ const TimerNavegacionContainer = styled.div``
 const TimerNavegacion = styled.div`
   max-width: 150px;
   width: 100%;
-
   text-align: center;
   font-family: ${props => props.theme.fontFamily};
   font-weight: ${props => props.theme.fontWeights.light};
@@ -254,7 +253,7 @@ const AcademiaPage = () => {
               <Logo src={logoFestival}></Logo>
               <Placeholder1 src={Placeholder}></Placeholder1>
             </LogoContainer>
-            <TimerNavegacion>
+            {/* <TimerNavegacion>
               <TiempoContainer>
                 <Horas>01</Horas>
                 <TextoContadores>Hs.</TextoContadores>
@@ -267,7 +266,7 @@ const AcademiaPage = () => {
                 <Seg>00</Seg>
                 <TextoContadores>Seg.</TextoContadores>
               </TiempoContainer>
-            </TimerNavegacion>
+            </TimerNavegacion> */}
             <CantidadVisitantesContainer>
               <CantidadVisitantes>30000</CantidadVisitantes>
               <TextoContadores>Visitantes</TextoContadores>

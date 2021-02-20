@@ -1,23 +1,22 @@
-import React, { useEffect } from "react"
+import React, { useState, useEffect } from "react"
 import styled from "styled-components"
 import Layout from "../../components/layout"
 import SEO from "../../components/seo"
 import Chat from "../../components/chat"
 import { useCookies } from "react-cookie"
 import logoFestival from "../../images/Academia/logo libélula.png"
-import Placeholder from "../../../static/images/Icon-Placeholder-1.png"
-import bannerHubs from "../../images/Academia/Mozilla Hubs.png"
 import fondoHeader from "../../images/DetalleArtistas/Banner_Exhibition_0.png"
 import libelula from "../../images/DetalleArtistas/Dragonfly.png"
 import globoDialogo from "../../images/DetalleArtistas/SpeechBalloon_0.png"
-import fondoObra from "../../images/DetalleArtistas/ObraExhibicion_Cantera.png"
+import fondoObra from "../../../static/images/artists/anaLauraCantera/obra_nueva.jpg"
 import flechaSliderIzqNormal from "../../images/DetalleArtistas/Btn-CiircleArrow_Normal.png"
 import flechaSliderDerNormal from "../../images/DetalleArtistas/Btn-CiircleArrow_Normal_DER.png"
 import flechaSliderIzqPressed from "../../images/DetalleArtistas/Btn-CiircleArrow_Click.png"
 import flechaSliderDerPressed from "../../images/DetalleArtistas/Btn-CiircleArrow_Click.png"
-import fotoObra from "../../images/DetalleArtistas/Displaced_Cantera_1_de-10.png"
 import like from "../../../static/images/exhibicion/likelikeRounded.png"
 import cv from "../../images/DetalleArtistas/Btn_Cv-Click.png"
+import Carousel, { ParrafoObra } from "../../components/carousel"
+import { obras } from "../../content/artistas/analauracantera.json"
 
 const DAContainer = styled.div`
   background-color: ${props => props.theme.colors.bg1};
@@ -25,7 +24,7 @@ const DAContainer = styled.div`
 const DAHeaderContainer = styled.div`
   display: flex;
   width: auto;
-  height: 750px;
+  height: 100vh;
   flex-direction: column;
   padding-left: 3rem;
   padding-right: 1rem;
@@ -233,59 +232,6 @@ const Titulo = styled.div`
   font-size: 25pt;
 `
 
-const DetalleObraContainer = styled.div`
-  display: flex;
-  padding: 1em 0;
-  margin-bottom: 3rem;
-`
-
-const MargenIzquierdo = styled.div`
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  margin-left: auto;
-  width: 20%;
-`
-const MargenDerecho = styled.div`
-  margin-right: auto;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  width: 20%;
-`
-const DetalleObra = styled.div`
-  display: flex;
-  flex-direction: row;
-  align-content: center;
-  justify-content: space-around;
-  max-width: 1152px;
-  margin: 0;
-  background-color: white;
-`
-
-const DescripcionContainer = styled.div`
-  padding: 2rem;
-  align-content: flex-start;
-  text-align: justify;
-  width: 600px;
-`
-
-const FlechaSlider = styled.div`
-  background: url(${props =>
-      props.left ? flechaSliderIzqNormal : flechaSliderDerNormal})
-    no-repeat;
-  height: 80px;
-  width: 80px;
-  margin: 2rem;
-  cursor: pointer;
-  &:hover {
-    background: url(${props =>
-        props.left ? flechaSliderIzqPressed : flechaSliderDerPressed})
-      no-repeat;
-  }
-`
-const FotoObra = styled.img``
-
 const LikeLikeCont = styled.div`
   margin-left: 10rem;
   align-self: flex-end;
@@ -325,46 +271,7 @@ const TituloBio = styled.div`
   flex-direction: row;
   justify-content: space-between;
 `
-const ProcedenciaFotosContainer = styled.div`
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-`
-const TituloWebCont = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  margin: 1rem 0rem 1rem 0rem;
-`
 
-const TituloObra = styled.div`
-  font-size: 24pt;
-  font-style: italic;
-`
-
-const LinkWeb = styled.a`
-  font-size: 12pt;
-  color: #ec6b42;
-`
-
-const CiudadPais = styled.div`
-  font-size: 14pt;
-  font-family: ${props => props.theme.fontFamily};
-  border: 2px solid #ec6b42;
-  border-radius: 23px;
-  text-align: center;
-  padding: 10px;
-  width: 290px;
-`
-const CantFotos = styled.div`
-  font-size: 14pt;
-  text-decoration: underline;
-  color: #ec6b42;
-`
-const ParrafoObra = styled.div`
-  font-size: 14pt;
-`
 const Footer = styled.div`
   height: 12rem;
   background-color: #272d28;
@@ -373,6 +280,22 @@ const Footer = styled.div`
 // ponemos una cookie para saber si le usuarix pasó por acá
 
 const DetalleArtista1 = () => {
+  const [obra, setObra] = useState(0)
+
+  const onPreviousClick = () => {
+    if (obra > 0) {
+      setObra(obra - 1)
+    }
+  }
+
+  const onNextClick = () => {
+    if (obra < obras.length - 1) {
+      setObra(obra + 1)
+    }
+  }
+
+  const datosObra = obras[obra]
+
   return (
     <Layout>
       <SEO title="Artista" />
@@ -381,9 +304,9 @@ const DetalleArtista1 = () => {
           <NavBar>
             <LogoContainer>
               <Logo src={logoFestival}></Logo>
-              <Placeholder1 src={Placeholder}></Placeholder1>
+              {/* <Placeholder1 src={Placeholder}></Placeholder1> */}
             </LogoContainer>
-            <TimerNavegacion>
+            {/* <TimerNavegacion>
               <TiempoContainer>
                 <Horas>01</Horas>
                 <TextoContadores>Hs.</TextoContadores>
@@ -396,7 +319,7 @@ const DetalleArtista1 = () => {
                 <Seg>00</Seg>
                 <TextoContadores>Seg.</TextoContadores>
               </TiempoContainer>
-            </TimerNavegacion>
+            </TimerNavegacion> */}
             <CantidadVisitantesContainer>
               <CantidadVisitantes>30000</CantidadVisitantes>
               <TextoContadores>Visitantes</TextoContadores>
@@ -451,58 +374,23 @@ const DetalleArtista1 = () => {
             </BioArtista>
           </BioArtistaContainer>
           <FotoObraContainer>
-            <NombreObra>
-              NOMBRE DE LA MUESTRA CON UN MAXIMO DE 50 CARACTERES
-            </NombreObra>
+            <NombreObra>INHALACIONES TERRITORIALES</NombreObra>
           </FotoObraContainer>
 
-          <DetalleObraContainer>
-            <MargenIzquierdo>
-              <FlechaSlider left src={flechaSliderIzqNormal}></FlechaSlider>
-            </MargenIzquierdo>
-            <DetalleObra>
-              <FotoObra src={fotoObra} height="880px" width="576px"></FotoObra>
-              <DescripcionContainer>
-                <ProcedenciaFotosContainer>
-                  <CiudadPais>Buenos Aires, Argentina</CiudadPais>
-                  <CantFotos>1/10</CantFotos>
-                </ProcedenciaFotosContainer>
-                <TituloWebCont>
-                  <TituloObra>Displaced</TituloObra>
-                  <LinkWeb>Web</LinkWeb>
-                </TituloWebCont>
-                <ParrafoObra>
-                  Se trata de una instalación robótica sobre los desplazamientos
-                  vinculados a los desastres climáticos, a las migraciones
-                  forzadas, los destinos inciertos y la incertidumbre. Desde
-                  2009, se estima que una persona por segundo es obligada a
-                  abandonar su hábitat por fenómenos naturales causados por el
-                  cambio climático: inundaciones, sequías, terremotos, tsunamis,
-                  desmontes, minería y contaminación de recursos hídricos.
-                </ParrafoObra>
-                <ParrafoObra>
-                  Se trata de una instalación robótica sobre los desplazamientos
-                  vinculados a los desastres climáticos, a las migraciones
-                  forzadas, los destinos inciertos y la incertidumbre. Desde
-                  2009, se estima que una persona por segundo es obligada a
-                  abandonar su hábitat por fenómenos naturales causados por el
-                  cambio climático: inundaciones, sequías, terremotos, tsunamis,
-                  desmontes, minería y contaminación de recursos hídricos.
-                </ParrafoObra>
-                <ParrafoObra>
-                  Se trata de una instalación robótica sobre los desplazamientos
-                  vinculados a los desastres climáticos, a las migraciones
-                  forzadas, los destinos inciertos y la incertidumbre.Desde
-                  2009, se estima que una persona por segundo es obligada a
-                  abandonar su hábitat por fenómenos naturales causados por el
-                  cambio climático: inundacio...
-                </ParrafoObra>
-              </DescripcionContainer>
-            </DetalleObra>
-            <MargenDerecho>
-              <FlechaSlider src={flechaSliderDerNormal}></FlechaSlider>
-            </MargenDerecho>
-          </DetalleObraContainer>
+          <Carousel
+            ciudadPais={datosObra.ciudadPais}
+            fotoObra={datosObra.fotoObra}
+            tituloObra={datosObra.tituloObra}
+            obraURL={datosObra.obraURL}
+            onPreviousClick={onPreviousClick}
+            onNextClick={onNextClick}
+            count={obras.length}
+            value={obra}
+          >
+            {datosObra.parrafos.map(parrafo => (
+              <ParrafoObra>{parrafo}</ParrafoObra>
+            ))}
+          </Carousel>
         </DAMain>
       </DAContainer>
       <Footer></Footer>

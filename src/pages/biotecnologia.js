@@ -1,11 +1,13 @@
 import React from "react"
 import Agenda from "../components/agenda"
+import Carousel, { ParrafoObra } from "../components/carousel"
 import styled from "styled-components"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import bannerBg from "../../static/images/biotecnologia/biotecnologia_banner_bg.png"
 import logoFestival from "../images/Academia/logo libélula.png"
 import Placeholder from "../../static/images/Icon-Placeholder-1.png"
+import fotoObra from "../images/DetalleArtistas/Displaced_Cantera_1_de-10.png"
 import carousel from "../../static/images/biotecnologia/empresa.jpg"
 import botonAdelante from "../../static/images/biotecnologia/flechita_der.png"
 import botonAtras from "../../static/images/biotecnologia/flechita_izq.png"
@@ -340,7 +342,7 @@ const BiotecnologiaPage = () => {
               <Logo src={logoFestival}></Logo>
               <Placeholder1 src={Placeholder}></Placeholder1>
             </LogoContainer>
-            <TimerNavegacion>
+            {/* <TimerNavegacion>
               <TiempoContainer>
                 <Horas>01</Horas>
                 <TextoContadores>Hs.</TextoContadores>
@@ -353,7 +355,7 @@ const BiotecnologiaPage = () => {
                 <Seg>00</Seg>
                 <TextoContadores>Seg.</TextoContadores>
               </TiempoContainer>
-            </TimerNavegacion>
+            </TimerNavegacion> */}
             <CantidadVisitantesContainer>
               <CantidadVisitantes>30000</CantidadVisitantes>
               <TextoContadores>Visitantes</TextoContadores>
@@ -367,69 +369,39 @@ const BiotecnologiaPage = () => {
           </AgendaCont>
         </Section>
         <SectionCarousel>
-          <SubSectionCarousel>
-            <Title>Empresas</Title>
-            <CarouselCont>
-              <ImagenEmpresa src={carousel} />
-              <EmpresaCont>
-                <Botonera>
-                  <BotonAtras src={botonAtras}></BotonAtras>
-                  <BotonAdelante src={botonAdelante}></BotonAdelante>
-                </Botonera>
-                <Slidebar></Slidebar>
-                <InfoEmpresa>
-                  <InfoEmpCol1>
-                    <UbicacionEmpresa>Buenos Aires</UbicacionEmpresa>
-                    <InfoCol2> 03 - 36 </InfoCol2>
-                  </InfoEmpCol1>
-                  <InfoEmpCol2>
-                    <NombreEmpresa>Biogénesis Bagó</NombreEmpresa>
-                  </InfoEmpCol2>
-                </InfoEmpresa>
-                <DetalleEmpresa>
-                  <TextoDetalleEmpresa>
-                    Artista bioelectrónica, investigadora y docente. Magister en
-                    Artes Electrónicas graduada con honores en la Universidad
-                    Nacional de Tres de Febrero, Licenciada y Profesora en Artes
-                    Visuales egresada
-                  </TextoDetalleEmpresa>
-                </DetalleEmpresa>
-              </EmpresaCont>
-            </CarouselCont>
-          </SubSectionCarousel>
+          <Carousel
+            ciudadPais="Buenos Aires, Argentina"
+            fotoObra={fotoObra}
+            tituloObra="Displaced"
+            obraURL="https://www.analauracantera.com.ar/displaced"
+          >
+            <ParrafoObra>
+              Se trata de una instalación robótica sobre los desplazamientos
+              vinculados a los desastres climáticos, a las migraciones forzadas,
+              los destinos inciertos y la incertidumbre. Desde 2009, se estima
+              que una persona por segundo es obligada a abandonar su hábitat por
+              fenómenos naturales causados por el cambio climático:
+              inundaciones, sequías, terremotos, tsunamis, desmontes, minería y
+              contaminación de recursos hídricos.
+            </ParrafoObra>
+            <ParrafoObra>
+              Se trata de una instalación robótica sobre los desplazamientos
+              vinculados a los desastres climáticos, a las migraciones forzadas,
+              los destinos inciertos y la incertidumbre. Desde 2009, se estima
+              que una persona por segundo es obligada a abandonar su hábitat por
+              fenómenos naturales causados por el cambio climático:
+              inundaciones, sequías, terremotos, tsunamis, desmontes, minería y
+              contaminación de recursos hídricos.
+            </ParrafoObra>
+            <ParrafoObra>
+              Se trata de una instalación robótica sobre los desplazamientos
+              vinculados a los desastres climáticos, a las migraciones forzadas,
+              los destinos inciertos y la incertidumbre.Desde 2009, se estima
+              que una persona por segundo es obligada a abandonar su hábitat por
+              fenómenos naturales causados por el cambio climático: inundacio...
+            </ParrafoObra>
+          </Carousel>
         </SectionCarousel>
-        <Footer>
-          <LogosFooter>
-            <LogoEmpresaCont>
-              <LogoEmpresa src={logoEmp1}></LogoEmpresa>
-              <HoverDiv></HoverDiv>
-            </LogoEmpresaCont>
-            <LogoEmpresaCont>
-              <LogoEmpresa src={logoEmp2}></LogoEmpresa>
-              <HoverDiv></HoverDiv>
-            </LogoEmpresaCont>
-            <LogoEmpresaCont>
-              <LogoEmpresa src={logoEmp3}></LogoEmpresa>
-              <HoverDiv></HoverDiv>
-            </LogoEmpresaCont>
-            <LogoEmpresaCont>
-              <LogoEmpresa src={logoEmp4}></LogoEmpresa>
-              <HoverDiv></HoverDiv>
-            </LogoEmpresaCont>
-            <LogoEmpresaCont>
-              <LogoEmpresa src={logoEmp5}></LogoEmpresa>
-              <HoverDiv></HoverDiv>
-            </LogoEmpresaCont>
-            <LogoEmpresaCont>
-              <LogoEmpresa src={logoEmp6}></LogoEmpresa>
-              <HoverDiv></HoverDiv>
-            </LogoEmpresaCont>
-            <LogoEmpresaCont>
-              <LogoEmpresa src={logoEmp7}></LogoEmpresa>
-              <HoverDiv></HoverDiv>
-            </LogoEmpresaCont>
-          </LogosFooter>
-        </Footer>
       </BiotecnologiaCont>
     </Layout>
   )
