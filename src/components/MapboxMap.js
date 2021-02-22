@@ -93,7 +93,13 @@ const SearchControl = ({ features = [], onSelect }) => {
 }
 
 const SearchControlInput = styled(({ className, onChange, value }) => (
-  <input className={className} value={value} onChange={onChange} type="text" />
+  <input
+    className={className}
+    value={value}
+    onChange={onChange}
+    placeholder="Busca universidades biotecnología"
+    type="text"
+  />
 ))`
   border-radius: 1rem;
   border: solid 1px #888;
@@ -105,6 +111,10 @@ const SearchControlInput = styled(({ className, onChange, value }) => (
 
   &:focus {
     outline: none;
+  }
+  ::placeholder {
+    color: gray;
+    font-size: 1rem;
   }
 `
 
