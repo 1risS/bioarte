@@ -33,6 +33,7 @@ const DetalleObra = styled.div`
   max-width: 1152px;
   margin: 0;
   background-color: white;
+  min-height: 880px;
 `
 
 const DescripcionContainer = styled.div`

@@ -355,20 +355,29 @@ const DetalleArtista1 = () => {
                   (UNA).
                 </ParrafoFormacion>
                 <Parrafo>
-                  En sus producciones artísticas trabaja con los conceptos de
-                  naturaleza y territorio como interfaz mediante electrónica y
-                  organismos no-humanos. Obtuvo recientemente la beca Global
-                  Community Bio Fellows, desarrollada en el MIT y la ELAP
-                  Emerging Leaders in the Americas Program (Concordia
-                  University-Montreal). Es co-fundadora de Mycocrea -
-                  Laboratorio de biomateriales y del colectivo de arte y
-                  biorobótica Robotícula, junto a Demián Ferrari.
+                  Ha exhibido sus obras en Argentina, Brasil, Venezuela, Canadá,
+                  EEUU, México, Irán, Israel, Mongolia, Francia, España, Perú,
+                  Bangladesh, entre otros.
                 </Parrafo>
                 <Parrafo>
-                  Ha exhibido sus obras en Argentina, Brasil, Venezuela, Canadá,
-                  México, Irán, Israel, Mongolia, Francia, España, entre otros.
-                  Se desempeña como docente y coordinadora de la Maestría en
-                  Tecnología y Estética de las Artes Electrónicas de la UNTREF.
+                  Obtuvo la beca Global Community Bio Fellows, desarrollada en
+                  el MIT, la Emerging Leaders in the Americas Programm en
+                  Concordia University, Montreal, y ha sido parte de numerosas
+                  residencias internacionales, como la LAM 360° Land Art
+                  Mongolia Biennial. Recientemente ganó el Primer Premio
+                  categoría Arte y Robótica del Premio Itaú a las Artes Visuales
+                  y la beca de investigación CAPES – PRINT, en la Universidade
+                  Federal de Rio de Janeiro. Por su desarrollo de biocueros de
+                  yerba mate, ha sido parte del 3D Fashion Week Latinoamérica
+                  desarrollado en Perú.
+                </Parrafo>
+                <Parrafo>
+                  Es co-fundadora de Mycocrea - Laboratorio de biomateriales,
+                  del colectivo de arte y biorobótica Robotícula, del colectivo
+                  Ecoestéticas y del Laboratorio de Geopoéticas Subalternas. Se
+                  desempeña como docente, investigadora y coordinadora de la
+                  Maestría en Tecnología y Estética de las Artes Electrónicas de
+                  la UNTREF.
                 </Parrafo>
               </BioTexto>
             </BioArtista>

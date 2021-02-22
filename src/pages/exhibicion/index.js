@@ -305,7 +305,7 @@ const ExhibicionPage = () => {
           <RowContainer>
             <RowPairs>
               <Column>
-                <Link to="detalleArtista1">
+                <Link to="anaLauraCantera">
                   <ContainerHoverDiv>
                     <Foto src={art01}></Foto>
                     <HoverDiv></HoverDiv>
