@@ -105,13 +105,13 @@ const LineaDeTiempo = () => {
               <Logo src={logoFestival}></Logo>
               {/* <Placeholder1 src={Placeholder}></Placeholder1> */}
             </LogoContainer>
-            <CantidadVisitantesContainer>
+            {/* <CantidadVisitantesContainer>
               <CantidadVisitantes>30000</CantidadVisitantes>
               <TextoContadores>Visitantes</TextoContadores>
-            </CantidadVisitantesContainer>
+            </CantidadVisitantesContainer> */}
           </NavBar>
-          <Texto>BIOARTE</Texto>
-          <Subtexto>Hitos históricos</Subtexto>
+          <Texto>Acerca del Bioarte</Texto>
+          <Subtexto>hitos históricos y reflexiones</Subtexto>
         </HistoriaHeaderContainer>
 
         <TimelineCont>

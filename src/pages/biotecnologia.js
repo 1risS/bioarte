@@ -340,7 +340,7 @@ const BiotecnologiaPage = () => {
           <NavBar>
             <LogoContainer>
               <Logo src={logoFestival}></Logo>
-              <Placeholder1 src={Placeholder}></Placeholder1>
+              {/* <Placeholder1 src={Placeholder}></Placeholder1> */}
             </LogoContainer>
             {/* <TimerNavegacion>
               <TiempoContainer>
@@ -356,18 +356,13 @@ const BiotecnologiaPage = () => {
                 <TextoContadores>Seg.</TextoContadores>
               </TiempoContainer>
             </TimerNavegacion> */}
-            <CantidadVisitantesContainer>
+            {/* <CantidadVisitantesContainer>
               <CantidadVisitantes>30000</CantidadVisitantes>
               <TextoContadores>Visitantes</TextoContadores>
-            </CantidadVisitantesContainer>
+            </CantidadVisitantesContainer> */}
           </NavBar>
           <Texto>Biotecnología</Texto>
         </BiotecnologiaHeaderCont>
-        <Section>
-          <AgendaCont>
-            <Agenda />
-          </AgendaCont>
-        </Section>
         <SectionCarousel>
           <Carousel
             ciudadPais="Buenos Aires, Argentina"
@@ -402,6 +397,11 @@ const BiotecnologiaPage = () => {
             </ParrafoObra>
           </Carousel>
         </SectionCarousel>
+        <Section>
+          <AgendaCont>
+            <Agenda />
+          </AgendaCont>
+        </Section>
       </BiotecnologiaCont>
     </Layout>
   )

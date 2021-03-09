@@ -251,7 +251,7 @@ const AcademiaPage = () => {
           <NavBar>
             <LogoContainer>
               <Logo src={logoFestival}></Logo>
-              <Placeholder1 src={Placeholder}></Placeholder1>
+              {/* <Placeholder1 src={Placeholder}></Placeholder1> */}
             </LogoContainer>
             {/* <TimerNavegacion>
               <TiempoContainer>
@@ -267,14 +267,14 @@ const AcademiaPage = () => {
                 <TextoContadores>Seg.</TextoContadores>
               </TiempoContainer>
             </TimerNavegacion> */}
-            <CantidadVisitantesContainer>
+            {/* <CantidadVisitantesContainer>
               <CantidadVisitantes>30000</CantidadVisitantes>
               <TextoContadores>Visitantes</TextoContadores>
-            </CantidadVisitantesContainer>
+            </CantidadVisitantesContainer> */}
           </NavBar>
           <Texto>Academia</Texto>
-          <Subtexto>Acompañanos a conocer</Subtexto>
-          <BannerHubs src={bannerHubs}></BannerHubs>
+          <Subtexto>Mapa Argentino de Carreras de Biotecnologia</Subtexto>
+          {/* <BannerHubs src={bannerHubs}></BannerHubs> */}
         </AcademiaHeaderContainer>
         <Section>
           <UniversidadesContainer>

@@ -257,13 +257,22 @@ const BioContainer = styled.div`
   background-color: ${props => props.theme.colors.bg1};
 `
 
-const LikeLikeCont = styled.div`
+const LikeLikeCont = styled.a`
   margin-left: 10rem;
   align-self: flex-end;
   margin: 0rem 4rem 0rem 0rem;
 `
 
 const Like = styled.img``
+
+const Subtexto = styled.div`
+  font-family: ${props => props.theme.fontFamily};
+  font-weight: ${props => props.theme.fontWeights.light};
+  font-style: italic;
+  font-size: 1.5rem;
+  color: white;
+  align-self: center;
+`
 
 const ExhibicionPage = () => {
   return (
@@ -291,13 +300,14 @@ const ExhibicionPage = () => {
                 <TextoContadores>Seg.</TextoContadores>
               </TiempoContainer>
             </TimerNavegacion> */}
-            <CantidadVisitantesContainer>
+            {/* <CantidadVisitantesContainer>
               <CantidadVisitantes>30000</CantidadVisitantes>
               <TextoContadores>Visitantes</TextoContadores>
-            </CantidadVisitantesContainer>
+            </CantidadVisitantesContainer> */}
           </NavBar>
           <Texto>Bioarte</Texto>
-          <LikeLikeCont>
+          <Subtexto>Exhibición virtual</Subtexto>
+          <LikeLikeCont src="http://likelike.glitch.me/">
             <Like src={like} />
           </LikeLikeCont>
         </ExhibicionHeaderContainer>
