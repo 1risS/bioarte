@@ -136,7 +136,7 @@ const CantFotos = styled.div`
   color: #ec6b42;
 `
 const ParrafoObra = styled.div`
-  font-size: 14pt;
+  font-size: 12pt;
 `
 
 const Carousel = ({
