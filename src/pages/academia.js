@@ -29,9 +29,8 @@ const AcademiaHeaderContainer = styled.div`
 const NavBar = styled.div`
   display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
-  margin-top: 1rem;
+  align-items: flex-start;
+  margin-top: 3rem;
   margin-bottom: -2rem;
 `
 const LogoContainer = styled.div`
