@@ -42,9 +42,9 @@ const BiotecnologiaHeaderCont = styled.div`
 const NavBar = styled.div`
   display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
-  margin-top: 1rem;
+  align-items: flex-start;
+  // justify-content: space-around;
+  margin-top: 3rem;
   margin-bottom: -2rem;
 `
 const LogoContainer = styled.div`
@@ -58,7 +58,7 @@ const Logo = styled.img`
   height: 3rem;
   width: 3rem;
   margin-right: 3rem;
-  align-self: center;
+  align-self: flex-start;
 `
 const Placeholder1 = styled.img`
   height: 3rem;
@@ -166,6 +166,7 @@ const SectionCarousel = styled.section`
   width: 60%;
   justify-content: center;
   background-color: ${props => props.theme.colors.bg1};
+  padding-top: 4rem;
 `
 const SubSectionCarousel = styled.div`
   max-width: 1164px;

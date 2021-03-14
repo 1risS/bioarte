@@ -80,7 +80,8 @@ const Title = styled.p`
 const Desc = styled.p`
   font-family: ${props => props.theme.fontFamily};
   color: white;
-  font-size: 14.5px;
+  font-size: 14px;
+  font-weight: 100;
 `
 
 // const tagManagerArgs = {
@@ -115,6 +116,7 @@ const DivDer360 = styled.div`
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  margin: 1rem;
 `
 
 const IndexPage = () => {
@@ -200,14 +202,14 @@ const IndexPage = () => {
               links.<br></br> <br></br>¡Los invitamos a disfrutar de la
               experiencia Proyecto Bios!
             </Desc>
+            <DivDer360>
+              <LinkWrapper>
+                <StyledLink to="/pano">
+                  <Exp src="images/welcome/BtnWelcome_Lab-Normal.png"></Exp>
+                </StyledLink>
+              </LinkWrapper>
+            </DivDer360>
           </DivDer>
-          <DivDer360>
-            <LinkWrapper>
-              <StyledLink to="/pano">
-                <Exp src="images/welcome/BtnWelcome_Lab-Normal.png"></Exp>
-              </StyledLink>
-            </LinkWrapper>
-          </DivDer360>
         </ContDerContainer>
       </BienvenidaContainer>
     </Layout>

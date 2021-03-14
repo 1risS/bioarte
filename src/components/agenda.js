@@ -7,6 +7,7 @@ import placeholder from "../images/placeholder.png"
 
 const days = ["05/04", "06/04", "07/04", "08/04", "09/04"]
 const eventsPerDay = [
+  //dia 1
   [
     {
       time: "15:00",
@@ -14,24 +15,30 @@ const eventsPerDay = [
       speaker: "Equipo BIOS + C3",
       desc:
         "Guadalupe, Laura, Iris, Tomas, Lujan, Susana" +
-        "presentan el proyecto BIOS " +
+        "Tomás y Lucía presentan el proyecto BIOS " +
         "",
     },
     {
       time: "16:00",
       title: "ARTE: Biorobótica",
-      speaker: "Ana Laura Cantera, Damián Ferrari, Daniel Álvarez Olmedo",
+      speaker: "Ana Laura Cantera, Daniel Álvarez Olmedo, Darío Sacco",
       desc: "??????????",
     },
     {
+      time: "16:50",
+      title: "Filler1",
+      speaker: "tbd",
+      desc: "tbd",
+    },
+    {
       time: "17:00",
-      title: "BIOTECNOLOGÍA: Casos de Biotecnología",
-      speaker: "FAN",
+      title: "FAN - Nanotecnología en Biotecnología",
+      speaker: "Lucía Policastro",
       desc: "?????????????",
     },
     {
       time: "18:00",
-      title: "ACADEMIA: 'Biotecnologia roja : Cs. Medicas, Salud, Genetica' ",
+      title: "ACADEMIA: 'Biotecnologia roja: Cs. Medicas, Salud, Genetica' ",
       speaker: "UBA+UNAM+UNOBA+UNIMORON",
       desc: "?????????????",
     },
@@ -42,36 +49,44 @@ const eventsPerDay = [
       desc: "?????????????",
     },
   ],
+  // dia 2
   [
     {
       time: "15:00",
       title: "ACADEMIA: Creación de empresas de base tecnológica",
       speaker: "UNQ + UNL",
-      desc: "???????",
+      desc: "Modera Susana Levy",
     },
     {
       time: "16:00",
       title: "BIOTECNOLOGÍA: Salud humana",
-      speaker: "Gemmabiotech, Roche, Bayer, Biosidus",
-      desc: "??????????",
+      speaker: "AmegaBiotech, Roche, mAxbcience.",
+      desc: "Modera Diego Golombek",
+    },
+    {
+      time: "16:50",
+      title: "Filler2",
+      speaker: "tbd",
+      desc: "tbd",
     },
     {
       time: "17:00",
       title: "BIOTECNOLOGÍA: Producción insumos industriales: Novozymes",
-      speaker: "Gemmabiotech, Roche, Bayer, Biosidus",
+      speaker: "??????????",
       desc: "??????????",
     },
     {
       time: "18:00",
-      title: "Taller Claudia Valente en Mozila hub",
-      speaker: "Claudia Valente",
-      desc: "??????????",
+      title: "Arte: Proyecto Namiki y colectivo Muru 7.8",
+      speaker: "Proyecto Namiki y colectivo Muru 7.8",
+      desc:
+        "Presentacion  Proyecto Namiki y Performance por colectivo Muru 7.8 en plataforma Mozilla hub",
     },
     {
       time: "18:50",
-      title: "Filler",
-      speaker: "Filler",
-      desc: "??????????",
+      title: "Filler3",
+      speaker: "tbd",
+      desc: "tbd",
     },
     {
       time: "19:00",
@@ -80,12 +95,13 @@ const eventsPerDay = [
       desc: "??????????",
     },
   ],
+  // dia 3
   [
     {
       time: "15:00",
       title: "BIOTECNOLOGÍA: una vision al futuro",
       speaker: "BIFE + Kheiron Biotech + myDNAmap ",
-      desc: "????????????????",
+      desc: "Modera Tomás Oulton",
     },
     {
       time: "16:00",
@@ -95,24 +111,30 @@ const eventsPerDay = [
       desc: "??????????",
     },
     {
+      time: "16:50",
+      title: "Filler4",
+      speaker: "tbd",
+      desc: "tbd",
+    },
+    {
       time: "17:00",
       title: "ARTE: Agar Art y Modelado Molecular",
       speaker:
         "Gabriel Gutkind, Daniela Cejas, Laura Echarren, Federico Coscio, Pablo Power",
-      desc: "??????????",
+      desc: "Modera Gabriel Gutlind",
     },
     {
       time: "18:00",
       title: "BIOTECNOLOGÍA: Salud y Reproduccion animal",
       speaker:
         "Biotecnofe - Foro Argentino de Genética Bovina - Biochemiq - Bioinnovo - Biogenesis Bagó",
-      desc: "??????????",
+      desc: "Modera Daniel Salamone",
     },
     {
       time: "18:50",
-      title: "Performance del corazón en el celular",
-      speaker: "???????????",
-      desc: "??????????",
+      title: "Performance: construcción de una obra colectiva de BioArte",
+      speaker: "tbd",
+      desc: "tbd",
     },
     {
       time: "19:00",
@@ -121,12 +143,13 @@ const eventsPerDay = [
       desc: "??????????",
     },
   ],
+  // dia 4
   [
     {
       time: "15:00",
       title: "ARTE: Biomateriales, biosensado y biosonificacion",
       speaker: "Veronica, Ana Paula, Electrobiota, Oliverio",
-      desc: "????????????????",
+      desc: "Modera N.Matewecki",
     },
     {
       time: "16:00",
@@ -138,57 +161,58 @@ const eventsPerDay = [
       time: "17:00",
       title: "ACADEMIA: Biofabricacion de Organos",
       speaker: "UP, CAECE, U Favaloro Video BIotecX - Life SI",
-      desc: "??????????",
+      desc: "Modera Guillermo Winnicki",
     },
     {
       time: "18:00",
-      title: "ARTE: performance",
-      speaker: "micra",
-      desc: "??????????",
+      title: "ARTE: performance arte microscópico",
+      speaker: "MicRA",
+      desc: "Performance arte microscópico",
     },
     {
       time: "18:40",
-      title: "YouTube La Hiperactina",
-      speaker: "???????",
+      title: "Academia: El Himno Argentino en una bacteria",
+      speaker: "UADE",
       desc: "??????????",
     },
     {
       time: "19:00",
       title: "Mesa redonda",
       speaker: "artistas / academia / empresas",
-      desc: "??????????",
+      desc: "Modera Guadalupe Diaz Constanzo",
     },
     {
       time: "15:00",
-      title: "ARTE: Biomateriales, biosensado y biosonificacion",
-      speaker: "Veronica, Ana Paula, Electrobiota, Oliverio",
+      title: "Academia: Bioeconomía",
+      speaker: "Fernando Viella",
       desc: "????????????????",
     },
     {
       time: "16:00",
-      title: "BIOTECNOLOGÍA: Mejoramiento cultivos y transgenicos",
-      speaker: "ArgenBio",
+      title: "Arte: Taller Bioarte",
+      speaker: "Joaquín Fargas",
+      desc: "Mozilla Hubs",
+    },
+    {
+      time: "16:40",
+      title: "ACADEMIA: Bioinformática",
+      speaker: "UTN",
       desc: "??????????",
     },
     {
       time: "17:00",
-      title: "ACADEMIA: Biofabricacion de Organos",
-      speaker: "UP, CAECE, U Favaloro Video BIotecX - Life SI",
-      desc: "??????????",
+      title: "ARTE: mesa de Universidades",
+      speaker: "Untref Biolab, Lab Latam BioArte UAI, UMSA",
+      desc: "Modera Lucia Stubrin",
     },
     {
       time: "18:00",
-      title: "ARTE: performance",
-      speaker: "micra",
-      desc: "??????????",
-    },
-    {
-      time: "19:00",
       title: "Mesa redonda",
       speaker: "artistas / academia / empresas",
       desc: "??????????",
     },
   ],
+  // dia 5
   [
     {
       time: "15:00",
@@ -211,26 +235,31 @@ const eventsPerDay = [
     {
       time: "17:00",
       title: "ARTE: mesa de Universidades",
-      speaker:
-        "Untref Biolab, Lab Latam BioArte UAI, UMSA, Modera Lucia Stubrin",
-      desc: "??????????",
+      speaker: "Untref Biolab, Lab Latam BioArte UAI, UMSA",
+      desc: "Modera Lucia Stubrin",
     },
     {
       time: "18:00",
       title: "BIOTECNOLOGÍA: startups",
       speaker: "GridX + Beeflow + Algaebio+ + Einsted",
-      desc: "??????????",
+      desc: "Modera GridX",
     },
     {
       time: "18:50",
-      title: "Filler",
-      speaker: "Filler",
-      desc: "??????????",
+      title: "Filler5",
+      speaker: "tbd",
+      desc: "tbd",
     },
     {
       time: "19:00",
-      title: "Cierre",
+      title: "Arte y Ciencia",
       speaker: "Pablo Lapadula",
+      desc: "??????????",
+    },
+    {
+      time: "19:45",
+      title: "Cierre",
+      speaker: "C3 y Oa",
       desc: "??????????",
     },
   ],
@@ -349,7 +378,7 @@ const Detail = styled.p`
     color: #fff;
     font-size: 0.875rem;
     flex-grow: 1;
-    padding: 0 4em 0 1em;
+    padding: 0 4em 0 0em;
   }
   & > img {
     height: 110px;
@@ -371,7 +400,7 @@ const Entry = ({ time, speaker, title, detail }) => {
         <ActivityContainer>
           <Title>{title}</Title>
           <Detail expanded={expanded}>
-            <img src={placeholder} />
+            {/* <img src={placeholder} /> */}
             <p>{detail}</p>
           </Detail>
         </ActivityContainer>
