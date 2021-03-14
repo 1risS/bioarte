@@ -14,12 +14,12 @@ const BienvenidaContainer = styled.div`
   display: flex;
   flex-direction: row;
   width: 100%;
-  height: 100vh;
   background-color: black;
   background-image: url(${logo});
   background-size: 87%;
   background-repeat: no-repeat;
   background-position: center;
+  background-attachment: fixed;
 `
 const LinkWrapper = styled.div``
 
