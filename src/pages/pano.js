@@ -3,6 +3,7 @@ import SEO from "../components/seo"
 import { createGlobalStyle } from "styled-components"
 import Layout from "../components/layout"
 import styled from "styled-components"
+import TWEEN from "@tweenjs/tween.js"
 // import { useCookies } from "react-cookie"
 
 const GlobalStyle = createGlobalStyle`
@@ -91,14 +92,49 @@ const PanoPage = () => {
   // const [cookies, setCookie] = useCookies()
 
   useEffect(() => {
+    console.log("initial load")
+
+    let viewer
+    let zoomRequestId
+
+    // Setup the animation loop.
+    const animate = time => {
+      requestAnimationFrame(animate)
+      TWEEN.update(time)
+    }
+    zoomRequestId = requestAnimationFrame(animate)
+
+    const zoom = (viewer, duration, easing) => {
+      const camera = viewer.getCamera()
+      // const zoomCamera = () => {
+      //   zoomRequestId = requestAnimationFrame(zoomCamera)
+      //   camera.fov -= 0.1
+      //   camera.updateProjectionMatrix()
+      // }
+      // zoomCamera()
+      const zoom = { value: camera.zoom }
+      const zoomEnd = { value: camera.zoom + 2 }
+      const tween = new TWEEN.Tween(zoom)
+        .to(zoomEnd, duration)
+        .easing(easing)
+        .onUpdate(() => {
+          camera.zoom = zoom.value
+          camera.updateProjectionMatrix()
+        })
+      tween.start()
+    }
+
     const run = async () => {
+      console.log("run")
+
       const Panolens = await import("panolens")
       const Three = await import("three")
+
       const { GLTFLoader } = await import(
         "three/examples/jsm/loaders/GLTFLoader"
       )
 
-      const viewer = new Panolens.Viewer({
+      viewer = new Panolens.Viewer({
         output: "console",
         autoHideInfospot: false,
         cameraFov: 55,
@@ -112,11 +148,15 @@ const PanoPage = () => {
       // Crea infospot para las subpáginas
       const createInfoSpot = (hoverText, position, onClick) => {
         const infospot = new Panolens.Infospot()
+        const linkDuration = 500
+        const linkEasing = TWEEN.Easing.Quadratic.InOut
         infospot.position.set(...position)
         infospot.addHoverText(hoverText)
         infospot.addEventListener("click", () => {
           console.log("click")
-          onClick()
+          zoom(viewer, 2 * linkDuration, linkEasing)
+          infospot.focus(500, linkEasing)
+          setTimeout(() => onClick(), linkDuration)
         })
         infospot.addEventListener("hover", function (event) {
           // console.log(event.mouseEvent)
@@ -328,11 +368,13 @@ const PanoPage = () => {
       )
 
       function onEnter(event) {
+        console.log("onEnter")
         progressElement.style.width = 0
         progressElement.style.opacity = 1
       }
 
       function onProgress(event) {
+        console.log("onProgress")
         const progress = (event.progress.loaded / event.progress.total) * 100
         console.log("progress:", progress)
         if (progress === 100) {
@@ -372,6 +414,11 @@ const PanoPage = () => {
     }
 
     run()
+
+    return function cleanup() {
+      if (zoomRequestId) cancelAnimationFrame(zoomRequestId)
+      // if (viewer) viewer.dispose();
+    }
   }, [])
 
   return (
