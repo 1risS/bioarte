@@ -2,8 +2,8 @@ import React, { useState } from "react"
 import styled from "styled-components"
 import flechaSliderIzqNormal from "../images/DetalleArtistas/Btn-CiircleArrow_Normal.png"
 import flechaSliderDerNormal from "../images/DetalleArtistas/Btn-CiircleArrow_Normal_DER.png"
-import flechaSliderIzqPressed from "../images/DetalleArtistas/Btn-CiircleArrow_Click.png"
-import flechaSliderDerPressed from "../images/DetalleArtistas/Btn-CiircleArrow_Click.png"
+import flechaSliderIzqPressed from "../../static/images/carousel/Btn-CircleArrow_Click_Left.png"
+import flechaSliderDerPressed from "../../static/images/carousel/Btn-CiircleArrow_Click.png"
 
 const DetalleObraContainer = styled.div`
   display: flex;
