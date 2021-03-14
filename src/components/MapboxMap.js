@@ -3,9 +3,9 @@ import ReactMapGL, { Marker, Popup, FlyToInterpolator } from "react-map-gl"
 import * as uniData from "../data/universidades.json"
 import pin from "../images/pin.png"
 import styled from "styled-components"
+import process from "process"
 
-let REACT_APP_MAPBOX_TOKEN =
-  "pk.eyJ1IjoiY2F0YWhhY2hlIiwiYSI6ImNrZ3BsNnoxYTA3dHYyenIzOXBjNnE2M20ifQ.8jOX6CUIDqlnBoMjkxtH1A"
+let MAPBOX_TOKEN = process.env.MAPBOX_TOKEN
 
 const MapContainer = styled.div`
   position: relative;
@@ -204,7 +204,7 @@ export default function MapboxMap() {
         </SearchContainer>
         <ReactMapGL
           {...viewport}
-          mapboxApiAccessToken={REACT_APP_MAPBOX_TOKEN}
+          mapboxApiAccessToken={MAPBOX_TOKEN}
           mapStyle="mapbox://styles/catahache/ckhtxig0t182319nzro2le33u"
           onViewportChange={viewport => {
             setViewport(viewport)
