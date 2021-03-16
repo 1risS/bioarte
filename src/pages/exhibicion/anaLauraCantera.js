@@ -304,26 +304,7 @@ const DetalleArtista1 = () => {
           <NavBar>
             <LogoContainer>
               <Logo src={logoFestival}></Logo>
-              {/* <Placeholder1 src={Placeholder}></Placeholder1> */}
             </LogoContainer>
-            {/* <TimerNavegacion>
-              <TiempoContainer>
-                <Horas>01</Horas>
-                <TextoContadores>Hs.</TextoContadores>
-              </TiempoContainer>
-              <TiempoContainer>
-                <Min>00</Min>
-                <TextoContadores>Min.</TextoContadores>
-              </TiempoContainer>
-              <TiempoContainer>
-                <Seg>00</Seg>
-                <TextoContadores>Seg.</TextoContadores>
-              </TiempoContainer>
-            </TimerNavegacion> */}
-            {/* <CantidadVisitantesContainer>
-              <CantidadVisitantes>30000</CantidadVisitantes>
-              <TextoContadores>Visitantes</TextoContadores>
-            </CantidadVisitantesContainer> */}
           </NavBar>
           <Texto>Bioarte</Texto>
           <LikeLikeCont>

@@ -89,6 +89,10 @@ const PanoPage = () => {
     window.location.href = "/historia"
   }
 
+  const irBiozen = () => {
+    window.location.href = "https://marieflanagan.com/"
+  }
+
   // const [cookies, setCookie] = useCookies()
 
   useEffect(() => {
@@ -214,6 +218,12 @@ const PanoPage = () => {
         "Historia",
         [4234.1, -1110.68, -2409.32],
         irHistoria
+      )
+
+      const infospotK = createInfoSpot(
+        "Biozen",
+        [3376.05, -748.38, 3604.04],
+        irBiozen
       )
 
       // OBJETOS E IMAGENES
@@ -399,6 +409,7 @@ const PanoPage = () => {
       panorama.add(infospotB)
       panorama.add(infospotC)
       panorama.add(infospotD)
+      panorama.add(infospotK)
       // panorama.add(infospotE)
       // panorama.add(infospotF)
       // panorama.add(infospotG)
