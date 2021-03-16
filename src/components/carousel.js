@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import styled from "styled-components"
-import flechaSliderIzqNormal from "../images/DetalleArtistas/Btn-CiircleArrow_Normal.png"
-import flechaSliderDerNormal from "../images/DetalleArtistas/Btn-CiircleArrow_Normal_DER.png"
+import flechaSliderIzqNormal from "../../static/images/carousel/Btn-CiircleArrow_Normal.png"
+import flechaSliderDerNormal from "../../static/images/carousel/Btn-CiircleArrow_Normal_DER.png"
 import flechaSliderIzqPressed from "../../static/images/carousel/Btn-CircleArrow_Click_Left.png"
 import flechaSliderDerPressed from "../../static/images/carousel/Btn-CiircleArrow_Click.png"
 

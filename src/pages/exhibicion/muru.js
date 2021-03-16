@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from "react"
+import React, { useState } from "react"
 import styled from "styled-components"
 import Layout from "../../components/layout"
 import SEO from "../../components/seo"
 import Chat from "../../components/chat"
-import { useCookies } from "react-cookie"
+// import { useCookies } from "react-cookie"
 import logoFestival from "../../images/Academia/logo libélula.png"
 import fondoHeader from "../../../static/images/carousel/Banner_Exhibition_0.png"
 import libelula from "../../../static/images/carousel/Dragonfly.png"
@@ -273,7 +273,7 @@ const Footer = styled.div`
 
 // ponemos una cookie para saber si le usuarix pasó por acá
 
-const DetalleArtista1 = () => {
+const Muru = () => {
   const [obra, setObra] = useState(0)
 
   const onPreviousClick = () => {
@@ -402,4 +402,4 @@ const DetalleArtista1 = () => {
   )
 }
 
-export default DetalleArtista1
+export default Muru

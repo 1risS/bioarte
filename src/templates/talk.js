@@ -1,6 +1,5 @@
 import React from "react"
 import styled from "styled-components"
-import logo from "../images/logo192.png"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
 
@@ -96,7 +95,7 @@ const Talk = ({ data }) => {
       <DetalleContainer id="detalleContainer">
         <Header id="header">
           <ImgContainer>
-            <img src={artistPhotoUrl || logo} alt="fotoArtista" />
+            <img src={artistPhotoUrl} alt="fotoArtista" />
           </ImgContainer>
           <NombreArtista>{artistName}</NombreArtista>
           <Info>

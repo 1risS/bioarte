@@ -2,7 +2,6 @@ import React from "react"
 import styled from "styled-components"
 import Layout from "../../components/layout"
 import SEO from "../../components/seo"
-import logo from "../../images/logo192.png"
 import art01 from "../../images/Exhibicion/01Cantera/01Cantera.png"
 import art02 from "../../images/Exhibicion/02Ferrari/01ferrari.png"
 import art03 from "../../images/Exhibicion/03Duhalde/01duhalde.png"
@@ -22,7 +21,7 @@ import art13 from "../../images/Exhibicion/13Caterbetti/01catterbetti.png"
 import art17 from "../../images/Exhibicion/17Bergottini/01Bergottini.png"
 
 import logoFestival from "../../images/Academia/logo libélula.png"
-import fondoHeader from "../../images/DetalleArtistas/Banner_Exhibition_0.png"
+import fondoHeader from "../../../static/images/carousel/Banner_Exhibition_0.png"
 import { Link } from "gatsby"
 
 import like from "../../../static/images/exhibicion/likelikeRounded.png"
@@ -320,7 +319,7 @@ const ExhibicionPage = () => {
                     <HoverDiv></HoverDiv>
                   </ContainerHoverDiv>
                 </Link>
-                <Link to="detalleArtista2">
+                <Link to="muru">
                   <ContainerHoverDiv>
                     <Foto src={art02}></Foto>
                     <HoverDiv></HoverDiv>
@@ -341,7 +340,7 @@ const ExhibicionPage = () => {
               </Column>
 
               <Column>
-                <Link to="detalleArtista1">
+                <Link to="muru">
                   <ContainerHoverDiv>
                     <Foto src={art05}></Foto>
                     <HoverDiv></HoverDiv>

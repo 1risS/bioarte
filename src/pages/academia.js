@@ -10,6 +10,8 @@ import logoFestival from "../images/Academia/logo libélula.png"
 import bannerHubs from "../images/Academia/Mozilla Hubs.png"
 import Placeholder from "../../static/images/Icon-Placeholder-1.png"
 import MapboxMap from "../components/MapboxMap"
+import Boton from "../components/boton"
+import Footer from "../components/footer"
 
 const AcademiaContainer = styled.div`
   background-color: ${props => props.theme.colors.bg1};
@@ -250,49 +252,30 @@ const AcademiaPage = () => {
           <NavBar>
             <LogoContainer>
               <Logo src={logoFestival}></Logo>
-              {/* <Placeholder1 src={Placeholder}></Placeholder1> */}
             </LogoContainer>
-            {/* <TimerNavegacion>
-              <TiempoContainer>
-                <Horas>01</Horas>
-                <TextoContadores>Hs.</TextoContadores>
-              </TiempoContainer>
-              <TiempoContainer>
-                <Min>00</Min>
-                <TextoContadores>Min.</TextoContadores>
-              </TiempoContainer>
-              <TiempoContainer>
-                <Seg>00</Seg>
-                <TextoContadores>Seg.</TextoContadores>
-              </TiempoContainer>
-            </TimerNavegacion> */}
-            {/* <CantidadVisitantesContainer>
-              <CantidadVisitantes>30000</CantidadVisitantes>
-              <TextoContadores>Visitantes</TextoContadores>
-            </CantidadVisitantesContainer> */}
           </NavBar>
           <Texto>Academia</Texto>
           <Subtexto>Mapa Argentino de Carreras de Biotecnologia</Subtexto>
-          {/* <BannerHubs src={bannerHubs}></BannerHubs> */}
         </AcademiaHeaderContainer>
         <Section>
           <UniversidadesContainer>
             <TextoDark>Universidades</TextoDark>
             <SectionMapa>
-              {/* <InfoContainer>
-                <DateTab>
-                  <input type="text" />
-                </DateTab>
-              </InfoContainer> */}
               <MapboxMap />
             </SectionMapa>
           </UniversidadesContainer>
         </Section>
+        <Boton label="Ver más info" url=""></Boton>
         <Section>
           <AgendaContainer>
             <Agenda />
           </AgendaContainer>
         </Section>
+        <Boton
+          label="Inscripciones"
+          url="https://programabios.wixsite.com/proyectobios"
+        ></Boton>
+        <Footer></Footer>
       </AcademiaContainer>
     </Layout>
   )
