@@ -6,12 +6,11 @@ import Loadable from "@loadable/component"
 import { useCookies } from "react-cookie"
 import Agenda from "../components/agenda"
 import fondoHeader from "../images/Academia/academia_bg.jpg"
-import logoFestival from "../images/Academia/logo libélula.png"
-import bannerHubs from "../images/Academia/Mozilla Hubs.png"
-import Placeholder from "../../static/images/Icon-Placeholder-1.png"
+import logo360 from "../../static/images/BIOSlogo.png"
 import MapboxMap from "../components/MapboxMap"
 import Boton from "../components/boton"
 import Footer from "../components/footer"
+import HomeBoton from "../components/homeBoton"
 
 const AcademiaContainer = styled.div`
   background-color: ${props => props.theme.colors.bg1};
@@ -42,78 +41,12 @@ const LogoContainer = styled.div`
   width: 30%;
 `
 
-const Logo = styled.img`
+const Logo = styled.div`
+  background-image: url(${logo360})
   height: 3rem;
   width: 3rem;
   margin-right: 3rem;
   align-self: center;
-`
-const Placeholder1 = styled.img`
-  height: 3rem;
-  width: 3rem;
-  align-self: center;
-`
-const TimerNavegacionContainer = styled.div``
-
-const TimerNavegacion = styled.div`
-  max-width: 150px;
-  width: 100%;
-  text-align: center;
-  font-family: ${props => props.theme.fontFamily};
-  font-weight: ${props => props.theme.fontWeights.light};
-  color: #fff;
-
-  display: flex;
-`
-
-const TiempoContainer = styled.div`
-  margin-left: 1em;
-  margin-right: 1em;
-`
-
-const Horas = styled.div`
-  border-radius: 20px;
-  background-color: rgba(0, 0, 0, 0.5);
-  font-size: 1.5rem;
-  font-weight: bold;
-  padding: 0 0.2em 0 0.2em;
-`
-const Min = styled.div`
-  border-radius: 20px;
-  background-color: rgba(0, 0, 0, 0.5);
-  font-size: 1.5rem;
-  font-weight: bold;
-  padding: 0 0.2em 0 0.2em;
-`
-
-const Seg = styled.div`
-  border-radius: 20px;
-  background-color: rgba(0, 0, 0, 0.5);
-  font-size: 1.5rem;
-  font-weight: bold;
-  padding: 0 0.2em 0 0.2em;
-`
-
-const CantidadVisitantesContainer = styled.div`
-  max-width: 150px;
-  width: 100%;
-  text-align: center;
-  font-family: ${props => props.theme.fontFamily};
-  font-weight: ${props => props.theme.fontWeights.light};
-  color: #fff;
-  margin-left: 10em;
-`
-
-const TextoContadores = styled.div`
-  font-weight: lighter;
-  font-size: 1em;
-`
-
-const CantidadVisitantes = styled.div`
-  border-radius: 20px;
-  background-color: rgba(0, 0, 0, 0.5);
-  font-size: 1.5rem;
-  font-weight: bold;
 `
 const Texto = styled.div`
   font-family: ${props => props.theme.fontFamily};
@@ -121,7 +54,7 @@ const Texto = styled.div`
   font-weight: bold;
   color: white;
   align-self: center;
-  margin-top: 25vh;
+  margin-top: 20vh;
   /*line-height: initial;*/
 `
 
@@ -251,7 +184,7 @@ const AcademiaPage = () => {
         <AcademiaHeaderContainer>
           <NavBar>
             <LogoContainer>
-              <Logo src={logoFestival}></Logo>
+              <HomeBoton></HomeBoton>
             </LogoContainer>
           </NavBar>
           <Texto>Academia</Texto>

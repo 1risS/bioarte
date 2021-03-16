@@ -8,16 +8,8 @@ import bannerBg from "../../static/images/biotecnologia/biotecnologia_banner_bg.
 import logoFestival from "../images/Academia/logo libélula.png"
 import Placeholder from "../../static/images/Icon-Placeholder-1.png"
 import fotoObra from "../../static/images/carousel/Displaced_Cantera_1_de-10.png"
-import carousel from "../../static/images/biotecnologia/empresa.jpg"
-import botonAdelante from "../../static/images/biotecnologia/flechita_der.png"
-import botonAtras from "../../static/images/biotecnologia/flechita_izq.png"
-import logoEmp1 from "../../static/images/biotecnologia/logoEmpresas/arbolito.png"
-import logoEmp2 from "../../static/images/biotecnologia/logoEmpresas/argenomics.png"
-import logoEmp3 from "../../static/images/biotecnologia/logoEmpresas/bago.png"
-import logoEmp4 from "../../static/images/biotecnologia/logoEmpresas/biotenk.png"
-import logoEmp5 from "../../static/images/biotecnologia/logoEmpresas/ecofertil.png"
-import logoEmp6 from "../../static/images/biotecnologia/logoEmpresas/gema.png"
-import logoEmp7 from "../../static/images/biotecnologia/logoEmpresas/nitragin.png"
+import HomeBoton from "../components/homeBoton"
+import Boton from "../components/boton"
 
 const BiotecnologiaCont = styled.div`
   background-color: ${props => props.theme.colors.bg1};
@@ -135,7 +127,7 @@ const Texto = styled.div`
   font-weight: bold;
   color: white;
   align-self: center;
-  margin-top: 50vh;
+  margin-top: 30vh;
   /*line-height: initial;*/
 `
 
@@ -340,69 +332,21 @@ const BiotecnologiaPage = () => {
         <BiotecnologiaHeaderCont>
           <NavBar>
             <LogoContainer>
-              <Logo src={logoFestival}></Logo>
-              {/* <Placeholder1 src={Placeholder}></Placeholder1> */}
+              <HomeBoton></HomeBoton>
             </LogoContainer>
-            {/* <TimerNavegacion>
-              <TiempoContainer>
-                <Horas>01</Horas>
-                <TextoContadores>Hs.</TextoContadores>
-              </TiempoContainer>
-              <TiempoContainer>
-                <Min>00</Min>
-                <TextoContadores>Min.</TextoContadores>
-              </TiempoContainer>
-              <TiempoContainer>
-                <Seg>00</Seg>
-                <TextoContadores>Seg.</TextoContadores>
-              </TiempoContainer>
-            </TimerNavegacion> */}
-            {/* <CantidadVisitantesContainer>
-              <CantidadVisitantes>30000</CantidadVisitantes>
-              <TextoContadores>Visitantes</TextoContadores>
-            </CantidadVisitantesContainer> */}
           </NavBar>
           <Texto>Biotecnología</Texto>
         </BiotecnologiaHeaderCont>
-        <SectionCarousel>
-          <Carousel
-            ciudadPais="Buenos Aires, Argentina"
-            fotoObra={fotoObra}
-            tituloObra="Displaced"
-            obraURL="https://www.analauracantera.com.ar/displaced"
-          >
-            <ParrafoObra>
-              Se trata de una instalación robótica sobre los desplazamientos
-              vinculados a los desastres climáticos, a las migraciones forzadas,
-              los destinos inciertos y la incertidumbre. Desde 2009, se estima
-              que una persona por segundo es obligada a abandonar su hábitat por
-              fenómenos naturales causados por el cambio climático:
-              inundaciones, sequías, terremotos, tsunamis, desmontes, minería y
-              contaminación de recursos hídricos.
-            </ParrafoObra>
-            <ParrafoObra>
-              Se trata de una instalación robótica sobre los desplazamientos
-              vinculados a los desastres climáticos, a las migraciones forzadas,
-              los destinos inciertos y la incertidumbre. Desde 2009, se estima
-              que una persona por segundo es obligada a abandonar su hábitat por
-              fenómenos naturales causados por el cambio climático:
-              inundaciones, sequías, terremotos, tsunamis, desmontes, minería y
-              contaminación de recursos hídricos.
-            </ParrafoObra>
-            <ParrafoObra>
-              Se trata de una instalación robótica sobre los desplazamientos
-              vinculados a los desastres climáticos, a las migraciones forzadas,
-              los destinos inciertos y la incertidumbre.Desde 2009, se estima
-              que una persona por segundo es obligada a abandonar su hábitat por
-              fenómenos naturales causados por el cambio climático: inundacio...
-            </ParrafoObra>
-          </Carousel>
-        </SectionCarousel>
+        <SectionCarousel></SectionCarousel>
         <Section>
           <AgendaCont>
             <Agenda />
           </AgendaCont>
         </Section>
+        <Boton
+          label="Inscripción"
+          url="https://programabios.wixsite.com/proyectobios"
+        ></Boton>
       </BiotecnologiaCont>
     </Layout>
   )

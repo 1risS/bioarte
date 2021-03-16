@@ -3,11 +3,11 @@ import styled from "styled-components"
 import logo1 from "../../static/images/BIOSlogo.png"
 
 const FooterCont = styled.div`
-  display: flexbox;
+  display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-  width: 100wv;
+  width: 100vw;
   background-color: #272d28;
 `
 

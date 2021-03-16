@@ -8,6 +8,7 @@ import Loadable from "@loadable/component"
 import { useCookies } from "react-cookie"
 import fondoHeader from "../images/Academia/academia_bg.jpg"
 import logoFestival from "../images/Academia/logo libélula.png"
+import HomeBoton from "../components/homeBoton"
 
 const Container = styled.div`
   display: flex;
@@ -79,7 +80,7 @@ const CantidadVisitantes = styled.div`
 
 const Texto = styled.div`
   font-family: ${props => props.theme.fontFamily};
-  font-size: 10rem;
+  font-size: 8rem;
   font-weight: bold;
   color: white;
   align-self: center;
@@ -101,16 +102,11 @@ const LineaDeTiempo = () => {
         <HistoriaHeaderContainer>
           <NavBar>
             <LogoContainer>
-              <Logo src={logoFestival}></Logo>
-              {/* <Placeholder1 src={Placeholder}></Placeholder1> */}
+              <HomeBoton></HomeBoton>
             </LogoContainer>
-            {/* <CantidadVisitantesContainer>
-              <CantidadVisitantes>30000</CantidadVisitantes>
-              <TextoContadores>Visitantes</TextoContadores>
-            </CantidadVisitantesContainer> */}
           </NavBar>
           <Texto>Acerca del Bioarte</Texto>
-          <Subtexto>hitos históricos y reflexiones</Subtexto>
+          <Subtexto>Hitos históricos y reflexiones</Subtexto>
         </HistoriaHeaderContainer>
 
         <TimelineCont>

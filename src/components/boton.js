@@ -2,10 +2,10 @@ import React from "react"
 import styled from "styled-components"
 
 const BotonCont = styled.div`
-  display: flexbox;
+  display: flex;
   justify-content: center;
   align-items: center;
-  margin: 4rem;
+  margin: 6rem;
 `
 const Botonstyled = styled.div`
   text-align: center;

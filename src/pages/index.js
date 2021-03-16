@@ -1,14 +1,13 @@
-import { Link } from "gatsby"
 import React from "react"
 import styled from "styled-components"
 import { animated, Keyframes } from "react-spring/renderprops"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import logo from "../../static/images/welcome/BG_WelcomePage.png"
-import isoLogo from "../../static/images/welcome/IsoLogo.png"
 import expNormal from "../../static/images/welcome/BtnWelcome_Lab-Normal.png"
 import expHover from "../../static/images/welcome/BtnWelcome_Lab-Hover.png"
 import expActive from "../../static/images/welcome/BtnWelcome_Lab-Click.png"
+import HomeBoton from "../components/homeBoton"
 // import TagManager from "react-gtm-module"
 
 const BienvenidaContainer = styled.div`
@@ -21,13 +20,6 @@ const BienvenidaContainer = styled.div`
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
-`
-const LinkWrapper = styled.div``
-
-const StyledLink = styled(Link)`
-  text-decoration: none;
-  color: white;
-  font-weight: 900;
 `
 
 const ContenidoIzqContainer = styled.div`
@@ -305,11 +297,7 @@ const IndexPage = () => {
               </Desc>
             </Block>
             <DivDer360>
-              <LinkWrapper>
-                <StyledLink to="/pano">
-                  <Exp src="images/welcome/BtnWelcome_Lab-Normal.png"></Exp>
-                </StyledLink>
-              </LinkWrapper>
+              <HomeBoton></HomeBoton>
             </DivDer360>
           </DivDer>
         </ContDerContainer>
