@@ -1,6 +1,7 @@
 import { Link } from "gatsby"
 import React from "react"
 import styled from "styled-components"
+import { animated, Keyframes } from "react-spring/renderprops"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import logo from "../../static/images/welcome/BG_WelcomePage.png"
@@ -43,6 +44,7 @@ const ContDerContainer = styled.div`
 `
 
 const DivDer = styled.div`
+  position: relative;
   margin: 0rem 4rem 4rem 20rem;
 `
 
@@ -54,6 +56,7 @@ const DivDerEmpty = styled.img`
 `
 
 const DivIzq = styled.div`
+  position: relative;
   margin: 1rem 25rem 3rem 1rem;
 `
 
@@ -109,6 +112,91 @@ const DivDer360 = styled.div`
   margin: 1rem;
 `
 
+const FadeInOutLoop = Keyframes.Spring(async next => {
+  while (true) {
+    await next({ from: { opacity: 0 }, opacity: 1, config: { duration: 1000 } })
+    await next({ from: { opacity: 1 }, opacity: 0, config: { duration: 1000 } })
+  }
+})
+
+const FasterFadeInOutLoop = Keyframes.Spring(async next => {
+  while (true) {
+    await next({ from: { opacity: 0 }, opacity: 1, config: { duration: 800 } })
+    await next({ from: { opacity: 1 }, opacity: 0, config: { duration: 800 } })
+  }
+})
+
+const LightGuide = styled(({ debug, flipX, flipY, className }) => {
+  let groupTransform = flipX ? "" : "scale(-1 1) translate(-100 0)"
+  if (flipY) groupTransform += " translate(100 0) rotate(90)"
+
+  return (
+    <svg
+      className={className}
+      viewBox="0 0 100 100"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g transform={groupTransform} transformOrigin="center">
+        {debug && (
+          <rect
+            x="0"
+            y="0"
+            width="100"
+            height="100"
+            stroke="#ff00ff"
+            strokeWidth="1"
+            fill="transparent"
+          />
+        )}
+        <FadeInOutLoop native>
+          {style => (
+            <animated.circle
+              style={style}
+              className="begin-big"
+              cx="10"
+              cy="50"
+              r="5"
+              fill="transparent"
+              stroke="#ffffff"
+              strokeWidth="0.8"
+            />
+          )}
+        </FadeInOutLoop>
+        <FasterFadeInOutLoop native>
+          {style => (
+            <animated.circle
+              style={style}
+              className="begin-small"
+              cx="10"
+              cy="50"
+              r="3"
+              fill="transparent"
+              stroke="#888888"
+              strokeWidth="0.8"
+            />
+          )}
+        </FasterFadeInOutLoop>
+        <path d="M 15 50 H 70" stroke="#888888" strokeWidth="0.8" />
+        <circle
+          className="end"
+          cx="73"
+          cy="50"
+          r="3"
+          fill="transparent"
+          stroke="#cccccc"
+          strokeWidth="0.8"
+        />
+      </g>
+    </svg>
+  )
+})`
+  position: absolute;
+  top: ${props => props.top};
+  right: ${props => props.right};
+  left: ${props => props.left};
+  width: 10rem;
+`
+
 const Block = styled.div`
   opacity: 0.1;
   transition: 1s;
@@ -125,6 +213,7 @@ const IndexPage = () => {
         <ContenidoIzqContainer>
           <DivIzqEmpty></DivIzqEmpty>
           <DivIzq>
+            <LightGuide top="20px" right="-120px" />
             <Block>
               <Title>¿Quienes lo integran?</Title>
               <Desc>
@@ -140,6 +229,7 @@ const IndexPage = () => {
             </Block>
           </DivIzq>
           <DivIzq>
+            <LightGuide top="20px" right="-160px" />
             <Block>
               <Title>¿Cómo se conforma?</Title>
               <Desc>
@@ -172,6 +262,7 @@ const IndexPage = () => {
             width="410px"
           ></DivDerEmpty>
           <DivDer>
+            <LightGuide flipY top="-110px" left="205px" />
             <Block>
               <Title>¿Qué es Proyecto Bios?</Title>
               <Desc>
@@ -191,6 +282,7 @@ const IndexPage = () => {
           </DivDer>
 
           <DivDer>
+            <LightGuide flipX top="20px" left="-160px" />
             <Block>
               <Title>¿Cómo recorrer la experiencia?</Title>
               <Desc>
