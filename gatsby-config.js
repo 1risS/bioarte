@@ -1,11 +1,11 @@
-const process = require("process");
+const process = require("process")
 
 const firebaseConfig = {
   apiKey: process.env.FIREBASE_API_KEY,
   appId: process.env.FIREBASE_APP_ID,
   authDomain: process.env.FIREBASE_AUTH_DOMAIN,
   databaseURL: process.env.FIREBASE_DATABASE_URL,
-  projectId: process.env.FIREBASE_PROJECT_ID
+  projectId: process.env.FIREBASE_PROJECT_ID,
 }
 
 module.exports = {
@@ -41,7 +41,7 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `static/images/BIOSlogo.png`, // This path is relative to the root of the site.
       },
     },
     `gatsby-plugin-styled-components`,
