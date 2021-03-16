@@ -166,7 +166,13 @@ const Libelulaimg = styled.img`
   width: 230px;
 `
 
-const GloboDialogo = styled.img``
+const GloboDialogo = styled.div`
+  background-image: url(${globoDialogo});
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 20rem;
+  height: 16rem;
+`
 
 const BioArtista = styled.div`
   display: flex;
@@ -327,7 +333,7 @@ const DetalleArtista1 = () => {
         <DAMain>
           <BioArtistaContainer>
             <LibelulaContainer>
-              <GloboDialogo src={globoDialogo}></GloboDialogo>
+              <GloboDialogo></GloboDialogo>
               <Libelulaimg src={libelula}></Libelulaimg>
             </LibelulaContainer>
             <BioArtista>
