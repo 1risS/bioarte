@@ -47,5 +47,6 @@ export const GlobalStyle = createGlobalStyle`
     line-height: 1.5;
     letter-spacing: 0;
     background-color: '#f7fafc';
+    overscroll-behavior: none;
   }
 `
