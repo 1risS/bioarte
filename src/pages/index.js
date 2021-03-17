@@ -14,7 +14,7 @@ const BienvenidaContainer = styled.div`
   display: flex;
   flex-direction: row;
   width: 100%;
-  background-color: black;
+  background-color: #050708;
   background-image: url(${logo});
   background-size: 87%;
   background-repeat: no-repeat;
