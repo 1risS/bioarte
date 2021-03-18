@@ -10,7 +10,7 @@ jobs:
       FIREBASE_AUTH_DOMAIN: ${{ secrets.FIREBASE_AUTH_DOMAIN }}
       FIREBASE_DATABASE_URL: ${{ secrets.FIREBASE_DATABASE_URL }}
       FIREBASE_PROJECT_ID: ${{ secrets.FIREBASE_PROJECT_ID }}
-      MAPBOX_TOKEN: ${{ secrets.MAPBOX_TOKEN }}
+      GATSBY_MAPBOX_TOKEN: ${{ secrets.MAPBOX_TOKEN }}
     steps:
     - uses: actions/checkout@v2
     - uses: actions/setup-node@v2
