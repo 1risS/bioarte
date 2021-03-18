@@ -5,7 +5,7 @@ import pin from "../images/pin.png"
 import styled from "styled-components"
 import process from "process"
 
-let MAPBOX_TOKEN = process.env.MAPBOX_TOKEN
+const MAPBOX_TOKEN = process.env.GATSBY_MAPBOX_TOKEN
 
 const MapContainer = styled.div`
   position: relative;
