@@ -270,6 +270,8 @@ const Subtexto = styled.div`
   align-self: center;
 `
 
+const ArtistLink = ({ to, ...props }) => <Link {...props} to={`${to}#header`} />
+
 const ArtistasPage = () => {
   return (
     <Layout>
@@ -311,113 +313,113 @@ const ArtistasPage = () => {
           <RowContainer>
             <RowPairs>
               <Column>
-                <Link to="ana-laura-cantera">
+                <ArtistLink to="ana-laura-cantera">
                   <ContainerHoverDiv>
                     <Foto src={art01}></Foto>
                     <HoverDiv></HoverDiv>
                   </ContainerHoverDiv>
-                </Link>
-                <Link to="muru">
+                </ArtistLink>
+                <ArtistLink to="muru">
                   <ContainerHoverDiv>
                     <Foto src={art02}></Foto>
                     <HoverDiv></HoverDiv>
                   </ContainerHoverDiv>
-                </Link>
-                <Link to="detalleArtista3">
+                </ArtistLink>
+                <ArtistLink to="detalleArtista3">
                   <ContainerHoverDiv>
                     <Foto src={art03}></Foto>
                     <HoverDiv></HoverDiv>
                   </ContainerHoverDiv>
-                </Link>
-                <Link to="detalleArtista4">
+                </ArtistLink>
+                <ArtistLink to="detalleArtista4">
                   <ContainerHoverDiv>
                     <Foto src={art04}></Foto>
                     <HoverDiv></HoverDiv>
                   </ContainerHoverDiv>
-                </Link>
+                </ArtistLink>
               </Column>
 
               <Column>
-                <Link to="muru">
+                <ArtistLink to="muru">
                   <ContainerHoverDiv>
                     <Foto src={art05}></Foto>
                     <HoverDiv></HoverDiv>
                   </ContainerHoverDiv>
-                </Link>
-                <Link to="detalleArtista2">
+                </ArtistLink>
+                <ArtistLink to="detalleArtista2">
                   <ContainerHoverDiv>
                     <Foto src={art06}></Foto>
                     <HoverDiv></HoverDiv>
                   </ContainerHoverDiv>
-                </Link>
-                <Link to="detalleArtista3">
+                </ArtistLink>
+                <ArtistLink to="detalleArtista3">
                   <ContainerHoverDiv>
                     <Foto src={art08}></Foto>
                     <HoverDiv></HoverDiv>
                   </ContainerHoverDiv>
-                </Link>
-                <Link to="detalleArtista4">
+                </ArtistLink>
+                <ArtistLink to="detalleArtista4">
                   <ContainerHoverDiv>
                     <Foto src={art10}></Foto>
                     <HoverDiv></HoverDiv>
                   </ContainerHoverDiv>
-                </Link>
+                </ArtistLink>
               </Column>
             </RowPairs>
 
             <RowPairs>
               <Column>
-                <Link to="detalleArtista1">
+                <ArtistLink to="detalleArtista1">
                   <ContainerHoverDiv>
                     <Foto src={art12}></Foto>
                     <HoverDiv></HoverDiv>
                   </ContainerHoverDiv>
-                </Link>
-                <Link to="detalleArtista2">
+                </ArtistLink>
+                <ArtistLink to="detalleArtista2">
                   <ContainerHoverDiv>
                     <Foto src={art13}></Foto>
                     <HoverDiv></HoverDiv>
                   </ContainerHoverDiv>
-                </Link>
-                <Link to="detalleArtista3">
+                </ArtistLink>
+                <ArtistLink to="detalleArtista3">
                   <ContainerHoverDiv>
                     <Foto src={art17}></Foto>
                     <HoverDiv></HoverDiv>
                   </ContainerHoverDiv>
-                </Link>
-                <Link to="detalleArtista4">
+                </ArtistLink>
+                <ArtistLink to="detalleArtista4">
                   <ContainerHoverDiv>
                     <Foto src={art04}></Foto>
                     <HoverDiv></HoverDiv>
                   </ContainerHoverDiv>
-                </Link>
+                </ArtistLink>
               </Column>
 
               <Column>
-                <Link to="detalleArtista1">
+                <ArtistLink to="detalleArtista1">
                   <ContainerHoverDiv>
                     <Foto src={art01}></Foto>
                     <HoverDiv></HoverDiv>
                   </ContainerHoverDiv>
-                </Link>
-                <Link to="detalleArtista2">
+                </ArtistLink>
+                <ArtistLink to="detalleArtista2">
                   <ContainerHoverDiv>
                     <Foto src={art02}></Foto>
                     <HoverDiv></HoverDiv>
                   </ContainerHoverDiv>
-                </Link>
-                <Link to="detalleArtista3">
+                </ArtistLink>
+                <ArtistLink to="detalleArtista3">
                   <ContainerHoverDiv>
                     <Foto src={art03}></Foto>
                     <HoverDiv></HoverDiv>
                   </ContainerHoverDiv>
-                </Link>
-                <Link to="detalleArtista4">
+                </ArtistLink>
+                <ArtistLink to="detalleArtista4">
                   <ContainerHoverDiv>
                     <Foto src={art04}></Foto>
                     <HoverDiv></HoverDiv>
                   </ContainerHoverDiv>
-                </Link>
+                </ArtistLink>
               </Column>
             </RowPairs>
           </RowContainer>

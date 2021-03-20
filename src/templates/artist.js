@@ -310,7 +310,7 @@ const ArtistPageTemplate = ({ pageContext }) => {
               <Libelulaimg src={libelula}></Libelulaimg>
             </LibelulaContainer>
             <BioArtista>
-              <BioHeader>{nombre}</BioHeader>
+              <BioHeader id="header">{nombre}</BioHeader>
               <BioTexto>
                 <TituloBio>
                   <Titulo>Biografía</Titulo>
