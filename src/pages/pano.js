@@ -81,8 +81,8 @@ const PanoPage = () => {
     window.location.href = "/biotecnologia"
   }
 
-  const irExhibicion = () => {
-    window.location.href = "/exhibicion"
+  const irArtistas = () => {
+    window.location.href = "/artistas"
   }
 
   const irHistoria = () => {
@@ -211,7 +211,7 @@ const PanoPage = () => {
       const infospotC = createInfoSpot(
         "Exhibición",
         [4798.29, -1153.87, -758.279],
-        irExhibicion
+        irArtistas
       )
 
       const infospotD = createInfoSpot(

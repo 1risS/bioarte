@@ -1,30 +1,28 @@
 import React from "react"
 import styled from "styled-components"
-import Layout from "../../components/layout"
-import SEO from "../../components/seo"
-import art01 from "../../images/Exhibicion/01Cantera/01Cantera.png"
-import art02 from "../../images/Exhibicion/02Ferrari/01ferrari.png"
-import art03 from "../../images/Exhibicion/03Duhalde/01duhalde.png"
-import art04 from "../../images/Exhibicion/04Fargas/01fargas.png"
-import art05 from "../../images/Exhibicion/05Marinaro/01Marinaro.png"
-import art06 from "../../images/Exhibicion/06Paoletti/01Paoletti.png"
-//import art07 from "../../images/Exhibicion/03Duhalde/01duhalde.png"
-import art08 from "../../images/Exhibicion/08Olmedo/01olmedo.png"
-//import art09 from "../../images/Exhibicion/03Duhalde/01duhalde.png"
-import art10 from "../../images/Exhibicion/10Olalde/01olalde.png"
-//import art11 from "../../images/Exhibicion/03Duhalde/01duhalde.png"
-import art12 from "../../images/Exhibicion/12Valente/01Valente.png"
-import art13 from "../../images/Exhibicion/13Caterbetti/01catterbetti.png"
-//import art14 from "../../images/Exhibicion/03Duhalde/01duhalde.png"
-//import art15 from "../../images/Exhibicion/03Duhalde/01duhalde.png"
-//import art16 from "../../images/Exhibicion/03Duhalde/01duhalde.png"
-import art17 from "../../images/Exhibicion/17Bergottini/01Bergottini.png"
-
-import logoFestival from "../../images/Academia/logo libélula.png"
-import fondoHeader from "../../../static/images/carousel/Banner_Exhibition_0.png"
+import Layout from "../components/layout"
+import SEO from "../components/seo"
 import { Link } from "gatsby"
-
-import like from "../../../static/images/exhibicion/likelikeRounded.png"
+import art01 from "../images/Exhibicion/01Cantera/01Cantera.png"
+import art02 from "../images/Exhibicion/02Ferrari/01ferrari.png"
+import art03 from "../images/Exhibicion/03Duhalde/01duhalde.png"
+import art04 from "../images/Exhibicion/04Fargas/01fargas.png"
+import art05 from "../images/Exhibicion/05Marinaro/01Marinaro.png"
+import art06 from "../images/Exhibicion/06Paoletti/01Paoletti.png"
+//import art07 from "../images/Exhibicion/03Duhalde/01duhalde.png"
+import art08 from "../images/Exhibicion/08Olmedo/01olmedo.png"
+//import art09 from "../images/Exhibicion/03Duhalde/01duhalde.png"
+import art10 from "../images/Exhibicion/10Olalde/01olalde.png"
+//import art11 from "../images/Exhibicion/03Duhalde/01duhalde.png"
+import art12 from "../images/Exhibicion/12Valente/01Valente.png"
+import art13 from "../images/Exhibicion/13Caterbetti/01catterbetti.png"
+//import art14 from "../images/Exhibicion/03Duhalde/01duhalde.png"
+//import art15 from "../images/Exhibicion/03Duhalde/01duhalde.png"
+//import art16 from "../images/Exhibicion/03Duhalde/01duhalde.png"
+import art17 from "../images/Exhibicion/17Bergottini/01Bergottini.png"
+import logoFestival from "../images/Academia/logo libélula.png"
+import fondoHeader from "../../static/images/carousel/Banner_Exhibition_0.png"
+import like from "../../static/images/exhibicion/likelikeRounded.png"
 
 const C = styled.div`
   display: flex;
@@ -272,7 +270,7 @@ const Subtexto = styled.div`
   align-self: center;
 `
 
-const ExhibicionPage = () => {
+const ArtistasPage = () => {
   return (
     <Layout>
       <C>
@@ -313,7 +311,7 @@ const ExhibicionPage = () => {
           <RowContainer>
             <RowPairs>
               <Column>
-                <Link to="anaLauraCantera">
+                <Link to="ana-laura-cantera">
                   <ContainerHoverDiv>
                     <Foto src={art01}></Foto>
                     <HoverDiv></HoverDiv>
@@ -431,4 +429,4 @@ const ExhibicionPage = () => {
   )
 }
 
-export default ExhibicionPage
+export default ArtistasPage
