@@ -18,7 +18,8 @@ exports.onCreateWebpackConfig = ({ actions, stage, plugins }) => {
 
 exports.onCreateNode = ({ node, getNode, actions }) => {
   const { createNodeField } = actions
-  if (node.internal.type === `MarkdownRemark`) {
+
+  if (node.internal.type === `ArtistasYaml`) {
     const slug = createFilePath({ node, getNode, basePath: `pages` })
     createNodeField({
       node,
@@ -30,13 +31,24 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
 
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions
+
   const result = await graphql(`
     query {
-      allMarkdownRemark {
+      allArtistasYaml {
         edges {
           node {
             fields {
               slug
+            }
+            nombre
+            formacion
+            bio
+            obras {
+              ciudadPais
+              foto
+              titulo
+              url
+              descripcion
             }
           }
         }
@@ -44,16 +56,13 @@ exports.createPages = async ({ graphql, actions }) => {
     }
   `)
 
-  const template = path.resolve(`./src/templates/talk.js`)
-
-  result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+  result.data.allArtistasYaml.edges.forEach(({ node }) => {
     createPage({
       path: node.fields.slug,
-      component: template,
+      component: path.resolve(`./src/templates/artist.js`),
       context: {
-        // Data passed to context is available
-        // in page queries as GraphQL variables.
         slug: node.fields.slug,
+        ...node,
       },
     })
   })
