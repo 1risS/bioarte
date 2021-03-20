@@ -7,11 +7,11 @@ import { useCookies } from "react-cookie"
 import logoFestival from "../../images/Academia/logo libélula.png"
 import fondoHeader from "../../../static/images/carousel/Banner_Exhibition_0.png"
 import libelula from "../../../static/images/carousel/Dragonfly.png"
-import globoDialogo from "../../../static/images/carousel/SpeechBalloon_0.png"
 import fondoObra from "../../../static/images/artists/anaLauraCantera/obra_nueva.jpg"
 import like from "../../../static/images/exhibicion/likelikeRounded.png"
 import Carousel, { ParrafoObra } from "../../components/carousel"
 import { obras } from "../../content/artistas/analauracantera.json"
+import FunFactsBalloon from "../../components/FunFactsBalloon"
 
 const DAContainer = styled.div`
   background-color: ${props => props.theme.colors.bg1};
@@ -166,14 +166,6 @@ const Libelulaimg = styled.img`
   width: 230px;
 `
 
-const GloboDialogo = styled.div`
-  background-image: url(${globoDialogo});
-  background-repeat: no-repeat;
-  background-size: contain;
-  width: 20rem;
-  height: 16rem;
-`
-
 const BioArtista = styled.div`
   display: flex;
   flex-direction: column;
@@ -314,7 +306,7 @@ const DetalleArtista1 = () => {
         <DAMain>
           <BioArtistaContainer>
             <LibelulaContainer>
-              <GloboDialogo></GloboDialogo>
+              <FunFactsBalloon />
               <Libelulaimg src={libelula}></Libelulaimg>
             </LibelulaContainer>
             <BioArtista>

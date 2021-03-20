@@ -7,11 +7,11 @@ import Chat from "../../components/chat"
 import logoFestival from "../../images/Academia/logo libélula.png"
 import fondoHeader from "../../../static/images/carousel/Banner_Exhibition_0.png"
 import libelula from "../../../static/images/carousel/Dragonfly.png"
-import globoDialogo from "../../../static/images/carousel/SpeechBalloon_0.png"
 import fondoObra from "../../../static/images/artists/anaLauraCantera/obra_nueva.jpg"
 import like from "../../../static/images/exhibicion/likelikeRounded.png"
 import Carousel, { ParrafoObra } from "../../components/carousel"
 import { obras } from "../../content/artistas/analauracantera.json"
+import FunFactsBalloon from "../../components/FunFactsBalloon"
 
 const DAContainer = styled.div`
   background-color: ${props => props.theme.colors.bg1};
@@ -165,8 +165,6 @@ const Libelulaimg = styled.img`
   height: 270px;
   width: 230px;
 `
-
-const GloboDialogo = styled.img``
 
 const BioArtista = styled.div`
   display: flex;
@@ -327,7 +325,7 @@ const Muru = () => {
         <DAMain>
           <BioArtistaContainer>
             <LibelulaContainer>
-              <GloboDialogo src={globoDialogo}></GloboDialogo>
+              <FunFactsBalloon />
               <Libelulaimg src={libelula}></Libelulaimg>
             </LibelulaContainer>
             <BioArtista>
