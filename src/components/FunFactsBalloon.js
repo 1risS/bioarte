@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react"
 import styled from "styled-components"
+import { animated, useTransition, config } from 'react-spring'
 import globoDialogo from "../../static/images/carousel/SpeechBalloon_0.png"
 import funFacts from "../content/fun_facts.json"
 
@@ -14,6 +15,13 @@ const FunFactsBalloon = styled(({ className, duration = 5000 }) => {
   const [facts, setFacts] = useState(funFacts);
   const [current, setCurrent] = useState(0);
 
+  const transitions = useTransition(facts[current], item => item, {
+    from: { opacity: 0 },
+    enter: { opacity: 1 },
+    leave: { opacity: 0 },
+    config: { duration: 500 }
+  });
+
   useEffect(() => {
     shuffle(funFacts);
     setFacts(funFacts);
@@ -27,9 +35,11 @@ const FunFactsBalloon = styled(({ className, duration = 5000 }) => {
   }, []);
 
   return (<div className={className}>
-    <p>
-      {facts[current]}
-    </p>
+    {transitions.map(({ item, props, key }) => (
+      <div>
+        <animated.p style={props} key={key}>{item}</animated.p>
+      </div>
+    ))}
   </div>)
 })`
   background-image: url(${globoDialogo});
@@ -37,6 +47,15 @@ const FunFactsBalloon = styled(({ className, duration = 5000 }) => {
   background-size: contain;
   width: 20rem;
   height: 16rem;
+  position: relative;
+
+  div {
+    position: absolute;
+  }
+
+  div p {
+    position: relative;
+  }
 `
 
 export default FunFactsBalloon;
