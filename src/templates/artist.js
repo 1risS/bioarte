@@ -11,6 +11,7 @@ import like from "../../static/images/exhibicion/likelikeRounded.png"
 import Carousel, { ParrafoObra } from "../components/carousel"
 import FunFactsBalloon from "../components/FunFactsBalloon"
 import HomeBoton from "../components/homeBoton"
+import Footer from "../components/footer"
 
 const DAContainer = styled.div`
   background-color: ${props => props.theme.colors.bg1};
@@ -195,16 +196,27 @@ const FotoObraContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+  &:hover {
+    opacity: 0.9;
+    cursor: pointer;
+  }
 `
 
 const NombreObra = styled.div`
   font-size: 2em;
+  text-align: center;
   color: #fff;
   background-color: RGBA(0, 0, 0, 0.5);
   width: 600px;
   height: auto;
   margin: 15em auto 0 auto;
   padding: 1em;
+  border-radius: 15px;
+  &:hover {
+    opacity: 0.8;
+    cursor: pointer;
+  }
 `
 const Parrafo = styled.div`
   padding-top: 1em;
@@ -227,6 +239,9 @@ const LikeLikeCont = styled.div`
   margin-left: 10rem;
   align-self: flex-end;
   margin: -2rem 4rem 3rem 0rem;
+  &:hover {
+    opacity: 0.8;
+  }
 `
 
 const Like = styled.img``
@@ -261,11 +276,6 @@ const TituloBio = styled.div`
   width: 100%;
   flex-direction: row;
   justify-content: space-between;
-`
-
-const Footer = styled.div`
-  height: 12rem;
-  background-color: #272d28;
 `
 
 // ponemos una cookie para saber si le usuarix pasó por acá
