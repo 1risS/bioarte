@@ -47,7 +47,7 @@ const LogoContainer = styled.div`
 
 const Texto = styled.div`
   font-family: ${props => props.theme.fontFamily};
-  font-size: 7rem;
+  font-size: 11rem;
   font-weight: bold;
   color: white;
   align-self: center;
@@ -209,7 +209,6 @@ const BiotecnologiaPage = () => {
         </BiotecnologiaHeaderCont>
         <SectionCarousel>
           <IconsCont>
-            <Icono src={logoFestival}></Icono>
             <Icono src={logoFestival}></Icono>
             <Icono src={logoFestival}></Icono>
             <Icono src={logoFestival}></Icono>
