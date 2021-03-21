@@ -1,4 +1,5 @@
 import React, { useState } from "react"
+import { Link } from "gatsby"
 import styled from "styled-components"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -126,22 +127,6 @@ const Texto = styled.div`
   padding-top: 25vh;
   /*line-height: initial;*/
 `
-/*
-const Subtexto = styled.div`
-  font-family: ${props => props.theme.fontFamily};
-  font-weight: ${props => props.theme.fontWeights.light};
-  font-style: italic;
-  font-size: 1.5rem;
-  color: white;
-  align-self: center;
-`
-*/
-
-const BannerHubs = styled.img`
-  height: 6rem;
-  width: 6rem;
-  align-self: flex-end;
-`
 const DAMain = styled.div`
   display: flex;
   flex-direction: column;
@@ -250,6 +235,9 @@ const CVCont = styled.div`
   margin-left: 10rem;
   align-self: flex-end;
   margin: 0rem 0rem 3rem 0rem;
+  &:hover {
+    cursor: pointer;
+  }
 `
 
 const CV = styled.div`
@@ -276,6 +264,11 @@ const TituloBio = styled.div`
   width: 100%;
   flex-direction: row;
   justify-content: space-between;
+`
+const StyledLink = styled(Link)`
+  text-decoration: none;
+  color: white;
+  font-weight: 200;
 `
 
 // ponemos una cookie para saber si le usuarix pasó por acá
@@ -327,7 +320,9 @@ const ArtistPageTemplate = ({ pageContext }) => {
                   <Titulo>Biografía</Titulo>
                   <CVCont>
                     <CV>
-                      <CVText>CV</CVText>
+                      <StyledLink to={cvUrl}>
+                        <CVText>CV</CVText>
+                      </StyledLink>
                     </CV>
                   </CVCont>
                 </TituloBio>
@@ -338,9 +333,11 @@ const ArtistPageTemplate = ({ pageContext }) => {
               </BioTexto>
             </BioArtista>
           </BioArtistaContainer>
-          <FotoObraContainer>
-            <NombreObra>{datosObra.titulo}</NombreObra>
-          </FotoObraContainer>
+          <StyledLink to={datosObra.url}>
+            <FotoObraContainer>
+              <NombreObra>{datosObra.titulo}</NombreObra>
+            </FotoObraContainer>
+          </StyledLink>
 
           <Carousel
             ciudadPais={datosObra.ciudadPais}
