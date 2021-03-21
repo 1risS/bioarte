@@ -171,7 +171,9 @@ const Carousel = ({
             </ProcedenciaFotosContainer>
             <TituloWebCont>
               <TituloObra>{tituloObra}</TituloObra>
-              <LinkWeb href={obraURL}>Web</LinkWeb>
+              <LinkWeb href={obraURL} target="_blank">
+                Web
+              </LinkWeb>
             </TituloWebCont>
             {children}
           </DescripcionContainer>

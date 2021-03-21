@@ -48,74 +48,7 @@ const Logo = styled.img`
   margin-right: 3rem;
   align-self: center;
 `
-const Placeholder1 = styled.img`
-  height: 3rem;
-  width: 3rem;
-  align-self: center;
-`
-const TimerNavegacionContainer = styled.div``
 
-const TimerNavegacion = styled.div`
-  max-width: 150px;
-  width: 100%;
-
-  text-align: center;
-  font-family: ${props => props.theme.fontFamily};
-  font-weight: ${props => props.theme.fontWeights.light};
-  color: #fff;
-
-  display: flex;
-`
-
-const TiempoContainer = styled.div`
-  margin-left: 1em;
-  margin-right: 1em;
-`
-
-const Horas = styled.div`
-  border-radius: 20px;
-  background-color: rgba(0, 0, 0, 0.5);
-  font-size: 1.5rem;
-  font-weight: bold;
-  padding: 0 0.2em 0 0.2em;
-`
-const Min = styled.div`
-  border-radius: 20px;
-  background-color: rgba(0, 0, 0, 0.5);
-  font-size: 1.5rem;
-  font-weight: bold;
-  padding: 0 0.2em 0 0.2em;
-`
-
-const Seg = styled.div`
-  border-radius: 20px;
-  background-color: rgba(0, 0, 0, 0.5);
-  font-size: 1.5rem;
-  font-weight: bold;
-  padding: 0 0.2em 0 0.2em;
-`
-
-const CantidadVisitantesContainer = styled.div`
-  max-width: 150px;
-  width: 100%;
-  text-align: center;
-  font-family: ${props => props.theme.fontFamily};
-  font-weight: ${props => props.theme.fontWeights.light};
-  color: #fff;
-  margin-left: 10em;
-`
-
-const TextoContadores = styled.div`
-  font-weight: lighter;
-  font-size: 1em;
-`
-
-const CantidadVisitantes = styled.div`
-  border-radius: 20px;
-  background-color: rgba(0, 0, 0, 0.5);
-  font-size: 1.5rem;
-  font-weight: bold;
-`
 const Texto = styled.div`
   font-family: ${props => props.theme.fontFamily};
   font-size: 14rem;
@@ -173,8 +106,8 @@ const BioTexto = styled.div`
   padding: 32.25pt 24pt 32.25pt 24pt;
 `
 const FotoObraContainer = styled.div`
-  background-image: url(${fondoObra});
-  background-size: 100%;
+  background-image: url("${props => props.foto}");
+  background-size: cover;
   background-repeat: no-repeat;
   margin: 1em 0;
   height: 100vh;
@@ -265,7 +198,7 @@ const TituloBio = styled.div`
   flex-direction: row;
   justify-content: space-between;
 `
-const StyledLink = styled(Link)`
+const StyledLink = styled.a`
   text-decoration: none;
   color: white;
   font-weight: 200;
@@ -292,6 +225,15 @@ const ArtistPageTemplate = ({ pageContext }) => {
 
   const datosObra = obras[obra]
 
+  const Subtexto = styled.div`
+    font-family: ${props => props.theme.fontFamily};
+    font-weight: ${props => props.theme.fontWeights.light};
+    font-style: italic;
+    font-size: 1.5rem;
+    color: white;
+    align-self: center;
+  `
+
   return (
     <Layout>
       <SEO title="Artista" />
@@ -303,6 +245,7 @@ const ArtistPageTemplate = ({ pageContext }) => {
             </LogoContainer>
           </NavBar>
           <Texto>Bioarte</Texto>
+          <Subtexto>Exhibición virtual</Subtexto>
           <LikeLikeCont>
             <Like src={like} />
           </LikeLikeCont>
@@ -320,7 +263,7 @@ const ArtistPageTemplate = ({ pageContext }) => {
                   <Titulo>Biografía</Titulo>
                   <CVCont>
                     <CV>
-                      <StyledLink to={cvUrl}>
+                      <StyledLink href={cvUrl} target="_blank">
                         <CVText>CV</CVText>
                       </StyledLink>
                     </CV>
@@ -333,8 +276,8 @@ const ArtistPageTemplate = ({ pageContext }) => {
               </BioTexto>
             </BioArtista>
           </BioArtistaContainer>
-          <StyledLink to={obras[0].url}>
-            <FotoObraContainer>
+          <StyledLink href={obras[0].url} target="_blank">
+            <FotoObraContainer foto={obras[0].foto}>
               <NombreObra>{obras[0].titulo}</NombreObra>
             </FotoObraContainer>
           </StyledLink>
