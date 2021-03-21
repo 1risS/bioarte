@@ -1,22 +1,20 @@
 nombre: Colores de la Biotecnología
-cvUrl: null
-formacion: |-
-bio: |-
+descripcion: |-
   La biotecnología es tan amplia que para una mejor clasificación de sus
   especialidades, se ha dividido en Colores.  Cada uno de ellos posee un campo
-  de aplicación, y es útil para diversos sectores. 
+  de aplicación, y es útil para diversos sectores.
 
-  La clasificación por colores proviene de dos cuestiones 
-  
+  La clasificación por colores proviene de dos cuestiones
+
   1. La dificultad de acotar al 100% cada área. Muchas de las aplicaciones se
      pueden enmarcar en más de uno de estos colores, lo que muestra que la
      biotecnología no es una ciencia excluyente.
-    
+
   2. La comodidad. Al ser una disciplina tan novedosa, los colores ayudan a las
      personas a recordar tanto la aplicación como su ámbito. Es mucho más sencillo
      recordar que la biotecnología roja está asociada con la salud que pensar en
      los procesos y su importancia en dicha área.
-    
+
   El uso de los colores para referirse a los distintos ámbitos de aplicaciones
   de la biotecnología es muy extendido. Aunque se han asociado varios colores
   para muchos tipos de biotecnología, hay cuatro especialmente reconocidos:
@@ -24,10 +22,11 @@ bio: |-
   blanca, para usos industriales, y azul para ámbito marino. Así, la
   biotecnología actualmente se divide en los siguientes colores:
 
-obras:
-  - ciudadhttps://www.analauracantera.com.ar/displacedull
+secciones:
+  - titulo: Biotecnología Roja
+    foto: /images/artists/anaLauraCantera/cartografias_invisibles.JPG
     descripcion: |-
-      Biotecnología roja o biotecnología sanitaria: es la asociada a la materia
+      Biotecnología roja o biotecnología sanitaria: es la asociada a la materia
       de salud, tanto humana como animal, investigaciones biomédicas,
       descubrimiento y producción de nuevos fármacos, antibióticos y vacunas más
       seguras (gracias a la implantación de la nanotecnología en medicina y de
@@ -38,13 +37,13 @@ obras:
       enfermedades a través de la modificación de genes defectuosos a partir,
       por ejemplo, de la inserción de genes que reemplacen aquellos dañados
       (terapia génica) y las nuevas técnicas de análisis y diagnóstico
-      molecular. 
+      molecular.
 
       Esta especialidad de la Biotecnología es muy representativa en nuestro
       pais, con el 54% de las empresas del área dedicadas y  el 20% de la
       participación en ventas biotecnológicas
 
-      Ejemplos de empresas 
+      Ejemplos de empresas
 
       En Salud Humana: Biosidus | Gemabiotech | Argenomics | Roche | Sinergium |
       Terragene | mAbxience | Gisens Biotech | Bayer | Amegabiotech | Zelltech |
@@ -55,12 +54,10 @@ obras:
       En Salud animal: Biogenesis Bago | Biotenk | Kheiron Biotech | Biotecnofé
       | Cabaña Las Lilas | Munar asociados
 
-      Más Información en: Biotecnología roja. – BiotecPedia (wordpress.com)
+      Más Información en: Biotecnología roja. BiotecPedia (wordpress.com)
 
-  - ciudadPais: Buenos Aires, Argentina
+  - titulo: Biotecnología Azul
     foto: /images/artists/anaLauraCantera/Displaced_Cantera_1_de-10.png
-    titulo: Biotecnología Azul
-    url: null
     descripcion: |-
       El mundo submarino es todavía un gran desconocido. Del mar están surgiendo
       conocimientos que nos abren puertas a nuevos fármacos, aplicaciones y
@@ -68,7 +65,7 @@ obras:
       explotación de organismos marinos. Aditivos y colorantes en la
       alimentación, nutracéticos para el tratamiento de artritis o mejora de la
       memoria, suplementos alimenticios, cosméticos y cremas rejuvenecedoras son
-      algunas de sus aplicaciones. 
+      algunas de sus aplicaciones.
 
       La biotecnología azul se ocupa de la aplicación de métodos moleculares y
       biológicos a los organismos marinos y de agua dulce. Esto implica el uso
@@ -85,12 +82,10 @@ obras:
       applications and methods (conicet.gov.ar)
       (https://ri.conicet.gov.ar/handle/11336/82226)
 
-      Más información en: Azul – BiotecPedia (wordpress.com)
+      Más información en: Azul - BiotecPedia (wordpress.com)
 
-  - ciudadPais: Buenos Aires, Argentina
+  - titulo: Biotecnología Verde
     foto: /images/artists/anaLauraCantera/cartografias_invisibles.JPG
-    titulo: Biotecnología Verde
-    url: null
     descripcion: |-
       Alberga todos los procesos en el sector agrícola. Plantas transgénicas
       capaces de crecer en condiciones ambientales desfavorables y organismos
@@ -104,14 +99,14 @@ obras:
       ellas, la producción de sustancias químicas, fármacos y materiales. Se
       espera que la biotecnología verde produzca soluciones más amigables con el
       medio ambiente que los métodos tradicionales de la agricultura
-      industrial. 
+      industrial.
 
       Ejemplos:
 
       Inoculantes: fertilizantes biológicos con el agregado de hormonas
       vegetales obtenidas por fermentación bacteriana, bioestimulantes,
       coadyuvantes y otras especialidades amigables. Empresas: Fragaria |
-      Ecofertil | Nitragin Argentina | Nitrasoil | Rizobacter 
+      Ecofertil | Nitragin Argentina | Nitrasoil | Rizobacter
 
       Micropropagación Vegetal: Genética de especies silvestres, colectándolas y
       cultivándolas, para luego propagarlas a escala comercial. Empresas:
@@ -121,10 +116,8 @@ obras:
       y salinidad. Empresas: Bioceres | Advanta Semillas | Nidera | NK
       Semillas | Bayer
 
-  - ciudadPais: Buenos Aires, Argentina
+  - titulo: Biotecnología Gris
     foto: /images/artists/anaLauraCantera/cartografias_invisibles.JPG
-    titulo: Biotecnología Gris
-    url: null
     descripcion: |-
       Es la encargada de estudiar y optimizar los procesos de reciclaje,
       centrándose en los ecosistemas y las ciencias ambientales. Trata la
@@ -139,11 +132,11 @@ obras:
       origen energético y microbiológico a partir de la utilización de seres
       vivos tales como hongos, algas y plantas.
 
-      Ejemplos: 
+      Ejemplos:
 
       Control de las Mareas Negras: Es el vertido masivo de petróleo debido a
       un accidente cuyas consecuencias son muy negativas en los ecosistemas.
-      
+
       Es posible utilizar bacterias que digieren los hidrocarburos que forman el
       petróleo y los transforman en sustancias químicas nada o menos
       contaminantes, combinando las características de varias bacterias para
@@ -151,23 +144,21 @@ obras:
       hidrocarburos diferentes.
 
       Biogas: Se produce por fermentación anaeróbica de los residuos orgánicos
-      y constituye una fuente de energía. 
+      y constituye una fuente de energía.
 
       Compost: Se obtiene por fermentación aeróbica de los residuos orgánicos y
       puede ser aprovechado como fertilizante.
 
       Ejemplo: IQUIBICEN (uba.ar)
 
-  - ciudadPais: Buenos Aires, Argentina
+  - titulo: Biotecnología Blanca
     foto: /images/artists/anaLauraCantera/cartografias_invisibles.JPG
-    titulo: Biotecnología Blanca
-    url: null
     descripcion: |-
       La biotecnología blanca es la rama de la biotecnología dedicada a
       optimizar los procesos industriales y el desarrollo de alternativas al uso
       del petróleo como fuente de energía. El uso de enzimas y microorganismos
       en los procesos permite la fabricación de productos biodegradables y
-      contribuye a un desarrollo económico sostenible. 
+      contribuye a un desarrollo económico sostenible.
 
       Las principales tendencias tecnológicas incluidas en esta área son la
       Biotransformación, la Bioproducción y la Biotecnología ambiental.
@@ -191,10 +182,8 @@ obras:
       Ejemplos: Novozymes - Ledesma - Keclon  - Diagramma - Porta hnos. -
       Vicentín
 
-  - ciudadPais: Buenos Aires, Argentina
+  - titulo: Biotecnología Dorada
     foto: /images/artists/anaLauraCantera/cartografias_invisibles.JPG
-    titulo: Biotecnología Dorada
-    url: null
     descripcion: |-
       Es la rama dedicada a la bioinformática, una herramienta imprescindible en
       biotecnología. Es la responsable tanto del software como del hardware,
@@ -221,17 +210,15 @@ obras:
       presencia internacional como HP, Apple o IBM han invertido en desarrollos
       en bioinformática e informática médica. En empresas farmacéuticas, como
       Roche, la Bioinformática es una herramienta fundamental para el proceso de
-      I+D.    
+      I+D.
 
-  - ciudadPais: Buenos Aires, Argentina
+  - titulo: Biotecnología Marrón
     foto: /images/artists/anaLauraCantera/cartografias_invisibles.JPG
-    titulo: Biotecnología Marrón
-    url: null
     descripcion: |-
       Una rama dedicada a la obtención de componentes y el aprovechamiento de
       recursos procedentes del desierto. Su objetivo es que suelos desérticos
       vuelvan a ser habitables, lo que se consigue introduciendo en estos
-      ecosistemas especies  altamente resistentes a suelos salinos y secos. 
+      ecosistemas especies  altamente resistentes a suelos salinos y secos.
 
       Estas especies empiezan a crecer (no les importa que en el suelo casi no
       haya nutrientes) y aportan materia orgánica al medio para que las otras
@@ -248,17 +235,15 @@ obras:
       - Repoblación de ecosistemas víctimas de la desertización
       - Aprovechamiento de los recursos de los desiertos
 
-  - ciudadPais: Buenos Aires, Argentina
+  - titulo: Biotecnología Naranja
     foto: /images/artists/anaLauraCantera/cartografias_invisibles.JPG
-    titulo: Biotecnología Naranja
-    url: null
     descripcion: |-
       Esta área se dedica a la formación y difusión de la biotecnología y sus
       aplicaciones. Es el área de divulgación de la biotecnología. Su enseñanza
       emerge con fuerza en centros universitarios de todo el mundo. Los
       conocimientos que aporta y su integración interdisciplinaria la convierten
       en una tecnología destinada a ofrecer bienes y servicios y a satisfacer
-      nuestras necesidades en un futuro que ya podemos llamar presente. 
+      nuestras necesidades en un futuro que ya podemos llamar presente.
 
       Youtubers como divulgadores : a) La Hiperactina (https://bit.ly/3qxF0Rp)
       Sandra Ortonobes: Graduada en Ciencias Biomédicas por la Universidad de
@@ -266,18 +251,16 @@ obras:
       Fabra. Creadora del canal de YouTube «La Hiperactina» sobre divulgación y
       biomedicina, b) BiotecX (https://bit.ly/3t4SSUV) Dario Garcia: Doctoral
       Researcher en Université catholique de Louvain, biotecnología, biomedicina
-      y todo el mundo biotec. c) Soybiotec.es (https://bit.ly/3ex19ge) 
+      y todo el mundo biotec. c) Soybiotec.es (https://bit.ly/3ex19ge)
 
       Programas de Radio: La Mecanica del Caracol con Eva Caballero
       :facebook/lamecanicadelcaracol.radioeuskadi/
 
-      Camaras: Camara argentina de BIotecnología 
+      Camaras: Camara argentina de BIotecnología
       Fundaciones: ArgenBio, Fundación Argentina de Nanotecnología
 
-  - ciudadPais: Buenos Aires, Argentina
+  - titulo: Biotecnología Púrpura
     foto: /images/artists/anaLauraCantera/cartografias_invisibles.JPG
-    titulo: Biotecnología Púrpura
-    url: null
     descripcion: |-
       Se centra en el estudio de los aspectos legales: medidas de seguridad,
       protección de datos del paciente,  patentes, problemas bioéticos y de
@@ -306,12 +289,10 @@ obras:
       o premisas bioéticas de donde se generan las grandes interrogantes
       jurídicas, en torno a las ciencias del derecho, las cuales se deben
       ajustar a la realidad generada por los grandes avances biotecnológicos,
-      con el fin de regular el comportamiento de la conducta humana.     
+      con el fin de regular el comportamiento de la conducta humana.
 
-  - ciudadPais: Buenos Aires, Argentina
+  - titulo: Biotecnología Amarilla
     foto: /images/artists/anaLauraCantera/cartografias_invisibles.JPG
-    titulo: Biotecnología Amarilla
-    url: null
     descripcion: |-
       Centrada en la producción y control nutricional, es otra de las ramas con
       mayor proyección de los últimos tiempos. Es un campo emergente de la
@@ -324,13 +305,13 @@ obras:
       provocan enfermedades cardiovasculares. O la elaboración de alimentos
       modificados con aumento en aporte calórico y suplementos vitamínicos
       utilizados en países en vías de desarrollo para combatir, de forma rápida
-      y eficaz, la desnutrición infantil. 
+      y eficaz, la desnutrición infantil.
 
       Se agregan los nutraceúticos y los alimentos funcionales, que se
       consideran beneficiosos para la salud y van más allá de la simple
       nutrición. Estos alimentos, compuestos o sustancias naturales ejercen una
       acción terapéutica sobre el cuerpo, por lo que su nombre deriva de la
-      mezcla de las palabras ‘nutrición’ y ‘terapéutico’.
+      mezcla de las palabras 'nutrición' y 'terapéutico'.
 
       Ejemplos:
 
@@ -343,16 +324,14 @@ obras:
       el metabolismo de ciertos nutrientes y favorecer la implementación de
       dietas personalizadas.
 
-  - ciudadPais: Buenos Aires, Argentina
+  - titulo: Biotecnología Negra
     foto: /images/artists/anaLauraCantera/cartografias_invisibles.JPG
-    titulo: Biotecnología Negra
-    url: null
     descripcion: |-
-      La biotecnología negra está vinculada al bioterrorismo y las guerras
+      La biotecnología negra está vinculada al bioterrorismo y las guerras
       biológicas. Se investigan microorganismos patógenos, virulentos y
       resistentes, para convertirlos en armas biológicas o contrarrestar sus
-      efectos nocivos (las bacterias Bacillus anthracis (anthrax) o Coxiella
-      burnetii, por ejemplo, pueden causan enfermedades letales a nivel
+      efectos nocivos (las bacterias Bacillus anthracis (anthrax) o Coxiella
+      burnetii, por ejemplo, pueden causan enfermedades letales a nivel
       pulmonar).
 
       Áreas:

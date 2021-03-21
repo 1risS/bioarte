@@ -1,12 +1,10 @@
 nombre: ¿Qué es la Biotecnología?
-cvUrl: null
-formacion: |-
-bio: |-
+descripcion: |-
   La Biotecnología se define como un área multidisciplinaria, que emplea la
-  la ingeniería, física, química, biología, medicina y veterinaria; y el campo
-  de esta ciencia tiene gran repercusión en la farmacia, la medicina, la ciencia
+  la ingeniería, física, química, biología, medicina y veterinaria; y el campo
+  de esta ciencia tiene gran repercusión en la farmacia, la medicina, la ciencia
   de los alimentos, el tratamiento de residuos sólidos, líquidos, gaseosos,
-  la industria y la agricultura. Probablemente el primero que usó este término
+  la industria y la agricultura. Probablemente el primero que usó este término
   fue el ingeniero húngaro Karl Ereky, en 1919.
 
   Una definición de biotecnología aceptada internacionalmente es la siguiente:
@@ -22,11 +20,9 @@ bio: |-
   yogurt, o que se puede hacer cerveza fermentando soluciones de malta y lúpulo
   fue el comienzo de la biotecnología, hace miles de años.
 
-obras:
-  - ciudadPais: Buenos Aires, Argentina
+secciones:
+  - titulo:
     foto: /images/artists/anaLauraCantera/obra_nueva.jpg
-    titulo: Inhalaciones territoriales
-    url:
     descripcion: |-
       Aunque en ese entonces los hombres no entendían cómo ocurrían estos
       procesos, podían utilizarlos para su beneficio. Estas aplicaciones
@@ -37,36 +33,34 @@ obras:
       Los científicos actualmente comprenden en detalle cómo ocurren estos
       procesos biológicos, lo que les ha permitido desarrollar nuevas técnicas a
       fin de modificar o copiar algunos de dichos procesos naturales para poder
-      lograr una variedad mucho más amplia de productos. 
+      lograr una variedad mucho más amplia de productos.
 
-      Los científicos hoy saben que los microorganismos sintetizan1 compuestos
-      químicos2 y enzimas3 que pueden emplearse eficientemente en procesos
+      Los científicos hoy saben que los microorganismos sintetizan(1) compuestos
+      químicos(2) y enzimas(3) que pueden emplearse eficientemente en procesos
       industriales, tales como la fabricación de detergentes, manufactura del
       papel e industria farmacéutica.
 
-      1. Síntesis química es el proceso por el cual se producen compuestos
-      químicos a partir de compuestos simples.​ La síntesis química permite
-      también obtener productos que no existen de forma natural, como el acero o
-      los plásticos. Actualmente hay catalogados unos once millones de productos
+      1. Síntesis química es el proceso por el cual se producen compuestos
+      químicos a partir de compuestos simples. La síntesis química permite
+      también obtener productos que no existen de forma natural, como el acero o
+      los plásticos. Actualmente hay catalogados unos once millones de productos
       químicos de síntesis.
 
-      2. Compuestos químicos: es una sustancia formada por la combinación
-      química de dos o más elementos distintos de la tabla periódica.
+      2. Compuestos químicos: es una sustancia formada por la combinación
+      química de dos o más elementos distintos de la tabla periódica.
 
-      3. Enzimas: son proteínas que catalizan reacciones químicas en los seres
+      3. Enzimas: son proteínas que catalizan reacciones químicas en los seres
       vivos. Los enzimas son sustancias que, sin consumirse en una reacción,
       aumentan notablemente su velocidad. No hacen factibles las reacciones
       imposibles, sino que solamente aceleran las que espontáneamente podrían
       producirse. Por ejemplo, en el estómago, las enzimas degradan los
-      alimentos en partículas diminutas para convertirlas en energía. 
+      alimentos en partículas diminutas para convertirlas en energía.
 
-  - ciudadPais: Buenos Aires, Argentina
+  - titulo:
     foto: /images/artists/anaLauraCantera/Displaced_Cantera_1_de-10.png
-    titulo: Displaced
-    url: https://www.analauracantera.com.ar/displaced
     descripcion: |-
-      La biotecnología moderna surge en la década de los ’80, y utiliza técnicas
-      denominadas en su conjunto “ingeniería genética”, para modificar y
+      La biotecnología moderna surge en la década de los '80, y utiliza técnicas
+      denominadas en su conjunto "ingeniería genética", para modificar y
       transferir genes de un organismo a otro. De esta manera es posible
       producir insulina humana en bacterias y, consecuentemente, mejorar el
       tratamiento de la diabetes. Por ingeniería genética también se fabrica la
@@ -83,17 +77,15 @@ obras:
       4. Microorganismos: Los microorganismos son organismos vivos unicelulares
       como hongos y bacterias. Los microorganismos son los productores de
       enzimas más eficaces. Estos fabricantes de enzimas producidos naturalmente
-      pueden utilizarse en una variedad de procesos agrícolas e industriales. 
- 
+      pueden utilizarse en una variedad de procesos agrícolas e industriales.
+
       Los microorganismos les brindan a los agricultores un nuevo conjunto de
       herramientas biológicas para incrementar el rendimiento agrícola y
       proteger los cultivos. Además, pueden mejorar la salud, el crecimiento y
-      la utilización de alimento del ganado. 
+      la utilización de alimento del ganado.
 
-  - ciudadPais: Buenos Aires, Argentina
+  - titulo:
     foto: /images/artists/anaLauraCantera/cartografias_invisibles.JPG
-    titulo: Cartografías invisibles
-    url: https://www.youtube.com/watch?v=yK95aQvYHnI&feature=emb_logo
     descripcion: |-
       Mas información en: argenbio.org
 
@@ -102,16 +94,16 @@ obras:
       biotecnología, contribuyendo a su comprensión y estimulando su desarrollo.
       Surgió del compromiso que asumieron los miembros fundadores para responder
       a la demanda de información acerca de la biotecnología y sus aplicaciones,
-      sus beneficios y su seguridad. 
+      sus beneficios y su seguridad.
 
       Para cumplir con este compromiso, ArgenBio realiza actividades en las
-      siguientes áreas: 
-      
+      siguientes áreas:
+
       - Capacitación para profesionales y docentes (porquebiotecnologia.com.ar)
       - Información para los medios como fuente de noticia y consulta
       - Información para profesionales de la salud (con especial foco en
         aquellos especializados en nutrición), profesionales que realizan alguna
         actividad en la cadena alimentaria (ej. chefs) y personas interesadas en
         conocer más sobre nutrición y seguridad de los alimentos
-        (www.infoalimentos.org.ar)  
+        (www.infoalimentos.org.ar)
       - Actividades de divulgación para público en general

@@ -60,14 +60,10 @@ exports.createPages = async ({ graphql, actions }) => {
               slug
             }
             nombre
-            cvUrl
-            formacion
-            bio
-            obras {
-              ciudadPais
-              foto
+            descripcion
+            secciones {
               titulo
-              url
+              foto
               descripcion
             }
           }
