@@ -281,7 +281,6 @@ const ArtistPageTemplate = ({ pageContext }) => {
               <NombreObra>{obras[0].titulo}</NombreObra>
             </FotoObraContainer>
           </StyledLink>
-
           <Carousel
             ciudadPais={datosObra.ciudadPais}
             fotoObra={datosObra.foto}
@@ -303,18 +302,5 @@ const ArtistPageTemplate = ({ pageContext }) => {
     </Layout>
   )
 }
-
-// export const query = graphql`
-//   query($slug: String!) {
-//     markdownRemark(fields: { slug: { eq: $slug } }) {
-//       html
-//       frontmatter {
-//         nombre
-//         formacion
-//         bio
-//       }
-//     }
-//   }
-// `
 
 export default ArtistPageTemplate

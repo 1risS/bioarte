@@ -104,8 +104,8 @@ const BioTexto = styled.div`
 `
 
 const FotoObraContainer = styled.div`
-  background-image: url(${fondoObra});
-  background-size: 100%;
+  background-image: url("${props => props.foto}");
+  background-size: cover;
   background-repeat: no-repeat;
   margin: 1em 0;
   height: 100vh;
@@ -113,8 +113,20 @@ const FotoObraContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+`
+
+const NombreObra = styled.div`
+  font-size: 2em;
+  text-align: center;
+  color: #fff;
+  background-color: RGBA(0, 0, 0, 0.5);
+  width: 600px;
+  height: auto;
+  margin: 15em auto 0 auto;
+  padding: 1em;
+  border-radius: 15px;
   &:hover {
-    opacity: 0.9;
+    opacity: 0.8;
     cursor: pointer;
   }
 `
@@ -195,6 +207,7 @@ const BiotecnologiaPageTemplate = ({ pageContext }) => {
               </BioTexto>
             </BioArtista>
           </BioArtistaContainer>
+          <FotoObraContainer foto={secciones[0].foto} />
           <Carousel
             ciudadPais={datosSeccion.ciudadPais}
             fotoObra={datosSeccion.foto}
