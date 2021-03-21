@@ -24,7 +24,7 @@ descripcion: |-
 
 secciones:
   - titulo: Biotecnología Roja
-    foto: /images/artists/anaLauraCantera/cartografias_invisibles.JPG
+    foto: /images/biotecnologia/colores/roja.jpg
     descripcion: |-
       Biotecnología roja o biotecnología sanitaria: es la asociada a la materia
       de salud, tanto humana como animal, investigaciones biomédicas,
@@ -57,7 +57,7 @@ secciones:
       Más Información en: Biotecnología roja. BiotecPedia (wordpress.com)
 
   - titulo: Biotecnología Azul
-    foto: /images/artists/anaLauraCantera/Displaced_Cantera_1_de-10.png
+    foto: /images/biotecnologia/colores/azul.jpg
     descripcion: |-
       El mundo submarino es todavía un gran desconocido. Del mar están surgiendo
       conocimientos que nos abren puertas a nuevos fármacos, aplicaciones y
@@ -85,7 +85,7 @@ secciones:
       Más información en: Azul - BiotecPedia (wordpress.com)
 
   - titulo: Biotecnología Verde
-    foto: /images/artists/anaLauraCantera/cartografias_invisibles.JPG
+    foto: /images/biotecnologia/colores/verde.jpg
     descripcion: |-
       Alberga todos los procesos en el sector agrícola. Plantas transgénicas
       capaces de crecer en condiciones ambientales desfavorables y organismos
@@ -117,7 +117,7 @@ secciones:
       Semillas | Bayer
 
   - titulo: Biotecnología Gris
-    foto: /images/artists/anaLauraCantera/cartografias_invisibles.JPG
+    foto: /images/biotecnologia/colores/gris.jpg
     descripcion: |-
       Es la encargada de estudiar y optimizar los procesos de reciclaje,
       centrándose en los ecosistemas y las ciencias ambientales. Trata la
@@ -152,7 +152,7 @@ secciones:
       Ejemplo: IQUIBICEN (uba.ar)
 
   - titulo: Biotecnología Blanca
-    foto: /images/artists/anaLauraCantera/cartografias_invisibles.JPG
+    foto: /images/biotecnologia/colores/blanca.jpg
     descripcion: |-
       La biotecnología blanca es la rama de la biotecnología dedicada a
       optimizar los procesos industriales y el desarrollo de alternativas al uso
@@ -183,7 +183,7 @@ secciones:
       Vicentín
 
   - titulo: Biotecnología Dorada
-    foto: /images/artists/anaLauraCantera/cartografias_invisibles.JPG
+    foto: /images/biotecnologia/colores/dorada.jpg
     descripcion: |-
       Es la rama dedicada a la bioinformática, una herramienta imprescindible en
       biotecnología. Es la responsable tanto del software como del hardware,
@@ -213,7 +213,7 @@ secciones:
       I+D.
 
   - titulo: Biotecnología Marrón
-    foto: /images/artists/anaLauraCantera/cartografias_invisibles.JPG
+    foto: /images/biotecnologia/colores/marron.jpg
     descripcion: |-
       Una rama dedicada a la obtención de componentes y el aprovechamiento de
       recursos procedentes del desierto. Su objetivo es que suelos desérticos
@@ -236,7 +236,7 @@ secciones:
       - Aprovechamiento de los recursos de los desiertos
 
   - titulo: Biotecnología Naranja
-    foto: /images/artists/anaLauraCantera/cartografias_invisibles.JPG
+    foto: /images/biotecnologia/colores/naranja.jpg
     descripcion: |-
       Esta área se dedica a la formación y difusión de la biotecnología y sus
       aplicaciones. Es el área de divulgación de la biotecnología. Su enseñanza
@@ -260,7 +260,7 @@ secciones:
       Fundaciones: ArgenBio, Fundación Argentina de Nanotecnología
 
   - titulo: Biotecnología Púrpura
-    foto: /images/artists/anaLauraCantera/cartografias_invisibles.JPG
+    foto: /images/biotecnologia/colores/purpura.jpg
     descripcion: |-
       Se centra en el estudio de los aspectos legales: medidas de seguridad,
       protección de datos del paciente,  patentes, problemas bioéticos y de
@@ -292,7 +292,7 @@ secciones:
       con el fin de regular el comportamiento de la conducta humana.
 
   - titulo: Biotecnología Amarilla
-    foto: /images/artists/anaLauraCantera/cartografias_invisibles.JPG
+    foto: /images/biotecnologia/colores/amarilla.jpg
     descripcion: |-
       Centrada en la producción y control nutricional, es otra de las ramas con
       mayor proyección de los últimos tiempos. Es un campo emergente de la
@@ -325,7 +325,7 @@ secciones:
       dietas personalizadas.
 
   - titulo: Biotecnología Negra
-    foto: /images/artists/anaLauraCantera/cartografias_invisibles.JPG
+    foto: /images/biotecnologia/colores/negra.png
     descripcion: |-
       La biotecnología negra está vinculada al bioterrorismo y las guerras
       biológicas. Se investigan microorganismos patógenos, virulentos y
