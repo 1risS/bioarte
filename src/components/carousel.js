@@ -45,7 +45,7 @@ const DescripcionContainer = styled.div`
 
 const FlechaSlider = styled.div`
   background: url(${props =>
-      props.left ? flechaSliderIzqNormal : flechaSliderDerNormal})
+    props.left ? flechaSliderIzqNormal : flechaSliderDerNormal})
     no-repeat;
   height: 80px;
   width: 80px;
@@ -53,7 +53,7 @@ const FlechaSlider = styled.div`
   cursor: pointer;
   &:hover {
     background: url(${props =>
-        props.left ? flechaSliderIzqPressed : flechaSliderDerPressed})
+    props.left ? flechaSliderIzqPressed : flechaSliderDerPressed})
       no-repeat;
   }
 `
@@ -164,16 +164,14 @@ const Carousel = ({
           <FotoObra src={fotoObra} height="880px" width="576px"></FotoObra>
           <DescripcionContainer>
             <ProcedenciaFotosContainer>
-              <CiudadPais>{ciudadPais}</CiudadPais>
+              {ciudadPais && <CiudadPais>{ciudadPais}</CiudadPais>}
               <CantFotos>
                 {value + 1}/{count}
               </CantFotos>
             </ProcedenciaFotosContainer>
             <TituloWebCont>
               <TituloObra>{tituloObra}</TituloObra>
-              <LinkWeb href={obraURL} target="_blank">
-                Web
-              </LinkWeb>
+              {obraURL && <LinkWeb href={obraURL} target="_blank">Web</LinkWeb>}
             </TituloWebCont>
             {children}
           </DescripcionContainer>

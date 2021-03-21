@@ -274,23 +274,19 @@ const StyledLink = styled(Link)`
 // ponemos una cookie para saber si le usuarix pasó por acá
 
 const ArtistPageTemplate = ({ pageContext }) => {
-  const { nombre, cvUrl, formacion, bio, obras } = pageContext
+  const { nombre, descripcion, secciones } = pageContext
 
-  const [obra, setObra] = useState(0)
+  const [seccion, setSeccion] = useState(0)
 
   const onPreviousClick = () => {
-    if (obra > 0) {
-      setObra(obra - 1)
-    }
+    setSeccion(seccion => seccion > 0 ? seccion - 1 : seccion);
   }
 
   const onNextClick = () => {
-    if (obra < obras.length - 1) {
-      setObra(obra + 1)
-    }
+    setSeccion(seccion => seccion < secciones.length - 1 ? seccion + 1 : seccion)
   }
 
-  const datosObra = obras[obra]
+  const datosSeccion = secciones[seccion]
 
   return (
     <Layout>
@@ -317,39 +313,25 @@ const ArtistPageTemplate = ({ pageContext }) => {
               <BioHeader id="header">{nombre}</BioHeader>
               <BioTexto>
                 <TituloBio>
-                  <Titulo>Biografía</Titulo>
-                  <CVCont>
-                    <CV>
-                      <StyledLink to={cvUrl}>
-                        <CVText>CV</CVText>
-                      </StyledLink>
-                    </CV>
-                  </CVCont>
+                  <Titulo>Descripción</Titulo>
                 </TituloBio>
-                <ParrafoFormacion>{formacion}</ParrafoFormacion>
-                {bio.split("\n\n").map(paragraph => (
+                {descripcion.split("\n\n").map(paragraph => (
                   <Parrafo>{paragraph}</Parrafo>
                 ))}
               </BioTexto>
             </BioArtista>
           </BioArtistaContainer>
-          <StyledLink to={datosObra.url}>
-            <FotoObraContainer>
-              <NombreObra>{datosObra.titulo}</NombreObra>
-            </FotoObraContainer>
-          </StyledLink>
-
           <Carousel
-            ciudadPais={datosObra.ciudadPais}
-            fotoObra={datosObra.foto}
-            tituloObra={datosObra.titulo}
-            obraURL={datosObra.url}
+            ciudadPais={datosSeccion.ciudadPais}
+            fotoObra={datosSeccion.foto}
+            tituloObra={datosSeccion.titulo}
+            obraURL={datosSeccion.url}
             onPreviousClick={onPreviousClick}
             onNextClick={onNextClick}
-            count={obras.length}
-            value={obra}
+            count={secciones.length}
+            value={seccion}
           >
-            {datosObra.descripcion.split("\n\n").map(parrafo => (
+            {datosSeccion.descripcion.split("\n\n").map(parrafo => (
               <ParrafoObra>{parrafo}</ParrafoObra>
             ))}
           </Carousel>
