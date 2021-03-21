@@ -207,8 +207,8 @@ const BiotecnologiaPageTemplate = ({ pageContext }) => {
               </BioTexto>
             </BioArtista>
           </BioArtistaContainer>
-          <FotoObraContainer foto={secciones[0].foto} />
-          <Carousel
+          <FotoObraContainer foto={secciones[0]?.foto} />
+          {datosSeccion && <Carousel
             ciudadPais={datosSeccion.ciudadPais}
             fotoObra={datosSeccion.foto}
             tituloObra={datosSeccion.titulo}
@@ -221,7 +221,7 @@ const BiotecnologiaPageTemplate = ({ pageContext }) => {
             {datosSeccion.descripcion.split("\n\n").map(parrafo => (
               <ParrafoObra>{parrafo}</ParrafoObra>
             ))}
-          </Carousel>
+          </Carousel>}
         </DAMain>
       </DAContainer>
       <Footer></Footer>
