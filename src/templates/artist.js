@@ -10,6 +10,7 @@ import fondoObra from "../../static/images/artists/anaLauraCantera/obra_nueva.jp
 import like from "../../static/images/exhibicion/likelikeRounded.png"
 import Carousel, { ParrafoObra } from "../components/carousel"
 import FunFactsBalloon from "../components/FunFactsBalloon"
+import HomeBoton from "../components/homeBoton"
 
 const DAContainer = styled.div`
   background-color: ${props => props.theme.colors.bg1};
@@ -270,7 +271,7 @@ const Footer = styled.div`
 // ponemos una cookie para saber si le usuarix pasó por acá
 
 const ArtistPageTemplate = ({ pageContext }) => {
-  const { nombre, formacion, bio, obras } = pageContext;
+  const { nombre, cvUrl, formacion, bio, obras } = pageContext
 
   const [obra, setObra] = useState(0)
 
@@ -295,7 +296,7 @@ const ArtistPageTemplate = ({ pageContext }) => {
         <DAHeaderContainer>
           <NavBar>
             <LogoContainer>
-              <Logo src={logoFestival}></Logo>
+              <HomeBoton></HomeBoton>
             </LogoContainer>
           </NavBar>
           <Texto>Bioarte</Texto>
@@ -320,9 +321,7 @@ const ArtistPageTemplate = ({ pageContext }) => {
                     </CV>
                   </CVCont>
                 </TituloBio>
-                <ParrafoFormacion>
-                  {formacion}
-                </ParrafoFormacion>
+                <ParrafoFormacion>{formacion}</ParrafoFormacion>
                 {bio.split("\n\n").map(paragraph => (
                   <Parrafo>{paragraph}</Parrafo>
                 ))}

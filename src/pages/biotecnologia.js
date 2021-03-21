@@ -5,8 +5,7 @@ import styled from "styled-components"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import bannerBg from "../../static/images/biotecnologia/biotecnologia_banner_bg.png"
-import logoFestival from "../images/Academia/logo libélula.png"
-import Placeholder from "../../static/images/Icon-Placeholder-1.png"
+import logoFestival from "../../static/images/BIOSlogo.png"
 import fotoObra from "../../static/images/carousel/Displaced_Cantera_1_de-10.png"
 import HomeBoton from "../components/homeBoton"
 import Boton from "../components/boton"
@@ -44,81 +43,6 @@ const LogoContainer = styled.div`
   flex-direction: row;
   justify-content: flex-start;
   width: 30%;
-`
-
-const Logo = styled.img`
-  height: 3rem;
-  width: 3rem;
-  margin-right: 3rem;
-  align-self: flex-start;
-`
-const Placeholder1 = styled.img`
-  height: 3rem;
-  width: 3rem;
-  align-self: center;
-`
-const TimerNavegacionContainer = styled.div``
-
-const TimerNavegacion = styled.div`
-  max-width: 150px;
-  width: 100%;
-
-  text-align: center;
-  font-family: ${props => props.theme.fontFamily};
-  font-weight: ${props => props.theme.fontWeights.light};
-  color: #fff;
-
-  display: flex;
-`
-
-const TiempoContainer = styled.div`
-  margin-left: 1em;
-  margin-right: 1em;
-`
-
-const Horas = styled.div`
-  border-radius: 20px;
-  background-color: rgba(0, 0, 0, 0.5);
-  font-size: 1.5rem;
-  font-weight: bold;
-  padding: 0 0.2em 0 0.2em;
-`
-const Min = styled.div`
-  border-radius: 20px;
-  background-color: rgba(0, 0, 0, 0.5);
-  font-size: 1.5rem;
-  font-weight: bold;
-  padding: 0 0.2em 0 0.2em;
-`
-
-const Seg = styled.div`
-  border-radius: 20px;
-  background-color: rgba(0, 0, 0, 0.5);
-  font-size: 1.5rem;
-  font-weight: bold;
-  padding: 0 0.2em 0 0.2em;
-`
-
-const CantidadVisitantesContainer = styled.div`
-  max-width: 150px;
-  width: 100%;
-  text-align: center;
-  font-family: ${props => props.theme.fontFamily};
-  font-weight: ${props => props.theme.fontWeights.light};
-  color: #fff;
-  margin-left: 10em;
-`
-
-const TextoContadores = styled.div`
-  font-weight: lighter;
-  font-size: 1em;
-`
-
-const CantidadVisitantes = styled.div`
-  border-radius: 20px;
-  background-color: rgba(0, 0, 0, 0.5);
-  font-size: 1.5rem;
-  font-weight: bold;
 `
 
 const Texto = styled.div`
@@ -254,75 +178,21 @@ const UbicacionEmpresa = styled.p`
   align-self: start;
   font-size: 0.9rem;
 `
-
-const NombreEmpresa = styled.h1`
-  font-size: 1.6rem;
-  margin: 0.5rem 0rem 2rem 2.5rem;
-  width: 100%;
-`
-
-const InfoCol2 = styled.p`
-  padding-top: 1rem;
-  font-size: 1.5rem;
-  font-weight: ${props => props.theme.fontWeights.semiBold};
-  color: #9a9b9a;
-`
-
-const DetalleEmpresa = styled.div`
-  height: 240px;
-`
-
-const TextoDetalleEmpresa = styled.p`
-  font-family: inherit;
-  padding: 1.5em 1.7em;
-  font-size: 0.9em;
-`
-
-const Footer = styled.section`
-  // height: 300px;
-  // max-width: 1164px;
-  width: 100%;
-  margin: 0em auto;
-  display: flex;
-  justify-content: center;
-  padding-bottom: 1rem;
-`
-
-const LogosFooter = styled.div`
-  width: 60%;
+const IconsCont = styled.div`
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
-  height: auto;
-
-  background: linear-gradient(
-    90deg,
-    rgba(231, 232, 230, 1) 0%,
-    rgba(231, 232, 230, 1) 75%,
-    rgba(196, 215, 219, 1) 100%
-  );
+  width: 90vw;
+  justify-content: space-around;
+  margin: 6rem;
+`
+const I = styled.img`
+  height: 15rem;
+  width: 15rem;
 `
 
-const LogoEmpresaCont = styled.div`
-  margin: auto 0;
-  display: flex;
-`
-
-const LogoEmpresa = styled.img`
-  height: 6.5em;
-`
-
-const HoverDiv = styled.div`
-  position: absolute;
-  height: 6.5em;
-  width: 6.5em;
-  background-color: rgba(0, 0, 0, 0);
-  border-radius: 100px;
-
-  &:hover {
-    background-color: rgba(0, 90, 50, 0.5);
-  }
-`
+const Icono = src => {
+  return <I src={src}></I>
+}
 
 const BiotecnologiaPage = () => {
   return (
@@ -337,7 +207,15 @@ const BiotecnologiaPage = () => {
           </NavBar>
           <Texto>Biotecnología</Texto>
         </BiotecnologiaHeaderCont>
-        <SectionCarousel></SectionCarousel>
+        <SectionCarousel>
+          <IconsCont>
+            <Icono src={logoFestival}></Icono>
+            <Icono src={logoFestival}></Icono>
+            <Icono src={logoFestival}></Icono>
+            <Icono src={logoFestival}></Icono>
+            <Icono src={logoFestival}></Icono>
+          </IconsCont>
+        </SectionCarousel>
         <Section>
           <AgendaCont>
             <Agenda />

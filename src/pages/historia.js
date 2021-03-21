@@ -4,10 +4,8 @@ import React from "react"
 import styled from "styled-components"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Loadable from "@loadable/component"
-import { useCookies } from "react-cookie"
+
 import fondoHeader from "../images/Academia/academia_bg.jpg"
-import logoFestival from "../images/Academia/logo libélula.png"
 import HomeBoton from "../components/homeBoton"
 
 const Container = styled.div`
@@ -47,37 +45,6 @@ const LogoContainer = styled.div`
   justify-content: flex-start;
   width: 30%;
 `
-
-const Logo = styled.img`
-  height: 3rem;
-  width: 3rem;
-  margin-right: 3rem;
-  align-self: center;
-`
-const CantidadVisitantesContainer = styled.div`
-  max-width: 150px;
-  width: 100%;
-  text-align: center;
-  font-family: ${props => props.theme.fontFamily};
-  font-family: ${props => props.theme.fontFamily};
-  font-weight: ${props => props.theme.fontWeights.light};
-  font-weight: lighter;
-  color: #fff;
-  margin-left: 10em;
-`
-
-const TextoContadores = styled.div`
-  font-weight: lighter;
-  font-size: 1em;
-`
-
-const CantidadVisitantes = styled.div`
-  border-radius: 20px;
-  background-color: rgba(0, 0, 0, 0.5);
-  font-size: 1.5rem;
-  font-weight: bold;
-`
-
 const Texto = styled.div`
   font-family: ${props => props.theme.fontFamily};
   font-size: 8rem;

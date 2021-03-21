@@ -7,11 +7,9 @@ const path = require("path")
 const { createFilePath } = require(`gatsby-source-filesystem`)
 
 exports.onCreateWebpackConfig = ({ actions, stage, plugins }) => {
-  if (stage === 'build-javascript' || stage === 'develop') {
+  if (stage === "build-javascript" || stage === "develop") {
     actions.setWebpackConfig({
-      plugins: [
-        plugins.provide({ process: 'process/browser' })
-      ]
+      plugins: [plugins.provide({ process: "process/browser" })],
     })
   }
 }
@@ -41,6 +39,7 @@ exports.createPages = async ({ graphql, actions }) => {
               slug
             }
             nombre
+            cvUrl
             formacion
             bio
             obras {

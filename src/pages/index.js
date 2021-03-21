@@ -4,9 +4,6 @@ import { animated, Keyframes } from "react-spring/renderprops"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import logo from "../../static/images/welcome/BG_WelcomePage.png"
-import expNormal from "../../static/images/welcome/BtnWelcome_Lab-Normal.png"
-import expHover from "../../static/images/welcome/BtnWelcome_Lab-Hover.png"
-import expActive from "../../static/images/welcome/BtnWelcome_Lab-Click.png"
 import HomeBoton from "../components/homeBoton"
 // import TagManager from "react-gtm-module"
 
@@ -79,21 +76,6 @@ const Bold = styled.p`
   font-family: ${props => props.theme.fontFamily};
   color: white;
   font-weight: bold;
-`
-
-const Exp = styled.div`
-  display: block;
-  height: 150px;
-  width: 150px;
-  background-image: url(${expNormal});
-
-  &:hover {
-    background-image: url(${expHover});
-  }
-
-  &active {
-    background-image: url(${expActive});
-  }
 `
 
 const DivDer360 = styled.div`

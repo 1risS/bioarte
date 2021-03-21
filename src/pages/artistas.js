@@ -23,6 +23,7 @@ import art17 from "../images/Exhibicion/17Bergottini/01Bergottini.png"
 import logoFestival from "../images/Academia/logo libélula.png"
 import fondoHeader from "../../static/images/carousel/Banner_Exhibition_0.png"
 import like from "../../static/images/exhibicion/likelikeRounded.png"
+import HomeBoton from "../components/homeBoton"
 
 const C = styled.div`
   display: flex;
@@ -280,28 +281,8 @@ const ArtistasPage = () => {
         <ExhibicionHeaderContainer>
           <NavBar>
             <LogoContainer>
-              <Logo src={logoFestival}></Logo>
-              {/* <Placeholder1 src={logo}></Placeholder1> */}
+              <HomeBoton></HomeBoton>
             </LogoContainer>
-
-            {/* <TimerNavegacion>
-              <TiempoContainer>
-                <Horas>01</Horas>
-                <TextoContadores>Hs.</TextoContadores>
-              </TiempoContainer>
-              <TiempoContainer>
-                <Min>00</Min>
-                <TextoContadores>Min.</TextoContadores>
-              </TiempoContainer>
-              <TiempoContainer>
-                <Seg>00</Seg>
-                <TextoContadores>Seg.</TextoContadores>
-              </TiempoContainer>
-            </TimerNavegacion> */}
-            {/* <CantidadVisitantesContainer>
-              <CantidadVisitantes>30000</CantidadVisitantes>
-              <TextoContadores>Visitantes</TextoContadores>
-            </CantidadVisitantesContainer> */}
           </NavBar>
           <Texto>Bioarte</Texto>
           <Subtexto>Exhibición virtual</Subtexto>
