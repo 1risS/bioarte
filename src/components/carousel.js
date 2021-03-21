@@ -57,7 +57,28 @@ const FlechaSlider = styled.div`
       no-repeat;
   }
 `
-const FotoObra = styled.img``
+
+const FotoObra = styled(({ className, ...props }) => (
+  <div className={className}>
+    <img {...props} />
+  </div>
+))`
+  position: relative;
+  height: 880px;
+  width: 576px;
+
+  img {
+    max-height: 100%;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+`
 
 const LikeLikeCont = styled.div`
   margin-left: 10rem;
@@ -161,7 +182,7 @@ const Carousel = ({
           ></FlechaSlider>
         </MargenIzquierdo>
         <DetalleObra>
-          <FotoObra src={fotoObra} height="880px" width="576px"></FotoObra>
+          <FotoObra src={fotoObra} />
           <DescripcionContainer>
             <ProcedenciaFotosContainer>
               {ciudadPais && <CiudadPais>{ciudadPais}</CiudadPais>}
