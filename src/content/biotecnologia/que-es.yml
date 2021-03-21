@@ -1,28 +1,26 @@
-nombre: Ana Laura Cantera
-cvUrl: https://
+nombre: ¿Qué es la Biotecnología?
+cvUrl: null
 formacion: |-
-  Artista bioelectrónica, investigadora y docente. Magister en Artes
-  Electrónicas graduada con honores en la Universidad Nacional de Tres de
-  Febrero, Licenciada y Profesora en Artes Visuales egresada de la Universidad
-  Nacional de las Artes (UNA).
 bio: |-
-  Ha exhibido sus obras en Argentina, Brasil, Venezuela, Canadá, EEUU, México,
-  Irán, Israel, Mongolia, Francia, España, Perú, Bangladesh, entre otros.
+  La Biotecnología se define como un área multidisciplinaria, que emplea la
+  la ingeniería, física, química, biología, medicina y veterinaria; y el campo
+  de esta ciencia tiene gran repercusión en la farmacia, la medicina, la ciencia
+  de los alimentos, el tratamiento de residuos sólidos, líquidos, gaseosos,
+  la industria y la agricultura. Probablemente el primero que usó este término
+  fue el ingeniero húngaro Karl Ereky, en 1919.
 
-  Obtuvo la beca Global Community Bio Fellows, desarrollada en el MIT, la
-  Emerging Leaders in the Americas Programm en Concordia University, Montreal, y
-  ha sido parte de numerosas residencias internacionales, como la LAM 360° Land
-  Art Mongolia Biennial. Recientemente ganó el Primer Premio categoría Arte y
-  Robótica del Premio Itaú a las Artes Visuales y la beca de investigación CAPES
-  – PRINT, en la Universidade Federal de Rio de Janeiro. Por su desarrollo de
-  biocueros de yerba mate, ha sido parte del 3D Fashion Week Latinoamérica
-  desarrollado en Perú.
+  Una definición de biotecnología aceptada internacionalmente es la siguiente:
 
-  Es co-fundadora de Mycocrea - Laboratorio de biomateriales, del colectivo de
-  arte y biorobótica Robotícula, del colectivo Ecoestéticas y del Laboratorio de
-  Geopoéticas Subalternas. Se desempeña como docente, investigadora y
-  coordinadora de la Maestría en Tecnología y Estética de las Artes Electrónicas
-  de la UNTREF.
+  La biotecnología se refiere a toda aplicación tecnológica que utilice sistemas
+  biológicos y organismos vivos o sus derivados para la creación o modificación
+  de productos o procesos para usos específicos (Convention on Biological
+  Diversity, Article 2. Use of Terms, United Nations. 1992).
+
+  La biotecnología tiene una larga historia, que se remonta a la fabricación del
+  vino, el pan, el queso y el yogurt. El descubrimiento de que el jugo de uva
+  fermentado se convierte en vino, que la leche puede convertirse en queso o
+  yogurt, o que se puede hacer cerveza fermentando soluciones de malta y lúpulo
+  fue el comienzo de la biotecnología, hace miles de años.
 
 obras:
   - ciudadPais: Buenos Aires, Argentina
@@ -30,143 +28,90 @@ obras:
     titulo: Inhalaciones territoriales
     url:
     descripcion: |-
-      El territorio urbano inhala y coexiste. Ya dejó de ser distópico y se
-      convirtió en un nuevo paisaje antropocénico, que se impregna de agentes
-      humanos y sus productos.  La polución presente en la atmósfera es una gran
-      amenaza a nivel mundial y la principal causa de muerte prematura. Las
-      micropartículas de gases invisibles suspendidos en el aire cohabitan con
-      nosotros e ingresan a nuestros cuerpos con la misma rapidez y naturalidad
-      con la que respiramos.
+      Aunque en ese entonces los hombres no entendían cómo ocurrían estos
+      procesos, podían utilizarlos para su beneficio. Estas aplicaciones
+      constituyen lo que se conoce como biotecnología tradicional y se basa en
+      la obtención y utilización de los productos del metabolismo de ciertos
+      microorganismos.
 
-      Inhalaciones territoriales se basa en la captura de esas partículas y su
-      uso como tinte para teñir biomateriales empleados luego en estructuras
-      robóticas modulares. La primera etapa del proyecto consiste en realizar
-      derivas realizadas con una mochila de recolección de CO2 ambiental y otros
-      gases presentes en la atmósfera de la Ciudad de Buenos Aires.  El
-      dispositivo  posee  sensores de gases y extractores que ingresan aire
-      hacia filtros de biomateriales que se impregnan de las micropartículas y
-      contaminantes ambientales, como el CO2 y el material particulado
-      respirable. Esos biomateriales (realizados a partir de hongos),  se tiñen
-      progresivamente con la polución en el proceso de filtración y serán
-      utilizados como la materia prima para  las estructuras de la etapa dos del
-      proyecto. También, permite identificar los elementos absorbidos mediante
-      el sensor presente en el dispositivo que identifica y almacena los datos
-      de tipología de gases obtenidos por las áreas de desplazamiento.
+      Los científicos actualmente comprenden en detalle cómo ocurren estos
+      procesos biológicos, lo que les ha permitido desarrollar nuevas técnicas a
+      fin de modificar o copiar algunos de dichos procesos naturales para poder
+      lograr una variedad mucho más amplia de productos. 
+
+      Los científicos hoy saben que los microorganismos sintetizan1 compuestos
+      químicos2 y enzimas3 que pueden emplearse eficientemente en procesos
+      industriales, tales como la fabricación de detergentes, manufactura del
+      papel e industria farmacéutica.
+
+      1. Síntesis química es el proceso por el cual se producen compuestos
+      químicos a partir de compuestos simples.​ La síntesis química permite
+      también obtener productos que no existen de forma natural, como el acero o
+      los plásticos. Actualmente hay catalogados unos once millones de productos
+      químicos de síntesis.
+
+      2. Compuestos químicos: es una sustancia formada por la combinación
+      química de dos o más elementos distintos de la tabla periódica.
+
+      3. Enzimas: son proteínas que catalizan reacciones químicas en los seres
+      vivos. Los enzimas son sustancias que, sin consumirse en una reacción,
+      aumentan notablemente su velocidad. No hacen factibles las reacciones
+      imposibles, sino que solamente aceleran las que espontáneamente podrían
+      producirse. Por ejemplo, en el estómago, las enzimas degradan los
+      alimentos en partículas diminutas para convertirlas en energía. 
 
   - ciudadPais: Buenos Aires, Argentina
     foto: /images/artists/anaLauraCantera/Displaced_Cantera_1_de-10.png
     titulo: Displaced
     url: https://www.analauracantera.com.ar/displaced
     descripcion: |-
-      Displaced, es una instalación robótica sobre los desplazamientos
-      vinculados a los desastres climáticos, a las migraciones forzadas, los
-      destinos inciertos y la incertidumbre.  Desde 2009, se estima que una
-      persona por segundo es obligada a abandonar su hábitat por fenómenos
-      naturales causados por el cambio climático: inundaciones, sequías,
-      terremotos, tsunamis, desmontes, minería y contaminación de recursos
-      hídricos.
+      La biotecnología moderna surge en la década de los ’80, y utiliza técnicas
+      denominadas en su conjunto “ingeniería genética”, para modificar y
+      transferir genes de un organismo a otro. De esta manera es posible
+      producir insulina humana en bacterias y, consecuentemente, mejorar el
+      tratamiento de la diabetes. Por ingeniería genética también se fabrica la
+      quimosina, enzima clave para la fabricación del queso y que evita el
+      empleo del cuajo en este proceso. La ingeniería genética también es hoy
+      una herramienta fundamental para el mejoramiento de los cultivos
+      vegetales. Por ejemplo, es posible transferir un gen proveniente de una
+      bacteria a una planta, tal es el ejemplo del maíz Bt. En este caso, los
+      bacilos del suelo fabrican una proteína que mata a las larvas de un
+      insecto que normalmente destruyen los cultivos de maíz. Al transferir el
+      gen correspondiente, ahora el maíz fabrica esta proteína y por lo tanto
+      resulta refractaria al ataque del insecto.
 
-      La obra, es un robot bípedo con morfología y comportamiento inspirado en
-      un pájaro, realizado con piel de biomateriales. Su caminar es forzado,
-      difícil, pero constante.  Se desplaza en territorios nuevos conociéndolos
-      y absorbiendo sus características, dejando atrás su historia y rutina y
-      debiéndose adaptar a los nuevos cambios para sobrevivir.  El organismo
-      evita amenazas, y por lo tanto en su caminar se distancia de los humanos
-      que lo llevaron a la reterritorialización.
-
-      El proyecto fue realizado mediante la construcción de una estructura de
-      piezas impresas en 3d en PLA, servomotores,  arduino, componentes
-      electrónicos, etc. Fue revestido en bioplásticos realizados con yerba
-      mate, remolacha, porotos y pelo humano.
+      4. Microorganismos: Los microorganismos son organismos vivos unicelulares
+      como hongos y bacterias. Los microorganismos son los productores de
+      enzimas más eficaces. Estos fabricantes de enzimas producidos naturalmente
+      pueden utilizarse en una variedad de procesos agrícolas e industriales. 
+ 
+      Los microorganismos les brindan a los agricultores un nuevo conjunto de
+      herramientas biológicas para incrementar el rendimiento agrícola y
+      proteger los cultivos. Además, pueden mejorar la salud, el crecimiento y
+      la utilización de alimento del ganado. 
 
   - ciudadPais: Buenos Aires, Argentina
     foto: /images/artists/anaLauraCantera/cartografias_invisibles.JPG
     titulo: Cartografías invisibles
     url: https://www.youtube.com/watch?v=yK95aQvYHnI&feature=emb_logo
     descripcion: |-
-      El objetivo de Cartografías Invisibles  fue resignificar e interpretar
-      territorios, transitarlos y atravesarlos para obtener lecturas disímiles a
-      las cotidianas.
+      Mas información en: argenbio.org
 
-      El proyecto nació a partir de la residencia LAM 360° (Land Art Mongolia
-      Biennial), que planteaba un fuerte vínculo con el espacio por
-      desarrollarse en Murum Sum, plena estepa de dicho país asiático. Desde ese
-      lugar, nos propusimos construir un robot que pudiese transitar el
-      territorio mongol y que a su vez sirva como visualizador de información
-      del aire que respiramos que no podríamos apreciar sin tecnología mediante.
+      ArgenBio es el Consejo Argentino para la Información y el Desarrollo de la
+      Biotecnología, creado con el fin de divulgar información sobre la
+      biotecnología, contribuyendo a su comprensión y estimulando su desarrollo.
+      Surgió del compromiso que asumieron los miembros fundadores para responder
+      a la demanda de información acerca de la biotecnología y sus aplicaciones,
+      sus beneficios y su seguridad. 
 
-      El robot, denominado Life Guardian, y planteado como una nueva posible
-      especie del antropoceno, es en realidad un cyborg construido mediante una
-      parte mecánica impresa en 3d y una parte viva: un hongo. La parte biótica
-      determina y modifica el comportamiento del robot, convirtiéndose
-      metafóricamente en su cerebro.  En su estructura, posee diferentes tipos
-      de sensores que lo hacen chequear de manera permanente el lugar donde se
-      desplaza como así también las condiciones en la que se encuentra el
-      organismo vivo. Siempre se moverá buscando el mayor bienestar. Los datos
-      que recauda son de humedad, temperatura, color del hongo, presencia de
-      polución en el aire, tipo de gases en la atmósfera y registros
-      fotográficos. Todos pueden ser vistos en el lcd que contiene en su armazón
-      y que permite visualizarlos en tiempo real, como también almacenarlos en
-      su tarjeta sd junto a la posición mediante el dispositivo de gps.
-
-      El proyecto pretende visualizar la información invisible en los entornos
-      en los que nos desarrollamos, en pos de ser conscientes de lo que
-      respiramos.​
-
-  - ciudadPais: Buenos Aires, Argentina
-    foto: /images/artists/anaLauraCantera/nidos_de_equilibrio.jpg
-    titulo: Nidos de equilibrio
-    url: https://www.youtube.com/watch?time_continue=4&v=h2kYUfJy1PE
-    descripcion: |-
-      Bioconstrucción site-specific realizada con la comunidad de  San José de
-      Barreiro. San Pablo, Brasil, en el marco de la residencia Rural.Scapes,
-      2014.
-
-      ¿Y si de repente tu propio habitáculo te sustenta? ¿y si nuestros desechos
-      son los que determinan nuestra subsistencia? La instalación es una
-      bioconstrucción analógica a los nidos de termitas, generada a partir de
-      “paquetes de energía” o celdas microbianas, que propone una alternativa
-      sustentable a nivel micro de lograr subsistencia energética a partir de
-      los recursos naturales del propio habitáculo.
-
-      Está formado por ladrillos de adobe con cápsulas plásticas en su interior
-      que contienen barro del sitio mezclado con desechos orgánicos en
-      descomposición, que posibilita la extracción de energía limpia a partir de
-      la metabolización de las bacterias de los sustratos orgánicos encontrados
-      en la materia. Con el voltaje generado en este proceso, se alimenta una
-      pequeña luz dentro de la estructura.
-
-      El proyecto fue realizado junto a la comunidad de Sao Jose de Barreiro,
-      mediante un  taller de construcción de ladrillos autoenergéticos. En él
-      participaron en su mayoría, adolescentes en situación de vulnerabilidad.
-
-  - ciudadPais: Buenos Aires, Argentina
-    foto: /images/artists/anaLauraCantera/evolucion_de_una_partida.JPG
-    titulo: Evolución de una partida
-    url: ""
-    descripcion: |-
-      Instalación mecánica-orgánica que relata el desvanecimiento, la debilidad
-      y la transformación de la materia mediante comunidades de microorganismos
-      que se comunican, degradan e interactúan mediante datos digitales.
-      Mediante procesos degenerativos, este dispositivo maquínico permite
-      visualizar los procesos de muerte, génesis y recomposición acaecidos en el
-      ciclo de la materia a partir de los diálogos y comportamientos de
-      adaptación de los ámbitos artificiales creados para el desarrollo de
-      micromundos.
-
-      El accionar comienza en una pequeña caja en la que es posible observar un
-      fruto en proceso de descomposición mediante una webcam que registra los
-      cambios producidos. A través de programación la cámara extrae una
-      fotografía de la zona afectada del fruto y la compara con la anterior,
-      para diferenciar cuántos cambios de color se produjeron. Estos datos
-      digitales son los que modifican  la segunda caja denominada matriz.
-
-      Esta nueva caja (output), contiene una reproducción cromática orgánica de
-      una porción de la imagen inicial de la zona afectada, realizada con
-      cuadrados de hojas de árboles en diferentes grados de oxidación, a modo de
-      pixeles. Dentro de la caja pueden observarse tres dispositivos
-      electrónicos que son los responsables de recibir la información de la caja
-      1 (input) y a su vez representan los principales elementos erosionadores
-      de la naturaleza: el viento, el agua y el calor. Para ello se utilizó un
-      cooler, un humidificador y un calentador que se son activados a partir de
-      los cambios de color que se producen en el input.
+      Para cumplir con este compromiso, ArgenBio realiza actividades en las
+      siguientes áreas: 
+      
+      - Capacitación para profesionales y docentes (porquebiotecnologia.com.ar)
+      - Información para los medios como fuente de noticia y consulta
+      - Información para profesionales de la salud (con especial foco en
+        aquellos especializados en nutrición), profesionales que realizan alguna
+        actividad en la cadena alimentaria (ej. chefs) y personas interesadas en
+        conocer más sobre nutrición y seguridad de los alimentos
+        (www.infoalimentos.org.ar)  
+      - Actividades de divulgación para público en general

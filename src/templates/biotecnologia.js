@@ -294,7 +294,7 @@ const ArtistPageTemplate = ({ pageContext }) => {
 
   return (
     <Layout>
-      <SEO title="Artista" />
+      <SEO title="Biotecnología" />
       <DAContainer>
         <DAHeaderContainer>
           <NavBar>
