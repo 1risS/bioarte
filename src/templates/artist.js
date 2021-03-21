@@ -75,7 +75,7 @@ const LibelulaContainer = styled.div`
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
-  width: 20% !important;
+  width: 16.5% !important;
   margin: 4rem;
 `
 

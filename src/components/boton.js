@@ -7,7 +7,8 @@ const BotonCont = styled.div`
   align-items: center;
   margin: 6rem;
 `
-const Botonstyled = styled.div`
+const Botonstyled = styled.a`
+  display: block;
   text-align: center;
   font-family: ${props => props.theme.fontFamily};
   font-weight: 900;
@@ -16,9 +17,11 @@ const Botonstyled = styled.div`
   background-color: #508f44;
   border-radius: 5px;
   width: 40%;
+  text-decoration: none;
 
   &:hover {
     background-color: #93bb66;
+    cursor: pointer;
   }
 `
 
@@ -29,7 +32,10 @@ const Boton = ({ label, url }) => {
 
   return (
     <BotonCont>
-      <Botonstyled onClick={onClick}> {label} </Botonstyled>
+      <Botonstyled href={url} target="_blank">
+        {" "}
+        {label}{" "}
+      </Botonstyled>
     </BotonCont>
   )
 }

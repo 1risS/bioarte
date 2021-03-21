@@ -72,7 +72,7 @@ const LibelulaContainer = styled.div`
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
-  width: 20% !important;
+  width: 16.5% !important;
   margin: 4rem;
 `
 
@@ -148,18 +148,19 @@ const TituloBio = styled.div`
   justify-content: space-between;
 `
 
-
 const BiotecnologiaPageTemplate = ({ pageContext }) => {
   const { nombre, descripcion, secciones } = pageContext
 
   const [seccion, setSeccion] = useState(0)
 
   const onPreviousClick = () => {
-    setSeccion(seccion => seccion > 0 ? seccion - 1 : seccion);
+    setSeccion(seccion => (seccion > 0 ? seccion - 1 : seccion))
   }
 
   const onNextClick = () => {
-    setSeccion(seccion => seccion < secciones.length - 1 ? seccion + 1 : seccion)
+    setSeccion(seccion =>
+      seccion < secciones.length - 1 ? seccion + 1 : seccion
+    )
   }
 
   const datosSeccion = secciones[seccion]
@@ -174,10 +175,7 @@ const BiotecnologiaPageTemplate = ({ pageContext }) => {
               <HomeBoton></HomeBoton>
             </LogoContainer>
           </NavBar>
-          <Texto>Bioarte</Texto>
-          <LikeLikeCont>
-            <Like src={like} />
-          </LikeLikeCont>
+          <Texto>Biotecnología</Texto>
         </DAHeaderContainer>
         <DAMain>
           <BioArtistaContainer>
