@@ -333,9 +333,9 @@ const ArtistPageTemplate = ({ pageContext }) => {
               </BioTexto>
             </BioArtista>
           </BioArtistaContainer>
-          <StyledLink to={datosObra.url}>
+          <StyledLink to={obras[0].url}>
             <FotoObraContainer>
-              <NombreObra>{datosObra.titulo}</NombreObra>
+              <NombreObra>{obras[0].titulo}</NombreObra>
             </FotoObraContainer>
           </StyledLink>
 

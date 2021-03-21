@@ -3,35 +3,24 @@ import styled from "styled-components"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { Link } from "gatsby"
-import art01 from "../images/Exhibicion/01Cantera/01Cantera.png"
-import art02 from "../images/Exhibicion/02Ferrari/01ferrari.png"
+import fotoAnaLaura from "../images/Exhibicion/01Cantera/01Cantera.png"
 import art03 from "../images/Exhibicion/03Duhalde/01duhalde.png"
 import art04 from "../images/Exhibicion/04Fargas/01fargas.png"
-import art05 from "../images/Exhibicion/05Marinaro/01Marinaro.png"
+import fotoMuru from "../../static/images/artists/muru/01 - Foto de Muru 7.8 foto.png"
 import art06 from "../images/Exhibicion/06Paoletti/01Paoletti.png"
-//import art07 from "../images/Exhibicion/03Duhalde/01duhalde.png"
 import art08 from "../images/Exhibicion/08Olmedo/01olmedo.png"
-//import art09 from "../images/Exhibicion/03Duhalde/01duhalde.png"
 import art10 from "../images/Exhibicion/10Olalde/01olalde.png"
-//import art11 from "../images/Exhibicion/03Duhalde/01duhalde.png"
 import art12 from "../images/Exhibicion/12Valente/01Valente.png"
 import art13 from "../images/Exhibicion/13Caterbetti/01catterbetti.png"
-//import art14 from "../images/Exhibicion/03Duhalde/01duhalde.png"
-//import art15 from "../images/Exhibicion/03Duhalde/01duhalde.png"
-//import art16 from "../images/Exhibicion/03Duhalde/01duhalde.png"
 import art17 from "../images/Exhibicion/17Bergottini/01Bergottini.png"
-import logoFestival from "../images/Academia/logo libélula.png"
 import fondoHeader from "../../static/images/carousel/Banner_Exhibition_0.png"
 import like from "../../static/images/exhibicion/likelikeRounded.png"
 import HomeBoton from "../components/homeBoton"
+import Footer from "../components/footer"
 
 const C = styled.div`
   display: flex;
   flex-direction: column;
-  background-color: ${props => props.theme.colors.bg1};
-`
-
-const ExhibicionContainer = styled.div`
   background-color: ${props => props.theme.colors.bg1};
 `
 
@@ -91,7 +80,7 @@ const ArtistasContainer = styled.div`
   justify-content: center;
   width: 43%;
   height: 100%;
-  margin: 2rem 2rem 2rem 2rem;
+  margin: 3rem 2rem 5rem 2rem;
   background-color: ${props => props.theme.colors.bg1};
 `
 
@@ -100,7 +89,7 @@ const HoverDiv = styled.div`
   height: 180px;
   width: 180px;
   position: absolute;
-  left: 0px;
+  left: 1rem;
   top: 0px;
   &:hover {
     background-color: rgba(255, 125, 0, 0.5);
@@ -120,6 +109,7 @@ const Foto = styled.img`
   align-self: center;
   height: 180px;
   width: 180px;
+  margin: 1rem;
   order: 3;
   ${Link}:hover & {
     fill: rebeccapurple;
@@ -159,89 +149,11 @@ const RowPairs = styled.div`
   justify-content: space-around;
 `
 const Column = styled.div`
-  display: inherit;
+  display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
   margin: 0.3rem;
 `
-
-const Placeholder1 = styled.img`
-  height: 3rem;
-  width: 3rem;
-  align-self: center;
-  margin-right: 1rem;
-`
-
-const ContadoresContainer = styled.div`
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  flex-basis: 150rem;
-`
-
-const TimerNavegacionContainer = styled.div``
-
-const TimerNavegacion = styled.div`
-  max-width: 150px;
-  width: 100%;
-
-  text-align: center;
-  font-family: ${props => props.theme.fontFamily};
-  font-weight: ${props => props.theme.fontWeights.light};
-  color: #fff;
-
-  display: flex;
-`
-
-const TiempoContainer = styled.div`
-  margin-left: 1em;
-  margin-right: 1em;
-`
-
-const Horas = styled.div`
-  border-radius: 20px;
-  background-color: rgba(0, 0, 0, 0.5);
-  font-size: 1.5rem;
-  font-weight: bold;
-  padding: 0 0.2em 0 0.2em;
-`
-const Min = styled.div`
-  border-radius: 20px;
-  background-color: rgba(0, 0, 0, 0.5);
-  font-size: 1.5rem;
-  font-weight: bold;
-  padding: 0 0.2em 0 0.2em;
-`
-
-const Seg = styled.div`
-  border-radius: 20px;
-  background-color: rgba(0, 0, 0, 0.5);
-  font-size: 1.5rem;
-  font-weight: bold;
-  padding: 0 0.2em 0 0.2em;
-`
-
-const CantidadVisitantesContainer = styled.div`
-  max-width: 150px;
-  width: 100%;
-  text-align: center;
-  font-family: ${props => props.theme.fontFamily};
-  font-weight: ${props => props.theme.fontWeights.light};
-  color: #fff;
-  margin-left: 10em;
-`
-
-const TextoContadores = styled.div`
-  font-weight: lighter;
-  font-size: 1em;
-`
-
-const CantidadVisitantes = styled.div`
-  border-radius: 20px;
-  background-color: rgba(0, 0, 0, 0.5);
-  font-size: 1.5rem;
-  font-weight: bold;
-`
-
 const BioContainer = styled.div`
   display: flex;
   flex-direction: column;
@@ -258,6 +170,10 @@ const LikeLikeCont = styled.a`
   margin-left: 10rem;
   align-self: flex-end;
   margin: 0rem 4rem 0rem 0rem;
+  &:hover {
+    opacity: 0.8;
+    cursor: pointer;
+  }
 `
 
 const Like = styled.img``
@@ -290,19 +206,22 @@ const ArtistasPage = () => {
             <Like src={like} />
           </LikeLikeCont>
         </ExhibicionHeaderContainer>
+
+        {/* Matriz */}
+
         <ArtistasContainer id="CONTAINER">
           <RowContainer>
             <RowPairs>
               <Column>
                 <ArtistLink to="ana-laura-cantera">
                   <ContainerHoverDiv>
-                    <Foto src={art01}></Foto>
+                    <Foto src={fotoAnaLaura}></Foto>
                     <HoverDiv></HoverDiv>
                   </ContainerHoverDiv>
                 </ArtistLink>
-                <ArtistLink to="muru">
+                <ArtistLink to="detalle de artista 2">
                   <ContainerHoverDiv>
-                    <Foto src={art02}></Foto>
+                    <Foto src={like}></Foto>
                     <HoverDiv></HoverDiv>
                   </ContainerHoverDiv>
                 </ArtistLink>
@@ -323,7 +242,7 @@ const ArtistasPage = () => {
               <Column>
                 <ArtistLink to="muru">
                   <ContainerHoverDiv>
-                    <Foto src={art05}></Foto>
+                    <Foto src={fotoMuru}></Foto>
                     <HoverDiv></HoverDiv>
                   </ContainerHoverDiv>
                 </ArtistLink>
@@ -352,7 +271,7 @@ const ArtistasPage = () => {
               <Column>
                 <ArtistLink to="detalleArtista1">
                   <ContainerHoverDiv>
-                    <Foto src={art12}></Foto>
+                    <Foto src={like}></Foto>
                     <HoverDiv></HoverDiv>
                   </ContainerHoverDiv>
                 </ArtistLink>
@@ -377,15 +296,15 @@ const ArtistasPage = () => {
               </Column>
 
               <Column>
-                <ArtistLink to="detalleArtista1">
+                <ArtistLink to="muru">
                   <ContainerHoverDiv>
-                    <Foto src={art01}></Foto>
+                    <Foto src={fotoAnaLaura}></Foto>
                     <HoverDiv></HoverDiv>
                   </ContainerHoverDiv>
                 </ArtistLink>
                 <ArtistLink to="detalleArtista2">
                   <ContainerHoverDiv>
-                    <Foto src={art02}></Foto>
+                    <Foto src={fotoMuru}></Foto>
                     <HoverDiv></HoverDiv>
                   </ContainerHoverDiv>
                 </ArtistLink>
@@ -408,6 +327,7 @@ const ArtistasPage = () => {
 
         <BioContainer></BioContainer>
       </C>
+      <Footer></Footer>
     </Layout>
   )
 }
