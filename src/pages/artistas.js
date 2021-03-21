@@ -4,13 +4,13 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { Link } from "gatsby"
 import fotoAnaLaura from "../images/Exhibicion/01Cantera/01Cantera.png"
-import art03 from "../images/Exhibicion/03Duhalde/01duhalde.png"
-import art04 from "../images/Exhibicion/04Fargas/01fargas.png"
 import fotoMuru from "../../static/images/artists/muru/01 - Foto de Muru 7.8 foto.png"
+import fotoOliverio from "../../static/images/artists/oliverioDuhalde/01 - OLIVERIO DUHALDE PHOTO 2021.jpg"
+import fotoFargas from "../../static/images/artists/joaquinFargas/01 - Foto Joaquin.jpg"
+import art04 from "../images/Exhibicion/04Fargas/01fargas.png"
 import art06 from "../images/Exhibicion/06Paoletti/01Paoletti.png"
 import art08 from "../images/Exhibicion/08Olmedo/01olmedo.png"
 import art10 from "../images/Exhibicion/10Olalde/01olalde.png"
-import art12 from "../images/Exhibicion/12Valente/01Valente.png"
 import art13 from "../images/Exhibicion/13Caterbetti/01catterbetti.png"
 import art17 from "../images/Exhibicion/17Bergottini/01Bergottini.png"
 import fondoHeader from "../../static/images/carousel/Banner_Exhibition_0.png"
@@ -227,7 +227,7 @@ const ArtistasPage = () => {
                 </ArtistLink>
                 <ArtistLink to="detalleArtista3">
                   <ContainerHoverDiv>
-                    <Foto src={art03}></Foto>
+                    <Foto src={like}></Foto>
                     <HoverDiv></HoverDiv>
                   </ContainerHoverDiv>
                 </ArtistLink>
@@ -269,9 +269,9 @@ const ArtistasPage = () => {
 
             <RowPairs>
               <Column>
-                <ArtistLink to="detalleArtista1">
+                <ArtistLink to="oliverio-duhalde">
                   <ContainerHoverDiv>
-                    <Foto src={like}></Foto>
+                    <Foto src={fotoOliverio}></Foto>
                     <HoverDiv></HoverDiv>
                   </ContainerHoverDiv>
                 </ArtistLink>
@@ -296,9 +296,9 @@ const ArtistasPage = () => {
               </Column>
 
               <Column>
-                <ArtistLink to="muru">
+                <ArtistLink to="joaquin-fargas">
                   <ContainerHoverDiv>
-                    <Foto src={fotoAnaLaura}></Foto>
+                    <Foto src={fotoFargas}></Foto>
                     <HoverDiv></HoverDiv>
                   </ContainerHoverDiv>
                 </ArtistLink>
@@ -310,7 +310,7 @@ const ArtistasPage = () => {
                 </ArtistLink>
                 <ArtistLink to="detalleArtista3">
                   <ContainerHoverDiv>
-                    <Foto src={art03}></Foto>
+                    <Foto src={like}></Foto>
                     <HoverDiv></HoverDiv>
                   </ContainerHoverDiv>
                 </ArtistLink>
