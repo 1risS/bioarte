@@ -17,7 +17,7 @@ exports.onCreateWebpackConfig = ({ actions, stage, plugins }) => {
 exports.onCreateNode = ({ node, getNode, actions }) => {
   const { createNodeField } = actions
 
-  if (node.internal.type === `ArtistasYaml`) {
+  if (['ArtistasYaml', 'BiotecnologiaYaml'].includes(node.internal.type)) {
     const slug = createFilePath({ node, getNode, basePath: `pages` })
     createNodeField({
       node,
@@ -52,6 +52,27 @@ exports.createPages = async ({ graphql, actions }) => {
           }
         }
       }
+
+      allBiotecnologiaYaml {
+        edges {
+          node {
+            fields {
+              slug
+            }
+            nombre
+            cvUrl
+            formacion
+            bio
+            obras {
+              ciudadPais
+              foto
+              titulo
+              url
+              descripcion
+            }
+          }
+        }
+      }
     }
   `)
 
@@ -59,6 +80,17 @@ exports.createPages = async ({ graphql, actions }) => {
     createPage({
       path: node.fields.slug,
       component: path.resolve(`./src/templates/artist.js`),
+      context: {
+        slug: node.fields.slug,
+        ...node,
+      },
+    })
+  })
+
+  result.data.allBiotecnologiaYaml.edges.forEach(({ node }) => {
+    createPage({
+      path: node.fields.slug,
+      component: path.resolve(`./src/templates/biotecnologia.js`),
       context: {
         slug: node.fields.slug,
         ...node,
