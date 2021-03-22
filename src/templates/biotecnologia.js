@@ -46,7 +46,7 @@ const LogoContainer = styled.div`
 
 const Texto = styled.div`
   font-family: ${props => props.theme.fontFamily};
-  font-size: 14rem;
+  font-size: 10rem;
   font-weight: bold;
   color: white;
   align-self: center;
@@ -208,20 +208,22 @@ const BiotecnologiaPageTemplate = ({ pageContext }) => {
             </BioArtista>
           </BioArtistaContainer>
           <FotoObraContainer foto={secciones[0]?.foto} />
-          {datosSeccion && <Carousel
-            ciudadPais={datosSeccion.ciudadPais}
-            fotoObra={datosSeccion.foto}
-            tituloObra={datosSeccion.titulo}
-            obraURL={datosSeccion.url}
-            onPreviousClick={onPreviousClick}
-            onNextClick={onNextClick}
-            count={secciones.length}
-            value={seccion}
-          >
-            {datosSeccion.descripcion.split("\n\n").map(parrafo => (
-              <ParrafoObra>{parrafo}</ParrafoObra>
-            ))}
-          </Carousel>}
+          {datosSeccion && (
+            <Carousel
+              ciudadPais={datosSeccion.ciudadPais}
+              fotoObra={datosSeccion.foto}
+              tituloObra={datosSeccion.titulo}
+              obraURL={datosSeccion.url}
+              onPreviousClick={onPreviousClick}
+              onNextClick={onNextClick}
+              count={secciones.length}
+              value={seccion}
+            >
+              {datosSeccion.descripcion.split("\n\n").map(parrafo => (
+                <ParrafoObra>{parrafo}</ParrafoObra>
+              ))}
+            </Carousel>
+          )}
         </DAMain>
       </DAContainer>
       <Footer></Footer>
