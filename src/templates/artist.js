@@ -75,19 +75,19 @@ const LibelulaContainer = styled.div`
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
-  width: 16.5% !important;
+  width: 14% !important;
   margin: 4rem;
 `
 
 const Libelulaimg = styled.img`
-  height: 270px;
-  width: 230px;
+  height: 260px;
+  width: 220px;
 `
 
 const BioArtista = styled.div`
   display: flex;
   flex-direction: column;
-  max-width: 1152px;
+  max-width: 60%;
   width: 100%;
   align-self: center;
   margin: 0 20% 0 0;

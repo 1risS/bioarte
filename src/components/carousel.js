@@ -30,7 +30,7 @@ const DetalleObra = styled.div`
   flex-direction: row;
   align-content: center;
   justify-content: space-around;
-  max-width: 1152px;
+  max-width: 60%;
   margin: 0;
   background-color: white;
   min-height: 880px;
@@ -45,7 +45,7 @@ const DescripcionContainer = styled.div`
 
 const FlechaSlider = styled.div`
   background: url(${props =>
-    props.left ? flechaSliderIzqNormal : flechaSliderDerNormal})
+      props.left ? flechaSliderIzqNormal : flechaSliderDerNormal})
     no-repeat;
   height: 80px;
   width: 80px;
@@ -53,7 +53,7 @@ const FlechaSlider = styled.div`
   cursor: pointer;
   &:hover {
     background: url(${props =>
-    props.left ? flechaSliderIzqPressed : flechaSliderDerPressed})
+        props.left ? flechaSliderIzqPressed : flechaSliderDerPressed})
       no-repeat;
   }
 `
@@ -192,7 +192,11 @@ const Carousel = ({
             </ProcedenciaFotosContainer>
             <TituloWebCont>
               <TituloObra>{tituloObra}</TituloObra>
-              {obraURL && <LinkWeb href={obraURL} target="_blank">Web</LinkWeb>}
+              {obraURL && (
+                <LinkWeb href={obraURL} target="_blank">
+                  Web
+                </LinkWeb>
+              )}
             </TituloWebCont>
             {children}
           </DescripcionContainer>
