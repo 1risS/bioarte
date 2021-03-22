@@ -1,0 +1,81 @@
+nombre: Damián Ferrari
+cvUrl:
+formacion: |-
+  Investigador artista. Realizó la Maestría en Tecnología y Estéticas de las Artes Electrónicas en la UNTREF, y es Técnico en Mantenimiento de Aviónica. Su área de investigación es la robótica y sus vertientes artísticas.
+bio: |-
+  En 2020 obtuvo el 1er Premio Itaú en la categoría Arte Robótico, y en 2019
+  recibió una Mención honorífica en el 1er Concurso de Arte y Tecnología del
+  Fondo Nacional de las Artes. Además, fue seleccionado en el mismo año para ser
+  parte del Global Community BioSummit 3.0 desarrollado en el  MIT MediaLab  en
+  la que expuso uno de sus biorobots realizados con Ana Laura Cantera, con quien
+  integra el colectivo artístico Robotícula. 
+  Las muestras recientes en las que participó fueron: Global Community BioSummit
+  (MIT), Fondo Nacional de las Artes: Concurso de Arte y Tecnología (CCK),  5th
+  Biennial Land Art Mongolia -Mongolian National Art Gallery, Ulaambaatar,
+  Mongolia, y Noviembre Electrónico en el Centro Cultural San Martín.
+
+obras:
+  - ciudadPais: Buenos Aires, Argentina
+    foto: /images/artists/demianFerrari/02 - Imagen obra nueva - donna_3.jpg
+    titulo: Vínculos comunitarios
+    url:
+    descripcion: |-
+      La obra consiste en un organismo robótico con características animalísticas que se constituye como una especie de compañía en épocas de pandemia. Tiene la particularidad de interactuar con los humanos aprendiendo comportamientos a partir de una interfaz digital. Quienes participen, podrán enseñarle movimientos a partir variar su morfología que grabará para poder reproducirlos de manera autónoma, constituyendo paulatinamente su comportamiento como la suma de aprendizajes de todos los participantes.
+
+      La propuesta busca explorar las posibilidades expresivas de la tecnología y la
+      robótica para generar vínculos colectivos comunitarios: Cada espectador podrá
+      interactuar con el organismo robótico y a su vez percibir lo aprendido y
+      enseñado por otros participantes. De este modo podríamos hablar de arte
+      comunitario desde el momento en que la obra se constituye como una conjunción de
+      individualidades en dialogo.
+  - ciudadPais: Buenos Aires, Argentina
+    foto: /images/artists/demianFerrari/01 displaced_atras - Demian coautor.jpg
+    titulo: Displaced
+    url:
+    descripcion: |-
+      Displaced, es una instalación robótica sobre los desplazamientos
+      vinculados a los desastres climáticos, a las migraciones forzadas, los
+      destinos inciertos y la incertidumbre.  Desde 2009, se estima que una
+      persona por segundo es obligada a abandonar su hábitat por fenómenos
+      naturales causados por el cambio climático: inundaciones, sequías,
+      terremotos, tsunamis, desmontes, minería y contaminación de recursos
+      hídricos.
+      La obra, es un robot bípedo con morfología y comportamiento inspirado en un
+      pájaro, realizado con piel de biomateriales. Su caminar es forzado, difícil,
+      pero constante.  Se desplaza en territorios nuevos conociéndolos y absorbiendo
+      sus características, dejando atrás su historia y rutina y debiéndose adaptar a
+      los nuevos cambios para sobrevivir.  El organismo evita amenazas, y por lo tanto
+      en su caminar se distancia de los humanos que lo llevaron a la
+      reterritorialización. El proyecto fue realizado mediante la construcción de una
+      estructura de piezas impresas en 3d en PLA, servomotores,  arduino, componentes
+      electrónicos,etc. Fue revestido en bioplásticos realizados con yerba mate,
+      remolacha, porotos y pelo humano.
+  - ciudadPais: Buenos Aires, Argentina
+    foto: /images/artists/demianFerrari/02 - Cartografias invisibles - Demian coautor.JPG
+    titulo: Cartografías Invisibles
+    url:
+    descripcion: |-
+      En el marco de la LAM 360°- 4°  Land Art Mongolia Biennial
+      El objetivo de Cartografías Invisibles  fue resignificar e interpretar
+      territorios, transitarlos y atravesarlos para obtener lecturas disímiles a
+      las cotidianas.
+      El proyecto nació a partir de la residencia LAM 360° (Land Art Mongolia
+      Biennial), que planteaba un fuerte vínculo con el espacio por desarrollarse en
+      Murum Sum, plena estepa de dicho país asiático. Desde ese lugar, nos propusimos
+      construir un robot que pudiese transitar el territorio mongol y que a su vez
+      sirva como visualizador de información del aire que respiramos que no podríamos
+      apreciar sin tecnología mediante. El robot, denominado Life Guardian, y
+      planteado como una nueva posible especie del antropoceno, es en realidad un
+      cyborg construido mediante una parte mecánica impresa en 3d y una parte viva: un
+      hongo. La parte biótica determina y modifica el comportamiento del robot,
+      convirtiéndose metafóricamente en su cerebro.  En su estructura, posee
+      diferentes tipos de sensores que lo hacen chequear de manera permanente el lugar
+      donde se desplaza como así también las condiciones en la que se encuentra el
+      organismo vivo. Siempre se moverá buscando el mayor bienestar. Los datos que
+      recauda son de humedad, temperatura, color del hongo, presencia de polución en
+      el aire, tipo de gases en la atmósfera y registros fotográficos. Todos pueden
+      ser vistos en el lcd que contiene en su armazón y que permite visualizarlos en
+      tiempo real, como también almacenarlos en su tarjeta sd junto a la posición
+      mediante el dispositivo de gps. El proyecto pretende visualizar la información
+      invisible en los entornos en los que nos desarrollamos, en pos de ser
+      conscientes de lo que respiramos.

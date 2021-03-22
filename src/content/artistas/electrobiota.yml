@@ -1,0 +1,121 @@
+nombre: Colectivo Electrobiota
+cvUrl: hhtps://www.colectivoelectrobiota.wordpress.com
+formacion: |-
+  Colectivo multiespecie fundado en el 2014 por las artistas, docentes e investigadoras multimediales mexicanas Gabriela Munguía y Guadalupe Chávez.
+bio: |-
+  Contextualizadas en el hacer y pensar latinoamericano y desde múltiples acercamientos propios de las artes electrónicas, el bioarte, las humanidades ambientales, la biología cultural, la recuperación ancestral y las epistemologías del sur investigan posibles expresiones y gestualidades interespecies. Juntas coordinan el Laboratorio Rizosférico, proyecto de educación experimental sobre medioambiente, arte y tecnologías abiertas. Su producción ha sido exhibido en distintos festivales y muestras internacionales como es la Bienal Kosice (Ar); la Bienal Internacional de Arte Contemporáneo de América del Sur (Ar-Br); Festival Transpiksel (Mx); Piksel Festival Art, Science and Free Technology (No); Teheran Annual Digital Art Festival (Ir); Cairotronica Festival of New Media Art of Cairo (Eg), Transitios MX Festival Internacional de Artes Electrónicas y Video (Mx), entre otros. Su trabajo ha recibido diversos reconocimientos internacionales y nacionales.
+
+obras:
+  - ciudadPais: Buenos Aires, Argentina
+    foto: /images/artists/electrobiota/01 -  Imagen Eisenia_00.jpg
+    titulo: Terrafonías
+    url:
+    descripcion: |-
+      Esta instalación mecano-sonora es una exploración especulativa sobre el cuidado ecológico de los suelos a través del estudio del ciclo del carbón atmosférico. El CO2 cobra especial relevancia en este proyecto por su efecto en las condiciones climáticas del planeta debido a que es un gas de larga permanencia. Sin embargo, las formaciones vegetales y los territorios rizosféricos actúan como importantes sumideros de carbono a partir de sus vitalidades principales, como son la fotosíntesis y la fijación de nutrientes en la biomasa-humus. La captación de CO2 y las intra-aciones químicas orgánicas de los ecosistemas terrestres constituyen un componente importante en el balance global entre los suelos y los cielos. 
+
+      La atención a las formas en que las nociones de "cuidado del suelo" podrían
+      potencialmente transformarse en estos tiempos de inestabilidad ambiental sacan a
+      la luz posibles ecologías alternativas prácticas, éticas y afectivas. Abrazamos
+      el cuidado como un "hacer tiempo" para involucrarse con una diversidad de líneas
+      de vida, agencias y múltiples ritmos: polifonías imaginarias entre los suelos y
+      la atmósfera, alteridades oscuras y etéreas de tiempos y ciclos profundos. Esta
+      pieza sonora se enreda entre las humanidades ambientales, procesos de
+      sonificación y las posibilidades de la composición sonora asistida por datos a
+      través de las lecturas de sensores de oxígeno, dióxido de carbono, humedad,
+      temperatura, partículas ambientales, velocidad del viento y humedad de los
+      suelos.
+  - ciudadPais: Buenos Aires, Argentina
+    foto: /images/artists/electrobiota/01 -  Imagen Eisenia_00.jpg
+    titulo: Eisenia, máquina de impresión orgánica
+    url:
+    descripcion: |-
+      La generación y manipulación de la vida por medios artificiales redefinen
+      constantemente nuestro entendimiento y relación con la naturaleza. Sin
+      embargo, el maltrato humano persistente y el descuido de los suelos se
+      encuentran atravesados por dominantes movilizaciones tecnociencientificas
+      y demandas globales de producción.
+
+      Los suelos, este espacio vivo, es la combinación de largos y lentos tiempos
+      químicos geológicos. Este espacio físico, pero también matérico-político y
+      poético se convierte en nuestra herramienta de pensamiento y acción para
+      reflexionar sobre los suelos, sus procesos y vitalidades. 
+
+      Eisenia es una escultura robótica nutrida por la imaginación radical y el
+      pensamiento especulativo que intenta poner en fricción y desarme crítico el
+      binomio artificial- orgánico para dar forma a una tecnología subalterna y
+      fronteriza de generación e impresión de vida. Esta máquina de impresión orgánica
+      transforma y recicla desechos naturales por medio de microorganismos y procesos
+      biológicos de la lombriz californiana (eisenia foetida) que habitan en su
+      interior, generando una materia prima (hidronutrientes) de "impresión" para
+      otras formas de vida. Esta máquina desde distintos proceso de co-creación busca
+      el aprovechamiento de los recursos desde un pensamiento sostenible, en donde
+      todas sus partes y procesos se interconectan. Este sistema híbrido e
+      interespecie funciona según el tiempo de los ciclos naturales necesarios para
+      la vida.
+  - ciudadPais: Buenos Aires, Argentina
+    foto: /images/artists/electrobiota/02 -  Imagen RizosferaFM_00.jpg
+    titulo: Rizosfera FM
+    url:
+    descripcion: |-
+      El proyecto Rizosfera FM es una investigación que nace desde la curiosidad
+      por aproximarnos y generar nuevas redes y canales de comunicación
+      interespecies. Apelamos a que comprender la relación interespecies
+      construye conocimiento, desestabiliza la centralidad del lenguaje, la
+      conciencia y el aprendizaje. Así, este proyecto imagina este micro
+      territorio vivo, poroso, entramado, interconectado, amorfo y colonizado
+      por raíces e infinitas comunidades de especies y géneros microbianos como
+      un territorio y herramienta de creación y expresión de lo vivo.
+
+      Este proyecto consiste en una intervención en el espacio público y una
+      instalación sonora que propone la apropiación y hackeo de las frecuencias
+      radiofónicas FM. A modo de una gran interfaz y red híbrida de traducción y
+      comunicación se sintonizan, expanden y reconectan las diversas voces en potencia
+      de las formas vivas que habitan los sensibles y complejos territorios
+      rizosféricos con otras especies segmentadas y domesticadas dentro de los
+      espacios urbanizados. Este proyecto innterconecta elementos biológicos,
+      tecnológicos, lumínicos y sonoros, que interactúan y dialogan a manera de un
+      complejo sistema radiofónico orgánico-vivo que se retroalimenta de los procesos,
+      intercambios y las transformaciones biológicas, orgánicas y geoquímicas de la
+      rizosfera. Un ejercicio y exploración de aquellas sonoridades y constantes
+      vibraciones que moran bajo la tierra.
+  - ciudadPais: Buenos Aires, Argentina
+    foto: /images/artists/electrobiota/02 -  Imagen RizosferaFM_00.jpg
+    titulo: Biotransmisiones FM
+    url:
+    descripcion: |-
+      Esta performance sonora experimental explora las ecologías de los territorios rizosféricos. A partir del desarrollo de biotransmisores de hardware abierto nos interesa amplificar y sonorizar señales eléctricas que emergen de este ensamblaje sensible entre los territorios y los cuerpxs. Donde raíces, comunidades de hongos y bacterias, minerales, el agua y diversos flujos energéticos se enredan en constantes impulsos simbióticos y de cooperación. Esta gran red híbrida orgánica radiofónica hilvana una exploración sobre lo terrestre-local y lo remoto-global como un ejercicio para imaginar y generar nuevos espacios y canales de comunicación y gestualidad interespecies. Ser sensible a aquello que oculta la rizosfera, abre una puerta para aproximarnos a lo que significa estar interconectados e interdependientes con otras especies compañeras.
+  - ciudadPais: Buenos Aires, Argentina
+    foto: /images/artists/electrobiota/04 - Imagen HabitaculosHabitaculosOrganicos_04.jpg
+    titulo: Habitáculos orgánicos
+    url:
+    descripcion: |-
+      Obra individual: Gabriela Munguia
+
+      Habitáculos orgánicos es un proyecto que imagina lo urbano como una compleja
+      organización biológica. A partir del desarrollo de una serie de biointerfaces y
+      una bioimpresora 3D, que utiliza agar papa dextrosa como materia prima, emerge
+      una arquitectura orgánica para microorganismos. Su morfología edilicia,
+      dinámica, sensible y efímera que funciona como alimento y sedimento mutando
+      constantemente en función del tejido íntimo de los procesos naturales de
+      intercambio, crecimiento, muerte y descomposición.
+
+      Es en el ejercicio de la documentación del proceso de biogeneración, donde el
+      "habitar" de infinidad de hongos y bacterias expresan la emergencia de nuevas
+      estructuras y la posibilidad de imaginar nuevas relaciones con el territorio. Un
+      momento de co-creación que desde una perspectiva biológica nos invita a repensar
+      una posible utopía de vitalidad y agencia terrestre: las ciudades como un gran
+      organismo vivo. 
+
+      Este proyecto fue realizado en el marco del programa de residencia Test_Lab
+      Summer Sessions del Talent Development Network en coproducción con V2_Institute
+      of the Unstable Media y la Maestría en Artes Electrónicas de la UNTREF y ha
+      contado con el apoyo del Institute Pasteur de Paris y el Centro Pompidou.
+  - ciudadPais: Buenos Aires, Argentina
+    foto: /images/artists/electrobiota/05 - Imagen PachaTransmision_01.jpg
+    titulo: Pacha Transmisión
+    url:
+    descripcion: |-
+      Obra individual: Guadalupe Chávez
+
+
+      Pacha Transmisión,  son registros que integran una serie de exploraciones hechas sobre pizarras, en las cuales entran en comunión  entidades biológicas  y sistemas artificiales para bosquejar la idea de recibir mensajes telegráficos de las comunidades vegetales. Estas pizarras trazan vínculos para aproximarnos a lo que significa estar interconectados e interdependientes a estas comunidades, develan posibles miradas y escuchas para intentar comprender  cómo es que percibimos e interactuamos constantemente. Se explora la misma naturaleza de la comunicación entre las formas vivas, lo humano y  lo no humano,  evocando el pasado a través de los antiguos sistemas de telecomunicación para  crear interfaces que nos permitan romper con la centralidad del lenguaje humano, profundizar en los fenómenos de la conciencia y el aprendizaje. Estos trazos que se dibujan en las pizarras entran en relación con la intimidad biológica y cultural entre especies compañeras, la cual se transforma en posibles expresiones de memoria e identidad colectiva.  Se busca profundizar en la realidad a través de lo mágico que existe en su naturaleza.

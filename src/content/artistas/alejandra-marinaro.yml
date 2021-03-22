@@ -1,0 +1,132 @@
+nombre: Alejandra Marinaro
+cvUrl:
+formacion: |-
+  Artista digital, líder del colectivo artístico Proyecto Untitled. Directora del Laboratorio Latinoamericano de Bioarte. Investigadora en áreas de arte, ciencia y tecnología. Especialista en gestión y planeamiento de instituciones educativas universitarias.
+
+bio: |-
+  Exhibiciones de BioArte: 2020: Cellular Seeds - Ars Electronica - Linz -
+  Austria | 2019: Ecodermis - Ars Electronica - Linz - Austria; A priori new
+  design - Muestra Superbacterias - Science Museum de Londres y C3 Buenos Aires;
+  Umbilical  - exposición: Cosas extrañas. Bioarte en la Argentina - UNLP |
+  2018: Dispositivo 3 pieles - BID Washington EEUU - C3;
+  Monstruo Interactivo - Muestra Frankenstein  - Biblioteca Nacional | 2017:
+  Constructores de Sistemas Utópicos - Instalación biorobótica - Noviembre
+  Electrónico y C3 - Buenos Aires | 2016: Dispositivo 3 pieles - C3 | 2014: A
+  priori. Instalación bio-artística - Cultural Recoleta; Dermis  - Instalación
+  interactiva - Cultural Recoleta | 2013: Umbilical. Instalación interactiva -
+  Facultad Bellas Artes - Barcelona | 2012: Proyecciones para la cúpula del
+  Planetario - Muestra ADN 256, acompañando obras interpretadas por Horacio
+  Lavandera. Planetario de la Ciudad; Umbilical. Instalación interactiva -
+  Sala Cronopios - Cultural Recoleta
+
+obras:
+  - ciudadPais: Buenos Aires, Argentina
+    foto: /images/artists/alejandraMarinaro/02 - Imagen de la obra nueva- Alejandra Marinaro.jpg
+    titulo: Cellular Seeds
+    url: https://www.cellularseeds.com/
+    descripcion: |-
+      Generá un sonido, cantá, hablá, gritá, solo o en grupo. Este juego mide la
+      energía del sonido y a través de un algorítmo la convierte en datos que
+      generan las semillas de tu mundo en una grilla. Esas semillas tienen dos
+      estados: vivas o muertas y evolucionarán a lo largo de las generaciones.
+      En cada generación las semillas son de un color diferente para que puedas
+      seguirlas y conocer su destino. En función del autómata celular que elijas
+      para jugar, tu mundo evolucionará de una forma distinta porque cada uno
+      está gobernado por reglas propias. Los autómatas te proponen mundos
+      eternos, efímeros y otros en permanente evolución. Sembrá la semilla
+      inicial de tu mundo usando la energía de tu voz y el autómata cellular que
+      elijas estará a cargo de mostrarte la evolución del mundo que elegiste
+      crear. ¿Estás listo para ver tu futuro?
+
+  - ciudadPais: Buenos Aires, Argentina
+    foto: /images/artists/alejandraMarinaro/01 - Umbilical.jpg
+    titulo: Umbilical
+    url:
+    descripcion: |-
+      Trabajo realizado como líder de Proyecto Untitled, 2013
+      Cuando el caos y el orden se vuelven parte de una misma cosa: sinónimos y
+      antónimos en sí mismos, encerrando las incógnitas universales más grandes.
+      Cuando las estructuras otorgan flexibilidad y adaptabilidad al cambio. Cuando
+      pensarnos despojados de nuestra historia es imposible. Cuando querer ordenar lo
+      no ordenable genera profundas frustraciones, pero a su vez nos conecta
+      intensamente con nuestra esencia. Cuando pensar en el futuro nos permite
+      aseverar a ciencia cierta que somos incapaces de siquiera esbozar planes a largo
+      plazo dada la inestabilidad de todo lo que nos rodea. Cuando nuestra existencia
+      se resume en la forma en la que fuimos concebidos. Cuando las respuestas a lo
+      que somos, lo que fuimos y lo que seremos pasa simple y complejamente por un
+      cordón… Umbilical.
+
+      Proyecciones de fractales y fluidos sobre una pared acrílica que remite a una pared celular, con sensores de proximidad que activan efectos sonoros y modifican las áreas de la pared donde se proyectan las imágenes. Detrás de la pared se encuentra una columna transparente que contiene cordones umbilicales humanos embebidos en formol, iluminados y conectados a sondas que alimentan la pared celular emulando una conexión entre imágenes y material vivo.
+      Esta obra se expuso en Recorridos: Arte, Ciencia y Tecnología [Sala Cronopios, Centro Cultural Recoleta], 2012
+      Itinerancia Recorridos [Facultad de Bellas Artes, Universidad de Barcelona, España 2013]
+  - ciudadPais: Buenos Aires, Argentina
+    foto: /images/artists/alejandraMarinaro/02 - dermis.JPG
+    titulo: Dermis - Pantalla de proyección viva
+    url:
+    descripcion: |-
+      Esta obra expone la sensibilidad de un soporte que, en su disposición de pantalla, es utilizado 
+      para poner en diálogo colectivo los símbolos o marcas que "inmortalizan en su cuerpo" momentos y 
+      sentimientos que forman parte de lo más íntimo de las personas y los identifican. Se trata de una construcción social, construcción colectiva de espacios íntimos. Resultados similares de decisiones individuales que pasan a convivir en una escultura orgánica, mutilada por lo que da vida a los pensamientos de sus portadores.
+
+      La obra se presenta a primera vista como una escultura, generada a partir de la unión de 24 piezas de piel animal utilizadas para implantes humanos, y 1 pieza de piel humana como centro de este de video-wall de fantasía transgénica, generada en el laboratorio a partir de pequeñas partes de piel donadas por los miembros del colectivo artístico Proyecto Untitled. Sobre la superficie, se proyectan imágenes de diferentes marcas de la piel, (cicatrices, marcas, lunares, manchas, tatuajes) tomadas por los propios espectadores de la obra creando una composición colectiva y única. La conexión entre la obra y el espectador se hará por medio de dispositivos móviles y/o por medio de un dispositivo que formara parte de la obra, éste tomará la foto y la enviará directamente al mural. Estas imágenes formaran parte de una galería que de forma ramdomica se proyectarán en la obra.
+      Se expuso en el Centro Cultural General San Martín y en el Centro Cultural Recoleta en el año 2013
+  - ciudadPais: Buenos Aires, Argentina
+    foto: /images/artists/alejandraMarinaro/03 - A Priori2.png
+    titulo: A priori
+    url:
+    descripcion: |-
+      Trabajo como líder del Colectivo Proyecto Untitled, 2015 : Mención Especial II Bienal Kocise
+
+      Bacterias. Organismos unicelulares procariotas primitivos. De ellos venimos. Y en ellos, que constituyen nuestro pasado y predicen nuestro futuro, estudiamos la forma y el camino de la supervivencia. La referencia original. La esencia, lo infinito de la existencia. La necesidad de volver al origen, de estudiar patrones de modelos primarios para evolucionar, para sobrevivir. Reinterpretar el comportamiento del ciclo de vida en estas colonias e interpolarlo a nuestra sociedad. Entender su ciclo de vida, es entender el nuestro a futuro. La diferencia es que las bacterias no pueden ni evitar ni modificar su accionar. Nosotros sí.
+
+
+      Escultura constituida por tubos de acrílico interconectados entre sí, con capsulas de petri inclinadas a 45 grados sobre el extremo superior de cada tubo. Cada capsula de petri contiene colonias de bacterias cultivadas en el Laboratorio Argentino de Bioarte de la Universidad Maimónides. Circulación de agua a través de los tubos de acrílico por medio de bombas hidráulicas interconectadas entre sí. Iluminación de LEDs que coloriza el agua que fluye en los tubos. Base cuadrada contenedora de las bombas hidráulicas.
+  - ciudadPais: Buenos Aires, Argentina
+    foto: /images/artists/alejandraMarinaro/04 - trespieles1.JPG
+    titulo: Tres Pieles
+    url:
+    descripcion: |-
+      Trabajo en colaboración con Martín Churba y Proyecto Untitled, 2017
+
+      Vestido interactivo utilizando distintas tecnologías de confección y comportamiento. El añadido lumínico que existe entre la piel y el vestido conforma un espacio que configura la identidad. Desde la parte más superficial hasta lo más interno, este conjunto de piezas intenta exponer la configuración de la piel, proyectando desde su capa más externa e iluminando su interior interactuando con el movimiento.
+
+      Tres Pieles
+      Indumentaria interactiva
+
+
+      Este trabajo se expuso en:
+      la muestra del Banco Interamericano de Desarrollo Washington EEUU, 2018
+      Muestra performática Centro Cultural de la Ciencia, Buenos Aires, Argentina, 2017
+  - ciudadPais: Buenos Aires, Argentina
+    foto: /images/artists/alejandraMarinaro/05 - CSU1.png
+    titulo: CSU Constructores de Sistemas Utópicos
+    url:
+    descripcion: |-
+      Trabajo en colaboración con Ricardo Iglesias y Proyecto Untitled, 2017
+      La instalación propone la construcción de pequeñas maquetas/módulos 
+      robotizados que forman el "espacio utópico". De formatos variables, 
+      dispondrán de "entidad propia"(movimiento autónomo, reprogramable y con toma de biodatos) pudiendo funcionar conjuntamente como una unidad o separadamente.
+
+      CSU Constructores de sistemas utópicos
+      Robots Interactivos
+
+
+
+      Esta obra fue expuesta en Noviembre Electrónico - Centro Cultural San Martín y Centro Cultural de la Ciencia, Buenos Aires,
+      Argentina 2017
+  - ciudadPais: Buenos Aires, Argentina
+    foto: /images/artists/alejandraMarinaro/07 - Ecodermis.png
+    titulo: Eco Dermis
+    url:
+    descripcion: |-
+      Trabajo Personal, 2019
+      Ecodermis es una obra que alude a la piel como órgano de conexión del ser humano
+      con su entorno, en la piel se refleja la historia de vida de cada ser humano, su
+      memoria y a través de ella pasan todas las sensaciones que permiten recibir la
+      comunicación y percepción del planeta que nos rodea y la relación con otros
+      seres vivos.
+
+
+      Es una instalación interactiva que se genera a partir de la decisión de los
+      espectadores de donar o no su piel de forma vitual a una dermis universal
+      Trabajo Expuesto en Ars Electronica, Linz Austria, Septiembre 2019

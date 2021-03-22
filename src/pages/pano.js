@@ -16,16 +16,6 @@ const GlobalStyle = createGlobalStyle`
   }
 `
 
-const Progress = styled.div`
-  width: 0;
-  height: 5px;
-  position: fixed;
-  top: 0;
-  background: #fff;
-  -webkit-transition: opacity 0.5s ease;
-  transition: opacity 0.5s ease;
-`
-
 const LoadingContainer = styled.div`
   width: 100%;
   height: 100%;
@@ -155,7 +145,8 @@ const PanoPage = () => {
         const linkDuration = 500
         const linkEasing = TWEEN.Easing.Quadratic.InOut
         infospot.position.set(...position)
-        infospot.addHoverText(hoverText)
+        infospot.addHoverText(hoverText, 70)
+        infospot.element.style.fontSize = "2.5rem"
         infospot.addEventListener("click", () => {
           console.log("click")
           zoom(viewer, 2 * linkDuration, linkEasing)

@@ -1,0 +1,116 @@
+nombre: Damián Ferrari
+cvUrl:
+formacion: |-
+  Artista Bioróbotico, Director de la Diplomatura en Arte Robótico UMSA, Profesor e Investigador Universitario / Escritor / Arte, Ciencia y Tecnología
+bio: |-
+  Mechatronic Art, Design and Fabrication, UW, EE.UU (DXARTS). Diseño e impresión en 3D, Fremont FAB LAB, UW, EE.UU. Diplomado en Tecnología Biónica, P4H Bionics, MEXICO. Maestría en Tecnología y Estética de las Artes Electrónicas (UNTREF). Posgrado Nuevas Tecnologías aplicadas a la creación de instalaciones y performance multimedia (IUNA). Licenciado en Artes Visuales (UNA). Profesor Universitario (UMSA - UNA). Asesor en Arte y Robótica inclusiva, Escuelas de Educación Especial y Centro de Formación Inclusiva. Laboratorio de producción en Arte y Robótica UTN BA. Sus investigaciones abarcan el campo del Arte Bioróbotico, la Tecnología biónica, Diseño biorganico, Biomimetica, Exo-esqueletos, Señales biologicas y Diseño inteligente, Diseño de mecanismos 3D y Biomecanica 3D. E-mail: dalvarezolmedo@gmail.com www.alvarezolmedo.wordpress.com
+obras:
+  - ciudadPais: Buenos Aires, Argentina
+    foto: /images/artists/danielAlvarezOlmedo/03_CPYCT_DXARTS_UW_EEUU.JPG
+    titulo: '"Con pan y con trabajo" Instalación robótica sonora (Micro-organismos + Comportamiento Social + Mini Robots)'
+    url: h
+    descripcion: |-
+      Work in Progress : persistencia de la memoria colectiva social en momentos de crisis
+
+      La obra hace alusión a los grupos de personas que se encuentran con largas horas
+      de trabajo en condiciones indignas, mediante el estudio de microorganismos
+      alimentados con pan duro y componentes orgánicos, utilizados como esclavos para
+      generar energía y activar una comunidad de mini-robots. Unas celdas
+      fotoresistivas censan el movimiento de los micro-organismos  y emiten la
+      información a las interfaces electrónicas dando paso a la energía que pone en
+      funcionamiento los dispositivos robóticos y los accionan en forma colectiva. El
+      proyecto propone el abordaje teórico/conceptual sobre la comunicación que se
+      ejecuta entre el movimiento de los micro-organismos vivos y las comunidades
+      artificiales de mini robots, que actúan y se expresan, poniendo en relieve la
+      comunicación entre la vida real y la vida artificial. Se pretende trabajar con
+      enzimas - utilizadas para licuar y digerir proteínas- que desintegran y devoran
+      preparados de materias orgánicas - capturadas en tiempo real en el Laboratorio
+      con microscopios, sensores y celdas fotoresistivas, para emitir la información
+      del movimiento de los organismos a las interfaces electrónicas. Se propone
+      asimismo realizar experimentaciones de comunicación entre organismos vivos y
+      organismos mecánicos que nos permitan producir simulaciones y poner en juego los
+      sistemas artificiales de mini robots de acuerdo con los datos estadísticos
+      adquiridos del accionar de los microorganismos vivos.
+  - ciudadPais: Buenos Aires, Argentina
+    foto: /images/artists/danielAlvarezOlmedo/04_PARASITOIDES_OBRA.JPG
+    titulo: '"Parasitoides" Instalación mecánica - Work in Progress Micro-ecosistema + Corazón mecánico'
+    url:
+    descripcion: |-
+      Autor: Ana Laura Cantera Colaboración: Daniel Alvarez Olmedo Proyecto desarrollado el marco de la Maestría en Artes Electrónicas UNTREF. Directora: Mariela Yeregui Con el apoyo a la Producción de Arte y Tecnología de RobotGroup Argentina
+
+      "Parasitoides" es una instalación mecánica - Work in Progress que involucra
+      micro-ecosistemas que crecen en el interior de contenedores de plástico con
+      formas humanas, que son expuestos a condiciones antinaturales de agua y
+      temperatura.
+
+      Los diferentes estados generados, a partir de sensores y microcontroladores, son
+      los responsables de controlar el ritmo de las palpitaciones de un corazón
+      mecánico, con movimientos autorregulados por medio de un sistema mecánico de
+      motores y engranajes que proporciona aire a su interior como una antelación de
+      EQUILIBRIO-DESEQUILIBRIO La temperatura interna del micro-ecosistema se
+      visualiza en un LCD de cristal líquido, controlado a partir de una placa
+      microprocesadora que envía datos al sistema mecánico que activa un motor y a su
+      vez determina el ritmo de las palpitaciones del corazón mecánico Si la
+      temperatura interna se encuentra estable, el corazón late en forma normal. Si la
+      temperatura del micro-ecosistema se modifica y sube, altera el accionar mecánico
+      y el corazón late más rápidamente en una equivalente taquicardia. Si el
+      micro-ecosistema se altera con temperaturas bajas, el corazón empieza a latir
+      lentamente hasta dejar de latir y morir
+  - ciudadPais: Buenos Aires, Argentina
+    foto: /images/artists/danielAlvarezOlmedo/06_GC2_OBRA.JPG
+    titulo: Generación de conciencia II
+    url:
+    descripcion: |-
+      Video instalación interactiva. Base de Datos + Internet + Objeto +
+      Proyección. Autores: Daniel Álvarez Olmedo - Diego Diez - Guido Villar.
+      2011 "Generación de conciencia II". Instalación robótica. La instalación
+      toma información de la base de datos de la tasa de mortalidad por mil
+      habitantes de la población total del país desde 1980 hasta 2007, datos del
+      Ministerio de Salud de la Nación. La interfase de la obra procesa y
+      controla los datos alfanuméricos activando la búsqueda de textos y números
+      que son proyectados en el piso en tres anillos semicirculares. Dicha
+      lectura actúa manipulando el video que es visualizado sobre un objeto de
+      acrílico circular que contiene en su interior el líquido desecho de
+      microorganismos vivos. La base de datos se encuentra en un servidor en el
+      cual tiene instalado un MQTT Broker. El broker recibe el mensaje y se lo
+      envía a la instalación robótica que actúa en forma autónoma por medio de
+      una Ethernet Shield / Arduino / ProtoShield que controla la apertura y
+      cierre de la electroválvula y, por ende, la frecuencia en que cae la gota
+      por medio del microgotero. MQTT Broker es el protocolo open source para
+      mensajes de pequeño tamaño, protocolo al cual distintos clientes pueden
+      publicar mensajes en un tópico. Un sensor ubicado en la parte superior del
+      objeto detecta la presencia del público afectando la metodología con que
+      son mostrados los datos sobre el contenedor acrílico circular en el centro
+      de la obra. El diagrama del funcionamiento de la obra da cuenta de la
+      circulación del espectador y cómo se delimitan los datos. Una pantalla de
+      TV LCD muestra el proceso de desarrollo.
+  - ciudadPais: Buenos Aires, Argentina
+    foto: /images/artists/danielAlvarezOlmedo/07_GC1_OBRA.JPG
+    titulo: Generación de conciencia I
+    url:
+    descripcion: |-
+      Instalación robótica. Base de Datos + Microcontroladores + Objeto +
+      Mecánica + Micro-organismos vivos. 
+      Autores: Daniel Álvarez Olmedo - Diego Diez - Guido Villar. 2011 La
+      instalación toma datos de la tasa de mortalidad por mil habitantes de la
+      población total del país de los años 1980 a 2007, por franja etaria,
+      información del Ministerio de Salud de la Nación. La interfase de la
+      instalación robótica procesa y controla los datos, modificando el actuar del
+      objeto real y físico que posee una forma de suero de hospital y que contiene
+      en su interior un líquido indicador pH de color rojo que representa la sangre
+      de los muertos en porcentaje entre los años 1980 y 2007, con un dispositivo de
+      válvula de apertura y cierre limita, mediante un goteo, el pasaje de líquido a
+      un recipiente que contiene agua con microorganismos vivos. Estas bacterias se
+      aglutinan alrededor de las gotas que caen devorando su composición (se
+      estipula que el contenido indicador pH dentro del recipiente tendrá la
+      duración del tiempo real de la muestra). El objeto está dotado de autonomía y
+      realiza sus cálculos sobre la información inicial suministrada por la
+      estadística, el dispositivo goteará más en los años de mayor mortalidad, cada
+      gota es el equivalente a 1 000 muertos de la estadística de la base de datos.
+      El líquido que gotea se diluirá en menor y mayor medida de acuerdo con el
+      accionar de los microorganismos vivos, proceso que es observado por un
+      microscopio, filmado por medio de una cámara adaptada y visualizado en video
+      en una pantalla LCD. La síntesis en una gota de sangre roja, tomado como
+      identificador simbólico de miles de personas muertas por no contar con una
+      buena atención médica, son gotas devoradas por el sistema de instituciones que
+      solo quieren lucrar con la salud de la gente.

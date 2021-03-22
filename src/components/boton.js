@@ -5,7 +5,7 @@ const BotonCont = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 6rem;
+  margin: 1rem 6rem 6rem 6rem;
 `
 const Botonstyled = styled.a`
   display: block;

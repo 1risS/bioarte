@@ -7,12 +7,12 @@ import fotoAnaLaura from "../images/Exhibicion/01Cantera/01Cantera.png"
 import fotoMuru from "../../static/images/artists/muru/01 - Foto de Muru 7.8 foto.png"
 import fotoOliverio from "../../static/images/artists/oliverioDuhalde/01 - OLIVERIO DUHALDE PHOTO 2021.jpg"
 import fotoFargas from "../../static/images/artists/joaquinFargas/01 - Foto Joaquin.jpg"
-import art04 from "../images/Exhibicion/04Fargas/01fargas.png"
-import art06 from "../images/Exhibicion/06Paoletti/01Paoletti.png"
-import art08 from "../images/Exhibicion/08Olmedo/01olmedo.png"
+import fotoMarinaro from "../../static/images/artists/alejandraMarinaro/01 - Foto alejandra.jpg"
+import fotoElectrobiota from "../../static/images/artists/electrobiota/01 - Foto Electrobiotas.jpg"
+import fotoAgarart from "../../static/images/artists/agarart/lauraEcharren/01 - Imagen Principal de Agar Art - A Salmonellosis odyssey.jpg"
+import fotoFerrari from "../../static/images/artists/demianFerrari/01 - Demian Ferrari.png"
 import art10 from "../images/Exhibicion/10Olalde/01olalde.png"
-import art13 from "../images/Exhibicion/13Caterbetti/01catterbetti.png"
-import art17 from "../images/Exhibicion/17Bergottini/01Bergottini.png"
+import fotoOlmedo from "../../static/images/artists/danielAlvarezOlmedo/01 - Foto Daniel Alvarez Olmedo.jpg"
 import fondoHeader from "../../static/images/carousel/Banner_Exhibition_0.png"
 import like from "../../static/images/exhibicion/likelikeRounded.png"
 import HomeBoton from "../components/homeBoton"
@@ -212,6 +212,7 @@ const ArtistasPage = () => {
         <ArtistasContainer id="CONTAINER">
           <RowContainer>
             <RowPairs>
+              {/* col1 */}
               <Column>
                 <ArtistLink to="ana-laura-cantera">
                   <ContainerHoverDiv>
@@ -219,9 +220,9 @@ const ArtistasPage = () => {
                     <HoverDiv></HoverDiv>
                   </ContainerHoverDiv>
                 </ArtistLink>
-                <ArtistLink to="detalle de artista 2">
+                <ArtistLink to="alejandra-marinaro">
                   <ContainerHoverDiv>
-                    <Foto src={like}></Foto>
+                    <Foto src={fotoMarinaro}></Foto>
                     <HoverDiv></HoverDiv>
                   </ContainerHoverDiv>
                 </ArtistLink>
@@ -233,12 +234,12 @@ const ArtistasPage = () => {
                 </ArtistLink>
                 <ArtistLink to="detalleArtista4">
                   <ContainerHoverDiv>
-                    <Foto src={art04}></Foto>
+                    <Foto src={like}></Foto>
                     <HoverDiv></HoverDiv>
                   </ContainerHoverDiv>
                 </ArtistLink>
               </Column>
-
+              {/* col2 */}
               <Column>
                 <ArtistLink to="muru">
                   <ContainerHoverDiv>
@@ -246,65 +247,9 @@ const ArtistasPage = () => {
                     <HoverDiv></HoverDiv>
                   </ContainerHoverDiv>
                 </ArtistLink>
-                <ArtistLink to="detalleArtista2">
+                <ArtistLink to="electrobiota">
                   <ContainerHoverDiv>
-                    <Foto src={art06}></Foto>
-                    <HoverDiv></HoverDiv>
-                  </ContainerHoverDiv>
-                </ArtistLink>
-                <ArtistLink to="detalleArtista3">
-                  <ContainerHoverDiv>
-                    <Foto src={art08}></Foto>
-                    <HoverDiv></HoverDiv>
-                  </ContainerHoverDiv>
-                </ArtistLink>
-                <ArtistLink to="detalleArtista4">
-                  <ContainerHoverDiv>
-                    <Foto src={art10}></Foto>
-                    <HoverDiv></HoverDiv>
-                  </ContainerHoverDiv>
-                </ArtistLink>
-              </Column>
-            </RowPairs>
-
-            <RowPairs>
-              <Column>
-                <ArtistLink to="oliverio-duhalde">
-                  <ContainerHoverDiv>
-                    <Foto src={fotoOliverio}></Foto>
-                    <HoverDiv></HoverDiv>
-                  </ContainerHoverDiv>
-                </ArtistLink>
-                <ArtistLink to="detalleArtista2">
-                  <ContainerHoverDiv>
-                    <Foto src={art13}></Foto>
-                    <HoverDiv></HoverDiv>
-                  </ContainerHoverDiv>
-                </ArtistLink>
-                <ArtistLink to="detalleArtista3">
-                  <ContainerHoverDiv>
-                    <Foto src={art17}></Foto>
-                    <HoverDiv></HoverDiv>
-                  </ContainerHoverDiv>
-                </ArtistLink>
-                <ArtistLink to="detalleArtista4">
-                  <ContainerHoverDiv>
-                    <Foto src={art04}></Foto>
-                    <HoverDiv></HoverDiv>
-                  </ContainerHoverDiv>
-                </ArtistLink>
-              </Column>
-
-              <Column>
-                <ArtistLink to="joaquin-fargas">
-                  <ContainerHoverDiv>
-                    <Foto src={fotoFargas}></Foto>
-                    <HoverDiv></HoverDiv>
-                  </ContainerHoverDiv>
-                </ArtistLink>
-                <ArtistLink to="detalleArtista2">
-                  <ContainerHoverDiv>
-                    <Foto src={fotoMuru}></Foto>
+                    <Foto src={fotoElectrobiota}></Foto>
                     <HoverDiv></HoverDiv>
                   </ContainerHoverDiv>
                 </ArtistLink>
@@ -316,7 +261,64 @@ const ArtistasPage = () => {
                 </ArtistLink>
                 <ArtistLink to="detalleArtista4">
                   <ContainerHoverDiv>
-                    <Foto src={art04}></Foto>
+                    <Foto src={like}></Foto>
+                    <HoverDiv></HoverDiv>
+                  </ContainerHoverDiv>
+                </ArtistLink>
+              </Column>
+            </RowPairs>
+
+            <RowPairs>
+              {/* col3 */}
+              <Column>
+                <ArtistLink to="oliverio-duhalde">
+                  <ContainerHoverDiv>
+                    <Foto src={fotoOliverio}></Foto>
+                    <HoverDiv></HoverDiv>
+                  </ContainerHoverDiv>
+                </ArtistLink>
+                <ArtistLink to="agarart">
+                  <ContainerHoverDiv>
+                    <Foto src={fotoAgarart}></Foto>
+                    <HoverDiv></HoverDiv>
+                  </ContainerHoverDiv>
+                </ArtistLink>
+                <ArtistLink to="daniel-alvarez-olmedo">
+                  <ContainerHoverDiv>
+                    <Foto src={fotoOlmedo}></Foto>
+                    <HoverDiv></HoverDiv>
+                  </ContainerHoverDiv>
+                </ArtistLink>
+                <ArtistLink to="detalleArtista4">
+                  <ContainerHoverDiv>
+                    <Foto src={like}></Foto>
+                    <HoverDiv></HoverDiv>
+                  </ContainerHoverDiv>
+                </ArtistLink>
+              </Column>
+              {/* col4 */}
+              <Column>
+                <ArtistLink to="joaquin-fargas">
+                  <ContainerHoverDiv>
+                    <Foto src={fotoFargas}></Foto>
+                    <HoverDiv></HoverDiv>
+                  </ContainerHoverDiv>
+                </ArtistLink>
+                <ArtistLink to="demian-ferrari">
+                  <ContainerHoverDiv>
+                    <Foto src={fotoFerrari}></Foto>
+                    <HoverDiv></HoverDiv>
+                  </ContainerHoverDiv>
+                </ArtistLink>
+                <ArtistLink to="detalleArtista3">
+                  <ContainerHoverDiv>
+                    <Foto src={like}></Foto>
+                    <HoverDiv></HoverDiv>
+                  </ContainerHoverDiv>
+                </ArtistLink>
+                <ArtistLink to="detalleArtista4">
+                  <ContainerHoverDiv>
+                    <Foto src={like}></Foto>
                     <HoverDiv></HoverDiv>
                   </ContainerHoverDiv>
                 </ArtistLink>
