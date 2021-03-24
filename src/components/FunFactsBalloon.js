@@ -61,6 +61,7 @@ const FunFactsBalloon = styled(({ className, duration = 5000 }) => {
 
   div p {
     position: relative;
+    font-size: 14px;
   }
 `
 
