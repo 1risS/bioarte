@@ -45,7 +45,7 @@ const DescripcionContainer = styled.div`
 
 const FlechaSlider = styled.div`
   background: url(${props =>
-      props.left ? flechaSliderIzqNormal : flechaSliderDerNormal})
+    props.left ? flechaSliderIzqNormal : flechaSliderDerNormal})
     no-repeat;
   height: 80px;
   width: 80px;
@@ -53,7 +53,7 @@ const FlechaSlider = styled.div`
   cursor: pointer;
   &:hover {
     background: url(${props =>
-        props.left ? flechaSliderIzqPressed : flechaSliderDerPressed})
+    props.left ? flechaSliderIzqPressed : flechaSliderDerPressed})
       no-repeat;
   }
 `
@@ -171,15 +171,18 @@ const Carousel = ({
   tituloObra,
   obraURL,
 }) => {
+  const first = value === 0;
+  const last = value === count - 1;
+
   return (
     <>
       <DetalleObraContainer>
         <MargenIzquierdo>
-          <FlechaSlider
+          {!first && <FlechaSlider
             left
             src={flechaSliderIzqNormal}
             onClick={onPreviousClick}
-          ></FlechaSlider>
+          ></FlechaSlider>}
         </MargenIzquierdo>
         <DetalleObra>
           <FotoObra src={fotoObra} />
@@ -202,10 +205,10 @@ const Carousel = ({
           </DescripcionContainer>
         </DetalleObra>
         <MargenDerecho>
-          <FlechaSlider
+          {!last && <FlechaSlider
             src={flechaSliderDerNormal}
             onClick={onNextClick}
-          ></FlechaSlider>
+          ></FlechaSlider>}
         </MargenDerecho>
       </DetalleObraContainer>
     </>
