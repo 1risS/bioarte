@@ -87,11 +87,15 @@ const IconsCont = styled.div`
   flex-direction: row;
   width: 90vw;
   justify-content: space-around;
-  margin: 6rem;
+  margin: 10rem 6rem;
 `
 const I = styled.img`
   height: 15rem;
   width: 15rem;
+`
+
+const BotonBiotecArgCont = styled.div`
+  margin-top: 2rem;
 `
 
 const Icono = ({ src }) => {
@@ -127,6 +131,13 @@ const BiotecnologiaPage = () => {
             </Link>
           </IconsCont>
         </SectionCarousel>
+        <BotonBiotecArgCont>
+          <Boton
+            label="Más info sobre Biotecnología en Argentina"
+            url="
+          "
+          ></Boton>
+        </BotonBiotecArgCont>
         <Section>
           <AgendaCont>
             <Agenda />
