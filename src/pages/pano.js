@@ -160,19 +160,19 @@ const PanoPage = () => {
             this.cursorEl.style.left = `${event.mouseEvent.x + cx}px`
           }
         })
-        infospot.addEventListener("hoverenter", function (event) {
-          if (!this.cursorEl) {
-            this.cursorEl = document.createElement("img")
-            this.container.appendChild(this.cursorEl)
-            console.log("created")
+        // infospot.addEventListener("hoverenter", function (event) {
+        //   if (!this.cursorEl) {
+        //     this.cursorEl = document.createElement("img")
+        //     this.container.appendChild(this.cursorEl)
+        //     console.log("created")
 
-            this.cursorEl.src = "/images/BIOSlogo.png"
-            this.cursorEl.style.position = "absolute"
-            this.cursorEl.style.top = `${event.mouseEvent.y + cy}px`
-            this.cursorEl.style.left = `${event.mouseEvent.x + cx}px`
-            this.cursorEl.style.zIndex = 1000
-          }
-        })
+        //     this.cursorEl.src = "/images/BIOSlogo.png"
+        //     this.cursorEl.style.position = "absolute"
+        //     this.cursorEl.style.top = `${event.mouseEvent.y + cy}px`
+        //     this.cursorEl.style.left = `${event.mouseEvent.x + cx}px`
+        //     this.cursorEl.style.zIndex = 1000
+        //   }
+        // })
         infospot.addEventListener("hoverleave", function (event) {
           if (this.cursorEl) {
             this.container.removeChild(this.cursorEl)
@@ -189,31 +189,31 @@ const PanoPage = () => {
 
       const infospot = createInfoSpot(
         "Academia",
-        [4719.43, -1113.57, 1187.03],
+        [-804.5, -278.2, -4916.92],
         irAcademia
       )
 
       const infospotB = createInfoSpot(
         "Biotecnología",
-        [3975.85, -914.34, 2884.46],
+        [1669.45, 1533.54, 4449.26],
         irBiotecnologia
       )
 
       const infospotC = createInfoSpot(
         "Exhibición",
-        [4798.29, -1153.87, -758.279],
+        [4698.54, 550.8, -1597.67],
         irArtistas
       )
 
       const infospotD = createInfoSpot(
         "Historia",
-        [4234.1, -1110.68, -2409.32],
+        [-4787.26, 290.78, 1381.65],
         irHistoria
       )
 
       const infospotK = createInfoSpot(
         "Biozen",
-        [3376.05, -748.38, 3604.04],
+        [-2693.92, 1201.38, 4028.23],
         irBiozen
       )
 
@@ -392,7 +392,9 @@ const PanoPage = () => {
         }
       }
 
-      const panorama = new Panolens.ImagePanorama("/images/vr/Version_01.jpg")
+      const panorama = new Panolens.ImagePanorama(
+        "/images/vr/24Marzo_Optimizada-01.jpg"
+      )
       panorama.addEventListener("progress", onProgress)
       panorama.addEventListener("enter", onEnter)
 
