@@ -11,7 +11,6 @@ import fotoMarinaro from "../../static/images/artists/alejandraMarinaro/01 - Fot
 import fotoElectrobiota from "../../static/images/artists/electrobiota/01 - Foto Electrobiotas.jpg"
 import fotoAgarart from "../../static/images/artists/agarart/lauraEcharren/01 - Imagen Principal de Agar Art - A Salmonellosis odyssey.jpg"
 import fotoFerrari from "../../static/images/artists/demianFerrari/01 - Demian Ferrari.png"
-import art10 from "../images/Exhibicion/10Olalde/01olalde.png"
 import fotoOlmedo from "../../static/images/artists/danielAlvarezOlmedo/01 - Foto Daniel Alvarez Olmedo.jpg"
 import fondoHeader from "../../static/images/carousel/Banner_Exhibition_0.png"
 import like from "../../static/images/exhibicion/likelikeRounded.png"
@@ -52,13 +51,6 @@ const LogoContainer = styled.div`
   justify-content: flex-start;
   max-width: 100%;
   margin-right: 15em;
-`
-
-const Logo = styled.img`
-  height: 3rem;
-  width: 3rem;
-  margin-right: 3rem;
-  align-self: center;
 `
 
 const Texto = styled.div`
@@ -121,23 +113,6 @@ const Foto = styled.img`
   ${Link}:hover & {
     fill: rebeccapurple;
   }
-`
-
-const ColContainer = styled.div`
-  display: inherit;
-  flex-direction: row;
-  width: 100%;
-  justify-content: center;
-  margin: 0.3rem 0rem 0.3rem 0rem;
-  @media (max-width: 800px) {
-    flex-direction: column;
-  }
-`
-const ColPairs = styled.div`
-  display: inherit;
-  flex-direction: column;
-  width: 100%;
-  margin: 0.3rem 0;
 `
 
 const RowContainer = styled.div`

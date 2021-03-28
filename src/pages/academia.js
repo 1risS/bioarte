@@ -1,12 +1,11 @@
-import React, { useEffect } from "react"
+import React from "react"
 import styled from "styled-components"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Loadable from "@loadable/component"
-import { useCookies } from "react-cookie"
+// import { useEffect } from "react"
+// import { useCookies } from "react-cookie"
 import Agenda from "../components/agenda"
 import fondoHeader from "../images/Academia/academia_bg.jpg"
-import logo360 from "../../static/images/BIOSlogo.png"
 import MapboxMap from "../components/MapboxMap"
 import Boton from "../components/boton"
 import Footer from "../components/footer"
@@ -34,6 +33,7 @@ const NavBar = styled.div`
   margin-top: 3rem;
   margin-bottom: -2rem;
 `
+
 const LogoContainer = styled.div`
   display: flex;
   flex-direction: row;
@@ -41,13 +41,6 @@ const LogoContainer = styled.div`
   width: 30%;
 `
 
-const Logo = styled.div`
-  background-image: url(${logo360})
-  height: 3rem;
-  width: 3rem;
-  margin-right: 3rem;
-  align-self: center;
-`
 const Texto = styled.div`
   font-family: ${props => props.theme.fontFamily};
   font-size: 10rem;
@@ -75,12 +68,6 @@ const Subtexto = styled.div`
   color: white;
   align-self: center;
 `
-const BannerHubs = styled.img`
-  height: 6rem;
-  width: 6rem;
-  align-self: flex-end;
-  margin: 5rem 3rem 2rem 2rem; ;
-`
 
 const AgendaContainer = styled.div`
   width: 55%;
@@ -94,6 +81,7 @@ const Section = styled.section`
   justify-content: center;
   margin: 2rem 0rem 0rem 0rem;
 `
+
 const SectionMapa = styled.section`
   display: flex;
   align-items: center;
@@ -102,80 +90,19 @@ const SectionMapa = styled.section`
   padding: 0rem 0rem 4rem 0rem;
 `
 
-const MapaPlaceholder = styled.img`
-  height: 50vh;
-`
-
-const InfoContainer = styled.div`
-  background-color: green;
-  padding: 1em;
-  height: 400px;
-  width: 340px;
-`
-
-const DateTab = styled.span`
-  background-color: white;
-  color: #fff;
-  border-radius: 16px;
-  padding: 0.25em 0.5em;
-  cursor: pointer;
-  width: 8rem;
-`
-
-// const inputUniv = styled.input.attrs(props => ({
-//   type: "text",
-//   size: props.small ? 5 : undefined,
-// }))`
-//   border-radius: 3px;
-//   border: 1px solid palevioletred;
-//   display: block;
-//   margin: 0 0 1em;
-//   padding: ${props => props.padding};
-
-//   ::placeholder {
-//     color: palevioletred;
-//   }
-// `
-
-const inputUniv = styled.input`
-  height: 36px;
-  width: 100%;
-  box-sizing: border-box;
-  border-radius: 4px;
-  background-color: white;
-  border: 1px solid grey;
-  padding-left: 10px;
-  line-height: normal;
-  font-size: 18px;
-  color: black;
-
-  &::placeholder {
-    color: grey;
-    opacity: 0.4;
-  }
-`
-
-const inputContainer = styled.div`
-  display: flex;
-  position: relative;
-  flex-direction: column;
-  justify-content: left;
-`
-
 const UniversidadesContainer = styled.div`
   width: 1000px;
   height: 600px;
   margin-top: 4rem;
 `
 
-// ponemos una cookie para saber si le usuarix pasó por acá
 const AcademiaPage = () => {
-  const [cookies, setCookie] = useCookies(["AcademiaVisited"])
+  // const [cookie, setCookie] = useCookies(["AcademiaVisited"])
 
-  useEffect(() => {
-    console.log("visito academia?", cookies.AcademiaVisited)
-    setCookie("AcademiaVisited", true, { path: "/" })
-  }, [])
+  // // ponemos una cookie para saber si le usuarix pasó por acá  
+  // useEffect(() => {
+  //   setCookie("AcademiaVisited", true, { path: "/" })
+  // }, [setCookie])
 
   return (
     <Layout>

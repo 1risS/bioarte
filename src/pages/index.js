@@ -116,7 +116,7 @@ const LightGuide = styled(({ debug, flipX, flipY, className }) => {
       viewBox="0 0 100 100"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <g transform={groupTransform} transformOrigin="center">
+      <g transform={groupTransform} transformorigin="center">
         {debug && (
           <rect
             x="0"

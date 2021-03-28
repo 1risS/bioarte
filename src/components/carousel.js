@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React from "react"
 import styled from "styled-components"
 import flechaSliderIzqNormal from "../../static/images/carousel/Btn-CiircleArrow_Normal.png"
 import flechaSliderDerNormal from "../../static/images/carousel/Btn-CiircleArrow_Normal_DER.png"
@@ -58,9 +58,9 @@ const FlechaSlider = styled.div`
   }
 `
 
-const FotoObra = styled(({ className, ...props }) => (
+const FotoObra = styled(({ className, src, alt }) => (
   <div className={className}>
-    <img {...props} />
+    <img src={src} alt={alt} />
   </div>
 ))`
   position: relative;
@@ -80,45 +80,6 @@ const FotoObra = styled(({ className, ...props }) => (
   }
 `
 
-const LikeLikeCont = styled.div`
-  margin-left: 10rem;
-  align-self: flex-end;
-  margin: -2rem 4rem 3rem 0rem;
-`
-
-const Like = styled.img``
-
-const CVCont = styled.div`
-  margin-left: 10rem;
-  align-self: flex-end;
-  margin: 0rem 0rem 3rem 0rem;
-`
-
-const CV = styled.div`
-  width: 49px;
-  height: 49px;
-  background-color: #508f44;
-  border-radius: 50px;
-  display: flex;
-  justify-content: center;
-
-  &:hover {
-    background-color: #bed6a3;
-  }
-`
-
-const CVText = styled.div`
-  color: #fff;
-  font-size: 1.5em;
-  padding-top: 0.25em;
-`
-
-const TituloBio = styled.div`
-  display: flex;
-  width: 100%;
-  flex-direction: row;
-  justify-content: space-between;
-`
 const ProcedenciaFotosContainer = styled.div`
   display: flex;
   flex-direction: row;
@@ -185,7 +146,7 @@ const Carousel = ({
           ></FlechaSlider>}
         </MargenIzquierdo>
         <DetalleObra>
-          <FotoObra src={fotoObra} />
+          <FotoObra src={fotoObra} alt={tituloObra} />
           <DescripcionContainer>
             <ProcedenciaFotosContainer>
               {ciudadPais && <CiudadPais>{ciudadPais}</CiudadPais>}

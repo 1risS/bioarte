@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { TransitionGroup, CSSTransition } from "react-transition-group"
-import { faDotCircle, faCheckCircle } from "@fortawesome/free-regular-svg-icons"
+import { faDotCircle } from "@fortawesome/free-regular-svg-icons"
 import styled from "styled-components"
 
 const days = ["05/04", "06/04", "07/04", "08/04", "09/04"]

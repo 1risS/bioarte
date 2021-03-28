@@ -276,7 +276,6 @@ const PanoPage = () => {
       infospotI.addEventListener("hoverleave", function (event) { })
 
       const loader = new GLTFLoader()
-      let objectScene
 
       loader.load("/images/Swan.gltf", gltf => {
         const objectScene = gltf.scene

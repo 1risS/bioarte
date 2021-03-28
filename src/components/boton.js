@@ -26,10 +26,6 @@ const Botonstyled = styled.a`
 `
 
 const Boton = ({ label, url }) => {
-  const onClick = () => {
-    window.location.href = url
-  }
-
   return (
     <BotonCont>
       <Botonstyled href={url} target="_blank">

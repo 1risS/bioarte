@@ -119,18 +119,18 @@ const SearchControlInput = styled(({ className, onChange, value }) => (
 `
 
 const SearchControlResults = styled(
-  ({ className, children = [], onItemSelect }) => {
-    return (
-      <ul className={className}>
-        {children.map((item, i) => (
-          <li key={i} onClick={() => onItemSelect(item)}>
+  ({ className, children = [], onItemSelect }) => (
+    <ul className={className}>
+      {children.map((item, i) => (
+        <li key={i} >
+          <div onClick={() => onItemSelect(item)} onKeyPress={() => onItemSelect(item)} role="button" tabIndex={i}>
             <strong>{item.properties["Institución"]}</strong> -{" "}
             {item.properties["Facultad"]}
-          </li>
-        ))}
-      </ul>
-    )
-  }
+          </div>
+        </li>
+      ))}
+    </ul>
+  )
 )`
   background-color: #fff;
   height: 300px;
@@ -143,11 +143,11 @@ const SearchControlResults = styled(
   box-shadow: inset -3px -8px 4px 4px rgb(255, 255, 255),
     inset 0 2px 4px 0px rgba(50, 50, 50, 0.75);
 
-  & li {
+  & li div {
     cursor: pointer;
   }
 
-  & li strong {
+  & li div strong {
     font-weight: bold;
   }
 
@@ -237,7 +237,7 @@ export default function MapboxMap() {
               }}
             >
               <div>
-                <a target="_blank" href={selectedUni.properties["Web Site"]}>
+                <a target="_blank" rel="noreferrer" href={selectedUni.properties["Web Site"]}>
                   <h2>{selectedUni.properties["Facultad"]}</h2>
                 </a>
                 <h3>{selectedUni.properties["Institución"]}</h3>
