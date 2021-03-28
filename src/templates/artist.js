@@ -49,7 +49,7 @@ const Texto = styled.div`
   align-self: center;
   margin-bottom: -0.2em;
   max-height: 750px;
-  padding-top: 25vh;
+  padding-top: 6rem;
   /*line-height: initial;*/
 `
 const DAMain = styled.div`

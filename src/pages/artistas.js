@@ -62,7 +62,7 @@ const Texto = styled.div`
   align-self: center;
 
   max-height: 750px;
-  padding-top: 25vh;
+  padding-top: 6rem;
   /*line-height: initial;*/
 `
 
