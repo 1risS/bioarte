@@ -28,7 +28,7 @@ bio: |-
 foto: /images/artists/agarart/main.jpg
 obras:
   - ciudadPais: Buenos Aires, Argentina
-    foto: /images/artists/agarart/01 - Imagen Principal de Agar Art - A Salmonellosis odyssey.jpg
+    foto: /images/artists/agarart/lauraEcharren/01 - Imagen Principal de Agar Art - A Salmonellosis odyssey.jpg
     titulo: Salmonellosis Odyssey-People Choice 2015
     url:
     descripcion: |-
@@ -81,7 +81,7 @@ obras:
       organismos.
 
   - ciudadPais: Buenos Aires, Argentina
-    foto: /images/artists/agarart/lauraEcharren/02 - Imagen Secundaria - Spring-onella_SMALL.png
+    foto: /images/artists/agarart/aliciaFarrinati/01 - Autumn leaves-neo_SMALL.png
     titulo: Autumn leaves
     url:
     descripcion: |-
@@ -102,3 +102,97 @@ obras:
       Fui y soy una entusiasta de la pintura que me llevó a pintar numerosos cuadros mediante técnicas diversas: óleo, acrílico, tempe a la vieja usanza con albúmina de huevo, acuarela, pastel, tintas…. Los colores me apasionan y no en vano los pigmentos bacterianos me despertaron y despiertan curiosidad, al igual que los surgidos de la actividad metabólica sobre medios de cultivo diferenciales y selectivos.
       Es por eso que me animé a dibujar o mejor pintar con microorganismos:
       "Autumn leaves": muy simple y significativa, sobre una placa de CLDE ya que el verde es como la representación del verano que se va. Las hojas dibujadas con trazo rápido mediante Candida albicans y el amarillo, el otoño que se avecina, con Staphylococcus aureus.
+
+  - ciudadPais: Buenos Aires, Argentina
+    foto: /images/artists/agarart/lauraPeña/01 - Flor de Cándida.jpg
+    titulo: Flor de cándida
+    url:
+    descripcion: |-
+      Autor: Peña Laura
+
+      Co autores: Calza Mariela Yanina, Acosta José Maria
+
+      Medio de cultivo: CHROMagar cándida. 
+
+      Bio: Bioquímica especialista en Microbiología clínica, Subjefa del Departamaneto de Bioquímica del Instituto de Cardiología de Corrientes. Jefa del Servicio de Microbiología clínica del Instituto de Cardiología de Corrientes.
+
+      Descripción de la obra: Ramas de un árbol donde se utilizo Cándida tropicalis, cuyas hojas fueron realizadas con Cándida albicans, las flores con Cándida parapsilosis y Rhodotorula  en la cual reposan 2 pajaritos con Cándida tropicalis y Aspergillus sp mirando el atardecer mezcla de Candida tropicalis y Rhodotorula .Fondo del dibujo Mezcla de Cándida tropicalis y Cándida parapsilosis.
+
+  - ciudadPais: Buenos Aires, Argentina
+    foto: /images/artists/agarart/sabrinaDiGregorio/01 - IMG_0884.JPG
+    titulo: Save the world
+    url:
+    descripcion: |-
+      Autores: Di Gregorio Sabrina, Arias Bárbara, Papalia Mariana, Ghiglione Bárbara, Cejas Daniela, Elena Alan, Haim María Sol, Gulone Lucía, Bonofiglio Laura.
+
+      Bio
+      Sabrina Di Gregorio es Doctora en Bioquímica de la UBA. Actualmente trabaja como investigadora y docente en el Instituto de Bacteriología y Virología Molecular, Cátedra de Microbiología, Facultad de Farmacia y Bioquímica, UBA.
+
+      Descripción
+      La obra alerta para que salvemos al mundo de la resistencia a antibióticos, un desafío importante para el sistema de salud a nivel global.
+      Uno de los mecanismos de resistencia a antibióticos más prevalentes es la producción de β-lactamasas (enzimas que degradan a los antibióticos β-lactámicos). Aquellas bacterias que producen β-lactamasas son resistentes a estos antibióticos.
+      En esta obra se utilizó:
+      - Agar sangre de oveja (en el exterior) donde se escribió "Save the world" utilizando un cultivo de Staphylococcus aureus, uno de los primeros microorganismos en los que descubrieron β-lactamasas.
+      - Agar yodométrico (región central), que contiene un complejo de almidón yodado azul y un antibiótico β-lactámico. El continente americano se dibujó usando un extracto de β-lactamasa. Cuando se agrega una β-lactamasa sobre el agar, ésta degrada el antibiótico presente, disminuye el pH del medio y se decolora el complejo de almidón yodado azul.
+      Para demostrar la transparencia que se generó al degradarse el antibiótico, se fotografió la placa sobre una cartulina coloreada.
+
+  - ciudadPais: Buenos Aires, Argentina
+    foto: /images/artists/agarart/yaninaCalza/Colibriceae.jpg
+    titulo: Colibriceae
+    url:
+    descripcion: |-
+      Autor: Calza Mariela Yanina
+      Co autores: Peña Laura, Acosta Jose Maria 
+
+      Bio: Bioquímica  especialista en Bacteriología clínica. Subjefa  del servicio de
+      Microbiología clínica del Instituto de Cardiología de Corriente. Miembro de la
+      Filial NEA de la Asociación Argentina de Microbiología                       
+      Medio de cultivo: CHROMagar orientación  
+
+      Descripción de la obra: Colibrí, tomando el néctar de una flor, cuyo contorno
+      fue realizado con  Klebsiella pneumoniae el plumaje con mezcla de Escherichia
+      coli Pseudomonas aeruginosa y Klebsiella pneumoniae. La flor y las ramas  fueron
+      realizadas con Escherichia coli y Pseudomonas aeruginosa. Fondo de la placa
+      Pseudomonas aeruginosa y Acinetobacter sp.
+
+  - ciudadPais: Buenos Aires, Argentina
+    foto: /images/artists/agarart/mariaEugeniaInda/Harvest Season.png
+    titulo: Temporada de cosecha
+    url:
+    descripcion: |-
+      Eugenia Inda trabaja en el Centro de Biología Sintética del MIT construyendo biosensores para diagnosticar y tratar trastornos inflamatorios en el intestino. Fuera de su investigación, le encanta capturar la belleza de la vida cotidiana con su Nikon D3400.
+      La pintura representa una humilde casa de campo con la producción de trigo enlazado en manojos en el campo.
+      El uso de agar, una sustancia gelatinosa para llenar la placa de Petri, crea un lienzo donde los microbios se pueden esparcir como pintura y una vez que se dejan crecer, crean una obra viva. Se usó una levadura llamada Saccharomyces cerevisiae que es el agente activo que se encuentra en nuestros alimentos más básicos: pan, vino y cerveza. 
+      El organismo utilizado para la obra se modificó metabólicamente en la vía de producción del β-caroteno, lo que resultó en una paleta de colores de colonias de elección, del amarillo al rojo, ideal para pintar este paisaje otoñal. 
+      La temporada de cosecha es un tiempo productivo, de alegría, de compartir. Asombrada por la plasticidad de este organismo para la ingeniería durante el Curso de Genética y Genómica de Levaduras en CSHL (Cold Spring Harbor Laboratory, New York), me inspiré para pintar este agar con el mensaje: 
+      "¡Mira el campo de levadura, porque ya está maduro para la cosecha!"
+
+  - ciudadPais: Buenos Aires, Argentina/
+    foto: /images/artists/agarart/nataliaVelazquez/01 - Velazquez_SMALL.png
+    titulo: Marilyn Moo-nroe
+    url:
+    descripcion: |-
+      Autora: Natalia Velázquez
+
+      Co-autores: Sofía Cainelli, Natalia Gareis, Belén Peralta, Elizabet Pereyra Bio:
+
+      Mujer de ciencia, entusiasta y apasionada. Licenciada en Biotecnología y Doctora
+      en Ciencias Biológicas egresada de la UNL de Santa Fe. Las expresiones
+      artísticas en todas sus formas son pasiones que se fusionan con su interés y
+      amor por la ciencia. 
+
+      Descripción de la obra: Para la ejecución de esta pieza se
+      combinaron dos conceptos: la pieza más emblemática del movimiento artístico Pop
+      Art creada por Andy Warhol a mediados del siglo XX y la protagonista objeto de
+      estudio de nuestro grupo de trabajo: la vaca; utilizando elementos que poseíamos
+      en el laboratorio. Se sembraron gota a gota el principal patógeno causante de
+      mastitis en vacas (Staphylococcus aureus), y otra bacteria usada como
+      herramienta de clonado (Escherichia coli) en medios agarizados de rutina de
+      nuestro laboratorio, para lograr nuestra propia versión "pop-agart": Marylin
+      Moo-nroe. Se usaron los medios: agar salado (superior izquierda), un medio
+      específico para Staphylococcus; medio agar sangre (superior derecha), en el cual
+      el Staphylococcus es capaz de generar un halo de hemólisis a su alrededor; medio
+      agar manitol (inferior izquierda) en el cual Staphylococcus es capaz de virar el
+      medio circundante de rojo a amarillo; y medio agarizado Luria-Bertani
+      suplementado con ampicilina y Xgal (inferior derecha) donde las colonias de
+      Escherichia coli puede verse azules.
