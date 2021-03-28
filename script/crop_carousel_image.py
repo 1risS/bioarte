@@ -16,6 +16,7 @@ PATTERNS = [
 ]
 SKIP_PATTERNS = [
     'artists/*/main.jpg',
+    'artists/*/profile.jpg',
     'biotecnologia/*/main.jpg',
     'biotecnologia/logoEmpresas/*',
     'biotecnologia/iconos/*',
