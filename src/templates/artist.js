@@ -191,10 +191,20 @@ const TituloBio = styled.div`
   flex-direction: row;
   justify-content: space-between;
 `
+
 const StyledLink = styled.a`
   text-decoration: none;
   color: white;
   font-weight: 200;
+`
+
+const Subtexto = styled.div`
+  font-family: ${props => props.theme.fontFamily};
+  font-weight: ${props => props.theme.fontWeights.light};
+  font-style: italic;
+  font-size: 1.5rem;
+  color: white;
+  align-self: center;
 `
 
 // ponemos una cookie para saber si le usuarix pasó por acá
@@ -217,15 +227,6 @@ const ArtistPageTemplate = ({ pageContext }) => {
   }
 
   const datosObra = obras[obra]
-
-  const Subtexto = styled.div`
-    font-family: ${props => props.theme.fontFamily};
-    font-weight: ${props => props.theme.fontWeights.light};
-    font-style: italic;
-    font-size: 1.5rem;
-    color: white;
-    align-self: center;
-  `
 
   return (
     <Layout>
@@ -263,8 +264,8 @@ const ArtistPageTemplate = ({ pageContext }) => {
                   </CVCont>
                 </TituloBio>
                 <ParrafoFormacion>{formacion}</ParrafoFormacion>
-                {bio.split("\n\n").map(paragraph => (
-                  <Parrafo>{paragraph}</Parrafo>
+                {bio.split("\n\n").map((paragraph, i) => (
+                  <Parrafo key={i}>{paragraph}</Parrafo>
                 ))}
               </BioTexto>
             </BioArtista>
@@ -284,8 +285,8 @@ const ArtistPageTemplate = ({ pageContext }) => {
             count={obras.length}
             value={obra}
           >
-            {datosObra.descripcion.split("\n\n").map(parrafo => (
-              <ParrafoObra>{parrafo}</ParrafoObra>
+            {datosObra.descripcion.split("\n\n").map((parrafo, i) => (
+              <ParrafoObra key={i}>{parrafo}</ParrafoObra>
             ))}
           </Carousel>
         </DAMain>

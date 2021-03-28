@@ -37,8 +37,8 @@ const FunFactsBalloon = styled(({ className, duration = 5000 }) => {
   return (
     <div className={className}>
       {transitions.map(({ item, props, key }) => (
-        <div>
-          <animated.p style={props} key={key}>
+        <div key={key}>
+          <animated.p style={props}>
             {item}
           </animated.p>
         </div>

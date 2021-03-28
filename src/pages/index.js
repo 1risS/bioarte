@@ -78,7 +78,7 @@ const Desc = styled.p`
 
 // TagManager.initialize(tagManagerArgs)
 
-const Bold = styled.p`
+const Bold = styled.span`
   font-family: ${props => props.theme.fontFamily};
   color: white;
   font-weight: bold;

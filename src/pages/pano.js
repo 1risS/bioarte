@@ -86,7 +86,7 @@ const PanoPage = () => {
   // const [cookies, setCookie] = useCookies()
 
   useEffect(() => {
-    console.log("initial load")
+    console.debug("initial load")
 
     let viewer
     let zoomRequestId
@@ -119,7 +119,7 @@ const PanoPage = () => {
     }
 
     const run = async () => {
-      console.log("run")
+      console.debug("run")
 
       const Panolens = await import("panolens")
       const Three = await import("three")
@@ -148,7 +148,7 @@ const PanoPage = () => {
         infospot.addHoverText(hoverText, 130)
         infospot.element.style.fontSize = "2.5rem"
         infospot.addEventListener("click", () => {
-          console.log("click")
+          // console.log("click")
           zoom(viewer, 2 * linkDuration, linkEasing)
           infospot.focus(1000, linkEasing)
           setTimeout(() => onClick(), linkDuration)
@@ -177,7 +177,7 @@ const PanoPage = () => {
           if (this.cursorEl) {
             this.container.removeChild(this.cursorEl)
             this.cursorEl = null
-            console.log("removed")
+            // console.log("removed")
           }
         })
         //infospot.setCursorHoverStyle("none")
@@ -269,7 +269,7 @@ const PanoPage = () => {
       const infospotI = new Panolens.Infospot(600, "/images/Deer-Little.jpg?6")
       infospotI.position.set(-4533, -1500, 1846.35)
       infospotI.addEventListener("click", function (event) {
-        console.log("click")
+        // console.log("click")
         swan.children[0].material.opacity = 1
         swan.children[0].material.transparent = false
       })
@@ -373,17 +373,17 @@ const PanoPage = () => {
       )
 
       function onEnter(event) {
-        console.log("onEnter")
+        console.debug("onEnter")
         progressElement.style.width = 0
         progressElement.style.opacity = 1
       }
 
       function onProgress(event) {
-        console.log("onProgress")
+        console.debug("onProgress")
         const progress = (event.progress.loaded / event.progress.total) * 100
-        console.log("progress:", progress)
+        console.debug("progress:", progress)
         if (progress === 100) {
-          console.log("finished!")
+          console.debug("finished!")
           progressElement.style.width = "100%"
           setTimeout(() => {
             loadingContainerElement.style.opacity = 0

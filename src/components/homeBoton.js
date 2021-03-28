@@ -15,12 +15,10 @@ const Exp = styled.div`
     background-image: url(${expHover});
   }
 
-  &active {
+  &:active {
     background-image: url(${expActive});
   }
 `
-
-const LinkWrapper = styled.div``
 
 const StyledLink = styled(Link)`
   text-decoration: none;
@@ -30,11 +28,9 @@ const StyledLink = styled(Link)`
 
 const HomeBoton = () => {
   return (
-    <LinkWrapper>
-      <StyledLink to="/pano">
-        <Exp></Exp>
-      </StyledLink>
-    </LinkWrapper>
+    <StyledLink to="/pano">
+      <Exp />
+    </StyledLink>
   )
 }
 

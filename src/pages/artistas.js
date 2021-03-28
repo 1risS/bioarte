@@ -111,7 +111,8 @@ const Foto = styled.img`
   width: 180px;
   margin: 1rem;
   order: 3;
-  ${Link}:hover & {
+
+  &:hover {
     fill: rebeccapurple;
   }
 `
