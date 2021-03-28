@@ -140,17 +140,17 @@ const PanoPage = () => {
       const [cx, cy] = [5, 5]
 
       // Crea infospot para las subpáginas
-      const createInfoSpot = (hoverText, position, onClick) => {
-        const infospot = new Panolens.Infospot()
+      const createInfoSpot = (hoverText, position, onClick, image) => {
+        const infospot = new Panolens.Infospot(600, image)
         const linkDuration = 500
         const linkEasing = TWEEN.Easing.Quadratic.InOut
         infospot.position.set(...position)
-        infospot.addHoverText(hoverText, 70)
+        infospot.addHoverText(hoverText, 130)
         infospot.element.style.fontSize = "2.5rem"
         infospot.addEventListener("click", () => {
           console.log("click")
           zoom(viewer, 2 * linkDuration, linkEasing)
-          infospot.focus(500, linkEasing)
+          infospot.focus(1000, linkEasing)
           setTimeout(() => onClick(), linkDuration)
         })
         infospot.addEventListener("hover", function (event) {
@@ -189,32 +189,37 @@ const PanoPage = () => {
 
       const infospot = createInfoSpot(
         "Academia",
-        [-804.5, -278.2, -4916.92],
-        irAcademia
+        [-801.62, -160.88, -4927.75],
+        irAcademia,
+        "images/vr/Icon_Academia.jpg"
       )
 
       const infospotB = createInfoSpot(
         "Biotecnología",
-        [1669.45, 1533.54, 4449.26],
-        irBiotecnologia
+        [1793.37, 1620.32, 4368.52],
+        irBiotecnologia,
+        "images/vr/Icon_Biotecnologia.jpg"
       )
 
       const infospotC = createInfoSpot(
         "Exhibición",
         [4698.54, 550.8, -1597.67],
-        irArtistas
+        irArtistas,
+        "images/vr/Icon_Exhibicion.jpg"
       )
 
       const infospotD = createInfoSpot(
         "Acerca del Bioarte",
-        [-4787.26, 290.78, 1381.65],
-        irHistoria
+        [-4804.24, 301.82, 1217.13],
+        irHistoria,
+        "images/vr/Icon_Historia.jpg"
       )
 
       const infospotK = createInfoSpot(
         "Biozen",
-        [-2693.92, 1201.38, 4028.23],
-        irBiozen
+        [-2651.67, 1420.32, 4368.5],
+        irBiozen,
+        "images/vr/Icon_Biozen.jpg"
       )
 
       // OBJETOS E IMAGENES
