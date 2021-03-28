@@ -150,7 +150,7 @@ const BiotecnologiaPageTemplate = ({ pageContext }) => {
 
   return (
     <Layout>
-      <SEO title="Biotecnología" />
+      <SEO title={nombre} />
       <DAContainer>
         <DAHeaderContainer>
           <NavBar>

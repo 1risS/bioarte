@@ -230,7 +230,7 @@ const ArtistPageTemplate = ({ pageContext }) => {
 
   return (
     <Layout>
-      <SEO title="Artista" />
+      <SEO title={nombre} />
       <DAContainer>
         <DAHeaderContainer>
           <NavBar>
