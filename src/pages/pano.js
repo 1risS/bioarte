@@ -206,7 +206,7 @@ const PanoPage = () => {
       )
 
       const infospotD = createInfoSpot(
-        "Historia",
+        "Acerca del Bioarte",
         [-4787.26, 290.78, 1381.65],
         irHistoria
       )
