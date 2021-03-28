@@ -142,7 +142,7 @@ const PanoPage = () => {
       // Crea infospot para las subpáginas
       const createInfoSpot = (hoverText, position, onClick, image) => {
         const infospot = new Panolens.Infospot(600, image)
-        const linkDuration = 500
+        const linkDuration = 1250
         const linkEasing = TWEEN.Easing.Quadratic.InOut
         infospot.position.set(...position)
         infospot.addHoverText(hoverText, 130)
