@@ -1,0 +1,30 @@
+nombre: Biomateriales
+cvUrl:
+formacion: |-
+  Un material biofabricado es aquel producido por células vivas ❨por ejemplo de mamíferos❩ y microorganismos como bacterias, levaduras y micelio. Algunos de estos organismos ya estan en la naturaleza y tienen años de evolución biológica. Es por ello que nos valemos de la biodiversidad para poder replicar aquellos procesos biológicos que nos permitan optimizar la producción de ciertos biomateriales en el laboratorio. Llego al mundo del biodiseño a través de la microbiología investigando a un grupo de microorganismos que sintetizan un polímero que tiene múltiples aplicaciones en la industria, una de ellas es la moda. Así nace KARU Biodiseño un lab-atelier de I+D en biomateriales.
+bio: |-
+  El animal recolecta elementos de su bioma o migra en su búsqueda. El ser humano vive en un hábitat intervenido por un sistema que agota sus recursos y genera desperdicios que brindan nuevas posibilidades. La riqueza que subyace en la transformación del mismo otorga un status de conquista por sobre la escasez. Aquí la obra es la recolección, el proceso, el resultado y las producciones venideras. Así, presentada como una selección de lo obtenido, interpela al espectador acerca de nuevas búsquedas y lo pone frente a su propia conversión dejando explícitos los ciclos vitales que lo incluyen.
+
+foto: /images/artists/biomateriales/02 - Ana Hall_Biomaterial_SMALL.png
+obras:
+  - ciudadPais: Buenos Aires, Argentina
+    foto: /images/artists/biomateriales/01 - viento 1.jpg
+    titulo: Viento
+    url:
+    descripcion: |-
+      "Viento" es un concepto que toma forma de obra-taller y casa de bioarte.
+      Aquí se experimenta el entramado entre arte, naturaleza y tecnología.
+      Además de cocina de producción de obra visual, sonora y textil se compone
+      de investigación y desarrollo de biotextiles y biomateriales.
+  - ciudadPais: Buenos Aires, Argentina
+    foto: /images/artists/biomateriales/02 - viento 2.jpg
+    titulo: Viento
+    url:
+    descripcion: |-
+      La experiencia del espectador es inmersiva, le permite participar del cultivo en una huerta orgánica, el composte y la recolección de semillas y le brinda la posibilidad de degustar conservas y dulces producidos y cosechados en el lugar. También ofrece capacitación en seminarios y talleres en modalidades duales.
+  - ciudadPais: Buenos Aires, Argentina
+    foto: /images/artists/biomateriales/03 - viento 3.jpg
+    titulo: Viento
+    url:
+    descripcion: |-
+      Viento es un concepto materializado en su sede, pero se expande y se adapta a cualquier espacio ya que mediante la virtualidad acerca al espectador a sus posibilidades de recioprocidad entre ser humano y contexto ofreciendo herramientas de conocimiento para cristalizar la transformación de ambos.

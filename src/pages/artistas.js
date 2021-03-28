@@ -13,6 +13,9 @@ import fotoAgarart from "../../static/images/artists/agarart/lauraEcharren/01 - 
 import fotoFerrari from "../../static/images/artists/demianFerrari/01 - Demian Ferrari.png"
 import fotoOlmedo from "../../static/images/artists/danielAlvarezOlmedo/01 - Foto Daniel Alvarez Olmedo.jpg"
 import fotoModelado from "../../static/images/artists/modeladoMolecular/Pablo_Power_SMALL.png"
+import fotoSacco from "../../static/images/artists/darioSacco/01 - Foto Dario Sacco_SMALL.png"
+import fotoLapadula from "../../static/images/artists/pabloLapadula/Pablo_Lapadula_SMALL.png"
+import fotoBiomateriales from "../../static/images/artists/biomateriales/01 - Foto Veronica Bergottini - 001_SMALL.png"
 import fondoHeader from "../../static/images/carousel/Banner_Exhibition_0.png"
 import like from "../../static/images/exhibicion/likelikeRounded.png"
 import HomeBoton from "../components/homeBoton"
@@ -222,9 +225,9 @@ const ArtistasPage = () => {
                   src={fotoModelado}
                 />
                 <ArtistCard
-                  to="detalleArtista4"
-                  name="Modelado Molecular"
-                  src={like}
+                  to="dario-sacco"
+                  name="Darío Sacco"
+                  src={fotoSacco}
                 />
               </Column>
               {/* col2 */}
@@ -235,8 +238,16 @@ const ArtistasPage = () => {
                   name="Electrobiota"
                   src={fotoElectrobiota}
                 />
-                <ArtistCard to="detalleArtista3" name="?" src={like} />
-                <ArtistCard to="detalleArtista4" name="?" src={like} />
+                <ArtistCard
+                  to="pablo-lapadula"
+                  name="Pablo Lapadula"
+                  src={fotoLapadula}
+                />
+                <ArtistCard
+                  to="luciana-paoletti"
+                  name="Luciana Paoletti"
+                  src={like}
+                />
               </Column>
             </RowPairs>
 
@@ -248,13 +259,13 @@ const ArtistasPage = () => {
                   name="Oliverio Duhalde"
                   src={fotoOliverio}
                 />
-                <ArtistCard to="agarart" name="Agarart" src={fotoAgarart} />
+                <ArtistCard to="agarart" name="Agar Art" src={fotoAgarart} />
                 <ArtistCard
                   to="daniel-alvarez-olmedo"
                   name="Daniel Alvarez Olmedo"
                   src={fotoOlmedo}
                 />
-                <ArtistCard to="detalleArtista4" name="?" src={like} />
+                <ArtistCard to="ariel-wilner" name="Ariel Wilner" src={like} />
               </Column>
               {/* col4 */}
               <Column>
@@ -268,7 +279,11 @@ const ArtistasPage = () => {
                   name="Demian Ferrari"
                   src={fotoFerrari}
                 />
-                <ArtistCard to="detalleArtista3" name="?" src={like} />
+                <ArtistCard
+                  to="biomateriales"
+                  name="Biomateriales"
+                  src={fotoBiomateriales}
+                />
                 <ArtistCard to="detalleArtista4" name="?" src={like} />
               </Column>
             </RowPairs>
