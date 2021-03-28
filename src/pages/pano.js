@@ -80,7 +80,7 @@ const PanoPage = () => {
   }
 
   const irBiozen = () => {
-    window.location.href = "https://marieflanagan.com/"
+    window.open("https://marieflanagan.com/");
   }
 
   // const [cookies, setCookie] = useCookies()
@@ -140,7 +140,7 @@ const PanoPage = () => {
       const [cx, cy] = [5, 5]
 
       // Crea infospot para las subpáginas
-      const createInfoSpot = (hoverText, position, onClick, image) => {
+      const createInfoSpot = (hoverText, position, onClick, image, noFocus) => {
         const infospot = new Panolens.Infospot(600, image)
         const linkDuration = 1250
         const linkEasing = TWEEN.Easing.Quadratic.InOut
@@ -149,9 +149,13 @@ const PanoPage = () => {
         infospot.element.style.fontSize = "2.5rem"
         infospot.addEventListener("click", () => {
           // console.log("click")
-          zoom(viewer, 2 * linkDuration, linkEasing)
-          infospot.focus(1000, linkEasing)
-          setTimeout(() => onClick(), linkDuration)
+          if (noFocus) {
+            onClick();
+          } else {
+            zoom(viewer, 2 * linkDuration, linkEasing)
+            infospot.focus(1000, linkEasing)
+            setTimeout(() => onClick(), linkDuration)
+          }
         })
         infospot.addEventListener("hover", function (event) {
           // console.log(event.mouseEvent)
@@ -219,7 +223,8 @@ const PanoPage = () => {
         "Biozen",
         [-2651.67, 1420.32, 4368.5],
         irBiozen,
-        "/images/vr/Icon_Biozen.jpg"
+        "/images/vr/Icon_Biozen.jpg",
+        true
       )
 
       // OBJETOS E IMAGENES
