@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react"
 import ReactMapGL, { Marker, Popup, FlyToInterpolator } from "react-map-gl"
+import 'mapbox-gl/dist/mapbox-gl.css';
 import * as uniData from "../data/universidades.json"
 import pin from "../images/pin.png"
 import styled from "styled-components"
@@ -74,7 +75,6 @@ const SearchControl = ({ features = [], onSelect }) => {
   }
 
   const onItemSelect = item => {
-    console.log("select item:", item)
     setQuery("")
     setResults([])
     onSelect(item.geometry.coordinates, item)
