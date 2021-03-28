@@ -45,7 +45,7 @@ const DescripcionContainer = styled.div`
 
 const FlechaSlider = styled.div`
   background: url(${props =>
-    props.left ? flechaSliderIzqNormal : flechaSliderDerNormal})
+      props.left ? flechaSliderIzqNormal : flechaSliderDerNormal})
     no-repeat;
   height: 80px;
   width: 80px;
@@ -53,7 +53,7 @@ const FlechaSlider = styled.div`
   cursor: pointer;
   &:hover {
     background: url(${props =>
-    props.left ? flechaSliderIzqPressed : flechaSliderDerPressed})
+        props.left ? flechaSliderIzqPressed : flechaSliderDerPressed})
       no-repeat;
   }
 `
@@ -119,6 +119,13 @@ const CantFotos = styled.div`
 `
 const ParrafoObra = styled.div`
   font-size: 12pt;
+  margin-bottom: 0.75em;
+`
+
+const DescripcionInnerContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 `
 
 const Carousel = ({
@@ -132,18 +139,20 @@ const Carousel = ({
   tituloObra,
   obraURL,
 }) => {
-  const first = value === 0;
-  const last = value === count - 1;
+  const first = value === 0
+  const last = value === count - 1
 
   return (
     <>
       <DetalleObraContainer>
         <MargenIzquierdo>
-          {!first && <FlechaSlider
-            left
-            src={flechaSliderIzqNormal}
-            onClick={onPreviousClick}
-          ></FlechaSlider>}
+          {!first && (
+            <FlechaSlider
+              left
+              src={flechaSliderIzqNormal}
+              onClick={onPreviousClick}
+            ></FlechaSlider>
+          )}
         </MargenIzquierdo>
         <DetalleObra>
           <FotoObra src={fotoObra} alt={tituloObra} />
@@ -154,22 +163,26 @@ const Carousel = ({
                 {value + 1}/{count}
               </CantFotos>
             </ProcedenciaFotosContainer>
-            <TituloWebCont>
-              <TituloObra>{tituloObra}</TituloObra>
-              {obraURL && (
-                <LinkWeb href={obraURL} target="_blank">
-                  Web
-                </LinkWeb>
-              )}
-            </TituloWebCont>
-            {children}
+            <DescripcionInnerContainer>
+              <TituloWebCont>
+                <TituloObra>{tituloObra}</TituloObra>
+                {obraURL && (
+                  <LinkWeb href={obraURL} target="_blank">
+                    Web
+                  </LinkWeb>
+                )}
+              </TituloWebCont>
+              {children}
+            </DescripcionInnerContainer>
           </DescripcionContainer>
         </DetalleObra>
         <MargenDerecho>
-          {!last && <FlechaSlider
-            src={flechaSliderDerNormal}
-            onClick={onNextClick}
-          ></FlechaSlider>}
+          {!last && (
+            <FlechaSlider
+              src={flechaSliderDerNormal}
+              onClick={onNextClick}
+            ></FlechaSlider>
+          )}
         </MargenDerecho>
       </DetalleObraContainer>
     </>
