@@ -17,6 +17,7 @@ import fondoHeader from "../../static/images/carousel/Banner_Exhibition_0.png"
 import like from "../../static/images/exhibicion/likelikeRounded.png"
 import HomeBoton from "../components/homeBoton"
 import Footer from "../components/footer"
+import Chat from "../components/chat"
 
 const C = styled.div`
   display: flex;
@@ -261,6 +262,7 @@ const ArtistasPage = () => {
         </ArtistasContainer>
         <BioContainer />
       </C>
+      <Chat />
       <Footer />
     </Layout>
   )

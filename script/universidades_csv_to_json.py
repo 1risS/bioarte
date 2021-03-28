@@ -77,17 +77,21 @@ def parse_and_generate(*, input_file, output_file):
     with open(input_file, 'r') as f:
         reader = csv.DictReader(f)
         for i, row in enumerate(reader):
-            keys = ['Institución', 'Facultad', 'Web Site']
-            properties = {k: row[k] for k in keys}
-            properties['id'] = i
-            if row['Localizacion (decimal)']:
-                coords = parse_decimal(row['Localizacion (decimal)'])
-            else:
-                coords = parse_degree(row['Localizacion'])
+            try:
+                keys = ['Institución', 'Facultad', 'Web Site']
+                properties = {k: row[k] for k in keys}
+                properties['id'] = i
+                if row['Localizacion (decimal)']:
+                    coords = parse_decimal(row['Localizacion (decimal)'])
+                else:
+                    coords = parse_degree(row['Localizacion'])
 
-            # Only append features with valid coordinates
-            if coords:
-                res.append((coords, properties))
+                # Only append features with valid coordinates
+                if coords:
+                    res.append((coords, properties))
+            except Exception as err:
+                print(f"Error on row {i}: {row['Institución']}")
+                raise err
     write_geojson(res, output_file)
 
 

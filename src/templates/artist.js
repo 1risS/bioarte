@@ -297,7 +297,7 @@ const ArtistPageTemplate = ({ pageContext }) => {
           </Carousel>
         </DAMain>
       </DAContainer>
-      <Footer></Footer>
+      <Footer />
       <Chat />
     </Layout>
   )
