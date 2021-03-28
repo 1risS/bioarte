@@ -91,8 +91,14 @@ const HoverDiv = styled.div`
   position: absolute;
   left: 1rem;
   top: 0px;
+  opacity: 0;
   &:hover {
-    background-color: rgba(255, 125, 0, 0.5);
+    background-color: rgb(255, 125, 0, 0.5);
+    opacity: 1;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    line-height: 180px;
   }
 `
 const ContainerHoverDiv = styled.div`
@@ -189,6 +195,13 @@ const Subtexto = styled.div`
 
 const ArtistLink = ({ to, ...props }) => <Link {...props} to={`${to}#header`} />
 
+const ArtistCard = ({ to, name, src }) => (<ArtistLink to={to}>
+  <ContainerHoverDiv>
+    <Foto src={src} />
+    <HoverDiv>{name}</HoverDiv>
+  </ContainerHoverDiv>
+</ArtistLink>)
+
 const ArtistasPage = () => {
   return (
     <Layout>
@@ -214,122 +227,41 @@ const ArtistasPage = () => {
             <RowPairs>
               {/* col1 */}
               <Column>
-                <ArtistLink to="ana-laura-cantera">
-                  <ContainerHoverDiv>
-                    <Foto src={fotoAnaLaura}></Foto>
-                    <HoverDiv></HoverDiv>
-                  </ContainerHoverDiv>
-                </ArtistLink>
-                <ArtistLink to="alejandra-marinaro">
-                  <ContainerHoverDiv>
-                    <Foto src={fotoMarinaro}></Foto>
-                    <HoverDiv></HoverDiv>
-                  </ContainerHoverDiv>
-                </ArtistLink>
-                <ArtistLink to="detalleArtista3">
-                  <ContainerHoverDiv>
-                    <Foto src={like}></Foto>
-                    <HoverDiv></HoverDiv>
-                  </ContainerHoverDiv>
-                </ArtistLink>
-                <ArtistLink to="detalleArtista4">
-                  <ContainerHoverDiv>
-                    <Foto src={like}></Foto>
-                    <HoverDiv></HoverDiv>
-                  </ContainerHoverDiv>
-                </ArtistLink>
+                <ArtistCard to="ana-laura-cantera" name="Ana Laura Cantera" src={fotoAnaLaura} />
+                <ArtistCard to="alejandra-marinaro" name="Alejandra Marinaro" src={fotoMarinaro} />
+                <ArtistCard to="detalleArtista3" name="?" src={like} />
+                <ArtistCard to="detalleArtista4" name="?" src={like} />
               </Column>
               {/* col2 */}
               <Column>
-                <ArtistLink to="muru">
-                  <ContainerHoverDiv>
-                    <Foto src={fotoMuru}></Foto>
-                    <HoverDiv></HoverDiv>
-                  </ContainerHoverDiv>
-                </ArtistLink>
-                <ArtistLink to="electrobiota">
-                  <ContainerHoverDiv>
-                    <Foto src={fotoElectrobiota}></Foto>
-                    <HoverDiv></HoverDiv>
-                  </ContainerHoverDiv>
-                </ArtistLink>
-                <ArtistLink to="detalleArtista3">
-                  <ContainerHoverDiv>
-                    <Foto src={like}></Foto>
-                    <HoverDiv></HoverDiv>
-                  </ContainerHoverDiv>
-                </ArtistLink>
-                <ArtistLink to="detalleArtista4">
-                  <ContainerHoverDiv>
-                    <Foto src={like}></Foto>
-                    <HoverDiv></HoverDiv>
-                  </ContainerHoverDiv>
-                </ArtistLink>
+                <ArtistCard to="muru" name="Muru" src={fotoMuru} />
+                <ArtistCard to="electrobiota" name="Electrobiota" src={fotoElectrobiota} />
+                <ArtistCard to="detalleArtista3" name="?" src={like} />
+                <ArtistCard to="detalleArtista4" name="?" src={like} />
               </Column>
             </RowPairs>
 
             <RowPairs>
               {/* col3 */}
               <Column>
-                <ArtistLink to="oliverio-duhalde">
-                  <ContainerHoverDiv>
-                    <Foto src={fotoOliverio}></Foto>
-                    <HoverDiv></HoverDiv>
-                  </ContainerHoverDiv>
-                </ArtistLink>
-                <ArtistLink to="agarart">
-                  <ContainerHoverDiv>
-                    <Foto src={fotoAgarart}></Foto>
-                    <HoverDiv></HoverDiv>
-                  </ContainerHoverDiv>
-                </ArtistLink>
-                <ArtistLink to="daniel-alvarez-olmedo">
-                  <ContainerHoverDiv>
-                    <Foto src={fotoOlmedo}></Foto>
-                    <HoverDiv></HoverDiv>
-                  </ContainerHoverDiv>
-                </ArtistLink>
-                <ArtistLink to="detalleArtista4">
-                  <ContainerHoverDiv>
-                    <Foto src={like}></Foto>
-                    <HoverDiv></HoverDiv>
-                  </ContainerHoverDiv>
-                </ArtistLink>
+                <ArtistCard to="oliverio-duhalde" name="Oliverio Duhalde" src={fotoOliverio} />
+                <ArtistCard to="agarart" name="Agarart" src={fotoAgarart} />
+                <ArtistCard to="daniel-alvarez-olmedo" name="Daniel Alvarez Olmedo" src={fotoOlmedo} />
+                <ArtistCard to="detalleArtista4" name="?" src={like} />
               </Column>
               {/* col4 */}
               <Column>
-                <ArtistLink to="joaquin-fargas">
-                  <ContainerHoverDiv>
-                    <Foto src={fotoFargas}></Foto>
-                    <HoverDiv></HoverDiv>
-                  </ContainerHoverDiv>
-                </ArtistLink>
-                <ArtistLink to="demian-ferrari">
-                  <ContainerHoverDiv>
-                    <Foto src={fotoFerrari}></Foto>
-                    <HoverDiv></HoverDiv>
-                  </ContainerHoverDiv>
-                </ArtistLink>
-                <ArtistLink to="detalleArtista3">
-                  <ContainerHoverDiv>
-                    <Foto src={like}></Foto>
-                    <HoverDiv></HoverDiv>
-                  </ContainerHoverDiv>
-                </ArtistLink>
-                <ArtistLink to="detalleArtista4">
-                  <ContainerHoverDiv>
-                    <Foto src={like}></Foto>
-                    <HoverDiv></HoverDiv>
-                  </ContainerHoverDiv>
-                </ArtistLink>
+                <ArtistCard to="joaquin-fargas" name="Joaquín Fargas" src={fotoFargas} />
+                <ArtistCard to="demian-ferrari" name="Demian Ferrari" src={fotoFerrari} />
+                <ArtistCard to="detalleArtista3" name="?" src={like} />
+                <ArtistCard to="detalleArtista4" name="?" src={like} />
               </Column>
             </RowPairs>
           </RowContainer>
         </ArtistasContainer>
-
-        <BioContainer></BioContainer>
+        <BioContainer />
       </C>
-      <Footer></Footer>
+      <Footer />
     </Layout>
   )
 }
