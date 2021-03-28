@@ -69,7 +69,7 @@ def write_geojson(points_with_props, output_path):
                 "properties": properties,
             }
             d["features"].append(feature)
-        f.write(json.dumps(d))
+        f.write(json.dumps(d, indent=4))
 
 
 def parse_and_generate(*, input_file, output_file):
