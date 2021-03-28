@@ -7,6 +7,11 @@ import SEO from "../components/seo"
 import bannerBg from "../../static/images/biotecnologia/biotecnologia_banner_bg.png"
 import HomeBoton from "../components/homeBoton"
 import Boton from "../components/boton"
+import iconQueES from "../../static/images/biotecnologia/iconos/box_que_es.png"
+import iconColores from "../../static/images/biotecnologia/iconos/box_los_colores.png"
+import iconArgMundo from "../../static/images/biotecnologia/iconos/box_argentina_mundo.png"
+import iconStartUps from "../../static/images/biotecnologia/iconos/box_start_ups.png"
+import Footer from "../components/footer"
 
 const BiotecnologiaCont = styled.div`
   background-color: ${props => props.theme.colors.bg1};
@@ -118,16 +123,16 @@ const BiotecnologiaPage = () => {
         <SectionCarousel>
           <IconsCont>
             <Link to="que-es">
-              <Icono src={bannerBg}></Icono>
+              <Icono src={iconQueES}></Icono>
             </Link>
             <Link to="colores">
-              <Icono src={bannerBg}></Icono>
+              <Icono src={iconColores}></Icono>
             </Link>
             <Link to="argentina-en-el-mundo">
-              <Icono src={bannerBg}></Icono>
+              <Icono src={iconArgMundo}></Icono>
             </Link>
-            <Link to="mapa-de-argentina">
-              <Icono src={bannerBg}></Icono>
+            <Link to="start-ups">
+              <Icono src={iconStartUps}></Icono>
             </Link>
           </IconsCont>
         </SectionCarousel>
@@ -147,6 +152,7 @@ const BiotecnologiaPage = () => {
           label="Inscripción"
           url="https://programabios.wixsite.com/proyectobios"
         ></Boton>
+        <Footer></Footer>
       </BiotecnologiaCont>
     </Layout>
   )
