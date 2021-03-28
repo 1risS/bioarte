@@ -29,16 +29,20 @@ const ChatBarButton = styled(props => <FontAwesomeIcon {...props} />)`
 `
 
 const ChatBar = styled(
-  ({ className, collapsed = false, onCollapseClick, onExpandClick }) => (
-    <div className={className} onClick={() => collapsed && onExpandClick()}>
-      <span>Chat</span>
-      {!collapsed && (
-        <div className="right">
-          <ChatBarButton icon={faTimes} onClick={onCollapseClick} />
-        </div>
-      )}
-    </div>
-  )
+  ({ className, collapsed = false, onCollapseClick, onExpandClick }) => {
+    const handlePress = () => collapsed && onExpandClick();
+
+    return (
+      <div className={className} onClick={handlePress} onKeyPress={handlePress} role="button" tabIndex="0">
+        <span>Chat</span>
+        {!collapsed && (
+          <div className="right">
+            <ChatBarButton icon={faTimes} onClick={onCollapseClick} />
+          </div>
+        )}
+      </div>
+    )
+  }
 )`
   background-color: #518f44;
   padding: 0.5em 0.75em 0.5em 0.75em;

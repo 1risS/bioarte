@@ -1,13 +1,10 @@
 import React, { useState } from "react"
-import { Link } from "gatsby"
 import styled from "styled-components"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Chat from "../components/chat"
-import logoFestival from "../images/Academia/logo libélula.png"
 import fondoHeader from "../../static/images/carousel/Banner_Exhibition_0.png"
 import libelula from "../../static/images/carousel/Dragonfly.png"
-import fondoObra from "../../static/images/artists/anaLauraCantera/obra_nueva.jpg"
 import like from "../../static/images/exhibicion/likelikeRounded.png"
 import Carousel, { ParrafoObra } from "../components/carousel"
 import FunFactsBalloon from "../components/FunFactsBalloon"
@@ -41,12 +38,6 @@ const LogoContainer = styled.div`
   flex-direction: row;
   justify-content: flex-start;
   width: 30%;
-`
-const Logo = styled.img`
-  height: 3rem;
-  width: 3rem;
-  margin-right: 3rem;
-  align-self: center;
 `
 
 const Texto = styled.div`

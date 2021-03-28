@@ -142,7 +142,7 @@ const PanoPage = () => {
       // Crea infospot para las subpáginas
       const createInfoSpot = (hoverText, position, onClick, image) => {
         const infospot = new Panolens.Infospot(600, image)
-        const linkDuration = 500
+        const linkDuration = 1250
         const linkEasing = TWEEN.Easing.Quadratic.InOut
         infospot.position.set(...position)
         infospot.addHoverText(hoverText, 130)
@@ -191,35 +191,35 @@ const PanoPage = () => {
         "Academia",
         [-801.62, -160.88, -4927.75],
         irAcademia,
-        "images/vr/Icon_Academia.jpg"
+        "/images/vr/Icon_Academia.jpg"
       )
 
       const infospotB = createInfoSpot(
         "Biotecnología",
         [1793.37, 1620.32, 4368.52],
         irBiotecnologia,
-        "images/vr/Icon_Biotecnologia.jpg"
+        "/images/vr/Icon_Biotecnologia.jpg"
       )
 
       const infospotC = createInfoSpot(
         "Exhibición",
         [4698.54, 550.8, -1597.67],
         irArtistas,
-        "images/vr/Icon_Exhibicion.jpg"
+        "/images/vr/Icon_Exhibicion.jpg"
       )
 
       const infospotD = createInfoSpot(
         "Acerca del Bioarte",
         [-4804.24, 301.82, 1217.13],
         irHistoria,
-        "images/vr/Icon_Historia.jpg"
+        "/images/vr/Icon_Historia.jpg"
       )
 
       const infospotK = createInfoSpot(
         "Biozen",
         [-2651.67, 1420.32, 4368.5],
         irBiozen,
-        "images/vr/Icon_Biozen.jpg"
+        "/images/vr/Icon_Biozen.jpg"
       )
 
       // OBJETOS E IMAGENES
@@ -235,19 +235,19 @@ const PanoPage = () => {
       })
       // // hidden always
       infospotE._show = infospotE.show
-      infospotE.show = () => {}
+      infospotE.show = () => { }
 
       // Imagen mostrada cuando se hace hover sobre otra (infospotG)
       const infospotH = new Panolens.Infospot(600, "/images/Deer-Little.jpg?5")
       infospotH.position.set(-4533.7, 2000, 1846.35)
       infospotH._show = infospotH.show
-      infospotH.show = () => {}
+      infospotH.show = () => { }
 
       // Imagen que muestra otra (infospotH) al hacer hover y es mostrada al hacer hover en otra (infospotF)
       const infospotG = new Panolens.Infospot(600, "/images/Deer-Little.jpg?4")
       infospotG.position.set(-4533.7, 1148.77, 1846.35)
       infospotG._show = infospotG.show
-      infospotG.show = () => {}
+      infospotG.show = () => { }
       infospotG.addEventListener("hoverenter", function (event) {
         infospotH._show()
       })
@@ -261,7 +261,7 @@ const PanoPage = () => {
       infospotF.addEventListener("hoverenter", function (event) {
         infospotG._show()
       })
-      infospotF.addEventListener("hoverleave", function (event) {})
+      infospotF.addEventListener("hoverleave", function (event) { })
 
       // Objeto 3D cisne mostrado al hacer click sobre una imagen (infospotI)
       let swan
@@ -273,10 +273,9 @@ const PanoPage = () => {
         swan.children[0].material.opacity = 1
         swan.children[0].material.transparent = false
       })
-      infospotI.addEventListener("hoverleave", function (event) {})
+      infospotI.addEventListener("hoverleave", function (event) { })
 
       const loader = new GLTFLoader()
-      let objectScene
 
       loader.load("/images/Swan.gltf", gltf => {
         const objectScene = gltf.scene

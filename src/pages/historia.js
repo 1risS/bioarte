@@ -78,6 +78,7 @@ const LineaDeTiempo = () => {
 
         <TimelineCont>
           <iframe
+            title="Timeline"
             src="https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1rs7WEGSPGYaGZ3zqiFY5bPqKAbPwRJEWYa3c81mSLzk&font=Default&lang=es&initial_zoom=2&height=650"
             width="100%"
             height="650"

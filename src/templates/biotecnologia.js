@@ -5,8 +5,6 @@ import SEO from "../components/seo"
 import Chat from "../components/chat"
 import fondoHeader from "../../static/images/carousel/Banner_Exhibition_0.png"
 import libelula from "../../static/images/carousel/Dragonfly.png"
-import fondoObra from "../../static/images/artists/anaLauraCantera/obra_nueva.jpg"
-import like from "../../static/images/exhibicion/likelikeRounded.png"
 import Carousel, { ParrafoObra } from "../components/carousel"
 import FunFactsBalloon from "../components/FunFactsBalloon"
 import HomeBoton from "../components/homeBoton"
@@ -115,22 +113,6 @@ const FotoObraContainer = styled.div`
   align-items: center;
 `
 
-const NombreObra = styled.div`
-  font-size: 2em;
-  text-align: center;
-  color: #fff;
-  background-color: RGBA(0, 0, 0, 0.5);
-  width: 600px;
-  height: auto;
-  margin: 15em auto 0 auto;
-  padding: 1em;
-  border-radius: 15px;
-  &:hover {
-    opacity: 0.8;
-    cursor: pointer;
-  }
-`
-
 const Parrafo = styled.div`
   padding-top: 1em;
   font-size: 16pt;
@@ -141,17 +123,6 @@ const Titulo = styled.div`
   font-weight: semibold;
   font-size: 25pt;
 `
-
-const LikeLikeCont = styled.div`
-  margin-left: 10rem;
-  align-self: flex-end;
-  margin: -2rem 4rem 3rem 0rem;
-  &:hover {
-    opacity: 0.8;
-  }
-`
-
-const Like = styled.img``
 
 const TituloBio = styled.div`
   display: flex;

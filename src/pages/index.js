@@ -5,8 +5,14 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import logo from "../../static/images/welcome/BG_WelcomePage.png"
 import HomeBoton from "../components/homeBoton"
+import { createGlobalStyle } from "styled-components"
 // import TagManager from "react-gtm-module"
 
+const GlobalStyle = createGlobalStyle`
+  html, body {
+    background-color: #050708;
+  }
+`
 const BienvenidaContainer = styled.div`
   display: flex;
   flex-direction: row;
@@ -110,7 +116,7 @@ const LightGuide = styled(({ debug, flipX, flipY, className }) => {
       viewBox="0 0 100 100"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <g transform={groupTransform} transformOrigin="center">
+      <g transform={groupTransform} transformorigin="center">
         {debug && (
           <rect
             x="0"
@@ -183,6 +189,7 @@ const IndexPage = () => {
   return (
     <Layout>
       <SEO title="BioArte" />
+      <GlobalStyle />
       <BienvenidaContainer id="bienvenidaContainer">
         <ContenidoIzqContainer>
           <DivIzqEmpty></DivIzqEmpty>
