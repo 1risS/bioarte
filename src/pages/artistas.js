@@ -12,6 +12,7 @@ import fotoElectrobiota from "../../static/images/artists/electrobiota/01 - Foto
 import fotoAgarart from "../../static/images/artists/agarart/lauraEcharren/01 - Imagen Principal de Agar Art - A Salmonellosis odyssey.jpg"
 import fotoFerrari from "../../static/images/artists/demianFerrari/01 - Demian Ferrari.png"
 import fotoOlmedo from "../../static/images/artists/danielAlvarezOlmedo/01 - Foto Daniel Alvarez Olmedo.jpg"
+import fotoModelado from "../../static/images/artists/modeladoMolecular/Pablo_Power_SMALL.png"
 import fondoHeader from "../../static/images/carousel/Banner_Exhibition_0.png"
 import like from "../../static/images/exhibicion/likelikeRounded.png"
 import HomeBoton from "../components/homeBoton"
@@ -215,8 +216,16 @@ const ArtistasPage = () => {
                   name="Alejandra Marinaro"
                   src={fotoMarinaro}
                 />
-                <ArtistCard to="detalleArtista3" name="?" src={like} />
-                <ArtistCard to="detalleArtista4" name="?" src={like} />
+                <ArtistCard
+                  to="modelado-molecular"
+                  name="Modelado Molecular"
+                  src={fotoModelado}
+                />
+                <ArtistCard
+                  to="detalleArtista4"
+                  name="Modelado Molecular"
+                  src={like}
+                />
               </Column>
               {/* col2 */}
               <Column>

@@ -1,25 +1,105 @@
 nombre: Modelado Molecular
 cvUrl:
 formacion: |-
-  Federico Coscio
-  Artista Visual, Matemático, Investigador y Profesor de diseño y morfología.
-  Estudió con el Maestro Adolfo Nigro Becado por la Fundación Antorchas. Autor
-  del Libro "Teoría de Anticristales" Publicado en la  Biblioteca Nacional
-  Argentina en 2014./ 2015 -2020 Colaborador en investigación del Laboratorio de
-  Fisiología de Proteínas de FCEN UBA. 2015 -2020 Dirigió tres proyectos de
-  Investigación con desarrollos tecnológicos para hábitat de emergencia- FAU-
-  UCASAL - Salta./ 2018- Director de la Catedra Libre Innovación morfológica
-  Aplicada INMA. FAU- UCASAL. 2017/18- Profesor de diseño y 2019/2020 Morfología
-  FAU UCASAL./- Entre 1989 y el 2020 obtuvo importantes premios en las
-  disciplinas: Pintura, instalación y fotografía a nivel regional, nacional e
-  internacional. Realizó alrededor de 30 exposiciones individuales en Galerías y
-  Museos y Centros culturales de Argentina, Perú y Estados unidos. Dentro de la
-  intersección Arte y ciencia:  2017- "Morfología de la nada" Museo de arte
-  contemporáneo de Salta.  2016- "ANTICRISTALES" - Bienal Internacional de Arte
-  y ciencia DCA Mar del Plata. Participó en más de cuarenta salones y
-  exposiciones colectivas a nivel nacional e internacional. Dirigió al menos 15
-  Workshops de grado y posgrado en el país y el extranjero y brindó numerosas
-  conferencias en universidades nacionales y extranjeras en el campo del Arte,
-  Arquitectura y Biología Molecular.
+  Arte metaperceptual:  el artista denomina de esta forma al género artístico que
+  utiliza como background del discurso poético aquella parte de la realidad que no
+  es perceptible por los sentidos, puntualmente por el sentido de la vista dentro
+  del campo de las artes visuales. En el caso de estas obras que presenta en la
+  disciplina de la escultura digital, el objeto se construye en base a
+  biomoléculas cuyo campo visual es menor a la distancia entre fotones, por tal
+  motivo solo pueden ser percibidas gracias a la tecnología de la microscopía
+  electrónica, difracción de rayos x, y el soporte computacional gráfico que
+  permite que sean reconstruidas en la virtualidad.
 
 bio: |-
+  Una definición de "modelado molecular" sería: "conjunto de métodos y técnicas
+  computacionales para modelar, imitar y predecir la estructura y comportamiento
+  de las moléculas". 
+  En cambio, el "modelado molecular artístico" se podría comparar con la música.
+  Cientos de programas y herramientas reproducen piezas musicales a la
+  "perfección", y ayudan para escribir o tocar canciones. Sin embargo, existen
+  elementos que sólo un músico puede transmitir con su instrumento: matices,
+  tonos, sentimiento, pasión, éxtasis, pausa, emoción, drama. En resumen:
+  interpretación. Para mí, el modelado molecular artístico es un poco esto. Es
+  atrapar al "lector", poner "interpretación" en una simple representación visual
+  y "caprichosa" de un resultado científico. Es, en definitiva, la convergencia
+  entre arte y ciencia.
+foto: /images/artists/modeladoMolecular/01 - Surfing with the Alien snakes_SMALL.png
+obras:
+  - ciudadPais: Buenos Aires, Argentina
+    foto: /images/artists/modeladoMolecular/01 - Surfing with the Alien snakes_SMALL.png
+    titulo: Surfing with the Alien snakes
+    url:
+    descripcion: |-
+      Surfeando el espacio recíproco de una matriz cristalográfica, cuatro
+      serpientes apocalípticas, con sus lenguas bífidas carboxiladas, avanzan en
+      perfecta sincronía hacia la destrucción de los antibióticos … o su
+      renacimiento.
+
+      El relebactam es uno de los inhibidores de última generación, utilizado para
+      bloquear la acción de las β-lactamasas de espectro extendido que producen muchas
+      de las especies bacterianas patógenas multirresistentes. PER-2 es una de las
+      β-lactamasas más frecuentes en nuestro país, y a veces forma estructuras
+      cristalográficas en donde cuatro moléculas independientes de la proteína se
+      ordenan simétricamente en la celda del cristal. Esta imagen corresponde a la
+      estructura del cristal de PER-2, resuelto a 2.1 Å (angstroms), en complejo con
+      moléculas de relebactam. Las cadenas carbonadas centrales de los cuatro
+      monómeros se representaron como "balls & sticks" (pelotas-palos) blancos,
+      cubiertas por una superficie suavizada azul transparente, y las respectivas
+      moléculas de relebactam unidas al sitio activo, representadas en "sticks" rojos.
+      Esta estructura aún no ha sido depositada en el Protein Data Bank (PDB).
+
+  - ciudadPais: Buenos Aires, Argentina
+    foto: /images/artists/modeladoMolecular/02 - Breathe.png
+    titulo: Breathe
+    url:
+    descripcion: |-
+      "Respira, respire en el aire. No tengas miedo de preocuparte. Vete, pero
+      no me dejes" (traducción de "Breathe", del LP "The dark side of the moon"
+      de Pink Floyd, 1973).
+
+      Una manera habitual de representar las proteínas es destacando la superficie de
+      las estructuras terciarias, y coloreando los diferentes aminoácidos que las
+      componen de acuerdo a su potencial electrostático (según la ley de Coulomb), en
+      donde los colores rojo y azul denotan residuos con potencial negativo y
+      positivo, respectivamente (blanco es neutro). 
+
+      La imagen corresponde a la
+      estructura cristalográfica de la metalo-β-lactamasa de origen ambiental LRA-12,
+      resuelta a 2.1 Å, y depositada bajo el código "5AEB" en la base de datos del PDB
+      (Protein Data Bank). Cada unidad cristalina consta de 2 monómeros de enzimas
+      ("pulmón" izquierdo y derecho), conectados por un átomo de cobalto, que sólo
+      cumple una función de estabilización del complejo cristalino. Sus sitios activos
+      se encuentran en "grietas" profundas localizadas en los extremos superiores,
+      según la vista de la imagen. El artículo correspondiente ha sido publicado en
+      PLoS One en 2017.
+
+  - ciudadPais: Buenos Aires, Argentina
+    foto: /images/artists/modeladoMolecular/03 - Caught in a web_SMALL.png
+    titulo: Caught in a web
+    url:
+    descripcion: |-
+      Atrapada en una red colgante, pende la esperanza que terminará con la
+      agonía, y volverá al monstruo inofensivo. Los modelos de proteínas
+      derivados de la cristalografía por rayos X se obtienen a partir de la
+      difracción o dispersión de los rayos X luego de impactar la estructura
+      sólida de un cristal de proteínas, y esa dispersión se "traduce" como una
+      "malla" o entramado que representa la densidad electrónica de cada átomo
+      que conforma cada aminoácido de la macromolécula. Luego, mediante una
+      serie de programas informáticos y algoritmos diversos, y usando otra
+      proteína similar como "molde", se obtiene el modelo de la proteína de
+      interés, dentro de esa malla. La imagen muestra la estructura terciaria de
+      la β-lactamasa CTX-M-151, representada como tubos "grumosos" multicolores,
+      estabilizada por moléculas de agua del cristal (los cuerpos esferoides
+      rojos) y, en su sitio activo, una molécula del inhibidor avibactam se
+      encuentra unido y "envuelto" por una malla gris que representa la nube de
+      densidad electrónica. La estructura, resuelta a una alta resolución (1.32
+      Å), se encuentra depositada en el Protein Data Bank (PDB) con el código
+      "6BPF", y saldrá publicada en el próximo número de Antimicrobial Agents &
+      Chemotherapy.
+
+  - ciudadPais: Buenos Aires, Argentina
+    foto: /images/artists/modeladoMolecular/04 - Metal forever.png
+    titulo: Metal forever
+    url:
+    descripcion: |-
