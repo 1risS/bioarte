@@ -11,6 +11,7 @@ import FunFactsBalloon from "../components/FunFactsBalloon"
 import HomeBoton from "../components/homeBoton"
 import Footer from "../components/footer"
 import LikeBoton from "../components/likelikeBoton"
+import Atras from "../components/irAtras"
 
 const DAContainer = styled.div`
   background-color: ${props => props.theme.colors.bg1};
@@ -246,6 +247,7 @@ const ArtistPageTemplate = ({ pageContext }) => {
         </DAHeaderContainer>
         <DAMain>
           <BioArtistaContainer>
+            <Atras></Atras>
             <LibelulaContainer>
               <FunFactsBalloon />
               <Libelulaimg src={libelula}></Libelulaimg>
