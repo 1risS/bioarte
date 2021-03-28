@@ -155,7 +155,7 @@ const BiotecnologiaPageTemplate = ({ pageContext }) => {
         <DAHeaderContainer>
           <NavBar>
             <LogoContainer>
-              <HomeBoton></HomeBoton>
+              <HomeBoton />
             </LogoContainer>
           </NavBar>
           <Texto>Biotecnología</Texto>
@@ -172,8 +172,8 @@ const BiotecnologiaPageTemplate = ({ pageContext }) => {
                 <TituloBio>
                   <Titulo>Descripción</Titulo>
                 </TituloBio>
-                {descripcion.split("\n\n").map(paragraph => (
-                  <Parrafo>{paragraph}</Parrafo>
+                {descripcion.split("\n\n").map((paragraph, i) => (
+                  <Parrafo key={i}>{paragraph}</Parrafo>
                 ))}
               </BioTexto>
             </BioArtista>
@@ -190,8 +190,8 @@ const BiotecnologiaPageTemplate = ({ pageContext }) => {
               count={secciones.length}
               value={seccion}
             >
-              {datosSeccion.descripcion.split("\n\n").map(parrafo => (
-                <ParrafoObra>{parrafo}</ParrafoObra>
+              {datosSeccion.descripcion.split("\n\n").map((parrafo, i) => (
+                <ParrafoObra key={i}>{parrafo}</ParrafoObra>
               ))}
             </Carousel>
           )}

@@ -386,15 +386,11 @@ const Detail = styled.p`
   overflow: hidden;
   transition: opacity 300ms;
 
-  & > p {
+  & > span {
     color: #fff;
     font-size: 0.875rem;
     flex-grow: 1;
     padding: 0 4em 0 0em;
-  }
-  & > img {
-    height: 110px;
-    width: 150px;
   }
 `
 
@@ -412,8 +408,7 @@ const Entry = ({ time, speaker, title, detail }) => {
         <ActivityContainer>
           <Title>{title}</Title>
           <Detail expanded={expanded}>
-            {/* <img src={placeholder} /> */}
-            <p>{detail}</p>
+            <span>{detail}</span>
           </Detail>
         </ActivityContainer>
       </InfoContainer>
