@@ -10,6 +10,7 @@ import Carousel, { ParrafoObra } from "../components/carousel"
 import FunFactsBalloon from "../components/FunFactsBalloon"
 import HomeBoton from "../components/homeBoton"
 import Footer from "../components/footer"
+import LikeBoton from "../components/likelikeBoton"
 
 const DAContainer = styled.div`
   background-color: ${props => props.theme.colors.bg1};
@@ -147,9 +148,10 @@ const Titulo = styled.div`
 const LikeLikeCont = styled.div`
   margin-left: 10rem;
   align-self: flex-end;
+  padding: 2rem;
   margin: -2rem 4rem 3rem 0rem;
   &:hover {
-    opacity: 0.8;
+    cursor: pointer;
   }
 `
 
@@ -238,7 +240,7 @@ const ArtistPageTemplate = ({ pageContext }) => {
           <Texto>Bioarte</Texto>
           <Subtexto>Exhibición virtual</Subtexto>
           <LikeLikeCont>
-            <Like src={like} />
+            <LikeBoton />
           </LikeLikeCont>
         </DAHeaderContainer>
         <DAMain>
