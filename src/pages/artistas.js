@@ -284,7 +284,11 @@ const ArtistasPage = () => {
                   name="Biomateriales"
                   src={fotoBiomateriales}
                 />
-                <ArtistCard to="detalleArtista4" name="?" src={like} />
+                <ArtistCard
+                  to="la-exhibición"
+                  name="La Exhibición"
+                  src={like}
+                />
               </Column>
             </RowPairs>
           </RowContainer>

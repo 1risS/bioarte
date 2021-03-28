@@ -96,6 +96,7 @@ const TituloWebCont = styled.div`
 const TituloObra = styled.div`
   font-size: 24pt;
   font-style: italic;
+  text-align: left;
 `
 
 const LinkWeb = styled.a`
