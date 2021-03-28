@@ -136,8 +136,6 @@ const Parrafo = styled.div`
 const ParrafoFormacion = styled.div`
   padding-top: 1em;
   font-size: 16pt;
-  font-style: italic;
-  text-decoration: underline;
 `
 
 const Titulo = styled.div`
