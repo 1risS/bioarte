@@ -5,7 +5,6 @@ formacion: |-
   con las diversas comunidades terrestres. Cristalizamos las turbulencias
   vitales de diversas entidades y sus códigos de vida en universos sintéticos y
   fenomenológicos.
-
 bio: |-
   Ha exhibido sus obras en Argentina, Brasil, Venezuela, Canadá, EEUU, México,
   Irán, Israel, Mongolia, Francia, España, Perú, Bangladesh, entre otros.
@@ -35,7 +34,7 @@ bio: |-
   Docente y desarrollador de dispositivos hardware programable para empresas y
   proyectos artísticos. Es profesor  de  robótica  educativa  en  la  escuela
   integral  Maimónides
-
+foto: /images/artists/muru/main.jpg
 obras:
   - ciudadPais: Buenos Aires, Argentina
     foto: /images/artists/muru/02 - Foto Obra Nueva - Proyecto Namiki.png

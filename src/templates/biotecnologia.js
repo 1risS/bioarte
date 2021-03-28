@@ -132,7 +132,7 @@ const TituloBio = styled.div`
 `
 
 const BiotecnologiaPageTemplate = ({ pageContext }) => {
-  const { nombre, descripcion, secciones } = pageContext
+  const { nombre, descripcion, foto, secciones } = pageContext
 
   const [seccion, setSeccion] = useState(0)
 
@@ -178,7 +178,7 @@ const BiotecnologiaPageTemplate = ({ pageContext }) => {
               </BioTexto>
             </BioArtista>
           </BioArtistaContainer>
-          <FotoObraContainer foto={secciones[0]?.foto} />
+          <FotoObraContainer foto={foto} />
           {datosSeccion && (
             <Carousel
               ciudadPais={datosSeccion.ciudadPais}

@@ -210,7 +210,7 @@ const Subtexto = styled.div`
 // ponemos una cookie para saber si le usuarix pasó por acá
 
 const ArtistPageTemplate = ({ pageContext }) => {
-  const { nombre, cvUrl, formacion, bio, obras } = pageContext
+  const { nombre, cvUrl, formacion, bio, foto, obras } = pageContext
 
   const [obra, setObra] = useState(0)
 
@@ -271,7 +271,7 @@ const ArtistPageTemplate = ({ pageContext }) => {
             </BioArtista>
           </BioArtistaContainer>
           <StyledLink href={obras[0].url} target="_blank">
-            <FotoObraContainer foto={obras[0].foto}>
+            <FotoObraContainer foto={foto}>
               <NombreObra>{obras[0].titulo}</NombreObra>
             </FotoObraContainer>
           </StyledLink>

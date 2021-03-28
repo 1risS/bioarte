@@ -42,6 +42,7 @@ exports.createPages = async ({ graphql, actions }) => {
             cvUrl
             formacion
             bio
+            foto
             obras {
               ciudadPais
               foto
@@ -61,6 +62,7 @@ exports.createPages = async ({ graphql, actions }) => {
             }
             nombre
             descripcion
+            foto
             secciones {
               titulo
               foto
