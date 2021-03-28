@@ -18,6 +18,7 @@ import like from "../../static/images/exhibicion/likelikeRounded.png"
 import HomeBoton from "../components/homeBoton"
 import Footer from "../components/footer"
 import Chat from "../components/chat"
+import LikeBoton from "../components/likelikeBoton"
 
 const C = styled.div`
   display: flex;
@@ -173,17 +174,15 @@ const BioContainer = styled.div`
   background-color: ${props => props.theme.colors.bg1};
 `
 
-const LikeLikeCont = styled.a`
+const LikeLikeCont = styled.div`
   margin-left: 10rem;
   align-self: flex-end;
+  padding: 2rem;
   margin: 0rem 4rem 0rem 0rem;
   &:hover {
-    opacity: 0.8;
     cursor: pointer;
   }
 `
-
-const Like = styled.img``
 
 const Subtexto = styled.div`
   font-family: ${props => props.theme.fontFamily};
@@ -196,12 +195,14 @@ const Subtexto = styled.div`
 
 const ArtistLink = ({ to, ...props }) => <Link {...props} to={`${to}#header`} />
 
-const ArtistCard = ({ to, name, src }) => (<ArtistLink to={to}>
-  <ContainerHoverDiv>
-    <Foto src={src} />
-    <HoverDiv>{name}</HoverDiv>
-  </ContainerHoverDiv>
-</ArtistLink>)
+const ArtistCard = ({ to, name, src }) => (
+  <ArtistLink to={to}>
+    <ContainerHoverDiv>
+      <Foto src={src} />
+      <HoverDiv>{name}</HoverDiv>
+    </ContainerHoverDiv>
+  </ArtistLink>
+)
 
 const ArtistasPage = () => {
   return (
@@ -216,8 +217,8 @@ const ArtistasPage = () => {
           </NavBar>
           <Texto>Bioarte</Texto>
           <Subtexto>Exhibición virtual</Subtexto>
-          <LikeLikeCont src="http://likelike.glitch.me/">
-            <Like src={like} />
+          <LikeLikeCont>
+            <LikeBoton />
           </LikeLikeCont>
         </ExhibicionHeaderContainer>
 
@@ -228,15 +229,27 @@ const ArtistasPage = () => {
             <RowPairs>
               {/* col1 */}
               <Column>
-                <ArtistCard to="ana-laura-cantera" name="Ana Laura Cantera" src={fotoAnaLaura} />
-                <ArtistCard to="alejandra-marinaro" name="Alejandra Marinaro" src={fotoMarinaro} />
+                <ArtistCard
+                  to="ana-laura-cantera"
+                  name="Ana Laura Cantera"
+                  src={fotoAnaLaura}
+                />
+                <ArtistCard
+                  to="alejandra-marinaro"
+                  name="Alejandra Marinaro"
+                  src={fotoMarinaro}
+                />
                 <ArtistCard to="detalleArtista3" name="?" src={like} />
                 <ArtistCard to="detalleArtista4" name="?" src={like} />
               </Column>
               {/* col2 */}
               <Column>
                 <ArtistCard to="muru" name="Muru" src={fotoMuru} />
-                <ArtistCard to="electrobiota" name="Electrobiota" src={fotoElectrobiota} />
+                <ArtistCard
+                  to="electrobiota"
+                  name="Electrobiota"
+                  src={fotoElectrobiota}
+                />
                 <ArtistCard to="detalleArtista3" name="?" src={like} />
                 <ArtistCard to="detalleArtista4" name="?" src={like} />
               </Column>
@@ -245,15 +258,31 @@ const ArtistasPage = () => {
             <RowPairs>
               {/* col3 */}
               <Column>
-                <ArtistCard to="oliverio-duhalde" name="Oliverio Duhalde" src={fotoOliverio} />
+                <ArtistCard
+                  to="oliverio-duhalde"
+                  name="Oliverio Duhalde"
+                  src={fotoOliverio}
+                />
                 <ArtistCard to="agarart" name="Agarart" src={fotoAgarart} />
-                <ArtistCard to="daniel-alvarez-olmedo" name="Daniel Alvarez Olmedo" src={fotoOlmedo} />
+                <ArtistCard
+                  to="daniel-alvarez-olmedo"
+                  name="Daniel Alvarez Olmedo"
+                  src={fotoOlmedo}
+                />
                 <ArtistCard to="detalleArtista4" name="?" src={like} />
               </Column>
               {/* col4 */}
               <Column>
-                <ArtistCard to="joaquin-fargas" name="Joaquín Fargas" src={fotoFargas} />
-                <ArtistCard to="demian-ferrari" name="Demian Ferrari" src={fotoFerrari} />
+                <ArtistCard
+                  to="joaquin-fargas"
+                  name="Joaquín Fargas"
+                  src={fotoFargas}
+                />
+                <ArtistCard
+                  to="demian-ferrari"
+                  name="Demian Ferrari"
+                  src={fotoFerrari}
+                />
                 <ArtistCard to="detalleArtista3" name="?" src={like} />
                 <ArtistCard to="detalleArtista4" name="?" src={like} />
               </Column>
