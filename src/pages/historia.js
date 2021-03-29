@@ -13,11 +13,12 @@ const Container = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  width: 100vw;
   background-color: ${props => props.theme.colors.bg1};
 `
 
 const TimelineCont = styled.div`
-  width: 100%;
+  width: 80vw;
   margin-top: 10rem;
 `
 const HistoriaHeaderContainer = styled.div`
@@ -37,7 +38,7 @@ const NavBar = styled.div`
   align-items: flex-start;
   margin-top: 4rem;
   margin-bottom: -2rem;
-  width: 100vw;
+  width: 100%;
 `
 const LogoContainer = styled.div`
   display: flex;
@@ -65,8 +66,9 @@ const SectionTexto = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  margin: 6rem 6rem 6rem 15rem;
-  width: 70%;
+  padding: 6rem 15rem 6rem 15rem;
+  width: 100%;
+  background-color: ${props => props.theme.colors.bg1};
 `
 
 const Titulo = styled.h1`
