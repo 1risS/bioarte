@@ -20,7 +20,7 @@ const Exp = styled.div`
   }
 `
 
-const StyledLink = styled(Link)`
+const StyledLink = styled.a`
   text-decoration: none;
   color: white;
   font-weight: 900;
@@ -28,7 +28,7 @@ const StyledLink = styled(Link)`
 
 const HomeBoton = () => {
   return (
-    <StyledLink to="/pano">
+    <StyledLink href="/pano">
       <Exp />
     </StyledLink>
   )
