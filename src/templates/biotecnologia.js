@@ -34,6 +34,7 @@ const NavBar = styled.div`
   align-items: flex-start;
   margin-top: 3rem;
   margin-bottom: -2rem;
+  width: 100%;
 `
 
 const LogoContainer = styled.div`

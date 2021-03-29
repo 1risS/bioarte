@@ -37,7 +37,7 @@ const NavBar = styled.div`
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  // justify-content: space-around;
+  width: 100%;
   margin-top: 3rem;
   margin-bottom: -2rem;
 `
