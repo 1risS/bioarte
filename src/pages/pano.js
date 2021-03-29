@@ -145,8 +145,8 @@ const PanoPage = () => {
         const linkDuration = 1250
         const linkEasing = TWEEN.Easing.Quadratic.InOut
         infospot.position.set(...position)
-        infospot.addHoverText(hoverText, 130)
-        infospot.element.style.fontSize = "2.5rem"
+        infospot.addHoverText(hoverText, 80)
+        infospot.element.style.fontSize = "1.5rem"
         infospot.addEventListener("click", () => {
           // console.log("click")
           if (noFocus) {
