@@ -17,9 +17,10 @@ const BienvenidaContainer = styled.div`
   display: flex;
   flex-direction: row;
   width: 100%;
+  height: 100vh;
   background-color: #050708;
   background-image: url(${logo});
-  background-size: 87%;
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
@@ -29,30 +30,31 @@ const ContenidoIzqContainer = styled.div`
   width: 50%;
   display: flex;
   flex-direction: column;
-  margin-left: 4rem;
+  padding-left: 5%;
+  padding-top: 2%;
 `
 
 const ContDerContainer = styled.div`
   width: 50%;
   display: flex;
   flex-direction: column;
+  padding-left: 15%;
+  padding-top: 2%;
 `
 
 const DivDer = styled.div`
   position: relative;
-  margin: 0rem 4rem 4rem 20rem;
+  margin: 1rem 4rem 0rem 0rem;
 `
 
 const DivDerEmpty = styled.img`
-  height: 33%;
-  margin-left: 33%;
-  margin-top: 4rem;
-  margin-bottom: 2rem;
+  height: 219px;
+  width: 400px;
 `
 
 const DivIzq = styled.div`
   position: relative;
-  margin: 1rem 25rem 3rem 1rem;
+  margin: 0.5rem 25rem 1.5rem 0.5rem;
 `
 
 const DivIzqEmpty = styled.div`
@@ -62,14 +64,16 @@ const DivIzqEmpty = styled.div`
 const Title = styled.p`
   font-family: ${props => props.theme.fontFamily};
   color: white;
-  font-weight: bold;
+  font-weight: 600;
 `
 
 const Desc = styled.p`
   font-family: ${props => props.theme.fontFamily};
   color: white;
-  font-size: 14px;
-  font-weight: 100;
+  font-size: 13px;
+  font-weight: 50;
+  letter-spacing: 0px;
+  align-text: justify;
 `
 
 // const tagManagerArgs = {
@@ -89,7 +93,7 @@ const DivDer360 = styled.div`
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin: 1rem;
+  margin: 2rem;
 `
 
 const FadeInOutLoop = Keyframes.Spring(async next => {
@@ -156,10 +160,10 @@ const LightGuide = styled(({ debug, flipX, flipY, className }) => {
             />
           )}
         </FasterFadeInOutLoop>
-        <path d="M 15 50 H 70" stroke="#888888" strokeWidth="0.8" />
+        <path d="M 15 50 H 55" stroke="#888888" strokeWidth="0.8" />
         <circle
           className="end"
-          cx="73"
+          cx="58"
           cy="50"
           r="3"
           fill="transparent"
@@ -194,7 +198,7 @@ const IndexPage = () => {
         <ContenidoIzqContainer>
           <DivIzqEmpty></DivIzqEmpty>
           <DivIzq>
-            <LightGuide top="20px" right="-120px" />
+            <LightGuide top="40px" right="-120px" />
             <Block>
               <Title>¿Quienes lo integran?</Title>
               <Desc>
@@ -243,7 +247,7 @@ const IndexPage = () => {
             width="410px"
           ></DivDerEmpty>
           <DivDer>
-            <LightGuide flipY top="-110px" left="205px" />
+            <LightGuide flipY top="-90px" left="205px" />
             <Block>
               <Title>¿Qué es Proyecto Bios?</Title>
               <Desc>
@@ -263,7 +267,7 @@ const IndexPage = () => {
           </DivDer>
 
           <DivDer>
-            <LightGuide flipX top="20px" left="-160px" />
+            <LightGuide flipX top="-60px" left="-130px" />
             <Block>
               <Title>¿Cómo recorrer la experiencia?</Title>
               <Desc>
