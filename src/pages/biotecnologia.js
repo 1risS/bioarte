@@ -92,16 +92,26 @@ const IconsCont = styled.div`
   flex-direction: row;
   width: 90vw;
   justify-content: space-around;
-  margin: 10rem 6rem;
+  margin: 6rem 2rem;
 `
 const I = styled.img`
   height: 15rem;
   width: 15rem;
+  border-radius: 15px;
 `
 
 const BotonBiotecArgCont = styled.div`
   margin-top: 2rem;
   width: 100%;
+`
+
+const BiotecDetalleCont = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin: 3rem 0rem 2rem 0rem;
+  background-color: ${props => props.theme.colors.bg2};
+  padding: 1rem 0rem 1rem 0rem;
+  border-radius: 15px;
 `
 
 const Icono = ({ src }) => {
@@ -124,28 +134,31 @@ const BiotecnologiaPage = () => {
           <Texto>Biotecnología</Texto>
         </BiotecnologiaHeaderCont>
         <SectionCarousel>
-          <IconsCont>
-            <BioLink to="que-es">
-              <Icono src={iconQueES}></Icono>
-            </BioLink>
-            <BioLink to="colores">
-              <Icono src={iconColores}></Icono>
-            </BioLink>
-            <BioLink to="argentina-en-el-mundo">
-              <Icono src={iconArgMundo}></Icono>
-            </BioLink>
-            <BioLink to="start-ups">
-              <Icono src={iconStartUps}></Icono>
-            </BioLink>
-          </IconsCont>
-        </SectionCarousel>
-        <BotonBiotecArgCont>
-          <Boton
-            label="Más info sobre Biotecnología en Argentina"
-            url="
+          <BiotecDetalleCont>
+            <IconsCont>
+              <BioLink to="que-es">
+                <Icono src={iconQueES}></Icono>
+              </BioLink>
+              <BioLink to="colores">
+                <Icono src={iconColores}></Icono>
+              </BioLink>
+              <BioLink to="argentina-en-el-mundo">
+                <Icono src={iconArgMundo}></Icono>
+              </BioLink>
+              <BioLink to="start-ups">
+                <Icono src={iconStartUps}></Icono>
+              </BioLink>
+            </IconsCont>
+            <BotonBiotecArgCont>
+              <Boton
+                label="Más info sobre Biotecnología en Argentina"
+                url="
           "
-          ></Boton>
-        </BotonBiotecArgCont>
+              ></Boton>
+            </BotonBiotecArgCont>
+          </BiotecDetalleCont>
+        </SectionCarousel>
+
         <Section>
           <AgendaCont>
             <Agenda />
