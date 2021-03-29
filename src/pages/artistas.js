@@ -8,8 +8,8 @@ import fotoMuru from "../../static/images/artists/muru/01 - Foto de Muru 7.8 fot
 import fotoOliverio from "../../static/images/artists/oliverioDuhalde/01 - OLIVERIO DUHALDE PHOTO 2021.jpg"
 import fotoFargas from "../../static/images/artists/joaquinFargas/01 - Foto Joaquin.jpg"
 import fotoMarinaro from "../../static/images/artists/alejandraMarinaro/01 - Foto alejandra.jpg"
-import fotoElectrobiota from "../../static/images/artists/electrobiota/01 - Foto Electrobiotas.jpg"
-import fotoAgarart from "../../static/images/artists/agarart/lauraEcharren/01 - Imagen Principal de Agar Art - A Salmonellosis odyssey.jpg"
+import fotoElectrobiota from "../../static/images/artists/electrobiota/02 -  Imagen RizosferaFM_00.jpg"
+import fotoAgarart from "../../static/images/artists/agarart/lauraEcharren/02 - Imagen Secundaria - Spring-onella_SMALL.png"
 import fotoFerrari from "../../static/images/artists/demianFerrari/01 - Demian Ferrari.png"
 import fotoOlmedo from "../../static/images/artists/danielAlvarezOlmedo/01 - Foto Daniel Alvarez Olmedo.jpg"
 import fotoModelado from "../../static/images/artists/modeladoMolecular/Pablo_Power_SMALL.png"
@@ -66,8 +66,7 @@ const Texto = styled.div`
   align-self: center;
 
   max-height: 750px;
-  padding-top: 6rem;
-  /*line-height: initial;*/
+  padding-top: 3%;
 `
 
 const ArtistasContainer = styled.div`

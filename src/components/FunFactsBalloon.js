@@ -6,12 +6,12 @@ import funFacts from "../content/fun_facts.json"
 
 const shuffle = array => {
   for (let i = array.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [array[i], array[j]] = [array[j], array[i]]
+    const j = Math.floor(Math.random() * (i + 1))
+    ;[array[i], array[j]] = [array[j], array[i]]
   }
 }
 
-const FunFactsBalloon = styled(({ className, duration = 5000 }) => {
+const FunFactsBalloon = styled(({ className, duration = 12000 }) => {
   const [facts, setFacts] = useState(funFacts)
   const [current, setCurrent] = useState(0)
 
@@ -38,9 +38,7 @@ const FunFactsBalloon = styled(({ className, duration = 5000 }) => {
     <div className={className}>
       {transitions.map(({ item, props, key }) => (
         <div key={key}>
-          <animated.p style={props}>
-            {item}
-          </animated.p>
+          <animated.p style={props}>{item}</animated.p>
         </div>
       ))}
     </div>
@@ -61,7 +59,7 @@ const FunFactsBalloon = styled(({ className, duration = 5000 }) => {
 
   div p {
     position: relative;
-    font-size: 14px;
+    font-size: 13px;
   }
 `
 
