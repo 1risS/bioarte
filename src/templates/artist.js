@@ -4,8 +4,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Chat from "../components/chat"
 import fondoHeader from "../../static/images/carousel/Banner_Exhibition_0.png"
-import libelula from "../../static/images/carousel/Dragonfly.png"
-import like from "../../static/images/exhibicion/likelikeRounded.png"
+import libelula from "../../static/images/LibelulaUltima_00.png"
 import Carousel, { ParrafoObra } from "../components/carousel"
 import FunFactsBalloon from "../components/FunFactsBalloon"
 import HomeBoton from "../components/homeBoton"
@@ -68,7 +67,7 @@ const LibelulaContainer = styled.div`
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
-  width: 14% !important;
+  width: 20% !important;
   margin: 4rem;
 `
 
