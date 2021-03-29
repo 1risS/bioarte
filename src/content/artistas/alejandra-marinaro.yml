@@ -1,5 +1,5 @@
 nombre: Alejandra Marinaro
-cvUrl:
+cvUrl: https://www.alejandramarinaro.com/
 formacion: |-
   Artista digital, líder del colectivo artístico Proyecto Untitled. Directora del Laboratorio Latinoamericano de Bioarte. Investigadora en áreas de arte, ciencia y tecnología. Especialista en gestión y planeamiento de instituciones educativas universitarias.
 
@@ -19,7 +19,6 @@ bio: |-
   Lavandera. Planetario de la Ciudad; Umbilical. Instalación interactiva -
   Sala Cronopios - Cultural Recoleta
 foto: /images/artists/alejandraMarinaro/main.jpg
-
 obras:
   - ciudadPais: Buenos Aires, Argentina
     foto: /images/artists/alejandraMarinaro/02 - Imagen de la obra nueva- Alejandra Marinaro.jpg
