@@ -239,7 +239,7 @@ const ArtistasPage = () => {
                 />
                 <ArtistCard
                   to="pablo-lapadula"
-                  name="Pablo Lapadula"
+                  name="Pablo La Padula"
                   src={fotoLapadula}
                 />
                 <ArtistCard
