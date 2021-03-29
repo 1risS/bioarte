@@ -205,6 +205,12 @@ const Subtexto = styled.div`
   align-self: center;
 `
 
+const AtrasCont = styled.div`
+  display: flex;
+  height: 20%;
+  align-items: flex-start;
+`
+
 // ponemos una cookie para saber si le usuarix pasó por acá
 
 const ArtistPageTemplate = ({ pageContext }) => {
@@ -244,8 +250,10 @@ const ArtistPageTemplate = ({ pageContext }) => {
         </DAHeaderContainer>
         <DAMain>
           <BioArtistaContainer>
-            <Atras></Atras>
             <LibelulaContainer>
+              <AtrasCont>
+                <Atras title="Volver a Artistas" href="/artistas/" />
+              </AtrasCont>
               <FunFactsBalloon />
               <Libelulaimg src={libelula}></Libelulaimg>
             </LibelulaContainer>

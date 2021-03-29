@@ -9,6 +9,7 @@ import Carousel, { ParrafoObra } from "../components/carousel"
 import FunFactsBalloon from "../components/FunFactsBalloon"
 import HomeBoton from "../components/homeBoton"
 import Footer from "../components/footer"
+import Atras from "../components/irAtras"
 
 const DAContainer = styled.div`
   background-color: ${props => props.theme.colors.bg1};
@@ -131,6 +132,12 @@ const TituloBio = styled.div`
   justify-content: space-between;
 `
 
+const AtrasCont = styled.div`
+  display: flex;
+  height: 20%;
+  align-items: flex-start;
+`
+
 const BiotecnologiaPageTemplate = ({ pageContext }) => {
   const { nombre, descripcion, foto, secciones } = pageContext
 
@@ -163,6 +170,9 @@ const BiotecnologiaPageTemplate = ({ pageContext }) => {
         <DAMain>
           <BioArtistaContainer>
             <LibelulaContainer>
+              <AtrasCont>
+                <Atras title="Volver a Biotecnología" href="/biotecnologia/" />
+              </AtrasCont>
               <FunFactsBalloon />
               <Libelulaimg src={libelula}></Libelulaimg>
             </LibelulaContainer>
