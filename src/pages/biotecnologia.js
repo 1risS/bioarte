@@ -108,6 +108,8 @@ const Icono = ({ src }) => {
   return <I src={src}></I>
 }
 
+const BioLink = ({ to, ...props }) => <Link {...props} to={`${to}#header`} />
+
 const BiotecnologiaPage = () => {
   return (
     <Layout>
@@ -123,18 +125,18 @@ const BiotecnologiaPage = () => {
         </BiotecnologiaHeaderCont>
         <SectionCarousel>
           <IconsCont>
-            <Link to="que-es">
+            <BioLink to="que-es">
               <Icono src={iconQueES}></Icono>
-            </Link>
-            <Link to="colores">
+            </BioLink>
+            <BioLink to="colores">
               <Icono src={iconColores}></Icono>
-            </Link>
-            <Link to="argentina-en-el-mundo">
+            </BioLink>
+            <BioLink to="argentina-en-el-mundo">
               <Icono src={iconArgMundo}></Icono>
-            </Link>
-            <Link to="start-ups">
+            </BioLink>
+            <BioLink to="start-ups">
               <Icono src={iconStartUps}></Icono>
-            </Link>
+            </BioLink>
           </IconsCont>
         </SectionCarousel>
         <BotonBiotecArgCont>
