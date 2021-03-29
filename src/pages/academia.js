@@ -2,8 +2,6 @@ import React from "react"
 import styled from "styled-components"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-// import { useEffect } from "react"
-// import { useCookies } from "react-cookie"
 import Agenda from "../components/agenda"
 import fondoHeader from "../images/Academia/academia_bg.jpg"
 import MapboxMap from "../components/MapboxMap"
@@ -99,7 +97,7 @@ const UniversidadesContainer = styled.div`
 const AcademiaPage = () => {
   // const [cookie, setCookie] = useCookies(["AcademiaVisited"])
 
-  // // ponemos una cookie para saber si le usuarix pasó por acá  
+  // // ponemos una cookie para saber si le usuarix pasó por acá
   // useEffect(() => {
   //   setCookie("AcademiaVisited", true, { path: "/" })
   // }, [setCookie])
@@ -125,7 +123,7 @@ const AcademiaPage = () => {
             </SectionMapa>
           </UniversidadesContainer>
         </Section>
-        <Boton label="Ver más info" url=""></Boton>
+        <Boton label="Descargar más info" url=""></Boton>
         <Section>
           <AgendaContainer>
             <Agenda />

@@ -80,7 +80,7 @@ const PanoPage = () => {
   }
 
   const irBiozen = () => {
-    window.open("https://marieflanagan.com/");
+    window.open("https://marieflanagan.com/")
   }
 
   // const [cookies, setCookie] = useCookies()
@@ -141,7 +141,7 @@ const PanoPage = () => {
 
       // Crea infospot para las subpáginas
       const createInfoSpot = (hoverText, position, onClick, image, noFocus) => {
-        const infospot = new Panolens.Infospot(600, image)
+        const infospot = new Panolens.Infospot(300, image)
         const linkDuration = 1250
         const linkEasing = TWEEN.Easing.Quadratic.InOut
         infospot.position.set(...position)
@@ -150,7 +150,7 @@ const PanoPage = () => {
         infospot.addEventListener("click", () => {
           // console.log("click")
           if (noFocus) {
-            onClick();
+            onClick()
           } else {
             zoom(viewer, 2 * linkDuration, linkEasing)
             infospot.focus(1000, linkEasing)
@@ -240,19 +240,19 @@ const PanoPage = () => {
       })
       // // hidden always
       infospotE._show = infospotE.show
-      infospotE.show = () => { }
+      infospotE.show = () => {}
 
       // Imagen mostrada cuando se hace hover sobre otra (infospotG)
       const infospotH = new Panolens.Infospot(600, "/images/Deer-Little.jpg?5")
       infospotH.position.set(-4533.7, 2000, 1846.35)
       infospotH._show = infospotH.show
-      infospotH.show = () => { }
+      infospotH.show = () => {}
 
       // Imagen que muestra otra (infospotH) al hacer hover y es mostrada al hacer hover en otra (infospotF)
       const infospotG = new Panolens.Infospot(600, "/images/Deer-Little.jpg?4")
       infospotG.position.set(-4533.7, 1148.77, 1846.35)
       infospotG._show = infospotG.show
-      infospotG.show = () => { }
+      infospotG.show = () => {}
       infospotG.addEventListener("hoverenter", function (event) {
         infospotH._show()
       })
@@ -266,7 +266,7 @@ const PanoPage = () => {
       infospotF.addEventListener("hoverenter", function (event) {
         infospotG._show()
       })
-      infospotF.addEventListener("hoverleave", function (event) { })
+      infospotF.addEventListener("hoverleave", function (event) {})
 
       // Objeto 3D cisne mostrado al hacer click sobre una imagen (infospotI)
       let swan
@@ -278,7 +278,7 @@ const PanoPage = () => {
         swan.children[0].material.opacity = 1
         swan.children[0].material.transparent = false
       })
-      infospotI.addEventListener("hoverleave", function (event) { })
+      infospotI.addEventListener("hoverleave", function (event) {})
 
       const loader = new GLTFLoader()
 

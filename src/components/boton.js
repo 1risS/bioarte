@@ -16,7 +16,8 @@ const Botonstyled = styled.a`
   color: white;
   background-color: #508f44;
   border-radius: 5px;
-  width: 40%;
+  width: 55% !important;
+  padding: 0.5rem;
   text-decoration: none;
 
   &:hover {

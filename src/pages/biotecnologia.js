@@ -54,7 +54,7 @@ const Texto = styled.div`
   font-weight: bold;
   color: white;
   align-self: center;
-  margin-top: 30vh;
+  margin-top: 15%;
   /*line-height: initial;*/
 `
 
@@ -101,6 +101,7 @@ const I = styled.img`
 
 const BotonBiotecArgCont = styled.div`
   margin-top: 2rem;
+  width: 100%;
 `
 
 const Icono = ({ src }) => {
