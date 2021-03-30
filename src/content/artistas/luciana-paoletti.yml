@@ -1,12 +1,64 @@
 nombre: Luciana Paoletti
 cvUrl: http://visible-in-visible.blogspot.com/
 formacion: |-
+  Artista visual, Lic. en Biotecnología, Dra. en Cs. Biológicas e Investigadora del CONICET (IPROBYQ). Docente en la Fac. de Ciencias Bioquímicas y Farmacéuticas UNR y miembro del grupo de investigación Arte y Contemporaneidad, Fac. de Humanidades y Artes UNR.
 bio: |-
+  Su obra es una constante fusión entre arte y ciencia, donde el entorno cercano
+  es el material de estudio, que analiza, desarma, cataloga y reutiliza en sus
+  proyectos. La modificación de protocolos experimentales sobre materiales
+  cotidianos y amorosamente seleccionados es responsable de las características
+  interdisciplinarias de su producción. 
+
+  Recibió beca para realizar clínica con
+  Rodrigo Alonso (Fondo Nacional de las Artes) y para participar de la
+  residencia Zona Habitada (Córdoba). Su obra fue premiada en diferentes
+  convocatorias: 1° Mención en Ciencia en foco, tecnología en foco, 3°Mención-
+  Premio de fotografía Francisco Ayerza y Mención en el Salón Nacional DJM.
+
+  Participó de la Bienal Kosice, diferentes Salones Nacionales y Premios. Su
+  trabajó formó parte de muestras colectivas e individuales en instituciones
+  públicas y privadas. Actualmente es artista de la galería Estudio G (Rosario).
 
 foto: /images/artists/biomateriales/02 - Ana Hall_Biomaterial_SMALL.png
 obras:
   - ciudadPais: Buenos Aires, Argentina
     foto: /images/artists/biomateriales/01 - viento 1.jpg
-    titulo:
+    titulo: Proyecto "Bio-pigmentos"
+    url:
+    descripcion: |-
+      Genero imágenes en las cuales la pintura es reemplazada por microorganismos capturados de diferentes fuentes. 
+      Este trabajo consta de varias etapas o fases:
+      Fase I: Captura de los microorganismos. 
+      Fase II: Selección y crecimiento de microorganismos. 
+      Fase III: Bocetos. 
+      Estudio el crecimiento de los microorganismos elegidos en diferentes condiciones y diseño los bocetos-protocolos para realizar la pintura final. 
+      Fase IV: Dibujos. 
+      Siguiendo los protocolos y utilizando técnicas de microbiología realizo las pinturas-dibujos sobre soportes con nutrientes (medios de cultivo sólidos). 
+      La imagen inicialmente es invisible, al incubar el dibujo a 30ºC durante 2 a 7 días, los microorganismos crecen y la pintura puede visualizarse a simple vista. 
+      Estos trabajos son finalmente fotografiados ya que la imagen es efímera y muere cuando se consumen los nutrientes.
+
+      La instalación Pintura N°18 corresponde a la fotografía digital enmarcada (marco antiguo 70x100 cm), carpeta con protocolo/boceto y registros experimentales, y libreta de notas.
+      Los microorganismos utilizados como pigmentos en la pintura N°18 fueron capturados en el patio de mi casa.
+  - ciudadPais: Buenos Aires, Argentina
+    foto: /images/artists/biomateriales/01 - viento 1.jpg
+    titulo: Proyecto "Mementos"
+    url:
+    descripcion: |-
+      Tomo recuerdos (muestras/souvenirs) de diferentes momentos de mi vida (cotidianos y/o especiales), que clasifico, desarmo y analizo utilizando metodología científica y amorosa. Trabajar sobre los recuerdos como protocolo para no olvidar.
+
+      Un lugar de mi corazón (Proyecto Mementos)
+
+      Instalación
+
+      2020
+
+      fotografía digital correspondiente al lugar de la captura
+      fotografía digital de los microorganismos capturados del aire del lugar
+      papel teñido con pigmento obtenido de mezclas de plantas
+      piedra con líquenes y musgos, en cápsula de vidrio
+
+  - ciudadPais: Buenos Aires, Argentina
+    foto: /images/artists/biomateriales/01 - viento 1.jpg
+    titulo: Proyecto "Mementos"
     url:
     descripcion: |-

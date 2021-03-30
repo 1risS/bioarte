@@ -1,30 +1,136 @@
 nombre: Biomateriales
 cvUrl:
 formacion: |-
-  Un material biofabricado es aquel producido por células vivas ❨por ejemplo de mamíferos❩ y microorganismos como bacterias, levaduras y micelio. Algunos de estos organismos ya estan en la naturaleza y tienen años de evolución biológica. Es por ello que nos valemos de la biodiversidad para poder replicar aquellos procesos biológicos que nos permitan optimizar la producción de ciertos biomateriales en el laboratorio. Llego al mundo del biodiseño a través de la microbiología investigando a un grupo de microorganismos que sintetizan un polímero que tiene múltiples aplicaciones en la industria, una de ellas es la moda. Así nace KARU Biodiseño un lab-atelier de I+D en biomateriales.
+  Para la artista Ana Paula Hall "el animal recolecta elementos de su bioma o migra en su búsqueda. El ser humano vive en un hábitat intervenido por un sistema que agota sus recursos y genera desperdicios que brindan nuevas posibilidades. La riqueza que subyace en la transformación del mismo otorga un status de conquista por sobre la escasez. Aquí la obra es la recolección, el proceso, el resultado y las producciones venideras. Así, presentada como una selección de lo obtenido, interpela al espectador acerca de nuevas búsquedas y lo pone frente a su propia conversión dejando explícitos los ciclos vitales que lo incluyen."
 bio: |-
-  El animal recolecta elementos de su bioma o migra en su búsqueda. El ser humano vive en un hábitat intervenido por un sistema que agota sus recursos y genera desperdicios que brindan nuevas posibilidades. La riqueza que subyace en la transformación del mismo otorga un status de conquista por sobre la escasez. Aquí la obra es la recolección, el proceso, el resultado y las producciones venideras. Así, presentada como una selección de lo obtenido, interpela al espectador acerca de nuevas búsquedas y lo pone frente a su propia conversión dejando explícitos los ciclos vitales que lo incluyen.
+  Para la Científica Veronica Bergottini:Un material biofabricado es aquel producido por células vivas ❨por ejemplo de mamíferos❩ y microorganismos como bacterias, levaduras y micelio. Algunos de estos organismos ya estan en la naturaleza y tienen años de evolución biológica. Es por ello que nos valemos de la biodiversidad para poder replicar aquellos procesos biológicos que nos permitan optimizar la producción de ciertos biomateriales en el laboratorio. Llego al mundo del biodiseño a través de la microbiología investigando a un grupo de microorganismos que sintetizan un polímero que tiene múltiples aplicaciones en la industria, una de ellas es la moda. Así nace KARU Biodiseño un lab-atelier de I+D en biomateriales.
 
 foto: /images/artists/biomateriales/02 - Ana Hall_Biomaterial_SMALL.png
 obras:
   - ciudadPais: Buenos Aires, Argentina
     foto: /images/artists/biomateriales/01 - viento 1.jpg
-    titulo: Viento
+    titulo: Biografías
     url:
     descripcion: |-
-      "Viento" es un concepto que toma forma de obra-taller y casa de bioarte.
-      Aquí se experimenta el entramado entre arte, naturaleza y tecnología.
-      Además de cocina de producción de obra visual, sonora y textil se compone
-      de investigación y desarrollo de biotextiles y biomateriales.
-  - ciudadPais: Buenos Aires, Argentina
-    foto: /images/artists/biomateriales/02 - viento 2.jpg
-    titulo: Viento
-    url:
-    descripcion: |-
-      La experiencia del espectador es inmersiva, le permite participar del cultivo en una huerta orgánica, el composte y la recolección de semillas y le brinda la posibilidad de degustar conservas y dulces producidos y cosechados en el lugar. También ofrece capacitación en seminarios y talleres en modalidades duales.
+      Artista: Verónica Bergottini
+
+      Bio: Licenciada en Genética de la Universidad de Misiones y Dra. en Ciencias Biológicas de la Universidad de Neuchâtel (Suiza).
+
+      Trayectoria
+
+      Verónica es oriunda de Eldorado, Misiones, y su crianza cerca de la naturaleza le generó un gran interés por el cuidado del medio ambiente y la biología. Durante su doctorado en Suiza, investigó el microbioma de la Yerba Mate para el desarrollo de biofertilizantes.
+
+      Actualmente se dedica a la investigación científica y a la docencia en la UADE. Fundó Karu Biodiseño en el que junto a diseñadores y artistas explora el desarrollo de biomateriales para el diseño sustentable. Desarrolló TILEX: Tela de Ilex paraguariensis (Yerba Mate) un biomaterial sintetizado por microorganismos cultivados en Yerba Mate. TILEX fue reconocido por Vogue Photos Italia,  Healthy Material Labs del Parsons Design School y el Tech Fashion Week de Nueva York. 
+
+      Artista: Ana Paula Hall.
+
+      Bio: Bioartista, I+D en biomateriales y biotextiles. Abordo la hibridación entre el arte textil, el arte sonoro y tecnopoéticas.
+      Fundadora de Viento Casa de Bioarte, gestora cultural y docente.
+
+      Reseña
+
+      Recorro el bioarte a partir de lo biotemático en mis obras, utilizando como herramienta el arte textil y el montaje del cuerpo desde una mirada social e íntima. 
+      A partir de 2017 desde Viento casa de bioarte combino arte, naturaleza y tecnologías.
+      Viento está concebido como un lugar y también como un concepto que contempla la versatilidad del ser humano y su capacidad de adaptación a diferentes ámbitos y situaciones. En la actualidad, busco comprobar la permeabilidad a los cambios del concepto Viento y su capacidad de trasladar su praxis a cualquier espacio que dé cuenta de la posibilidad de intercambio y transformación entre ser humano y contexto, pasando a ser una experiencia que toma la forma de cada necesidad e inquietud humana en su búsqueda de adaptación con el bioma en el que se encuentre y partiendo del uso de los espacios virtuales como primera herramienta de intercambio.
+
   - ciudadPais: Buenos Aires, Argentina
     foto: /images/artists/biomateriales/03 - viento 3.jpg
-    titulo: Viento
+    titulo: Obra 1
     url:
     descripcion: |-
+      Artista : Verónica Bergottini
+
+      En KARU Biodiseño investigo TILEX, un material sintetizado por microorganismos
+      como alternativa eco-amigable al cuero.
+
+      El principal componente de TILEX es un polímero que se ensambla en vivo gracias
+      a un grupo de bacterias que se alimentan de azúcares y de la Yerba mate. Así
+      nace TILEX: Tela de Ilex en referencia a la Yerba Mate (Ilex paraguariensis).
+      Este biomaterial es biodegradable, compostable y además puede producir bajo un
+      modelo circular empleando diferentes residuos agroindustriales. Esta capacidad
+      que tienen los microorganismos de sintetizar este biomaterial existe ya en la
+      naturaleza y tiene años de evolución biológica. Es así que la biotecnología se
+      aplica al mundo del diseño permitiéndonos emplear procesos biológicos para
+      rediseñar el presente y crear un futuro con bases firmes en el desarrollo
+      sustentable en su más amplio sentido.
+
+      Este prototipo de pollera en base a TILEX representa la moda sustentable del
+      futuro. El diseño es de Emilia Gomez Berga y la producción fotográfica de Paula
+      Penise.
+  - ciudadPais: Buenos Aires, Argentina
+    foto: /images/artists/biomateriales/03 - viento 3.jpg
+    titulo: Obra 2
+    url:
+    descripcion: |-
+      Artista : Verónica Bergottini
+
+      Impulsar la innovación sostenible en materiales solo es posible dentro de un enfoque transdisciplinario colaborativo.
+
+      En el pasado, la biología y el diseño existían por separado, pero ahora el biodiseño las unifica en una nueva área emergente conectando a científicos, diseñadores e ingenieros para el gran desafío de forjar un futuro más sostenible. Y esta es una gran oportunidad para innovar no solo en materiales, sino también para repensar los procesos de diseño y las cadenas de suministro.
+
+      Los más fervientes defensores del biodiseño afirman que se trata de una nueva revolución industrial.
+
+      Este prototipo de top de TILEX y lino es un reflejo de ese trabajo transdisciplinario. El proceso inicia en el laboratorio cultivando a los microorganismos y optimizando el cultivo para maximizar la producción del biopolímero. Luego se cosecha y procesa hasta alcanzar ciertas propiedades en el material. Finalmente el mismo llega a manos del diseñador que realizará la moldería, el corte y la confección. El diseño fue realizado por Emilia Gomez Bergna y la producción de fotografía por Paula Penise.
+
+      El biodiseño en área emergente de intersección entre la biología, la tecnología y el diseño, atrapante por la innovación disruptiva y la sinergia que se genera entre los científicos y los diseñadores.
+  - ciudadPais: Buenos Aires, Argentina
+    foto: /images/artists/biomateriales/03 - viento 3.jpg
+    titulo: Obra 3
+    url:
+    descripcion: |-
+      Artista : Verónica Bergottini
+
+      Contraste de materialidades. TILEX, madera y metal.
+
+      Producción de bioarte de Paula Penise publicada por el Día de la Tierra en Vogue Fotos Italia.
+  - ciudadPais: Buenos Aires, Argentina
+    foto: /images/artists/biomateriales/03 - viento 3.jpg
+    titulo: Obra 4
+    url:
+    descripcion: |-
+      Artista : Verónica Bergottini
+
+      Nutriendo el planeta.
+
+      KARU, término de la lengua guaraní, significa NUTRIR. Con ello se busca reflejar no solo el crecimiento de los microorganismos que sintetizan el material, sino también  la necesidad de  que los nuevos materiales deben volver a la tierra como nutrientes al final de su ciclo de vida. 
+
+      Esta obra nos lleva a reflexionar acerca de la importancia de que los nuevos materiales sean biodegradables y compostables.
+  - ciudadPais: Buenos Aires, Argentina
+    foto: /images/artists/biomateriales/03 - viento 3.jpg
+    titulo: Obra 5
+    url:
+    descripcion: |-
+      Artista : Verónica Bergottini
+
+      Actualmente estamos surfeando una nueva ola de innovación en materiales para la industria de la moda. Esperamos que para 2030 podamos construir un ecosistema más consolidado para ayudar a los bio-diseñadores emergentes y sus materiales eco-amigables a llegar al mercado. Todos los que apostamos al biodiseño sabemos que los biomateriales son la base para construir una economía sostenible.
+
+      En esta producción fotográfica buscamos transmitir la naturaleza biológica de TlLEX, la biocompatibilidad con el ser humano, transformándose en una especie de segunda piel.
+      Agradecemos a la modelo Lena Shan y la estilista Martina Bevilacqua por su colaboración en esta producción de biodiseño.
+  - ciudadPais: Buenos Aires, Argentina
+    foto: /images/artists/biomateriales/03 - viento 3.jpg
+    titulo: Obra 6
+    url:
+    descripcion: |-
+      Artista : Ana Paula Hall
+
+      "Viento" es un concepto que toma forma de obra-taller y casa de bioarte. Aquí se experimenta el entramado entre arte, naturaleza y tecnología. Además de cocina de producción de obra visual, sonora y textil se compone de investigación y desarrollo de biotextiles y biomateriales
+  - ciudadPais: Buenos Aires, Argentina
+    foto: /images/artists/biomateriales/03 - viento 3.jpg
+    titulo: Obra 7
+    url:
+    descripcion: |-
+      Artista : Ana Paula Hall
+
+      La experiencia del espectador es inmersiva, le permite participar del
+      cultivo en una huerta orgánica, el composte y la recolección de semillas y
+      le brinda la posibilidad de degustar conservas y dulces producidos y
+      cosechados en el lugar. También ofrece capacitación en seminarios y
+      talleres en modalidades duales.
+  - ciudadPais: Buenos Aires, Argentina
+    foto: /images/artists/biomateriales/03 - viento 3.jpg
+    titulo: Obra 7
+    url:
+    descripcion: |-
+      Artista : Ana Paula Hall
+
       Viento es un concepto materializado en su sede, pero se expande y se adapta a cualquier espacio ya que mediante la virtualidad acerca al espectador a sus posibilidades de recioprocidad entre ser humano y contexto ofreciendo herramientas de conocimiento para cristalizar la transformación de ambos.
