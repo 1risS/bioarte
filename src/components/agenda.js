@@ -17,10 +17,10 @@ const eventsPerDay = [
     },
     {
       time: "16:00",
-      title: "Conversatorio de artistas de Biorobótica en Artes Electrónicas",
+      title: "Simbiosis entre sistemas biológicos, robótica y arte",
       speaker: "Arte",
       desc:
-        "Modera: Tomas Oulton (Director de Objeto a)Panelistas: Ana Laura Cantera (Magíster en Artes Electrónicas graduada con honores en la Untref, Licenciada y Profesora en Artes Visuales egresada de la UNA), Daniel Alvarez Olmedo (Artista Biorobótico / Director de la Diplomatura en Arte Robótico UMSA/ Profesor e Investigador Universitario / Escritor), Dario Sacco (Licenciado y Magister en Artes Electrónicas de la Untref, investigador, docente y compositor)",
+        "Modera:  Ricardo Iglesias (Licenciado por la Facultad de Filosofía y Letras, Madrid. PhD Cum Laude, mención europea Facultad de Bellas Artes, Barcelona. Tesis: La robótica como experimentación artística. Premio extraordinario PhD.)Panelistas: Ana Laura Cantera (Magíster en Artes Electrónicas graduada con honores en la Untref, Licenciada y Profesora en Artes Visuales egresada de la UNA), Daniel Alvarez Olmedo (Artista Biorobótico / Director de la Diplomatura en Arte Robótico UMSA/ Profesor e Investigador Universitario / Escritor), Dario Sacco (Licenciado y Maestrando en Artes Electrónicas de la Untref, investigador, docente y compositor)",
     },
     {
       time: "16:50",
@@ -43,7 +43,7 @@ const eventsPerDay = [
       speaker: "Academia",
       desc:
         "Moderador: Ing. Guillermo Winnicki (Encargado de Academia en Proyecto Bios, Director Gestión Cultural UTN-FRBA)" +
-        "Panelistas: Dra María Victoria Miranda (Bioquímica (UBA) Dra. UBA. Actual Directora del Instituto NANOBIOTEC (UBA-CONICET). Prof. Titular de la Cátedra de Biotecnología de la FFyB (UBA). Investigadora Principal de CONICET), Gaston Soria (Profesor Adjunto de Diagnóstico y Patología Molecular, FCQ-UNC, Director Científico de OncoPrecision, empresa de base tecnológica con inversión nacional e internacional).",
+        " Panelistas: Dra María Victoria Miranda (Bioquímica (UBA) Dra. UBA. Actual Directora del Instituto NANOBIOTEC (UBA-CONICET). Prof. Titular de la Cátedra de Biotecnología de la FFyB (UBA). Investigadora Principal de CONICET), Gaston Soria (Profesor Adjunto de Diagnóstico y Patología Molecular, FCQ-UNC, Director Científico de OncoPrecision, empresa de base tecnológica con inversión nacional e internacional).",
     },
     {
       time: "19:00",
@@ -60,15 +60,16 @@ const eventsPerDay = [
       title: "La Universidad como creadora de empresas de Base Biotecnológica",
       speaker: "Academia",
       desc:
-        "Modera : Susana Levy (Dra. Ciencias Biológicas con 20 años de experiencia en I&D de vacunas y biofarmacéuticos en la academia y la industria, fundadora de EBT Cell Tonics, Gerente de Innovación y Transferencia Tecnológica UNSAM)",
+        "Modera : Susana Levy (Dra. Ciencias Biológicas con 20 años de experiencia en I&D de vacunas y biofarmacéuticos en la academia y la industria, fundadora de EBT Cell Tonics, Gerente de Innovación y Transferencia Tecnológica UNSAM)." +
+        " Panelistas: Dario Codner (Licenciado en Física y Magíster en Política y Gestión de la Ciencia y la Tecnología de la UBA. Jefe de Gabinete de Asesores de la Secretaría de política y planeamiento del MINCYT. Secretario de Innovación y Transferencia Tecnológica de la UN Quilmes), Dr. Javier Lottersberger (Bioquímico. Doctor en Ciencias Biológicas. Secretario de Vinculación y Transferencia Tecnológica de la Universidad Nacional del Litoral. Ex Decano de la Facultad de Bioquímica y Ciencias Biológicas. Profesor Adjunto en la Facultad de Bioquímica y Ciencias Biológicas) - Lic. Romina Joris (Licenciada en Biotecnología. Coordinación del Programa UNLBio, Secretaría de Vinculación y Transferencia Tecnológica de la UNL. Posgrado en Biotecnología, Industria y Negocios)",
     },
     {
       time: "16:00",
       title: "Biotecnología en Salud Humana",
       speaker: "Biotecnología",
       desc:
-        "Modera : Susana Levy (Dra. Ciencias Biológicas con 20 años de experiencia en I&D de vacunas y biofarmacéuticos en la academia y la industria, fundadora de EBT Cell Tonics, Gerente de Innovación y Transferencia Tecnológica UNSAM)" +
-        "Panelistas: Dario Codner (Licenciado en Física y Magíster en Política y Gestión de la Ciencia y la Tecnología de la UBA. Jefe de Gabinete de Asesores de la Secretaría de política y planeamiento del MINCYT. Secretario de Innovación y Transferencia Tecnológica de la UN Quilmes), Dr. Javier Lottersberger (Bioquímico. Doctor en Ciencias Biológicas. Secretario de Vinculación y Transferencia Tecnológica de la Universidad Nacional del Litoral. Ex Decano de la Facultad de Bioquímica y Ciencias Biológicas. Profesor Adjunto en la Facultad de Bioquímica y Ciencias Biológicas) - Lic. Romina Joris (Licenciada en Biotecnología. Coordinación del Programa UNLBio, Secretaría de Vinculación y Transferencia Tecnológica de la UNL. Posgrado en Biotecnología, Industria y Negocios)",
+        "Modera : Diego Golombek (Doctor en Ciencias Biológicas y divulgador científico argentino, especialista en cronobiología. Investigador superior del CONICET y  profesor titular regular de la Universidad Nacional de Quilmes)." +
+        " Panelistas: Dra. Guillermina Forno (Bioquímica y Doctora en Ciencias Biológicas con una Maestría en Administración de Empresas UNL), Gerente de Investigación y Desarrollo, AMEGA Biotech; Dra. Verónica Sotomayor (Licenciada en Ciencias Biológicas y doctora en Química Biológica de la UBA, con una maestría en Administración de Empresas de la UTDT. Actualmente se desempeña como líder del equipo de medicina personalizada para Roche Argentina), Lucas Filgueira Risso (Bioquímico UBA, cofundador de pharmADN, actualmente mAbxience. Director de Operaciones, lideró el proyecto de expansión de capacidad de mAbxience en 2019. Profesor de la UNSAM)",
     },
     {
       time: "16:50",
@@ -82,11 +83,11 @@ const eventsPerDay = [
       title: "Producción de Insumos Industriales (Biotecnología Blanca)",
       speaker: "Biotecnología",
       desc:
-        "Orador: Maximiliano D’Alessio (Licenciado en Biotecnología de la Universidad de Quilmes, MBA de la Universidad de Belgrano. Director Comercial de Novozymes BioAg para América Latina - transmisión desde New York).",
+        "Orador: Maximiliano D'Alessio (Licenciado en Biotecnología de la Universidad de Quilmes, MBA de la Universidad de Belgrano. Director Comercial de Novozymes BioAg para América Latina - transmisión desde New York).",
     },
     {
       time: "18:00",
-      title: "Muru 7.8 – Performance en Espacios interactivos Virtuales",
+      title: "Muru 7.8 - Performance en Espacios interactivos Virtuales",
       speaker: "Arte",
       desc:
         "MURU 7.8 reúne a Lupita Chávez Pardo, Leandro Barbeito, Nic Motta y Claudia Valente, artistas/ investigadores que realizan prácticas reflexivas con dispositivos electro digitales." +
@@ -105,12 +106,12 @@ const eventsPerDay = [
     {
       time: "19:00",
       title:
-        "Lanzamiento del libro “BioArte - Poéticas de lo viviente” de  Lucía Stubrin (primer libro de la temática en Argentina)",
+        "Lanzamiento del libro ¨BioArte - Poéticas de lo viviente¨ de  Lucía Stubrin (primer libro de la temática en Argentina)",
       speaker: "General",
       desc:
-        "Ivana Tosti: Editora Ediciones UNL (Licenciada en Letras por la UNL y Directora Ediciones UNL)" +
-        "Lucía Stubrin: Autora (Doctora en Teoría e Historia de las Artes por la UBA y Licenciada en Comunicación Social por la UNER, becaria posdoctoral del (CONICET), profesora universitaria de Semiótica (UNER) y Epistemología de las Artes Visuales (UNL))." +
-        "Invitados: Natalia Matewecki, Flavia Costa y Daniel Lopez del Rincón",
+        "Ivana Tosti: Editora Ediciones UNL (Licenciada en Letras por la UNL y Directora Ediciones UNL)," +
+        " Lucía Stubrin: Autora (Doctora en Teoría e Historia de las Artes por la UBA y Licenciada en Comunicación Social por la UNER, becaria posdoctoral del (CONICET), profesora universitaria de Semiótica (UNER) y Epistemología de las Artes Visuales (UNL))." +
+        " Invitados: Natalia Matewecki, Flavia Costa y Daniel Lopez del Rincón",
     },
   ],
   // Miércoles 07 de Abril
@@ -120,15 +121,16 @@ const eventsPerDay = [
       title: "Ejemplos del Futuro",
       speaker: "Biotecnología",
       desc:
-        "Modera: Tomás Oulton (Director de Objeto a - productora de Proyecto Bios)" +
-        "Panelistas: Gabriel Vichera (Licenciado en Biotecnología, Doctorado en Ciencias Agropecuarias. Co-fundador y director científico de Kheiron Biotech); Juan Gregorio Hernandez (CEO myDNAmap) y Pablo Noseda (Licenciatura en Ciencias Biológicas con orientación Molecular Universidad CAECE - Director científico myDNAmap); Laura Correa (Licenciada en Ciencias Biológicas egresada de la FCEN de la UBA, División Bioingeniería de Laboratorios Craveri).",
+        "Modera: Tomás Oulton (Director de Objeto a - productora de Proyecto Bios)." +
+        " Panelistas: Gabriel Vichera (Licenciado en Biotecnología, Doctorado en Ciencias Agropecuarias. Co-fundador y director científico de Kheiron Biotech); Juan Gregorio Hernandez (CEO myDNAmap) y Pablo Noseda (Licenciatura en Ciencias Biológicas con orientación Molecular Universidad CAECE - Director científico myDNAmap); Laura Correa (Licenciada en Ciencias Biológicas egresada de la FCEN de la UBA, División Bioingeniería de Laboratorios Craveri).",
     },
     {
       time: "16:00",
-      title: "Biotecnología Industrial.",
+      title:
+        "Biotecnología Azul - Comunidades microbianas de la costa Patagónica.",
       speaker: "Academia",
       desc:
-        "Presenta: Ing. Guillermo Winnicki (Encargado de Academia en Proyecto Bios, Director Gestión Cultural UTN-FRBA). Panelistas: Dra. Marina de Escalada Pla (Doctora de la UBA, FCEyN área: Industrias. Ingeniera Química, UTN FRBA. Investigadora independiente del CONICET y Profesora de la  FCEyN-UBA. Directora de la Carrera de Especialización en Biotecnología Industrial. FCEyN-UBA e INTI; Lic. F. Fabian Nigro, Director Técnico de Biotecnología Industrial en INTI; Carolina Genevois (Lic. en Nutrición de la UNER, Mg. en Tecnología de los Alimentos de la UTN, y Dra. de la UBA en el área de Química Industrial).",
+        "Dra. Hebe Dionisi (Doctora en Ciencias Biológicas, investigadora independiente del CONICET. En el año 2004 fundó el Laboratorio de Microbiología Ambiental del Centro para el Estudio de Sistemas Marinos, CCT CONICET-CENPAT, Puerto Madryn).",
     },
     {
       time: "16:50",
@@ -212,11 +214,11 @@ const eventsPerDay = [
     },
     {
       time: "19:00",
-      title: "Artistas científicos o Científicos artistas",
+      title: "Mesa Redonda Mixta : Artistas científicos o Científicos artistas",
       speaker: "Mesa Redonda Mixta",
       desc:
-        "Modera Guadalupe Diaz Constanzo (Directora Centro Cultural de la Ciencia)" +
-        "Panelistas: Patricia Saragüeta (Ph.D. Facultad de Ciencias Exactas y Naturales, Universidad de Buenos Aires. Investigadora Independiente, CONICET Area Biología Molecular y Celular. Directora del Instituto de Biología y Medicina Experimental  - IBYME), Daniel Corach (biólogo y genetista creador y Director del Servicio de Huellas Digitales Genéticas de la UBA), Ariel Wilner (Licenciado en Ciencias Biológicas por la UBA - MSc. en Genética por la HUJ y Dr. en Genética Molecular por UBA).",
+        "Modera Guadalupe Diaz Constanzo (Directora Centro Cultural de la Ciencia)." +
+        " Panelistas: Patricia Saragüeta (Ph.D. Facultad de Ciencias Exactas y Naturales, Universidad de Buenos Aires. Investigadora Independiente, CONICET Area Biología Molecular y Celular. Directora del Instituto de Biología y Medicina Experimental  - IBYME), Elin Winkler (Doctora en Física del Instituto Balseiro (UNCuyo-CNEA) - Investigadora CNEA/Conicet - Unidad ejecutora Instituto de Nanociencia y Nanotecnología - Nodo Bariloche. Laboratorio de Resonancias Magnéticas), Ariel Wilner (Licenciado en Ciencias Biológicas por la UBA - MSc. en Genética por la HUJ y Dr. en Genética Molecular por UBA).",
     },
   ],
   // Viernes 09 de Abril
@@ -234,7 +236,7 @@ const eventsPerDay = [
         "Visita virtual interactiva al laboratorio de Joaquin Fargas, taller de fabricación de Bioesferas y factoría de ADN",
       speaker: "Arte",
       desc:
-        "Joaquin Fargas: Ingeniero y artista cuyas obras son una combinación del arte, la ciencia y la tecnología. Gran divulgador de la ciencia y la tecnología desde el año 1988. Su obra más emblemática es el Proyecto Biosfera que actualmente se encuentra expuesto en Los Angeles Center for Digital Art, en California, Estados Unidos;​ Museo Contemporáneo de Mar del Plata, Buenos Aires, Argentina; Estación Correo Central del Subte de la Ciudad de Buenos Aires (Instalación urbana), entre otros.",
+        "Joaquin Fargas: Ingeniero y artista cuyas obras son una combinación del arte, la ciencia y la tecnología. Gran divulgador de la ciencia y la tecnología desde el año 1988. Su obra más emblemática es el Proyecto Biosfera que actualmente se encuentra expuesto en Los Angeles Center for Digital Art, en California, Estados Unidos; Museo Contemporáneo de Mar del Plata, Buenos Aires, Argentina; Estación Correo Central del Subte de la Ciudad de Buenos Aires (Instalación urbana), entre otros.",
     },
     {
       time: "16:40",
@@ -249,15 +251,15 @@ const eventsPerDay = [
       speaker: "Academia",
       desc:
         "Modera: Lucía Stubrin (Doctora en Teoría e Historia de las Artes por la UBA y Licenciada en Comunicación Social por la UNER, becaria posdoctoral del Consejo Nacional de Investigaciones Científicas y Técnicas (CONICET), profesora universitaria de Semiótica (UNER) y Epistemología de las Artes Visuales (UNL))." +
-        "Panelistas: Mariela Yeregui (Directora de la Maestría en Tecnología y Estética de las Artes Electrónicas de la Untref : BioLab (Biolab | biolabmovil (wixsite.com)), Mg. Alejandra Marinaro (Laboratorio Latinoamericano de Bioarte alojado en la UAI) y Alejandra Portela Decana de la Facultad de Artes de la UMSA con la Diplomatura de Arte Robótico (Biorobótica)  (robótica (umsa.edu.ar)",
+        " Panelistas: Mariela Yeregui (Directora de la Maestría en Tecnología y Estética de las Artes Electrónicas de la Untref : BioLab (Biolab | biolabmovil (wixsite.com)), Mg. Alejandra Marinaro (Laboratorio Latinoamericano de Bioarte alojado en la UAI) y Alejandra Portela Decana de la Facultad de Artes de la UMSA con la Diplomatura de Arte Robótico (Biorobótica)  (robótica (umsa.edu.ar)",
     },
     {
       time: "18:00",
       title: "Aceleradora Grid X y Start ups",
       speaker: "Biotecnología",
       desc:
-        "Modera Grid X: Federico Marque (Graduado de Singularity University e Ingeniero industrial es emprendedor en biotecnología hace más de 10 años. Es socio en GRIDX, una company builder que crea e invierte en compañías de start ups biotecnológicas en Latinoamérica)" +
-        "Panelistas: Milagros Graziani (Ingeniera Agrónoma - Country Managing Director en Beeflow, Carolina Baldi, (Doctora en Bioquímica, CEO de ALGAE+ Biotecnología) y Atilio Grimani (Abogado con posgrado de negocios en la IAE, CEO de Einsted)",
+        "Modera Grid X: Federico Marque (Graduado de Singularity University e Ingeniero industrial es emprendedor en biotecnología hace más de 10 años. Es socio en GRIDX, una company builder que crea e invierte en compañías de start ups biotecnológicas en Latinoamérica)." +
+        " Panelistas: Milagros Graziani (Ingeniera Agrónoma - Country Managing Director en Beeflow, Carolina Baldi, (Doctora en Bioquímica, CEO de ALGAE+ Biotecnología) y Atilio Grimani (Abogado con posgrado de negocios en la IAE, CEO de Einsted)",
     },
     {
       time: "19:00",
