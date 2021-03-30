@@ -63,7 +63,7 @@ const Bar = styled.div`
 `
 
 const Icon360 = styled(({ className, ...props }) => (
-  <img className={className} src="/images/360-degrees.png" alt="360 degrees" {...props} />
+  <img className={className} src="/images/360-degrees.png" alt="360 degrees" draggable={false} {...props} />
 ))`
   position: fixed;
   top: 50%;
@@ -145,6 +145,8 @@ const PanoPage = () => {
       viewer = new Panolens.Viewer({
         output: "console",
         autoHideInfospot: false,
+        autoRotate: true,
+        autoRotateSpeed: 0.25,
         cameraFov: 55,
       })
 
@@ -394,7 +396,10 @@ const PanoPage = () => {
       function hide360Icon() {
         console.debug("hide 360 icon");
         const icon360 = document.getElementById('icon-360');
-        if (icon360) icon360.style.opacity = 0;
+        if (icon360) {
+          icon360.style.opacity = 0;
+          setTimeout(() => { icon360.remove() }, 500);
+        }
       }
 
       // barra de progreso al cargar la vista 360
