@@ -19,10 +19,10 @@ bio: |-
   trabajó formó parte de muestras colectivas e individuales en instituciones
   públicas y privadas. Actualmente es artista de la galería Estudio G (Rosario).
 
-foto: /images/artists/biomateriales/02 - Ana Hall_Biomaterial_SMALL.png
+foto: /images/artists/biomateriales/02---Imagen-obra-nueva_SMALL.jpg
 obras:
   - ciudadPais: Buenos Aires, Argentina
-    foto: /images/artists/biomateriales/01 - viento 1.jpg
+    foto: /images/artists/biomateriales/02---Imagen-obra-nueva_SMALL.jpg
     titulo: Proyecto "Bio-pigmentos"
     url:
     descripcion: |-
@@ -40,8 +40,8 @@ obras:
       La instalación Pintura N°18 corresponde a la fotografía digital enmarcada (marco antiguo 70x100 cm), carpeta con protocolo/boceto y registros experimentales, y libreta de notas.
       Los microorganismos utilizados como pigmentos en la pintura N°18 fueron capturados en el patio de mi casa.
   - ciudadPais: Buenos Aires, Argentina
-    foto: /images/artists/biomateriales/01 - viento 1.jpg
-    titulo: Proyecto "Mementos"
+    foto: /images/artists/biomateriales/01 - un lugar de mi corazon.jpg
+    titulo: Proyecto "Mementos" - Un lugar en mi corazón
     url:
     descripcion: |-
       Tomo recuerdos (muestras/souvenirs) de diferentes momentos de mi vida (cotidianos y/o especiales), que clasifico, desarmo y analizo utilizando metodología científica y amorosa. Trabajar sobre los recuerdos como protocolo para no olvidar.
@@ -58,7 +58,22 @@ obras:
       piedra con líquenes y musgos, en cápsula de vidrio
 
   - ciudadPais: Buenos Aires, Argentina
-    foto: /images/artists/biomateriales/01 - viento 1.jpg
-    titulo: Proyecto "Mementos"
+    foto: /images/artists/biomateriales/02---elvira_SMALL.jpg
+    titulo: Proyecto "Mementos" - Elvira
+    url:
+    descripcion: |-
+- ciudadPais: Buenos Aires, Argentina
+    foto: /images/artists/biomateriales/03---flora-urbana--pigmentos_SMALL.jpg
+    titulo: Flora Urbana
+    url:
+    descripcion: |-
+- ciudadPais: Buenos Aires, Argentina
+    foto: /images/artists/biomateriales/04---autorretrato_SMALL.jpg
+    titulo: Autorretrato
+    url:
+    descripcion: |-
+- ciudadPais: Buenos Aires, Argentina
+    foto: /images/artists/biomateriales/05 - Microbestiario del ParanaL.jpg
+    titulo: Microbestiario del Paraná
     url:
     descripcion: |-
