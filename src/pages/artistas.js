@@ -114,6 +114,8 @@ const Foto = styled.img`
   height: 180px;
   width: 180px;
   margin: 1rem;
+  border-radius: 15px;
+
   order: 3;
 
   &:hover {
