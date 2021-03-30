@@ -16,7 +16,7 @@ import fotoModelado from "../../static/images/artists/modeladoMolecular/01 - Fot
 import fotoSacco from "../../static/images/artists/darioSacco/01 - Foto Dario Sacco_SMALL.png"
 import fotoLapadula from "../../static/images/artists/pabloLapadula/Pablo_Lapadula_SMALL.png"
 import fotoBiomateriales from "../../static/images/artists/biomateriales/01 - Foto Veronica Bergottini - 001_SMALL.png"
-import fotoPaoletti from "../../static/images/artists/lucianaPaoletti/04---autorretrato_SMALL.jpg"
+import fotoPaoletti from "../../static/images/artists/lucianaPaoletti/Luciana 04_SMALL.png"
 import fondoHeader from "../../static/images/carousel/Banner_Exhibition_0.png"
 import like from "../../static/images/exhibicion/likelikeRounded.png"
 import HomeBoton from "../components/homeBoton"
