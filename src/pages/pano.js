@@ -63,7 +63,13 @@ const Bar = styled.div`
 `
 
 const Icon360 = styled(({ className, ...props }) => (
-  <img className={className} src="/images/360-degrees.png" alt="360 degrees" draggable={false} {...props} />
+  <img
+    className={className}
+    src="/images/360-degrees.png"
+    alt="360 degrees"
+    draggable={false}
+    {...props}
+  />
 ))`
   position: fixed;
   top: 50%;
@@ -146,7 +152,7 @@ const PanoPage = () => {
         output: "console",
         autoHideInfospot: false,
         autoRotate: true,
-        autoRotateSpeed: 0.25,
+        autoRotateSpeed: -0.25,
         cameraFov: 55,
       })
 
@@ -256,19 +262,19 @@ const PanoPage = () => {
       })
       // // hidden always
       infospotE._show = infospotE.show
-      infospotE.show = () => { }
+      infospotE.show = () => {}
 
       // Imagen mostrada cuando se hace hover sobre otra (infospotG)
       const infospotH = new Panolens.Infospot(600, "/images/Deer-Little.jpg?5")
       infospotH.position.set(-4533.7, 2000, 1846.35)
       infospotH._show = infospotH.show
-      infospotH.show = () => { }
+      infospotH.show = () => {}
 
       // Imagen que muestra otra (infospotH) al hacer hover y es mostrada al hacer hover en otra (infospotF)
       const infospotG = new Panolens.Infospot(600, "/images/Deer-Little.jpg?4")
       infospotG.position.set(-4533.7, 1148.77, 1846.35)
       infospotG._show = infospotG.show
-      infospotG.show = () => { }
+      infospotG.show = () => {}
       infospotG.addEventListener("hoverenter", function (event) {
         infospotH._show()
       })
@@ -282,7 +288,7 @@ const PanoPage = () => {
       infospotF.addEventListener("hoverenter", function (event) {
         infospotG._show()
       })
-      infospotF.addEventListener("hoverleave", function (event) { })
+      infospotF.addEventListener("hoverleave", function (event) {})
 
       // Objeto 3D cisne mostrado al hacer click sobre una imagen (infospotI)
       let swan
@@ -294,7 +300,7 @@ const PanoPage = () => {
         swan.children[0].material.opacity = 1
         swan.children[0].material.transparent = false
       })
-      infospotI.addEventListener("hoverleave", function (event) { })
+      infospotI.addEventListener("hoverleave", function (event) {})
 
       const loader = new GLTFLoader()
 
@@ -387,18 +393,20 @@ const PanoPage = () => {
       infospotJ.addHoverText("AcademiaCookie")
 
       function show360Icon() {
-        console.debug("show 360 icon");
-        setTimeout(hide360Icon, 3000);
-        const icon360 = document.getElementById('icon-360');
-        if (icon360) icon360.style.opacity = 0.5;
+        console.debug("show 360 icon")
+        setTimeout(hide360Icon, 3000)
+        const icon360 = document.getElementById("icon-360")
+        if (icon360) icon360.style.opacity = 0.5
       }
 
       function hide360Icon() {
-        console.debug("hide 360 icon");
-        const icon360 = document.getElementById('icon-360');
+        console.debug("hide 360 icon")
+        const icon360 = document.getElementById("icon-360")
         if (icon360) {
-          icon360.style.opacity = 0;
-          setTimeout(() => { icon360.remove() }, 500);
+          icon360.style.opacity = 0
+          setTimeout(() => {
+            icon360.remove()
+          }, 500)
         }
       }
 
@@ -427,7 +435,7 @@ const PanoPage = () => {
           }, 500)
           setTimeout(() => {
             loadingContainerElement.style.display = "none"
-            setTimeout(show360Icon, 200);
+            setTimeout(show360Icon, 200)
           }, 1500)
         } else {
           progressElement.style.width = progress + "%"
