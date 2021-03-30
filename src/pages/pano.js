@@ -62,6 +62,20 @@ const Bar = styled.div`
   transition: width 0.1s ease;
 `
 
+const Icon360 = styled(({ className, ...props }) => (
+  <img className={className} src="/images/360-degrees.png" alt="360 degrees" {...props} />
+))`
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 200px;
+  height: 200px;
+  margin-top: -100px;
+  margin-left: -100px;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+`
+
 const PanoPage = () => {
   const irAcademia = () => {
     window.location.href = "/academia"
@@ -240,19 +254,19 @@ const PanoPage = () => {
       })
       // // hidden always
       infospotE._show = infospotE.show
-      infospotE.show = () => {}
+      infospotE.show = () => { }
 
       // Imagen mostrada cuando se hace hover sobre otra (infospotG)
       const infospotH = new Panolens.Infospot(600, "/images/Deer-Little.jpg?5")
       infospotH.position.set(-4533.7, 2000, 1846.35)
       infospotH._show = infospotH.show
-      infospotH.show = () => {}
+      infospotH.show = () => { }
 
       // Imagen que muestra otra (infospotH) al hacer hover y es mostrada al hacer hover en otra (infospotF)
       const infospotG = new Panolens.Infospot(600, "/images/Deer-Little.jpg?4")
       infospotG.position.set(-4533.7, 1148.77, 1846.35)
       infospotG._show = infospotG.show
-      infospotG.show = () => {}
+      infospotG.show = () => { }
       infospotG.addEventListener("hoverenter", function (event) {
         infospotH._show()
       })
@@ -266,7 +280,7 @@ const PanoPage = () => {
       infospotF.addEventListener("hoverenter", function (event) {
         infospotG._show()
       })
-      infospotF.addEventListener("hoverleave", function (event) {})
+      infospotF.addEventListener("hoverleave", function (event) { })
 
       // Objeto 3D cisne mostrado al hacer click sobre una imagen (infospotI)
       let swan
@@ -278,7 +292,7 @@ const PanoPage = () => {
         swan.children[0].material.opacity = 1
         swan.children[0].material.transparent = false
       })
-      infospotI.addEventListener("hoverleave", function (event) {})
+      infospotI.addEventListener("hoverleave", function (event) { })
 
       const loader = new GLTFLoader()
 
@@ -370,6 +384,19 @@ const PanoPage = () => {
       infospotJ.position.set(5000.0, -465.23, -3196.49)
       infospotJ.addHoverText("AcademiaCookie")
 
+      function show360Icon() {
+        console.debug("show 360 icon");
+        setTimeout(hide360Icon, 3000);
+        const icon360 = document.getElementById('icon-360');
+        if (icon360) icon360.style.opacity = 0.5;
+      }
+
+      function hide360Icon() {
+        console.debug("hide 360 icon");
+        const icon360 = document.getElementById('icon-360');
+        if (icon360) icon360.style.opacity = 0;
+      }
+
       // barra de progreso al cargar la vista 360
 
       const progressElement = document.getElementById("progress")
@@ -395,6 +422,7 @@ const PanoPage = () => {
           }, 500)
           setTimeout(() => {
             loadingContainerElement.style.display = "none"
+            setTimeout(show360Icon, 200);
           }, 1500)
         } else {
           progressElement.style.width = progress + "%"
@@ -404,6 +432,7 @@ const PanoPage = () => {
       const panorama = new Panolens.ImagePanorama(
         "/images/vr/24Marzo_Optimizada-01.jpg"
       )
+
       panorama.addEventListener("progress", onProgress)
       panorama.addEventListener("enter", onEnter)
 
@@ -449,6 +478,7 @@ const PanoPage = () => {
           </ProgressBar>
         </LoadingBox>
       </LoadingContainer>
+      <Icon360 id="icon-360" />
     </Layout>
   )
 }
