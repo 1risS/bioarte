@@ -12,7 +12,7 @@ import fotoElectrobiota from "../../static/images/artists/electrobiota/02 -  Ima
 import fotoAgarart from "../../static/images/artists/agarart/lauraEcharren/02 - Imagen Secundaria - Spring-onella_SMALL.png"
 import fotoFerrari from "../../static/images/artists/demianFerrari/01 - Demian Ferrari.png"
 import fotoOlmedo from "../../static/images/artists/danielAlvarezOlmedo/01 - Foto Daniel Alvarez Olmedo.jpg"
-import fotoModelado from "../../static/images/artists/modeladoMolecular/Pablo_Power_SMALL.png"
+import fotoModelado from "../../static/images/artists/modeladoMolecular/01 - Foto bloque 1 - pablo_federico.png"
 import fotoSacco from "../../static/images/artists/darioSacco/01 - Foto Dario Sacco_SMALL.png"
 import fotoLapadula from "../../static/images/artists/pabloLapadula/Pablo_Lapadula_SMALL.png"
 import fotoBiomateriales from "../../static/images/artists/biomateriales/01 - Foto Veronica Bergottini - 001_SMALL.png"

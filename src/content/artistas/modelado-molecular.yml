@@ -1,36 +1,67 @@
 nombre: Modelado Molecular
 cvUrl:
 formacion: |-
-  Arte metaperceptual:  el artista denomina de esta forma al género artístico que
-  utiliza como background del discurso poético aquella parte de la realidad que no
-  es perceptible por los sentidos, puntualmente por el sentido de la vista dentro
-  del campo de las artes visuales. En el caso de estas obras que presenta en la
-  disciplina de la escultura digital, el objeto se construye en base a
-  biomoléculas cuyo campo visual es menor a la distancia entre fotones, por tal
-  motivo solo pueden ser percibidas gracias a la tecnología de la microscopía
-  electrónica, difracción de rayos x, y el soporte computacional gráfico que
-  permite que sean reconstruidas en la virtualidad.
-
+  Definición por el artista Federico Coscio: Arte metaperceptual:  el artista
+  denomina de esta forma al género artístico que utiliza como background del
+  discurso poético aquella parte de la realidad que no es perceptible por los
+  sentidos, puntualmente por el sentido de la vista dentro del campo de las
+  artes visuales. 
+  En el caso de estas obras que presenta en la disciplina de la escultura digital,
+  el objeto se construye en base a biomoléculas cuyo campo visual es menor a la
+  distancia entre fotones, por tal motivo solo pueden ser percibidas gracias a la
+  tecnología de la microscopía electrónica, difracción de rayos x, y el soporte
+  computacional gráfico que permite que sean reconstruidas en la virtualidad.
 bio: |-
-  Una definición de "modelado molecular" sería: "conjunto de métodos y técnicas
-  computacionales para modelar, imitar y predecir la estructura y comportamiento
-  de las moléculas". 
-  En cambio, el "modelado molecular artístico" se podría comparar con la música.
-  Cientos de programas y herramientas reproducen piezas musicales a la
-  "perfección", y ayudan para escribir o tocar canciones. Sin embargo, existen
-  elementos que sólo un músico puede transmitir con su instrumento: matices,
-  tonos, sentimiento, pasión, éxtasis, pausa, emoción, drama. En resumen:
-  interpretación. Para mí, el modelado molecular artístico es un poco esto. Es
-  atrapar al "lector", poner "interpretación" en una simple representación visual
-  y "caprichosa" de un resultado científico. Es, en definitiva, la convergencia
-  entre arte y ciencia.
-foto: /images/artists/modeladoMolecular/01 - Surfing with the Alien snakes_SMALL.png
+  Definición por el científico Pablo Power: el modelado molecular es el conjunto
+  de métodos y técnicas computacionales para modelar, imitar y predecir la
+  estructura y comportamiento de las moléculas. En cambio, el "modelado molecular
+  artístico" se podría comparar con la música. Cientos de programas y herramientas
+  reproducen piezas musicales a la "perfección" y ayudan para escribir o tocar
+  canciones. Sin embargo, existen elementos que sólo un músico puede transmitir
+  con su instrumento: matices, tonos, sentimiento, pasión, éxtasis, pausa,
+  emoción, drama. En resumen: Es poner "interpretación" en una representación
+  visual y "caprichosa" de un resultado científico: la convergencia entre arte y
+  ciencia.
+
+foto: /images/artists/modeladoMolecular/Foto principal 02 - Metamorphosis.png
 obras:
   - ciudadPais: Buenos Aires, Argentina
-    foto: /images/artists/modeladoMolecular/01 - Surfing with the Alien snakes_SMALL.png
+    foto: /images/artists/modeladoMolecular/01 - Foto bloque 1 - pablo_federico.png
+    titulo: Modelado Molecular
+    url:
+    descripcion: |-
+
+      Pablo Power: Bioquímico por la Facultad de Farmacia y Bioquímica, Doctor
+      de la UBA, Investigador Independiente de CONICET en el IBaViM-UBA,
+      Profesor Adjunto de la Cátedra de Microbiología de la FFyB (UBA), y
+      Coordinador de la Subcomisión de Microbiología Molecular de la Asociación
+      Argentina de Microbiología.
+
+      Post-doctorado en el Centro de Ingeniería de Proteínas de la Universidad de
+      Lieja (Bélgica), donde adquirí formación en técnicas de metagenómica y
+      cristalografía de proteínas. Junto a mi equipo de trabajo, realizamos estudios
+      moleculares, bioquímicos, evolutivos y estructurales de β-lactamasas (enzimas
+      que degradan e inactivan antibióticos β-lactámicos) de interés clínico y
+      ambiental, orientados a la búsqueda de nuevas drogas con actividad inhibitoria.
+      Músico y compositor amateur.
+
+      Federico Coscio: Artista Visual, Matemático, Investigador y Profesor de
+      diseño y morfología. Estudió con el Maestro Adolfo Nigro Becado por la Fundación
+      Antorchas. Autor del Libro "Teoría de Anticristales" Publicado en la Biblioteca
+      Nacional Argentina. 2015 -2020 Colaborador en investigación del Laboratorio de
+      Fisiología de Proteínas de FCEN UBA. 2015 -2020 Dirigió tres proyectos de
+      Investigación con desarrollos tecnológicos para hábitat de emergencia- FAU-
+      UCASAL - Salta./ 2018- Director de la Catedra Libre Innovación morfológica
+      Aplicada INMA. FAU- UCASAL. 2017/18- Profesor de diseño y 2019/2020 Morfología
+      FAU UCASAL./- Entre 1989 y 2020 obtuvo importantes premios en las disciplinas:
+      Pintura, instalación y fotografía a nivel regional, nacional e internacional.
+  - ciudadPais: Buenos Aires, Argentina
+    foto: /images/artists/modeladoMolecular/02 - Surfing with the Alien snakes_SMALL.png
     titulo: Surfing with the Alien snakes
     url:
     descripcion: |-
+      Autor: Pablo Power.
+
       Surfeando el espacio recíproco de una matriz cristalográfica, cuatro
       serpientes apocalípticas, con sus lenguas bífidas carboxiladas, avanzan en
       perfecta sincronía hacia la destrucción de los antibióticos … o su
@@ -50,10 +81,12 @@ obras:
       Esta estructura aún no ha sido depositada en el Protein Data Bank (PDB).
 
   - ciudadPais: Buenos Aires, Argentina
-    foto: /images/artists/modeladoMolecular/02 - Breathe.png
+    foto: /images/artists/modeladoMolecular/03 - Breathe.png
     titulo: Breathe
     url:
     descripcion: |-
+      Autor: Pablo Power.
+
       "Respira, respire en el aire. No tengas miedo de preocuparte. Vete, pero
       no me dejes" (traducción de "Breathe", del LP "The dark side of the moon"
       de Pink Floyd, 1973).
@@ -75,10 +108,12 @@ obras:
       PLoS One en 2017.
 
   - ciudadPais: Buenos Aires, Argentina
-    foto: /images/artists/modeladoMolecular/03 - Caught in a web_SMALL.png
+    foto: /images/artists/modeladoMolecular/04 - Caught in a web_SMALL.png
     titulo: Caught in a web
     url:
     descripcion: |-
+      Autor: Pablo Power.
+
       Atrapada en una red colgante, pende la esperanza que terminará con la
       agonía, y volverá al monstruo inofensivo. Los modelos de proteínas
       derivados de la cristalografía por rayos X se obtienen a partir de la
@@ -99,10 +134,12 @@ obras:
       Chemotherapy.
 
   - ciudadPais: Buenos Aires, Argentina
-    foto: /images/artists/modeladoMolecular/04 - Metal forever.png
+    foto: /images/artists/modeladoMolecular/05 - Metal forever.png
     titulo: Metal forever
     url:
     descripcion: |-
+      Autor: Pablo Power.
+
       La música es una parte fundamental de mi vida. Una especie de "segunda
       profesión no remunerada", pero que me da (y perdón por el "sacrilegio") la
       paz interior que no me da la ciencia, quizás porque no conlleva la misma
@@ -124,65 +161,30 @@ obras:
       2017 en la revista PLoS One.
 
   - ciudadPais: Buenos Aires, Argentina
-    foto: /images/artists/modeladoMolecular/05 - Metamorphosis.png
-    titulo: Metamorphosis
+    foto: /images/artists/modeladoMolecular/06 - SARS COV 2 - fotograma de INFINITO INTERIOR.png
+    titulo: INFINITO INTERIOR
     url:
     descripcion: |-
-      "Metamorfosis" tiene cientos de significados y usos en el arte gráfico,
-      poesías, musical, etc. Representa "transformación", "cambio de forma".
-      Significa "evolución". Desde hace un año todos estamos experimentando una
-      especie de "metamorfosis", ya sea en los hábitos y costumbres,
-      actividades, horarios, relaciones, formas de trabajar y relacionarnos con
-      los otros … Mi "metamorfosis" tuvo que ver con un acercamiento a la
-      música, y a explorar otras formas de expresión, como por ejemplo estas
-      obras que muestran mi trabajo desde otra perspectiva.
+      Autor: Federico Coscio.
 
-      La estructura cristalográfica de PER-2 en complejo con el inhibidor avibactam
-      fue resuelta a 2.4 Å, depositada en el PDB con el código 6D3G, y publicada en
-      Antimicrobial Agents & Chemotherapy en 2019. En la obra, observamos cómo una
-      estructura casi "amorfa", en donde los cuatro monómeros que conforman cada
-      unidad cristalina se representan por estructuras terciarias en modo de
-      superficie "Gaussiana" en tonos de azul siguiendo los "factores de temperatura"
-      (b-factor), y a medida que vamos "rascando el cascarón", vamos descubriendo la
-      magnificencia de la estructura representada por clásicas hélices α, cadenas β y
-      loops flexibles, en diferentes gamas de colores de acuerdo a cada monómero. Si
-      observamos en detalle, veremos la molécula de avibactam (en "sticks" magenta)
-      unida a cada uno de los sitios activos.
+      "INFINITO INTERIOR" Es una obra de intersección arte y ciencia, que se compone
+      de tres esculturas digitales modeladas con biomoléculas, las proteínas
+      estructurales de la nucleocapside de los virus sars cov 2, hiv, y dengue, los
+      diseños están realizados con el programa vmd (visual molecular dynamics) de
+      modelado molecular y visualización de estructuras de proteínas resueltas a
+      través de difracción de electrones. La obra "infinito interior" pertenece a la
+      serie "Arte metaperceptual". La acción artística nace en la generación del
+      lenguaje morfológico propio del universo nanométrico como punto de partida
+      (realidad), para alcanzar una poesía visual abstracta a partir de las
+      herramientas de modelado usadas en el campo científico.
 
   - ciudadPais: Buenos Aires, Argentina
-    foto: /images/artists/modeladoMolecular/06 - The Beast_SMALL.png
-    titulo: The Beast
-    url:
-    descripcion: |-
-      "Ay de tí, oh tierra y mar, porque el diablo envía a la Bestia con ira; él
-      sabe que el tiempo es corto, y quien entienda, cuente el número de la
-      Bestia: su número es humano; es 666 …" (traducción de "The Number of the
-      Beast", Iron Maiden, 1982). Las β-lactamasas de la familia OXA pertenecen
-      a un grupo de enzimas muy diversificadas (más de 1.000 variantes), con
-      espectros de actividad muy variado, y generalmente bastante difíciles de
-      purificar, cristalizar y analizar, por su frecuente inestabilidad
-      termodinámica. Son consideradas por algunos investigadores, ni más ni
-      menos, las "Bestias de las β-lactamasas". 
-
-      OXA-438 es una variante con actividad de "carbapenemasa", ya que puede inactivar una amplia variedad
-      de β-lactámicos, incluyendo los de "último recurso" como los carbapenemes.
-      Hace dos años, hemos logrado resolver la estructura cristalográfica de
-      esta enzima en complejo con el antibiótico ceftazidima, a una resolución
-      de 2.8 Å. Aún no ha sido depositada en el PDB. 
-
-      La obra muestra los dos
-      monómeros que posee la estructura cristalina, representada como superficie
-      generada por las cadenas laterales de los aminoácidos, utilizando una
-      renderización con coloración de arcoíris en modo de "ramping". En uno de
-      los monómeros (derecha), se observa una molécula hidrolizada de
-      ceftazidima (en "ball&stick") encajada en el sitio activo de la
-      β-lactamasa, cual "trozo de alimento en las fauces de la Bestia".
-
-  - ciudadPais: Buenos Aires, Argentina
-    foto: /images/artists/modeladoMolecular/01 - Faro del fin del mundo_SMALL.png
+    foto: /images/artists/modeladoMolecular/07 - Faro del fin del mundo_SMALL.png
     titulo: EL FARO DEL FIN DEL MUNDO
     url:
     descripcion: |-
+      Autor: Federico Coscio.
+
       En el interior de la estructura del virus se diseñó un espacio habitable,
       mostrando la potencialidad estructural de estas "bio-maquinarias". El
       título "El faro del fin del mundo" está motivado por la idea de evidenciar
@@ -196,11 +198,13 @@ obras:
       investigadores del CONICET, FACEN- UBA.
 
   - ciudadPais: Buenos Aires, Argentina
-    foto: /images/artists/modeladoMolecular/02 - Morfología de la nada_SMALL.png
+    foto: /images/artists/modeladoMolecular/08 - Morfología de la nada_SMALL.png
     titulo: MORFOLOGÍA DE LA NADA
     url:
     descripcion: |-
-      Insatalación colgante con luz negra 300cm. x 250cm. x 250cm.
+      Autor: Federico Coscio.
+
+      Instalación colgante con luz negra 300cm. x 250cm. x 250cm.
 
       Desde el campo de las Matemáticas "Morfología de la nada" presenta un
       mecanismo inventado por el artista llamado Hiperperspectiva que de manera
@@ -209,11 +213,13 @@ obras:
       nuestra experiencia en el mundo.
 
   - ciudadPais: Buenos Aires, Argentina
-    foto: /images/artists/modeladoMolecular/03 - Zona de mutación_SMALL.png
+    foto: /images/artists/modeladoMolecular/09 - Zona de mutación_SMALL.png
     titulo: Zona de mutación
     url:
     descripcion: |-
-      esculturas mutantes construidas con piezas modulares giratorias.
+      Autor: Federico Coscio.
+
+      Esculturas mutantes construidas con piezas modulares giratorias.
 
       Zona de mutación es un conjunto de objetos escultóricos en movimiento y
       transformación, compuestos por piezas modulares de cierta complejidad
@@ -225,10 +231,12 @@ obras:
       objeto escultórico.
 
   - ciudadPais: Buenos Aires, Argentina
-    foto: /images/artists/modeladoMolecular/04 - quasiurbes.jpg
+    foto: /images/artists/modeladoMolecular/10 - quasiurbes.jpg
     titulo: QUASIURBES
     url:
     descripcion: |-
+      Autor: Federico Coscio.
+
       Escultura mutante de medidas variables y composición modular.
 
       Quasiurbes es un conjunto de objetos escultóricos mutantes inspirados en los quasicristales.
