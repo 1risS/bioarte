@@ -106,6 +106,7 @@ const ContainerHoverDiv = styled.div`
   display: inherit;
   justify-content: space-around;
   margin-top: 0.4rem;
+  border-radius: 15px;
 `
 
 const Foto = styled.img`
