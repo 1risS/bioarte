@@ -100,7 +100,7 @@ const PanoPage = () => {
   }
 
   const irBiozen = () => {
-    window.open("https://marieflanagan.com/")
+    window.open("http://softsanctuary.club/")
   }
 
   // const [cookies, setCookie] = useCookies()
@@ -242,7 +242,7 @@ const PanoPage = () => {
       )
 
       const infospotK = createInfoSpot(
-        "Biozen",
+        "Soft Sanctuary",
         [-2651.67, 1420.32, 4368.5],
         irBiozen,
         "/images/vr/Icon_Biozen.jpg",
