@@ -87,6 +87,7 @@ const HoverDiv = styled.div`
   height: 180px;
   width: 180px;
   position: absolute;
+  border-radius: 15px !important;
   left: 1rem;
   top: 0px;
   opacity: 0;
@@ -106,7 +107,6 @@ const ContainerHoverDiv = styled.div`
   display: inherit;
   justify-content: space-around;
   margin-top: 0.4rem;
-  border-radius: 15px;
 `
 
 const Foto = styled.img`
