@@ -121,6 +121,11 @@ const Citas = styled.p`
   text-align: justify;
 `
 
+const StyledA = styled.a`
+  color: #508f44;
+  font-weight: 600;
+`
+
 const LineaDeTiempo = () => {
   return (
     <Layout>
@@ -325,9 +330,9 @@ const LineaDeTiempo = () => {
           <br></br>
           Asimismo, en el marco del PID Novel N° 3180 hemos participado con la
           ponencia "Lecturas del bioarte en clave semiótica: avances de
-          investigación" publicada en las Actas del 14° Congreso Mundial de
+          investigación" publicada en las <StyledA href="https://iass-ais.org/proceedings2019/">Actas</StyledA> del 14° Congreso Mundial de
           Semiótica Buenos Aires 2019, y también ha sido aceptado para sus
-          publicación en la revista especializada Designis, el artículo
+          publicación en la revista especializada <StyledA href="http://www.designisfels.net/">Designis</StyledA>, el artículo
           "Biosemiótica y las explosiones de sentido del bioarte" (en prensa).
           <br></br>
           <br></br>
@@ -340,13 +345,13 @@ const LineaDeTiempo = () => {
           Asimismo, a modo de actividad de divulgación y buscando fomentar fuera
           del ámbito académico también la socialización y reflexión sobre el
           tema en cuestión, llevamos adelante un ciclo de charlas virtuales
-          denominado Mañanas de bioarte. Conversaciones con artistas que
+          denominado <StyledA href="https://www.fcedu.uner.edu.ar/?p=46456">Mañanas de bioarte</StyledA>. Conversaciones con artistas que
           trabajan en el cruce del arte, la ciencia y la tecnología, donde
           dialogamos con artistas y colectivos artísticos femeninos, presentando
           una selección de sus obras bioartísticas realizadas a partir de
           distintas metodologías y poéticas. Durante el 2020 fueron
-          entrevistadas Luciana Paoletti, Laura Olalde y el Colectivo
-          Electrobiota (Gabriela Munguía y Guadalupe Chávez).
+          entrevistadas <StyledA href="https://www.youtube.com/watch?v=ydg-2uQZKvU">Luciana Paoletti</StyledA>, <StyledA href="https://www.youtube.com/watch?v=RJsjM2GEykE">Laura Olalde</StyledA> y el <StyledA href="https://www.youtube.com/watch?v=ABPacUtjm0Q&t=615s">Colectivo
+          Electrobiota</StyledA> (Gabriela Munguía y Guadalupe Chávez).
         </TextoBase>
         <Citas>
           Citas:<br></br>
