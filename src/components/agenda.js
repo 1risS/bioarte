@@ -13,7 +13,7 @@ const eventsPerDay = [
       title: "Presentación BIOS",
       speaker: "General",
       desc:
-        "Dra. Guadalupe Diaz Constanzo (Directora Centro Cultural de la Ciencia);  Equipo de Producción de Proyecto Bios  Objeto a (Lujan Oulton, Susana De Giacomo y Tomas Oulton); Iris Saladino (Programación), Laura Palavecino (Arte), Guillermo Winnicki (Academia), Natalia Matewecki (Linea del Tiempo), Lucía Stubrin (reflexiones sobre Biotecnología y Arte)",
+        "Dra. Guadalupe Diaz Constanzo (Directora Centro Cultural de la Ciencia);  Equipo de Producción de Proyecto Bios  Objeto a (Lujan Oulton, Susana De Giacomo y Tomas Oulton); Valeria Scalisse (Diseño), Iris Saladino (Programación), Laura Palavecino (Arte), Guillermo Winnicki (Academia), Natalia Matewecki (Linea del Tiempo), Lucía Stubrin (reflexiones sobre Biotecnología y Arte)",
     },
     {
       time: "16:00",
@@ -43,14 +43,14 @@ const eventsPerDay = [
       speaker: "Academia",
       desc:
         "Moderador: Ing. Guillermo Winnicki (Encargado de Academia en Proyecto Bios, Director Gestión Cultural UTN-FRBA)" +
-        " Panelistas: Dra María Victoria Miranda (Bioquímica (UBA) Dra. UBA. Actual Directora del Instituto NANOBIOTEC (UBA-CONICET). Prof. Titular de la Cátedra de Biotecnología de la FFyB (UBA). Investigadora Principal de CONICET), Gaston Soria (Profesor Adjunto de Diagnóstico y Patología Molecular, FCQ-UNC, Director Científico de OncoPrecision, empresa de base tecnológica con inversión nacional e internacional).",
+        "Panelistas: Dra María Victoria Miranda (Bioquímica (UBA) Dra. UBA. Actual Directora del Instituto NANOBIOTEC (UBA-CONICET). Prof. Titular de la Cátedra de Biotecnología de la FFyB (UBA). Investigadora Principal de CONICET), Gaston Soria (Profesor Adjunto de Diagnóstico y Patología Molecular, FCQ-UNC, Director Científico de OncoPrecision, empresa de base tecnológica con inversión nacional e internacional).",
     },
     {
       time: "19:00",
-      title: "Inauguración muestra virtual con LikeLike",
+      title: "Inauguración virtual de la muestra de BioArte",
       speaker: "General",
       desc:
-        "Plataforma interactiva en internet Like like : los asistentes ingresan con su avatar en una galería de arte virtual en 8 bits en la que pueden chatear con los artistas, visitar sus obras y beber tragos virtuales en el patio chill out de la galería.",
+        "Plataforma interactiva virtual en Likelike. Esta actividad requiere inscripción aparte. Los asistentes ingresan con su avatar en una galería de arte virtual pixelart  en la que pueden chatear con los artistas, visitar sus obras y beber tragos virtuales en el patio chill out de la galería.",
     },
   ],
   // Martes 06 de Abril
@@ -80,10 +80,10 @@ const eventsPerDay = [
     },
     {
       time: "17:00",
-      title: "Producción de Insumos Industriales (Biotecnología Blanca)",
+      title: "Producción de Insumos Industriales y el uso de herramientas de edición génica",
       speaker: "Biotecnología",
       desc:
-        "Orador: Maximiliano D'Alessio (Licenciado en Biotecnología de la Universidad de Quilmes, MBA de la Universidad de Belgrano. Director Comercial de Novozymes BioAg para América Latina - transmisión desde New York).",
+        "Maximiliano D'Alessio (Licenciado en Biotecnología de la Universidad de Quilmes, MBA de la Universidad de Belgrano. Director Comercial de Novozymes BioAg para América Latina - transmisión desde New York).",
     },
     {
       time: "18:00",
@@ -145,9 +145,9 @@ const eventsPerDay = [
       title: "Agar Art y Modelado Molecular",
       speaker: "Arte",
       desc:
-        "Panel Agar Art: Daniela Cejas (Dra. UBA en Microbiología, Investigadora CONICET y JTP de la UBA, ASM young ambassador) y Laura Echarren (Becaria Doctoral en Instituto de Biología Molecular y Celular de Rosario. Ganadora  People Choice en el concurso de Agart Art de la ASM en 2015)." +
-        "Panel Modelado Molecular: Dr. Pablo Power (Investigador Independiente CONICET / Profesor Adjunto FFyB-UBA, Coordina la Subcomisión de Microbiología Celular y Molecular de la Asoc. Arg. de Microbiología), Federico Coscio (Investigador del Instituto de Morfología Comunicación y Diseño - Facultad de Arquitectura y Urbanismo- UCASAL - Artista plástico, fotógrafo y Geómetra." +
-        "Modera: Gabriel Gutkind, Doctor en Farmacia y Bioquímica, Investigador Principal del Conicet, Senior Ambassador de la American Society of Microbiology (ASM).",
+        "Modera: Gabriel Gutkind, Doctor en Farmacia y Bioquímica, Investigador Principal del Conicet, Senior Ambassador de la American Society of Microbiology (ASM)." +
+        "Panel Agar Art: Daniela Cejas (Dra. UBA en Microbiología, Investigadora CONICET y JTP de la UBA, ASM young ambassador) y Laura Echarren (Becaria Doctoral en Instituto de Biología Molecular y Celular de Rosario. Ganadora  People Choice en el concurso de Agart Art de la ASM en 2018)." +
+        "Panel Modelado Molecular: Dr. Pablo Power (Investigador Independiente CONICET / Profesor Adjunto FFyB-UBA, Coordina la Subcomisión de Microbiología Celular y Molecular de la Asoc. Arg. de Microbiología), Federico Coscio (Investigador del Instituto de Morfología Comunicación y Diseño - Facultad de Arquitectura y Urbanismo- UCASAL - Artista plástico, fotógrafo y Geómetra.",
     },
     {
       time: "18:00",
@@ -225,10 +225,10 @@ const eventsPerDay = [
   [
     {
       time: "15:00",
-      title: "Bioeconomía - Master Class",
-      speaker: "Biotecnología",
+      title: "Master Class Bioeconomía",
+      speaker: "Academia",
       desc:
-        "Fernando Vilella: Ingeniero agrónomo UBA, Director del Programa de Agronegocios y Alimentos, y Profesor a cargo de la Cátedra de Agronegocios de la Facultad de Agronomía de la UBA. Miembro de las Comisiones Directivas de MAIZAR, ETICAGRO, Asociación Argentina de Biocombustibles e Hidrógeno y la Fundación Pro-Antártida. Preside la Fundación Alimentos Argentinos. Ha sido Decano de la Facultad de Agronomía de la UBA; Subsecretario de Asuntos Agrarios de la Provincia de Buenos Aires y Miembro del Directorio de IAMA (International Food and Agribusiness Management Association Board of Directors)",
+        "Fernando Vilella: Ingeniero agrónomo UBA, Director del Área de Bioeconomía, y Titular a cargo de la Cátedra de Agronegocios de la Facultad de Agronomía de la UBA. Miembro de las Comisiones Directivas de MAIZAR, ETICAGRO, Asociación Argentina de Biocombustibles e Hidrógeno. Preside la Fundación Alimentos Argentinos. Ha sido Decano de la Facultad de Agronomía de la UBA; Subsecretario de Asuntos Agrarios de la Provincia de Buenos Aires y Miembro del Directorio de IAMA (International Food and Agribusiness Management Association Board of Directors).",
     },
     {
       time: "16:00",
@@ -251,22 +251,22 @@ const eventsPerDay = [
       speaker: "Academia",
       desc:
         "Modera: Lucía Stubrin (Doctora en Teoría e Historia de las Artes por la UBA y Licenciada en Comunicación Social por la UNER, becaria posdoctoral del Consejo Nacional de Investigaciones Científicas y Técnicas (CONICET), profesora universitaria de Semiótica (UNER) y Epistemología de las Artes Visuales (UNL))." +
-        " Panelistas: Mariela Yeregui (Directora de la Maestría en Tecnología y Estética de las Artes Electrónicas de la Untref : BioLab (Biolab | biolabmovil (wixsite.com)), Mg. Alejandra Marinaro (Laboratorio Latinoamericano de Bioarte alojado en la UAI) y Alejandra Portela Decana de la Facultad de Artes de la UMSA con la Diplomatura de Arte Robótico (Biorobótica)  (robótica (umsa.edu.ar)",
+        "Panelistas: Mariela Yeregui (Directora de la Maestría en Tecnología y Estética de las Artes Electrónicas de la Untref : BioLab (Biolab | biolabmovil (wixsite.com)), Mg. Alejandra Marinaro (Laboratorio Latinoamericano de Bioarte alojado en la UAI) y Alejandra Portela Decana de la Facultad de Artes de la UMSA con la Diplomatura de Arte Robótico (Biorobótica)  (robótica (umsa.edu.ar)",
     },
     {
       time: "18:00",
       title: "Aceleradora Grid X y Start ups",
       speaker: "Biotecnología",
       desc:
-        "Modera Grid X: Federico Marque (Graduado de Singularity University e Ingeniero industrial es emprendedor en biotecnología hace más de 10 años. Es socio en GRIDX, una company builder que crea e invierte en compañías de start ups biotecnológicas en Latinoamérica)." +
-        " Panelistas: Milagros Graziani (Ingeniera Agrónoma - Country Managing Director en Beeflow, Carolina Baldi, (Doctora en Bioquímica, CEO de ALGAE+ Biotecnología) y Atilio Grimani (Abogado con posgrado de negocios en la IAE, CEO de Einsted)",
+        "Modera Grid X: Maria Renner (Bióloga UBA, Doctora en Neurociencias. Es socia en GRIDX, una company builder que crea e invierte en compañías de start ups biotecnológicas en Latinoamérica)." +
+        "Panelistas: Milagros Graziani (Ingeniera Agrónoma - Country Managing Director en Beeflow que brinda servicios de polinización científicos, integrando el trabajo de apicultores, agricultores y científicos), Carolina Baldi (Doctora en Bioquímica, CEO de AlgaeBio+, que crea compuestos a través de microalgas para la salud humana y animal) y Nahuel Olaiz  (Chief Scientific Officer & CoFounder de Einsted, que combinan Biotecnología y Tecnología de Campos Eléctricos Pulsados para producir una \"nueva generación de alimentos\")",
     },
     {
       time: "19:00",
       title: "Cierre",
       speaker: "General",
       desc:
-        "Pablo Lapadula: Biólogo FADU UBA, Artista, miembro del Consejo Cultural de la Ciudad de Buenos Aires, Asesor Académico de Contenidos del Centro de Arte y Naturaleza, sede Ecoparque / Muntref y profesor de arte y ciencia de la Maestría en Estéticas Electrónicas, Universidad Nacional de Tres de Febrero.",
+        "Pablo La Padula: Artista visual, Licenciado y Doctor en Ciencias Biológicas, Facultad de Ciencias Exactas y Naturales, Universidad de Buenos Aires (UBA). Es investigador del Instituto Taquíni de Investigaciones en Medicina Traslacional(UBA-CONICET). Consejero Cultural de la Ciudad de Buenos Aires, Ministerio de Cultura, y  Asesor Académico del Centro de Arte y Naturaleza, Museo de la Universidad Nacional de Tres de Febrero (UNTREF).",
     },
     {
       time: "19:40",
