@@ -47,19 +47,28 @@ const FunFactsBalloon = styled(({ className, duration = 12000 }) => {
   background-image: url(${globoDialogo});
   background-repeat: no-repeat;
   background-size: contain;
-  width: 18rem;
-  height: 14rem;
+  width: 20rem;
+  height: 16rem;
   position: relative;
   padding: 1em;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
 
   div {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
     position: absolute;
     width: 16rem;
   }
 
   div p {
+    display: flex;
     position: relative;
     font-size: 13px;
+    align-self: center;
   }
 `
 

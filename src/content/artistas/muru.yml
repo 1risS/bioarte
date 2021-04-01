@@ -1,5 +1,5 @@
 nombre: MURU 7.8
-cvUrl: https://muru7-8.github.io/2020/integrantes/
+cvUrl: https://namiki-universo-digital.netlify.app/
 formacion: |-
   Somos semillas en agenciamiento electromagnético con la tierra y en resonancia
   con las diversas comunidades terrestres. Cristalizamos las turbulencias
@@ -34,12 +34,12 @@ bio: |-
   Docente y desarrollador de dispositivos hardware programable para empresas y
   proyectos artísticos. Es profesor  de  robótica  educativa  en  la  escuela
   integral  Maimónides
-foto: /images/artists/muru/main.jpg
+foto: /images/artists/muru/02---Foto-Obra-Nueva---bailarina-y-cristal_SMALL.jpg
 obras:
   - ciudadPais: Buenos Aires, Argentina
     foto: /images/artists/muru/02 - Foto Obra Nueva - Proyecto Namiki.png
     titulo: Proyecto Namiki
-    url: https://muru7-8.github.io/2020/observatorio-resonancias/
+    url: https://muru7-8.github.io/2021/proyecto_namiki/
     descripcion: |-
       El proyecto Namiki invita a percibir las resonancias de eventos mínimos de
       nuestro entorno y descubrir por medio de su sensado y cristalización
@@ -88,7 +88,7 @@ obras:
 
   - ciudadPais: Buenos Aires, Argentina
     foto: /images/artists/muru/02 - Tradescantia.png
-    titulo: Tradescantia, geometrías en danza y colisión
+    titulo: Pacha Transmisión
     url:
     descripcion: |-
       La instalación Tradescantia propone al espectador reconfigurar la mirada

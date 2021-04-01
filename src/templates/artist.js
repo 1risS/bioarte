@@ -101,6 +101,7 @@ const BioTexto = styled.div`
 const FotoObraContainer = styled.div`
   background-image: url("${props => props.foto}");
   background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
   margin: 1em 0;
   height: 100vh;
