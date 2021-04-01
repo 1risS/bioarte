@@ -17,6 +17,7 @@ const LogosCont = styled.div`
   width: 100vw;
   max-height: 10rem;
   // background-color: #272d28;
+  background-color: white;
 `
 
 const FirstRow = styled.div`
@@ -25,6 +26,7 @@ const FirstRow = styled.div`
   justify-content: space-evenly;
   align-items: center;
   width: 100vw;
+  background-color: white;
 `
 
 const SecRow = styled.div`
@@ -36,6 +38,7 @@ const SecRow = styled.div`
   height: 3rem;
   margin-bottom: 1rem;
   margin-top: 1rem;
+  background-color: white;
 `
 
 const Logo = styled.img`
