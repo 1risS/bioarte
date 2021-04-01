@@ -40,13 +40,17 @@ const SecRow = styled.div`
 
 const Logo = styled.img`
   margin: 3rem;
-  height: 100px;
-  width: 100px;
+  max-width: 100px;
+  max-height: 100px;
+  width: auto;
+  height: auto;
 `
 
 const Logo2 = styled.img`
-  height: 50px;
-  width: 50px;
+  max-width: 70px;
+  max-height: 70px;
+  width: auto;
+  height: auto;
   margin: 2rem;
 `
 
