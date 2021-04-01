@@ -17,6 +17,7 @@ import fotoSacco from "../../static/images/artists/darioSacco/01 - Foto Dario Sa
 import fotoLapadula from "../../static/images/artists/pabloLapadula/Pablo_Lapadula_SMALL.png"
 import fotoBiomateriales from "../../static/images/artists/biomateriales/Artistas_Biomateriales_SMALL.jpg"
 import fotoPaoletti from "../../static/images/artists/lucianaPaoletti/Luciana 04_SMALL.png"
+import fotoWilner from "../../static/images/artists/arielWilner/01 - Foto Ariel.jpg"
 import fondoHeader from "../../static/images/carousel/Banner_Exhibition_0.png"
 import like from "../../static/images/exhibicion/likelikeRounded.png"
 import HomeBoton from "../components/homeBoton"
@@ -268,7 +269,11 @@ const ArtistasPage = () => {
                   name="Daniel Alvarez Olmedo"
                   src={fotoOlmedo}
                 />
-                <ArtistCard to="ariel-wilner" name="Ariel Wilner" src={like} />
+                <ArtistCard
+                  to="ariel-wilner"
+                  name="Ariel Wilner"
+                  src={fotoWilner}
+                />
               </Column>
               {/* col4 */}
               <Column>

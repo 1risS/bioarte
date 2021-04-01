@@ -9,7 +9,7 @@ foto: /images/artists/biomateriales/Principal_Biomateriales.jpg
 obras:
   - ciudadPais: Buenos Aires, Argentina
     foto: /images/artists/biomateriales/00 - Foto Bloque 01 - ana_veronica.png
-    titulo: Biografías
+    titulo:
     url:
     descripcion: |-
       Artista: Verónica Bergottini

@@ -1,12 +1,50 @@
 nombre: Ariel Wilner
 cvUrl: https://www.ceiarteuntref.edu.ar/Ariel_Wilner
 formacion: |-
-bio: |-
+  Ariel Wilner nació en Buenos Aires en 1960. Es Licenciado en Ciencias Biológicas por la UBA - Universidad de Buenos Aires (1985), MSc. en Genética por la HUJ (1987) y Dr. en Biología Molecular por UBA (1991). Desarrolló una carrera empresarial en la Industria Argentina por más de 25 años. Se desempeña profesionalmente en Genda, un Laboratorio de Diagnóstico Genético por Biología Molecular.
 
-foto: /images/artists/biomateriales/02 - Ana Hall_Biomaterial_SMALL.png
+bio: |-
+  En la actualidad, producto de su interés en el arte contemporáneo, crea y dirige un proyecto de carácter artístico, por el cual produce imágenes digitales, destinadas a poner de manifiesto la compleja vinculación entre la visualidad del mundo circundante y su percepción por parte de la mente humana, desde una concepción que cruza los lenguajes artístico y científico. Con el objetivo de contener conceptualmente este proyecto, crea el Instituto Cordu (IG @cordu.institute), marco ideal desde donde interacciona con la comunidad, a través de plataformas en red. 
+
+  Sus trabajos artísticos tratan de concientizar y lograr visibilidad acerca de las problemáticas actuales relacionadas con las áreas del conocimiento de su incumbencia.
+
+  La visualización de sus trabajos representa una experiencia empática e intelectual.
+
+foto: /images/artists/arielWilner/02 - Imagen principal.jpg
+
 obras:
   - ciudadPais: Buenos Aires, Argentina
-    foto: /images/artists/biomateriales/01 - viento 1.jpg
-    titulo:
+    foto: /images/artists/arielWilner/03 - Imagen bloque 1 - ElDesafioDeLaVida01.jpg
+    titulo: El Desafío de la Vida
+    url:
+    descripcion: |-
+      El tema elegido para trabajar en esta presentación se refiere al Hambre en el Mundo en 2020. Son más de 800 millones de personas las que padecen hambre, desde comer una sola vez al día hasta el grado de desnutrición alta. No es necesario recordar los daños irrecuperables que se producen a nivel fisiológico y luego anatómico en el cerebro en desarrollo de niños que crecen desnutridos, ni en la conformación de capacidades intelectuales, así como los daños irreversibles en adultos, y que hablan en muertes directas o indirectas.
+
+      En este contexto, existen herramientas desarrolladas que permitirían una ayuda
+      eficaz para resolver esta Tragedia Global, y son los alimentos modificados
+      genéticamente (OGM) o los editados mediante técnicas de edición genética con el
+      uso de la Tecnología Crispr. Existe información errónea muy grave sobre el uso
+      de estos alimentos. No existe evidencia científica alguna que revele algún daño
+      o apoye la posición de que son dañinos y no deben consumirse. Ninguno de ningún
+      tipo. El tema se ha distorsionado hasta tal punto que Sir Richard Roberts,
+      ganador del Premio Nobel, ha reunido y organizado un movimiento al que ya se han
+      sumado alrededor de 130 premios Nobel que proclaman la seguridad de los
+      alimentos transgénicos.
+
+      Dicho esto, entiendo que tenemos la enorme responsabilidad de amplificar este
+      mensaje. Parece que el tema es desafiante y controvertido, cuando debería ser
+      disruptivo en el sentido de exigir que estas herramientas se utilicen para
+      combatir la más tremenda de las tragedias: La tragedia del hambre.
+  - ciudadPais: Buenos Aires, Argentina
+    foto: /images/artists/arielWilner/04 - Imagen bloque 2 - ElDesafioDeLaVida03.jpg
+    titulo: El Desafío de la Vida
+    url:
+    descripcion: |-
+      Esta experiencia viene a generar esta observación, a sustentar este mensaje de manera heterodoxa, inmaterial, profundamente empática, y pretende generar una reacción en quien la observa. Esa reacción, ese conflicto intelectual que inevitablemente conducirá a la reflexión, es la Pieza Artística. Es ese momento en el que la persona que participa de la experiencia termina de manera diferente a cuando comenzó a participar. Ese cambio, esa chispa, es la obra de arte en sí. Ese acto de reflexión que hará que el observador sea cuestionado por su propia racionalidad. ¿Es cierto lo que vi? ¿Es cierto ese concepto que tenía? o ¿Habré sido víctima de la desinformación, hasta el punto de haber abrazado una causa que me tomó falsamente como un luchador o un luchador?
+
+      En Octubre de 2020 las temáticas de sendos Premios Nobel, el de Química al CRISPR, y el de la Paz al Programa de Alimentos de la ONU, revelan la oportunidad de la obra. Tanto para visibilizar la utilización de las herramientas tecnológicas, como también de la tragedia del hambre. Ambas  abordados en la obra, que permite juntar arte y ciencia para colaborar en la visibilidad de un problema de la humanidad. Tratamos de que las mentes jóvenes se abran al ingenio y la curiosidad, al servicio del progreso. Si despejamos preconceptos, entonces ayudaremos a que más gente se ocupe estos temas.
+  - ciudadPais: Buenos Aires, Argentina
+    foto: /images/artists/arielWilner/ElDesafioDeLaVida04.jpg
+    titulo: El Desafío de la Vida
     url:
     descripcion: |-
