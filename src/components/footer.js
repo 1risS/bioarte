@@ -1,6 +1,15 @@
 import React from "react"
 import styled from "styled-components"
-import logo1 from "../../static/images/BIOSlogo.png"
+import logoMinCiencia from "../../static/images/footer/302 - Ministerio_de_Ciencia_arg.png"
+import logoC3 from "../../static/images/footer/logo C3.jpg"
+import logoObjetoA from "../../static/images/footer/Logo_Objeto_bordo_trasparente.png"
+import logoMecenazgo from "../../static/images/footer/LogoMecenazgo2019_large.jpg"
+import logoCanada from "../../static/images/footer/1 Canada_Wordmark-col.jpg"
+import logoUTN from "../../static/images/footer/2 - utn fr ba.png"
+import logoArgenbio from "../../static/images/footer/3- Argenbio 002.png"
+import logoFfyb from "../../static/images/footer/4- logo-ffyb.png"
+import logoAmega from "../../static/images/footer/5 - Logo AMEGA sin lema.jpg"
+import logoNZ from "../../static/images/footer/6 - NZ_BioAg_Purple_RGB.png"
 
 const LogosCont = styled.div`
   display: flex;
@@ -31,6 +40,8 @@ const SecRow = styled.div`
 
 const Logo = styled.img`
   margin: 3rem;
+  height: 100px;
+  width: 100px;
 `
 
 const Logo2 = styled.img`
@@ -43,18 +54,18 @@ const Footer = () => {
   return (
     <LogosCont>
       <FirstRow>
-        <Logo src={logo1}></Logo>
-        <Logo src={logo1}></Logo>
-        <Logo src={logo1}></Logo>
-        <Logo src={logo1}></Logo>
+        <Logo src={logoMinCiencia}></Logo>
+        <Logo src={logoC3}></Logo>
+        <Logo src={logoObjetoA}></Logo>
+        <Logo src={logoMecenazgo}></Logo>
       </FirstRow>
       <SecRow>
-        <Logo2 src={logo1}></Logo2>
-        <Logo2 src={logo1}></Logo2>
-        <Logo2 src={logo1}></Logo2>
-        <Logo2 src={logo1}></Logo2>
-        <Logo2 src={logo1}></Logo2>
-        <Logo2 src={logo1}></Logo2>
+        <Logo2 src={logoCanada}></Logo2>
+        <Logo2 src={logoUTN}></Logo2>
+        <Logo2 src={logoArgenbio}></Logo2>
+        <Logo2 src={logoFfyb}></Logo2>
+        <Logo2 src={logoAmega}></Logo2>
+        <Logo2 src={logoNZ}></Logo2>
       </SecRow>
     </LogosCont>
   )
