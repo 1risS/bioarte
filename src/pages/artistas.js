@@ -8,7 +8,7 @@ import fotoMuru from "../../static/images/artists/muru/01 - Muru7.8colorcuadrado
 import fotoOliverio from "../../static/images/artists/oliverioDuhalde/01 - OLIVERIO DUHALDE PHOTO 2021.jpg"
 import fotoFargas from "../../static/images/artists/joaquinFargas/01 - Foto Joaquin.jpg"
 import fotoMarinaro from "../../static/images/artists/alejandraMarinaro/01 - Foto alejandra.jpg"
-import fotoElectrobiota from "../../static/images/artists/electrobiota/02 -  Imagen RizosferaFM_00.jpg"
+import fotoElectrobiota from "../../static/images/artists/electrobiota/01 - Foto Electrobiotas_SMALL.png"
 import fotoAgarart from "../../static/images/artists/agarart/embajadores_cuadrada.jpg"
 import fotoFerrari from "../../static/images/artists/demianFerrari/01 - Demian Ferrari.png"
 import fotoOlmedo from "../../static/images/artists/danielAlvarezOlmedo/01 - Foto Daniel Alvarez Olmedo.jpg"
