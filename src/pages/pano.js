@@ -65,7 +65,7 @@ const Bar = styled.div`
 const Icon360 = styled(({ className, ...props }) => (
   <img
     className={className}
-    src="/images/360-degrees.png"
+    src="/images/vr/Icon_360.png"
     alt="360 degrees"
     draggable={false}
     {...props}
@@ -74,8 +74,10 @@ const Icon360 = styled(({ className, ...props }) => (
   position: fixed;
   top: 50%;
   left: 50%;
-  width: 200px;
-  height: 200px;
+  max-width: 200px;
+  max-height: 200px;
+  width: auto;
+  height: auto;
   margin-top: -100px;
   margin-left: -100px;
   opacity: 0;
@@ -443,7 +445,7 @@ const PanoPage = () => {
       }
 
       const panorama = new Panolens.ImagePanorama(
-        "/images/vr/24Marzo_Optimizada-01.jpg"
+        "/images/vr/30-DeMarzo_b_Optimizada.jpg"
       )
 
       panorama.addEventListener("progress", onProgress)
