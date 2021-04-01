@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react"
 import ReactMapGL, { Marker, Popup, FlyToInterpolator } from "react-map-gl"
-import 'mapbox-gl/dist/mapbox-gl.css';
+import "mapbox-gl/dist/mapbox-gl.css"
 import * as uniData from "../data/universidades.json"
 import pin from "../images/pin.png"
 import styled from "styled-components"
@@ -122,8 +122,13 @@ const SearchControlResults = styled(
   ({ className, children = [], onItemSelect }) => (
     <ul className={className}>
       {children.map((item, i) => (
-        <li key={i} >
-          <div onClick={() => onItemSelect(item)} onKeyPress={() => onItemSelect(item)} role="button" tabIndex={i}>
+        <li key={i}>
+          <div
+            onClick={() => onItemSelect(item)}
+            onKeyPress={() => onItemSelect(item)}
+            role="button"
+            tabIndex={i}
+          >
             <strong>{item.properties["Institución"]}</strong> -{" "}
             {item.properties["Facultad"]}
           </div>
@@ -205,7 +210,7 @@ export default function MapboxMap() {
         <ReactMapGL
           {...viewport}
           mapboxApiAccessToken={MAPBOX_TOKEN}
-          mapStyle="mapbox://styles/catahache/ckhtxig0t182319nzro2le33u"
+          mapStyle="mapbox://styles/mapbox/streets-v11"
           onViewportChange={viewport => {
             setViewport(viewport)
           }}
@@ -237,7 +242,11 @@ export default function MapboxMap() {
               }}
             >
               <div>
-                <a target="_blank" rel="noreferrer" href={selectedUni.properties["Web Site"]}>
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href={selectedUni.properties["Web Site"]}
+                >
                   <h2>{selectedUni.properties["Facultad"]}</h2>
                 </a>
                 <h3>{selectedUni.properties["Institución"]}</h3>
