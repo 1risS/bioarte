@@ -16,7 +16,7 @@ const LogosCont = styled.div`
   flex-direction: column;
   width: 100vw;
   max-height: 20rem;
-  background-color: #272d28;
+  // background-color: #272d28;
 `
 
 const FirstRow = styled.div`
@@ -35,7 +35,7 @@ const SecRow = styled.div`
   width: 100vw;
   height: 3rem;
   margin-bottom: 1rem;
-  margin-top: 3rem;
+  margin-top: 1rem;
 `
 
 const Logo = styled.img`
@@ -47,8 +47,8 @@ const Logo = styled.img`
 `
 
 const Logo2 = styled.img`
-  max-width: 70px;
-  max-height: 70px;
+  max-width: 60px;
+  max-height: 60px;
   width: auto;
   height: auto;
   margin: 2rem;
@@ -64,10 +64,10 @@ const Footer = () => {
         <Logo src={logoMecenazgo}></Logo>
       </FirstRow>
       <SecRow>
+        <Logo2 src={logoFfyb}></Logo2>
         <Logo2 src={logoCanada}></Logo2>
         <Logo2 src={logoUTN}></Logo2>
         <Logo2 src={logoArgenbio}></Logo2>
-        <Logo2 src={logoFfyb}></Logo2>
         <Logo2 src={logoAmega}></Logo2>
         <Logo2 src={logoNZ}></Logo2>
       </SecRow>
