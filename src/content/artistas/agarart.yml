@@ -25,8 +25,42 @@ bio: |-
   Hasta hoy, se han recibido 1200 presentaciones de 1000 artistas
   individuales de 145 países. Las obras del concurso se han presentado en
   una amplia gama de instituciones, como el Liberty Science Center y la ONU.
-foto: /images/artists/agarart/main.jpg
+foto: /images/artists/agarart/lauraEcharren/01 - Imagen Principal de Agar Art - A Salmonellosis odyssey.jpg
 obras:
+  - ciudadPais: Buenos Aires, Argentina
+    foto: /images/artists/agarart/embajadores_ancha.jpg
+    titulo: Embajadores Argentinos de la ASM
+    url: https://asm.org/Events/ASM-Agar-Art-Contest/Home
+    descripcion: |-
+      Dr. Gabriel Gutkind y Dra. Daniela Cejas
+
+      El Dr. Gabriel Gutkind es un microbiólogo de reconocimiento internacional y más
+      de 40 años de dedicación a la actividad científica en Argentina. Su campo de
+      investigación se centra en el estudio de la resistencia a los antimicrobianos.
+      Es profesor Titular de la cátedra de Microbiología de la Facultad de Farmacia y
+      Bioquímica, Universidad de Buenos Aires (FFyB-UBA) e Investigador Principal del
+      CONICET. Actualmente se desempeña como Director del Instituto de Investigaciones
+      en Bacteriología y Virología Molecular (IBaViM) de FFyB-UBA. Ha publicado más de
+      150 artículos científicos y es miembro de la Academia Nacional de Farmacia y
+      Bioquímica.
+
+      Desde mediados de los 80 es miembro de la Subcomisión de
+      Antimicrobianos-SADEBAC-Asociación Argentina de Microbiología (AAM) y desde 2019
+      es embajador senior de la American Society for Microbiology (ASM) en Argentina.
+
+      Ha contribuido a la formación de numerosos investigadores en el área de la
+      microbiología, entre los que se encuentra la Dra. Daniela Cejas. Ella se dedica
+      desde hace 14 años al estudio de la resistencia bacteriana, área en la cual ha
+      realizado su tesis de grado y de doctorado. Es Investigadora Asistente del
+      CONICET, forma parte del plantel de investigadores formados del Instituto IBaViM
+      y es docente de Microbiología en FFyB-UBA. Es miembro de la Subcomisión de
+      Antimicrobianos -SADEBAC-AAM y desde 2020 ha sido seleccionada como embajadora
+      joven de la ASM en Argentina.
+
+      Dr. Gutkind y Dra. Cejas han coordinado la
+      categoría Agar Art, vinculando Proyecto Bios, ASM, AAM y los artistas argentinos
+      que han participado en el concurso ASM Agar Art.
+
   - ciudadPais: Buenos Aires, Argentina
     foto: /images/artists/agarart/lauraEcharren/01 - Imagen Principal de Agar Art - A Salmonellosis odyssey.jpg
     titulo: Salmonellosis Odyssey-People Choice 2015
