@@ -1,9 +1,9 @@
 import React from "react"
 import styled from "styled-components"
-import logoMinCiencia from "../../static/images/footer/302 - Ministerio_de_Ciencia_arg.png"
+import logoMinCiencia from "../../static/images/footer/00_Logo_Ministerio_ECCyT.png"
 import logoC3 from "../../static/images/footer/logo C3.jpg"
-import logoObjetoA from "../../static/images/footer/Logo_Objeto_bordo_trasparente.png"
-import logoMecenazgo from "../../static/images/footer/LogoMecenazgo2019_large.jpg"
+import logoObjetoA from "../../static/images/footer/logoobjetoanegro.png"
+import logoMecenazgo from "../../static/images/footer/Logo-Mecenazgo-2019-1.jpg"
 import logoCanada from "../../static/images/footer/1 Canada_Wordmark-col.jpg"
 import logoUTN from "../../static/images/footer/2 - utn fr ba.png"
 import logoArgenbio from "../../static/images/footer/3- Argenbio 002.png"
@@ -15,7 +15,7 @@ const LogosCont = styled.div`
   display: flex;
   flex-direction: column;
   width: 100vw;
-  max-height: 20rem;
+  max-height: 10rem;
   // background-color: #272d28;
 `
 
@@ -39,7 +39,7 @@ const SecRow = styled.div`
 `
 
 const Logo = styled.img`
-  margin: 3rem;
+  margin: 2rem;
   max-width: 100px;
   max-height: 100px;
   width: auto;
@@ -47,11 +47,12 @@ const Logo = styled.img`
 `
 
 const Logo2 = styled.img`
-  max-width: 60px;
-  max-height: 60px;
+  max-width: 80px;
+  max-height: 80px;
   width: auto;
   height: auto;
   margin: 2rem;
+  padding-bottom: 1rem;
 `
 
 const Footer = () => {

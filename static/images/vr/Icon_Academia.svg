@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 25.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 140 140" style="enable-background:new 0 0 140 140;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#508F44;}
+	.st1{fill:#FFFFFF;}
+</style>
+<symbol  id="baseIcon_x5F_00" viewBox="-61.26 -61.26 122.51 122.51">
+	<rect x="-61.26" y="-61.26" class="st0" width="122.51" height="122.51"/>
+	<g>
+		<path class="st1" d="M-61.26,61.26V-61.26H61.26V61.26H-61.26z M51.92-28.12c0-13.15-10.66-23.81-23.81-23.81h-56.23
+			c-13.15,0-23.81,10.66-23.81,23.81v56.23c0,13.15,10.66,23.81,23.81,23.81h56.23c13.15,0,23.81-10.66,23.81-23.81V-28.12z"/>
+	</g>
+</symbol>
+<symbol  id="column" viewBox="-3.32 -11.64 6.64 27.92">
+	<rect x="-3.32" y="12.53" class="st1" width="6.64" height="3.75"/>
+	<rect x="-2.07" y="-11.64" class="st1" width="4.15" height="23.55"/>
+</symbol>
+<g>
+	
+		<use xlink:href="#baseIcon_x5F_00"  width="122.51" height="122.51" x="-61.26" y="-61.26" transform="matrix(1.1428 0 0 -1.1428 70.0831 70.2013)" style="overflow:visible;"/>
+	<g>
+		<polygon class="st1" points="117.71,47.48 22.45,47.48 70.08,26.9 		"/>
+		
+			<use xlink:href="#column"  width="6.64" height="27.92" id="XMLID_13_" x="-3.32" y="-11.64" transform="matrix(1.3349 0 0 -1.3349 94.5085 81.7966)" style="overflow:visible;"/>
+		
+			<use xlink:href="#column"  width="6.64" height="27.92" id="XMLID_12_" x="-3.32" y="-11.64" transform="matrix(1.3349 0 0 -1.3349 78.1867 81.7966)" style="overflow:visible;"/>
+		
+			<use xlink:href="#column"  width="6.64" height="27.92" id="XMLID_11_" x="-3.32" y="-11.64" transform="matrix(1.3349 0 0 -1.3349 61.865 81.3864)" style="overflow:visible;"/>
+		
+			<use xlink:href="#column"  width="6.64" height="27.92" id="XMLID_10_" x="-3.32" y="-11.64" transform="matrix(1.3349 0 0 -1.3349 45.5432 81.7966)" style="overflow:visible;"/>
+		<rect x="36.35" y="50.48" class="st1" width="67.46" height="7.91"/>
+		<rect x="33.59" y="99.01" class="st1" width="75.88" height="3.96"/>
+		<rect x="29.61" y="104.64" class="st1" width="83.84" height="6.36"/>
+	</g>
+</g>
+</svg>

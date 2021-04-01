@@ -217,7 +217,7 @@ const PanoPage = () => {
         "Academia",
         [-801.62, -160.88, -4927.75],
         irAcademia,
-        "/images/vr/Icon_Academia.jpg"
+        "/images/vr/Icon_Academia.svg"
       )
 
       const infospotB = createInfoSpot(
