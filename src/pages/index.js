@@ -90,10 +90,18 @@ const Bold = styled.span`
 
 const DivDer360 = styled.div`
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   margin: 2rem;
+`
+
+const Ingresar = styled.div`
+  font-family: ${props => props.theme.fontFamily};
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+  margin: 2rem 3rem 4rem 3rem;
 `
 
 const FadeInOutLoop = Keyframes.Spring(async next => {
@@ -223,7 +231,6 @@ const IndexPage = () => {
               <Desc>
                 <br></br>
                 Proyecto Bios se estructura de la siguiente forma:<br></br>
-                <br></br>
                 <Bold>a. Site web con cinco áreas: </Bold>
                 Exhibición de BioArte - Panorama nacional y obras inéditas{" "}
                 <br></br>
@@ -235,7 +242,7 @@ const IndexPage = () => {
                 Acerca del BioArte - Hitos destacados , investigaciones y
                 aproximación al bioarte.<br></br>
                 Soft Sanctuary - un espacio de introspección y exploración
-                sensorial <br></br>
+                sensorial
                 <br></br>
                 <Bold>b. Agenda de Actividades:</Bold>
                 Conversatorios, talleres, performances y master classes<br></br>
@@ -290,6 +297,7 @@ const IndexPage = () => {
             </Block>
             <DivDer360>
               <HomeBoton></HomeBoton>
+              <Ingresar>INGRESAR</Ingresar>
             </DivDer360>
           </DivDer>
         </ContDerContainer>
