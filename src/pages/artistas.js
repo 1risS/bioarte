@@ -18,6 +18,7 @@ import fotoLapadula from "../../static/images/artists/pabloLapadula/Pablo_Lapadu
 import fotoBiomateriales from "../../static/images/artists/biomateriales/Artistas_Biomateriales_SMALL.jpg"
 import fotoPaoletti from "../../static/images/artists/lucianaPaoletti/Luciana 04_SMALL.png"
 import fotoWilner from "../../static/images/artists/arielWilner/01 - Foto Ariel.jpg"
+import fotoExhibicion from "../../static/images/artists/laExhibicion/cuadrado_la_exhibicion.png"
 import fondoHeader from "../../static/images/carousel/Banner_Exhibition_0.png"
 import like from "../../static/images/exhibicion/likelikeRounded.png"
 import HomeBoton from "../components/homeBoton"
@@ -295,7 +296,7 @@ const ArtistasPage = () => {
                 <ArtistCard
                   to="la-exhibición"
                   name="La Exhibición"
-                  src={like}
+                  src={fotoExhibicion}
                 />
               </Column>
             </RowPairs>
