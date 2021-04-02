@@ -26,7 +26,7 @@ const MargenDerecho = styled.div`
   width: 20%;
 `
 const DetalleObra = styled.div`
-  display: flex;
+  display: ${props => props.current ? 'flex' : 'none'};
   flex-direction: row;
   align-content: center;
   justify-content: space-around;
@@ -151,22 +151,22 @@ const Carousel = ({ items }) => {
     descripcion
   } = items[current]
 
-  return (
-    <DetalleObraContainer>
-      <MargenIzquierdo>
-        {!first && (
-          <FlechaSlider
-            left
-            src={flechaSliderIzqNormal}
-            onClick={onPreviousClick}
-          ></FlechaSlider>
-        )}
-      </MargenIzquierdo>
-      <DetalleObra>
-        <FotoObra key={foto} src={foto} alt={titulo} />
+  return (<DetalleObraContainer>
+    <MargenIzquierdo>
+      {!first && (
+        <FlechaSlider
+          left
+          src={flechaSliderIzqNormal}
+          onClick={onPreviousClick}
+        ></FlechaSlider>
+      )}
+    </MargenIzquierdo>
+    {items.map((item, i) => (
+      <DetalleObra key={i} current={current === i}>
+        <FotoObra src={item.foto} alt={item.titulo} />
         <DescripcionContainer>
           <ProcedenciaFotosContainer>
-            {ciudadPais && <CiudadPais>{ciudadPais}</CiudadPais>}
+            {item.ciudadPais && <CiudadPais>{item.ciudadPais}</CiudadPais>}
             <CantFotos>
               {current + 1}/{items.length}
             </CantFotos>
@@ -186,16 +186,16 @@ const Carousel = ({ items }) => {
           </DescripcionInnerContainer>
         </DescripcionContainer>
       </DetalleObra>
-      <MargenDerecho>
-        {!last && (
-          <FlechaSlider
-            src={flechaSliderDerNormal}
-            onClick={onNextClick}
-          ></FlechaSlider>
-        )}
-      </MargenDerecho>
-    </DetalleObraContainer>
-  )
+    ))}
+    <MargenDerecho>
+      {!last && (
+        <FlechaSlider
+          src={flechaSliderDerNormal}
+          onClick={onNextClick}
+        ></FlechaSlider>
+      )}
+    </MargenDerecho>
+  </DetalleObraContainer>)
 }
 
 export default Carousel
