@@ -231,14 +231,14 @@ const PanoPage = () => {
 
       const infospotC = createInfoSpot(
         "Exhibición",
-        [4975.2, -307.2, 242.87],
+        [4974.46, 324.47, 244.02],
         irArtistas,
         "/images/vr/Icon_Exhibicion.jpg"
       )
 
       const infospotD = createInfoSpot(
         "Acerca del Bioarte",
-        [-4934.09, 726.35, 209.15],
+        [-4983.29, 192.27, 174.75],
         irHistoria,
         "/images/vr/Icon_Historia.jpg"
       )

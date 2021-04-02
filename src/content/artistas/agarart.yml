@@ -1,5 +1,5 @@
-nombre: Colectivo Agar Art
-cvUrl:
+nombre: Agar Art
+cvUrl: https://asm.org/events/ASM-agar-art-contest/home
 formacion: |-
   La Sociedad Americana de Microbiología se estableció en 1899. Su misión es
   promover y hacer avanzar las ciencias microbianas. La ASM es hoy una
@@ -63,7 +63,7 @@ obras:
 
   - ciudadPais: Buenos Aires, Argentina
     foto: /images/artists/agarart/lauraEcharren/01 - Imagen Principal de Agar Art - A Salmonellosis odyssey.jpg
-    titulo: Salmonellosis Odyssey-People Choice 2015
+    titulo: A Salmonellosis Odyssey - Premio People Choice 2018
     url:
     descripcion: |-
       Autora: María Laura Echarren

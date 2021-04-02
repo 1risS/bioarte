@@ -14,7 +14,7 @@ bio: |-
   ha sido parte de numerosas residencias internacionales, como la LAM 360° Land
   Art Mongolia Biennial. Recientemente ganó el Primer Premio categoría Arte y
   Robótica del Premio Itaú a las Artes Visuales y la beca de investigación CAPES
-  – PRINT, en la Universidade Federal de Rio de Janeiro. Por su desarrollo de
+  - PRINT, en la Universidade Federal de Rio de Janeiro. Por su desarrollo de
   biocueros de yerba mate, ha sido parte del 3D Fashion Week Latinoamérica
   desarrollado en Perú.
 
@@ -28,7 +28,7 @@ obras:
   - ciudadPais: Buenos Aires, Argentina
     foto: /images/artists/anaLauraCantera/obra_nueva.jpg
     titulo: Inhalaciones territoriales
-    url:
+    url: https://www.analauracantera.com.ar/inhalaciones
     descripcion: |-
       El territorio urbano inhala y coexiste. Ya dejó de ser distópico y se
       convirtió en un nuevo paisaje antropocénico, que se impregna de agentes
