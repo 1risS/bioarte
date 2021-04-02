@@ -41,7 +41,7 @@ const ContDerContainer = styled.div`
   height: 100vh;
   display: flex;
   flex-direction: column;
-  padding-left: 15%;
+  padding-left: 16%;
   padding-top: 2%;
 `
 
