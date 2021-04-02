@@ -28,6 +28,7 @@ const BienvenidaContainer = styled.div`
 
 const ContenidoIzqContainer = styled.div`
   width: 50%;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   padding-left: 5%;
@@ -36,6 +37,7 @@ const ContenidoIzqContainer = styled.div`
 
 const ContDerContainer = styled.div`
   width: 50%;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   padding-left: 15%;
