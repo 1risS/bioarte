@@ -225,24 +225,23 @@ const IndexPage = () => {
               <Title>¿Cómo se conforma?</Title>
               <Desc>
                 <br></br>
-                Proyecto Bios se estructura de la siguiente forma:<br></br>
-                <Bold>a. Site web con cinco áreas: </Bold>
+                <Bold> Sitio web con cinco áreas: </Bold>
+                <br></br>
+                <br></br>
                 Exhibición de BioArte - Panorama nacional y obras inéditas{" "}
                 <br></br>
                 Academia - Mapa Nacional de Universidades y sus
-                especializaciones.
+                especializaciones
                 <br></br>
                 Biotecnología - Áreas de actividad, investigación y desarrollo
-                local.<br></br>
+                local<br></br>
                 Acerca del BioArte - Hitos destacados , investigaciones y
-                aproximación al bioarte.<br></br>
+                aproximación al bioarte<br></br>
                 Soft Sanctuary - un espacio de introspección y exploración
                 sensorial
                 <br></br>
-                <Bold>b. Agenda de Actividades:</Bold>
-                Conversatorios, talleres, performances y master classes<br></br>
-                Acerca del BioArte: Timeline. Diferentes aproximaciones al
-                bioarte
+                <Bold>Agenda de Actividades: </Bold> Conversatorios, talleres,
+                performances y master classes<br></br>
               </Desc>
             </Block>
           </DivIzq>
@@ -270,7 +269,9 @@ const IndexPage = () => {
                 <br></br>
                 <Bold>Área Bioarte: </Bold> Natalia Matewecki, Lucia Stubrin,
                 Objeto a<br></br>
-                <Bold>Soft Sanctuary: </Bold>Marie Claire Flanagan
+                <Bold>Soft Sanctuary: </Bold>Marie Claire Flanagan <br></br>
+                <Bold>Galería en LikeLike:</Bold> Leandro Godón y Laura
+                Palavecino
               </Desc>
             </Block>
           </DivDer>
