@@ -31,7 +31,8 @@ const ContenidoIzqContainer = styled.div`
   height: 100vh;
   display: flex;
   flex-direction: column;
-  padding-left: 5%;
+  justify-content: flex-start;
+  padding-left: 2.5%;
   padding-top: 2%;
 `
 
@@ -60,7 +61,7 @@ const DivIzq = styled.div`
 `
 
 const DivIzqEmpty = styled.div`
-  height: 20%;
+  height: 13%;
 `
 
 const Title = styled.p`
@@ -72,7 +73,7 @@ const Title = styled.p`
 const Desc = styled.p`
   font-family: ${props => props.theme.fontFamily};
   color: white;
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 50;
   letter-spacing: 0px;
   align-text: justify;
