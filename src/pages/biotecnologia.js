@@ -152,7 +152,7 @@ const BiotecnologiaPage = () => {
             <BotonBiotecArgCont>
               <Boton
                 label="Más info sobre Biotecnología en Argentina"
-                url="/static/Catalogo Bios Final - Abril 2, 2021.pdf"
+                url="/Catalogo Bios Final - Abril 2, 2021.pdf"
               ></Boton>
             </BotonBiotecArgCont>
           </BiotecDetalleCont>

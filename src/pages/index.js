@@ -227,7 +227,6 @@ const IndexPage = () => {
                 <br></br>
                 <Bold> Sitio web con cinco áreas: </Bold>
                 <br></br>
-                <br></br>
                 Exhibición de BioArte - Panorama nacional y obras inéditas{" "}
                 <br></br>
                 Academia - Mapa Nacional de Universidades y sus
