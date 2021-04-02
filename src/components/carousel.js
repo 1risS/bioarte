@@ -156,7 +156,7 @@ const Carousel = ({
           )}
         </MargenIzquierdo>
         <DetalleObra>
-          <FotoObra src={fotoObra} alt={tituloObra} />
+          <FotoObra src={fotoObra} alt={tituloObra} key={fotoObra} />
           <DescripcionContainer>
             <ProcedenciaFotosContainer>
               {ciudadPais && <CiudadPais>{ciudadPais}</CiudadPais>}
