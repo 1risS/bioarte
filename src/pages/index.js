@@ -182,8 +182,8 @@ const LightGuide = styled(({ debug, flipX, flipY, className }) => {
 `
 
 const Block = styled.div`
-  opacity: 0.1;
-  transition: 1s;
+  opacity: 0.5;
+  transition: 0.35s;
   &:hover {
     opacity: 1;
   }
