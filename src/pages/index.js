@@ -199,7 +199,7 @@ const IndexPage = () => {
       <GlobalStyle />
       <BienvenidaContainer id="bienvenidaContainer">
         <ContenidoIzqContainer>
-          <DivIzqEmpty></DivIzqEmpty>
+          <DivIzqEmpty />
           <DivIzq>
             <Block>
               <LightGuide top="40px" right="-120px" />
