@@ -198,8 +198,8 @@ const IndexPage = () => {
         <ContenidoIzqContainer>
           <DivIzqEmpty></DivIzqEmpty>
           <DivIzq>
-            <LightGuide top="40px" right="-120px" />
             <Block>
+              <LightGuide top="40px" right="-120px" />
               <Title>¿Qué es Proyecto Bios</Title>
               <Desc>
                 <br></br>
@@ -217,8 +217,8 @@ const IndexPage = () => {
             </Block>
           </DivIzq>
           <DivIzq>
-            <LightGuide top="20px" right="-160px" />
             <Block>
+              <LightGuide top="20px" right="-160px" />
               <Title>¿Cómo se conforma?</Title>
               <Desc>
                 <br></br>
@@ -251,8 +251,8 @@ const IndexPage = () => {
             width="410px"
           ></DivDerEmpty>
           <DivDer>
-            <LightGuide flipY top="-90px" left="205px" />
             <Block>
+              <LightGuide flipY top="-90px" left="205px" />
               <Title>¿Quiénes lo integran?</Title>
               <Desc>
                 <br></br>
@@ -273,8 +273,8 @@ const IndexPage = () => {
           </DivDer>
 
           <DivDer>
-            <LightGuide flipX top="-60px" left="-130px" />
             <Block>
+              <LightGuide flipX top="-60px" left="-130px" />
               <Title>¿Cómo recorrer la experiencia?</Title>
               <Desc>
                 <br></br>
