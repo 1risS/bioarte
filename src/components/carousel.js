@@ -141,7 +141,7 @@ const Carousel = ({ items }) => {
   }
 
   const first = current === 0
-  const last = current === items.count - 1
+  const last = current === items.length - 1
 
   const {
     ciudadPais,
