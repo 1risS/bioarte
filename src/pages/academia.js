@@ -124,7 +124,10 @@ const AcademiaPage = () => {
             </SectionMapa>
           </UniversidadesContainer>
         </Section>
-        <Boton label="Descargar más info" url=""></Boton>
+        <Boton
+          label="Descargar más info"
+          url="/Listado de Universidades de Biotecnologia - Proyecto Bios - Final - Abrl 02, 201.pdf"
+        ></Boton>
         <Section>
           <AgendaContainer>
             <Agenda />
