@@ -171,6 +171,7 @@ const PanoPage = () => {
         infospot.position.set(...position)
         infospot.addHoverText(hoverText, 80)
         infospot.element.style.fontSize = "1.5rem"
+        infospot.element.style.borderRadius = "30px"
         infospot.addEventListener("click", () => {
           // console.log("click")
           if (noFocus) {
@@ -233,7 +234,7 @@ const PanoPage = () => {
         "Exhibición",
         [4974.46, 324.47, 244.02],
         irArtistas,
-        "/images/vr/Icon_Exhibicion.jpg"
+        "/images/360-degrees.png"
       )
 
       const infospotD = createInfoSpot(

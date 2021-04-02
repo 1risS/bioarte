@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "styled-components"
-import logoMinCiencia from "../../static/images/footer/00_Logo_Ministerio_ECCyT.png"
+import logoMinCiencia from "../../static/images/footer/Ministerio_de_Ciencia_arg.png"
 import logoC3 from "../../static/images/footer/logo C3.jpg"
 import logoObjetoA from "../../static/images/footer/logoobjetoanegro.png"
 import logoMecenazgo from "../../static/images/footer/Logo-Mecenazgo-2019-1.jpg"
@@ -42,9 +42,9 @@ const SecRow = styled.div`
 `
 
 const Logo = styled.img`
-  margin: 2rem;
-  max-width: 100px;
+  margin: 3rem;
   max-height: 100px;
+  max-width: 300px;
   width: auto;
   height: auto;
 `
@@ -68,7 +68,7 @@ const Footer = () => {
         <Logo src={logoMecenazgo}></Logo>
       </FirstRow>
       <SecRow>
-        <Logo2 src={logoFfyb}></Logo2>
+        <Logo2 style={{ paddingTop: 20 }} src={logoFfyb}></Logo2>
         <Logo2 src={logoCanada}></Logo2>
         <Logo2 src={logoUTN}></Logo2>
         <Logo2 src={logoArgenbio}></Logo2>
