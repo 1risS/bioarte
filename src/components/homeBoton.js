@@ -10,6 +10,7 @@ const Exp = styled.div`
   height: 150px;
   width: 150px;
   background-image: url(${expNormal});
+  transition: 0.35s;
 
   &:hover {
     background-image: url(${expHover});
