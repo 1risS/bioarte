@@ -12,7 +12,7 @@ const MapContainer = styled.div`
   position: relative;
 `
 
-const MarkerBtn = styled.button`
+const PinImage = styled(({ className, ...props }) => <img className={className} src={pin} alt="pin" {...props} />)`
   background: none;
   border: none;
   cursor: pointer;
@@ -220,15 +220,10 @@ export default function MapboxMap() {
               key={university.properties.id}
               longitude={university.geometry.coordinates[0]}
               latitude={university.geometry.coordinates[1]}
+              offsetTop={-16}
+              offsetLeft={-8}
             >
-              <MarkerBtn
-                onClick={e => {
-                  e.preventDefault()
-                  setSelectedUni(university)
-                }}
-              >
-                <img src={pin} alt="pin" />
-              </MarkerBtn>
+              <PinImage onClick={() => setSelectedUni(university)} />
             </Marker>
           ))}
 
