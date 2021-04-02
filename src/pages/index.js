@@ -73,7 +73,7 @@ const Title = styled.p`
 const Desc = styled.p`
   font-family: ${props => props.theme.fontFamily};
   color: white;
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 50;
   letter-spacing: 0px;
   align-text: justify;
