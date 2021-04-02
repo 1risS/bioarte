@@ -26,10 +26,18 @@ const StyledLink = styled.a`
   font-weight: 900;
 `
 
+const Ingresar = styled.div`
+  font-family: ${props => props.theme.fontFamily};
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+`
+
 const HomeBoton = () => {
   return (
     <StyledLink href="/pano">
       <Exp />
+      <Ingresar>INGRESAR</Ingresar>
     </StyledLink>
   )
 }

@@ -96,14 +96,6 @@ const DivDer360 = styled.div`
   margin: 2rem;
 `
 
-const Ingresar = styled.div`
-  font-family: ${props => props.theme.fontFamily};
-  color: white;
-  font-weight: bold;
-  font-size: 30px;
-  margin: 2rem 3rem 4rem 3rem;
-`
-
 const FadeInOutLoop = Keyframes.Spring(async next => {
   while (true) {
     await next({ from: { opacity: 0 }, opacity: 1, config: { duration: 1000 } })
@@ -297,7 +289,6 @@ const IndexPage = () => {
             </Block>
             <DivDer360>
               <HomeBoton></HomeBoton>
-              <Ingresar>INGRESAR</Ingresar>
             </DivDer360>
           </DivDer>
         </ContDerContainer>
