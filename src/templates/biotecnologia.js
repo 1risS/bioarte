@@ -142,20 +142,6 @@ const AtrasCont = styled.div`
 const BiotecnologiaPageTemplate = ({ pageContext }) => {
   const { nombre, descripcion, foto, secciones } = pageContext
 
-  const [seccion, setSeccion] = useState(0)
-
-  const onPreviousClick = () => {
-    setSeccion(seccion => (seccion > 0 ? seccion - 1 : seccion))
-  }
-
-  const onNextClick = () => {
-    setSeccion(seccion =>
-      seccion < secciones.length - 1 ? seccion + 1 : seccion
-    )
-  }
-
-  const datosSeccion = secciones[seccion]
-
   return (
     <Layout>
       <SEO title={nombre} />
@@ -190,22 +176,7 @@ const BiotecnologiaPageTemplate = ({ pageContext }) => {
             </BioArtista>
           </BioArtistaContainer>
           <FotoObraContainer foto={foto} />
-          {datosSeccion && (
-            <Carousel
-              ciudadPais={datosSeccion.ciudadPais}
-              fotoObra={datosSeccion.foto}
-              tituloObra={datosSeccion.titulo}
-              obraURL={datosSeccion.url}
-              onPreviousClick={onPreviousClick}
-              onNextClick={onNextClick}
-              count={secciones.length}
-              value={seccion}
-            >
-              {datosSeccion.descripcion.split("\n\n").map((parrafo, i) => (
-                <ParrafoObra key={i}>{parrafo}</ParrafoObra>
-              ))}
-            </Carousel>
-          )}
+          <Carousel items={secciones} />
         </DAMain>
       </DAContainer>
       <Footer></Footer>
