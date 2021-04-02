@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from "react"
 import ReactMapGL, { Marker, Popup, FlyToInterpolator } from "react-map-gl"
-import "mapbox-gl/dist/mapbox-gl.css"
-import * as uniData from "../data/universidades.json"
+import uniData from "../data/universidades.json"
 import pin from "../images/pin.png"
 import styled from "styled-components"
 import process from "process"
+
+const features = uniData.features;
 
 const MAPBOX_TOKEN = process.env.GATSBY_MAPBOX_TOKEN
 
@@ -201,7 +202,7 @@ export default function MapboxMap() {
         <SearchContainer>
           <ControlGroup top center>
             <SearchControl
-              features={uniData.features}
+              features={features}
               onSelect={onSearchItemSelect}
             />
           </ControlGroup>
@@ -215,7 +216,7 @@ export default function MapboxMap() {
             setViewport(viewport)
           }}
         >
-          {uniData.features.map(university => (
+          {features.map(university => (
             <Marker
               key={university.properties.id}
               longitude={university.geometry.coordinates[0]}

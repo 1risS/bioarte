@@ -6,3 +6,5 @@
 
 import "firebase/auth"
 import "firebase/database"
+
+import "mapbox-gl/dist/mapbox-gl.css"
