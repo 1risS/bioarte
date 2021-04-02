@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import styled from "styled-components"
 import flechaSliderIzqNormal from "../../static/images/carousel/Btn-CiircleArrow_Normal.png"
 import flechaSliderDerNormal from "../../static/images/carousel/Btn-CiircleArrow_Normal_DER.png"
@@ -45,7 +45,7 @@ const DescripcionContainer = styled.div`
 
 const FlechaSlider = styled.div`
   background: url(${props =>
-      props.left ? flechaSliderIzqNormal : flechaSliderDerNormal})
+    props.left ? flechaSliderIzqNormal : flechaSliderDerNormal})
     no-repeat;
   height: 80px;
   width: 80px;
@@ -53,7 +53,7 @@ const FlechaSlider = styled.div`
   cursor: pointer;
   &:hover {
     background: url(${props =>
-        props.left ? flechaSliderIzqPressed : flechaSliderDerPressed})
+    props.left ? flechaSliderIzqPressed : flechaSliderDerPressed})
       no-repeat;
   }
 `
@@ -129,66 +129,73 @@ const DescripcionInnerContainer = styled.div`
   justify-content: center;
 `
 
-const Carousel = ({
-  children,
-  onPreviousClick,
-  onNextClick,
-  count,
-  value,
-  ciudadPais,
-  fotoObra,
-  tituloObra,
-  obraURL,
-}) => {
-  const first = value === 0
-  const last = value === count - 1
+const Carousel = ({ items }) => {
+  const [current, setCurrent] = useState(0)
+
+  const onPreviousClick = () => {
+    setCurrent(current => current > 0 ? current - 1 : current)
+  }
+
+  const onNextClick = () => {
+    setCurrent(current => (current < items.length - 1) ? current + 1 : current)
+  }
+
+  const first = current === 0
+  const last = current === items.count - 1
+
+  const {
+    ciudadPais,
+    foto,
+    titulo,
+    url,
+    descripcion
+  } = items[current]
 
   return (
-    <>
-      <DetalleObraContainer>
-        <MargenIzquierdo>
-          {!first && (
-            <FlechaSlider
-              left
-              src={flechaSliderIzqNormal}
-              onClick={onPreviousClick}
-            ></FlechaSlider>
-          )}
-        </MargenIzquierdo>
-        <DetalleObra>
-          <FotoObra src={fotoObra} alt={tituloObra} key={fotoObra} />
-          <DescripcionContainer>
-            <ProcedenciaFotosContainer>
-              {ciudadPais && <CiudadPais>{ciudadPais}</CiudadPais>}
-              <CantFotos>
-                {value + 1}/{count}
-              </CantFotos>
-            </ProcedenciaFotosContainer>
-            <DescripcionInnerContainer>
-              <TituloWebCont>
-                <TituloObra>{tituloObra}</TituloObra>
-                {obraURL && (
-                  <LinkWeb href={obraURL} target="_blank">
-                    Web
-                  </LinkWeb>
-                )}
-              </TituloWebCont>
-              {children}
-            </DescripcionInnerContainer>
-          </DescripcionContainer>
-        </DetalleObra>
-        <MargenDerecho>
-          {!last && (
-            <FlechaSlider
-              src={flechaSliderDerNormal}
-              onClick={onNextClick}
-            ></FlechaSlider>
-          )}
-        </MargenDerecho>
-      </DetalleObraContainer>
-    </>
+    <DetalleObraContainer>
+      <MargenIzquierdo>
+        {!first && (
+          <FlechaSlider
+            left
+            src={flechaSliderIzqNormal}
+            onClick={onPreviousClick}
+          ></FlechaSlider>
+        )}
+      </MargenIzquierdo>
+      <DetalleObra>
+        <FotoObra key={foto} src={foto} alt={titulo} />
+        <DescripcionContainer>
+          <ProcedenciaFotosContainer>
+            {ciudadPais && <CiudadPais>{ciudadPais}</CiudadPais>}
+            <CantFotos>
+              {current + 1}/{items.length}
+            </CantFotos>
+          </ProcedenciaFotosContainer>
+          <DescripcionInnerContainer>
+            <TituloWebCont>
+              <TituloObra>{titulo}</TituloObra>
+              {url && (
+                <LinkWeb href={url} target="_blank">
+                  Web
+                </LinkWeb>
+              )}
+            </TituloWebCont>
+            {descripcion.split("\n\n").map((parrafo, i) => (
+              <ParrafoObra key={i}>{parrafo}</ParrafoObra>
+            ))}
+          </DescripcionInnerContainer>
+        </DescripcionContainer>
+      </DetalleObra>
+      <MargenDerecho>
+        {!last && (
+          <FlechaSlider
+            src={flechaSliderDerNormal}
+            onClick={onNextClick}
+          ></FlechaSlider>
+        )}
+      </MargenDerecho>
+    </DetalleObraContainer>
   )
 }
 
 export default Carousel
-export { Carousel, ParrafoObra }

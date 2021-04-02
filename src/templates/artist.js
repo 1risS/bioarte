@@ -5,7 +5,7 @@ import SEO from "../components/seo"
 import Chat from "../components/chat"
 import fondoHeader from "../../static/images/carousel/Banner_Exhibition_0.png"
 import libelula from "../../static/images/LibelulaUltima_00.png"
-import Carousel, { ParrafoObra } from "../components/carousel"
+import Carousel from "../components/carousel"
 import FunFactsBalloon from "../components/FunFactsBalloon"
 import HomeBoton from "../components/homeBoton"
 import Footer from "../components/footer"
@@ -218,22 +218,6 @@ const AtrasCont = styled.div`
 const ArtistPageTemplate = ({ pageContext }) => {
   const { nombre, cvUrl, formacion, bio, foto, obras } = pageContext
 
-  const [obra, setObra] = useState(0)
-
-  const onPreviousClick = () => {
-    if (obra > 0) {
-      setObra(obra - 1)
-    }
-  }
-
-  const onNextClick = () => {
-    if (obra < obras.length - 1) {
-      setObra(obra + 1)
-    }
-  }
-
-  const datosObra = obras[obra]
-
   return (
     <Layout>
       <SEO title={nombre} />
@@ -284,20 +268,7 @@ const ArtistPageTemplate = ({ pageContext }) => {
               <NombreObra>{obras[0].titulo}</NombreObra>
             </FotoObraContainer>
           </StyledLink>
-          <Carousel
-            ciudadPais={datosObra.ciudadPais}
-            fotoObra={datosObra.foto}
-            tituloObra={datosObra.titulo}
-            obraURL={datosObra.url}
-            onPreviousClick={onPreviousClick}
-            onNextClick={onNextClick}
-            count={obras.length}
-            value={obra}
-          >
-            {datosObra.descripcion.split("\n\n").map((parrafo, i) => (
-              <ParrafoObra key={i}>{parrafo}</ParrafoObra>
-            ))}
-          </Carousel>
+          <Carousel items={obras} />
         </DAMain>
       </DAContainer>
       <Footer />
