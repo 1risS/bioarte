@@ -7,6 +7,7 @@ import SEO from "../components/seo"
 
 import fondoHeader from "../images/Academia/academia_bg.jpg"
 import HomeBoton from "../components/homeBoton"
+import Footer from "../components/footer"
 
 const Container = styled.div`
   display: flex;
@@ -138,7 +139,9 @@ const LineaDeTiempo = () => {
             </LogoContainer>
           </NavBar>
           <Texto>Acerca del Bioarte</Texto>
-          <Subtexto>Hitos históricos y reflexiones</Subtexto>
+          <Subtexto>
+            Hitos históricos (Natalia Matewecki) y Reflexiones (Lucia Stubrin)
+          </Subtexto>
         </HistoriaHeaderContainer>
 
         <TimelineCont>
@@ -330,10 +333,15 @@ const LineaDeTiempo = () => {
           <br></br>
           Asimismo, en el marco del PID Novel N° 3180 hemos participado con la
           ponencia "Lecturas del bioarte en clave semiótica: avances de
-          investigación" publicada en las <StyledA href="https://iass-ais.org/proceedings2019/">Actas</StyledA> del 14° Congreso Mundial de
-          Semiótica Buenos Aires 2019, y también ha sido aceptado para sus
-          publicación en la revista especializada <StyledA href="http://www.designisfels.net/">Designis</StyledA>, el artículo
-          "Biosemiótica y las explosiones de sentido del bioarte" (en prensa).
+          investigación" publicada en las{" "}
+          <StyledA href="https://iass-ais.org/proceedings2019/">
+            Actas
+          </StyledA>{" "}
+          del 14° Congreso Mundial de Semiótica Buenos Aires 2019, y también ha
+          sido aceptado para sus publicación en la revista especializada{" "}
+          <StyledA href="http://www.designisfels.net/">Designis</StyledA>, el
+          artículo "Biosemiótica y las explosiones de sentido del bioarte" (en
+          prensa).
           <br></br>
           <br></br>
           De modo consecuente a la perspectiva estudiada y al tema elegido
@@ -345,13 +353,27 @@ const LineaDeTiempo = () => {
           Asimismo, a modo de actividad de divulgación y buscando fomentar fuera
           del ámbito académico también la socialización y reflexión sobre el
           tema en cuestión, llevamos adelante un ciclo de charlas virtuales
-          denominado <StyledA href="https://www.fcedu.uner.edu.ar/?p=46456">Mañanas de bioarte</StyledA>. Conversaciones con artistas que
-          trabajan en el cruce del arte, la ciencia y la tecnología, donde
-          dialogamos con artistas y colectivos artísticos femeninos, presentando
-          una selección de sus obras bioartísticas realizadas a partir de
-          distintas metodologías y poéticas. Durante el 2020 fueron
-          entrevistadas <StyledA href="https://www.youtube.com/watch?v=ydg-2uQZKvU">Luciana Paoletti</StyledA>, <StyledA href="https://www.youtube.com/watch?v=RJsjM2GEykE">Laura Olalde</StyledA> y el <StyledA href="https://www.youtube.com/watch?v=ABPacUtjm0Q&t=615s">Colectivo
-          Electrobiota</StyledA> (Gabriela Munguía y Guadalupe Chávez).
+          denominado{" "}
+          <StyledA href="https://www.fcedu.uner.edu.ar/?p=46456">
+            Mañanas de bioarte
+          </StyledA>
+          . Conversaciones con artistas que trabajan en el cruce del arte, la
+          ciencia y la tecnología, donde dialogamos con artistas y colectivos
+          artísticos femeninos, presentando una selección de sus obras
+          bioartísticas realizadas a partir de distintas metodologías y
+          poéticas. Durante el 2020 fueron entrevistadas{" "}
+          <StyledA href="https://www.youtube.com/watch?v=ydg-2uQZKvU">
+            Luciana Paoletti
+          </StyledA>
+          ,{" "}
+          <StyledA href="https://www.youtube.com/watch?v=RJsjM2GEykE">
+            Laura Olalde
+          </StyledA>{" "}
+          y el{" "}
+          <StyledA href="https://www.youtube.com/watch?v=ABPacUtjm0Q&t=615s">
+            Colectivo Electrobiota
+          </StyledA>{" "}
+          (Gabriela Munguía y Guadalupe Chávez).
         </TextoBase>
         <Citas>
           Citas:<br></br>
@@ -367,22 +389,86 @@ const LineaDeTiempo = () => {
       </SectionTexto>
       <SectionTexto>
         <Titulo>
-          Síntesis del artículo <StyledA href="https://www.researchgate.net/publication/321927663_El_poder_reunificador_de_la_biotecnologia_Reflexiones_en_torno_a_la_conformacion_de_un_espacio_colaborativo_entre_arte_y_ciencia">"El poder reunificador de la biotecnología. Reflexiones en torno a la conformación de un espacio colaborativo entre arte y ciencia"</StyledA>
+          Síntesis del artículo{" "}
+          <StyledA href="https://www.researchgate.net/publication/321927663_El_poder_reunificador_de_la_biotecnologia_Reflexiones_en_torno_a_la_conformacion_de_un_espacio_colaborativo_entre_arte_y_ciencia">
+            "El poder reunificador de la biotecnología. Reflexiones en torno a
+            la conformación de un espacio colaborativo entre arte y ciencia"
+          </StyledA>
         </Titulo>
         <TextoBase>
-          Dentro de lo que podemos reconocer como las condiciones de posibilidad del cruce arte y ciencia que supone el bioarte, la cuestión del método resulta de capital importancia.
-          Si pensamos en artistas invadiendo laboratorios debemos pensar en que además de las cuestiones epistemológicas que han flexibilizado los límites disciplinarios y que han reorganizado el universo del intercambio de conocimientos incorporando actores de lo más diversos, algo debe pasar en el orden de lo práctico, de la técnica, del arte de producir que hermana ambas esferas.
-          Desde el punto de vista de la biología, podemos rastrear el reconocimiento del uso de protocolos (no de métodos) basado en la aplicación continua de técnicas donde el azar se ha incorporado como parte de la explicación de los resultados; esta forma experimental de proceder es similar a la que utiliza el arte que viene sufriendo, desde hace más de medio siglo, transformaciones que dificultan su conceptualización.
-          La apertura hacia nuevos horizontes de conocimiento, junto con la incorporación técnica que eso trae aparejado, ha dado lugar a la aparición de artistas -en condiciones de manipular los mismos elementos que utilizan los científicos- en los laboratorios. El uso de protocolos -guías de experimentos- puede ser utilizado tanto por el arte como por la ciencia.
-          En el caso de esta última, los mismos se combinan persiguiendo un fin epistemológico vinculado a la producción de un conocimiento nuevo, ya sea técnico, teórico o instrumental (bienes y servicios). En el caso del arte, no existe la obligación de obtener un resultado innovador. Esto es algo que diferencia a ambas maneras de crear pero que, al mismo tiempo, las emparenta, dado que demuestra la ausencia de un determinismo en la metodología de trabajo utilizada. Es por ello también que puede suceder que el arte produzca conocimiento científico. Así como que la ciencia desarrolle una mirada estética sobre su propia práctica y pueda capitalizar esas reflexiones en función del desarrollo de una investigación más compleja. Los márgenes de libertad que cada uno posee, y que construimos a partir de una visión moderna donde el arte y la ciencia constituyen esferas autónomas y aisladas de las demás, se potencian al momento del intercambio interdisciplinar que supone el bioarte -y que, desde la perspectiva de la historia de las ciencias de la vida, habilitó la biotecnología. Son significativos los casos en los que obras de arte creadas en conjunto por artistas y científicos han producido giros en las investigaciones de laboratorio. Asimismo, los niveles de experimentación orientados por la curiosidad del artista han generado resultados inexplicables para la ciencia. Instituciones como Symbiotica (Australia), Biolab (Argentina), Incubator Art Lab (Canadá), BioArt Laboratories (Holanda) y artistas como Eduardo Kac (Brasil-EEUU), Paul Vanouse (EEUU), Marta de Menezes (Portugal), Joaquín Fargas (Argentina) entre muchísimos otros exponentes de la "vanguardia biológica"<Sup>1</Sup>,
-          han puesto en jaque la construcción de conocimiento tradicional operando desde dentro de la lógica científica pero incorporando la mirada inmaculada de quien posee una formación alternativa. Transcurrida más de una década desde su oficialización, es imposible pensar en la aparición de una nueva sensibilidad estética como el bioarte sin la construcción interdisciplinaria del campo de la biotecnología. En este contexto los artistas y los científicos pueden complementarse armoniosamente, sin anularse. Esto se debe a que, como hemos visto, las trayectorias de cada una son disímiles y están cargadas de imaginarios y maneras diferentes de intervenir en la realidad.
-          No es fácil encontrar el equilibrio, pero la práctica del bioarte da muestras de que es posible pensar en una convivencia pacífica ente actores diversos que contagie y derribe, definitivamente, las fronteras histórico-políticas que han limitado el desarrollo de una forma de investigar más compleja, es decir, más humana.
+          Dentro de lo que podemos reconocer como las condiciones de posibilidad
+          del cruce arte y ciencia que supone el bioarte, la cuestión del método
+          resulta de capital importancia. Si pensamos en artistas invadiendo
+          laboratorios debemos pensar en que además de las cuestiones
+          epistemológicas que han flexibilizado los límites disciplinarios y que
+          han reorganizado el universo del intercambio de conocimientos
+          incorporando actores de lo más diversos, algo debe pasar en el orden
+          de lo práctico, de la técnica, del arte de producir que hermana ambas
+          esferas. Desde el punto de vista de la biología, podemos rastrear el
+          reconocimiento del uso de protocolos (no de métodos) basado en la
+          aplicación continua de técnicas donde el azar se ha incorporado como
+          parte de la explicación de los resultados; esta forma experimental de
+          proceder es similar a la que utiliza el arte que viene sufriendo,
+          desde hace más de medio siglo, transformaciones que dificultan su
+          conceptualización. La apertura hacia nuevos horizontes de
+          conocimiento, junto con la incorporación técnica que eso trae
+          aparejado, ha dado lugar a la aparición de artistas -en condiciones de
+          manipular los mismos elementos que utilizan los científicos- en los
+          laboratorios. El uso de protocolos -guías de experimentos- puede ser
+          utilizado tanto por el arte como por la ciencia. En el caso de esta
+          última, los mismos se combinan persiguiendo un fin epistemológico
+          vinculado a la producción de un conocimiento nuevo, ya sea técnico,
+          teórico o instrumental (bienes y servicios). En el caso del arte, no
+          existe la obligación de obtener un resultado innovador. Esto es algo
+          que diferencia a ambas maneras de crear pero que, al mismo tiempo, las
+          emparenta, dado que demuestra la ausencia de un determinismo en la
+          metodología de trabajo utilizada. Es por ello también que puede
+          suceder que el arte produzca conocimiento científico. Así como que la
+          ciencia desarrolle una mirada estética sobre su propia práctica y
+          pueda capitalizar esas reflexiones en función del desarrollo de una
+          investigación más compleja. Los márgenes de libertad que cada uno
+          posee, y que construimos a partir de una visión moderna donde el arte
+          y la ciencia constituyen esferas autónomas y aisladas de las demás, se
+          potencian al momento del intercambio interdisciplinar que supone el
+          bioarte -y que, desde la perspectiva de la historia de las ciencias de
+          la vida, habilitó la biotecnología. Son significativos los casos en
+          los que obras de arte creadas en conjunto por artistas y científicos
+          han producido giros en las investigaciones de laboratorio. Asimismo,
+          los niveles de experimentación orientados por la curiosidad del
+          artista han generado resultados inexplicables para la ciencia.
+          Instituciones como Symbiotica (Australia), Biolab (Argentina),
+          Incubator Art Lab (Canadá), BioArt Laboratories (Holanda) y artistas
+          como Eduardo Kac (Brasil-EEUU), Paul Vanouse (EEUU), Marta de Menezes
+          (Portugal), Joaquín Fargas (Argentina) entre muchísimos otros
+          exponentes de la "vanguardia biológica"<Sup>1</Sup>, han puesto en
+          jaque la construcción de conocimiento tradicional operando desde
+          dentro de la lógica científica pero incorporando la mirada inmaculada
+          de quien posee una formación alternativa. Transcurrida más de una
+          década desde su oficialización, es imposible pensar en la aparición de
+          una nueva sensibilidad estética como el bioarte sin la construcción
+          interdisciplinaria del campo de la biotecnología. En este contexto los
+          artistas y los científicos pueden complementarse armoniosamente, sin
+          anularse. Esto se debe a que, como hemos visto, las trayectorias de
+          cada una son disímiles y están cargadas de imaginarios y maneras
+          diferentes de intervenir en la realidad. No es fácil encontrar el
+          equilibrio, pero la práctica del bioarte da muestras de que es posible
+          pensar en una convivencia pacífica ente actores diversos que contagie
+          y derribe, definitivamente, las fronteras histórico-políticas que han
+          limitado el desarrollo de una forma de investigar más compleja, es
+          decir, más humana.
         </TextoBase>
         <Citas>
-          Citas:
-          1.  Stubrin, Lucía. "Aportes para el estudio de la vanguardia biológica latinoamericana" en Revista Nómadas. N° 40. Bogotá. Universidad Central. Instituto de Estudios Sociales Contemporáneos. 2014, págs. 131-143. <StyledA href="http://www.ucentral.edu.co/images/editorial/nomadas/docs/40-8s-aportes-para-el-estudio-de-la-vanguardia.pdf">Descargar</StyledA>. Fecha de consulta: diciembre 2015.
+          Citas: 1. Stubrin, Lucía. "Aportes para el estudio de la vanguardia
+          biológica latinoamericana" en Revista Nómadas. N° 40. Bogotá.
+          Universidad Central. Instituto de Estudios Sociales Contemporáneos.
+          2014, págs. 131-143.{" "}
+          <StyledA href="http://www.ucentral.edu.co/images/editorial/nomadas/docs/40-8s-aportes-para-el-estudio-de-la-vanguardia.pdf">
+            Descargar
+          </StyledA>
+          . Fecha de consulta: diciembre 2015.
         </Citas>
       </SectionTexto>
+      <Footer />
     </Layout>
   )
 }
