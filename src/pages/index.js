@@ -288,7 +288,7 @@ const IndexPage = () => {
               </Desc>
             </Block>
             <DivDer360>
-              <HomeBoton></HomeBoton>
+              <HomeBoton showText={true} />
             </DivDer360>
           </DivDer>
         </ContDerContainer>

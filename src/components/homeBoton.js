@@ -33,11 +33,11 @@ const Ingresar = styled.div`
   font-size: 30px;
 `
 
-const HomeBoton = () => {
+const HomeBoton = ({ showText = false }) => {
   return (
     <StyledLink href="/pano">
       <Exp />
-      <Ingresar>INGRESAR</Ingresar>
+      {showText && <Ingresar>INGRESAR</Ingresar>}
     </StyledLink>
   )
 }
