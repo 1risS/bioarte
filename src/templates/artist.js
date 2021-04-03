@@ -70,6 +70,7 @@ const LibelulaContainer = styled.div`
   align-items: center;
   width: 20% !important;
   margin: 4rem;
+  margin-top: 1rem;
 `
 
 const Libelulaimg = styled.img`
@@ -155,8 +156,6 @@ const LikeLikeCont = styled.div`
   }
 `
 
-const Like = styled.img``
-
 const CVCont = styled.div`
   margin-left: 10rem;
   align-self: flex-end;
@@ -210,13 +209,25 @@ const Subtexto = styled.div`
 const AtrasCont = styled.div`
   display: flex;
   height: 20%;
-  align-items: flex-start;
+  width: 100%;
+  align-items: flex-end;
+  justify-content: flex-end;
+  margin-bottom: 1rem;
 `
 
 // ponemos una cookie para saber si le usuarix pasó por acá
 
 const ArtistPageTemplate = ({ pageContext }) => {
-  const { nombre, cvUrl, formacion, bio, foto, obras } = pageContext
+  const {
+    nombre,
+    cvUrl,
+    formacion,
+    bio,
+    foto,
+    obraPrincipalUrl,
+    obraBotonLabel,
+    obras,
+  } = pageContext
 
   return (
     <Layout>
@@ -263,9 +274,9 @@ const ArtistPageTemplate = ({ pageContext }) => {
               </BioTexto>
             </BioArtista>
           </BioArtistaContainer>
-          <StyledLink href={obras[0].url} target="_blank">
+          <StyledLink href={obraPrincipalUrl} target="_blank">
             <FotoObraContainer foto={foto}>
-              <NombreObra>{obras[0].titulo}</NombreObra>
+              {obraPrincipalUrl && <NombreObra>{obraBotonLabel}</NombreObra>}
             </FotoObraContainer>
           </StyledLink>
           <Carousel items={obras} />

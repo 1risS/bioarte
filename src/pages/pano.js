@@ -164,8 +164,15 @@ const PanoPage = () => {
       const [cx, cy] = [5, 5]
 
       // Crea infospot para las subpáginas
-      const createInfoSpot = (hoverText, position, onClick, image, noFocus) => {
-        const infospot = new Panolens.Infospot(350, image)
+      const createInfoSpot = (
+        hoverText,
+        position,
+        onClick,
+        image,
+        noFocus,
+        scale
+      ) => {
+        const infospot = new Panolens.Infospot(scale || 350, image)
         const linkDuration = 1250
         const linkEasing = TWEEN.Easing.Quadratic.InOut
         infospot.position.set(...position)
@@ -220,28 +227,36 @@ const PanoPage = () => {
         "Academia",
         [-758.81, -401.44, -4918.53],
         irAcademia,
-        "/images/vr/Icon_Academia.png"
+        "/images/vr/Icon_Academia.png",
+        false,
+        400
       )
 
       const infospotB = createInfoSpot(
         "Biotecnología",
         [2069.01, 1315.76, 4347.94],
         irBiotecnologia,
-        "/images/vr/Icon_Biotecnologia.png"
+        "/images/vr/Icon_Biotecnologia.png",
+        false,
+        400
       )
 
       const infospotC = createInfoSpot(
         "Exhibición",
         [4974.46, 324.47, 244.02],
         irArtistas,
-        "/images/vr/Icon_Exhibicion.png"
+        "/images/vr/Icon_Exhibicion.png",
+        false,
+        400
       )
 
       const infospotD = createInfoSpot(
         "Acerca del Bioarte",
         [-4983.29, 192.27, 174.75],
         irHistoria,
-        "/images/vr/Icon_Historia.png"
+        "/images/vr/Icon_Historia.png",
+        false,
+        400
       )
 
       const infospotK = createInfoSpot(

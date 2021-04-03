@@ -11,7 +11,8 @@ bio: |-
   La visualización de sus trabajos representa una experiencia empática e intelectual.
 
 foto: /images/artists/arielWilner/02 - Imagen principal.jpg
-
+obraPrincipalUrl: https://www.arielwilner.com/
+obraBotonLabel: CONOCE LA OBRA INÉDITA
 obras:
   - ciudadPais: Buenos Aires, Argentina
     foto: /images/artists/arielWilner/03 - Imagen bloque 1 - ElDesafioDeLaVida01.jpg

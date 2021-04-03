@@ -20,6 +20,8 @@ bio: |-
   tecnología, la ciencia, han ido conformando un mundo Bíos.
 
 foto: /images/artists/laExhibicion/la_exhibicion_BIG.png
+obraPrincipalUrl:
+obraBotonLabel: CONOCE LA OBRA
 obras:
   - ciudadPais: Buenos Aires, Argentina
     foto: /images/artists/laExhibicion/la_exhibicion_OBRAS.jpg

@@ -32,11 +32,13 @@ bio: |-
   proyectos artísticos. Es profesor  de  robótica  educativa  en  la  escuela
   integral  Maimónides
 foto: /images/artists/muru/02---Foto-Obra-Nueva---bailarina-y-cristal_SMALL.jpg
+obraPrincipalUrl: https://namiki-universo-digital.netlify.app/
+obraBotonLabel: CONOCE LA OBRA INÉDITA
 obras:
   - ciudadPais: Buenos Aires, Argentina
     foto: /images/artists/muru/02 - Foto Obra Nueva - Proyecto Namiki.png
     titulo: Proyecto Namiki
-    url: https://namiki-universo-digital.netlify.app/
+    url: https://muru7-8.github.io/2021/proyecto_namiki/
     descripcion: |-
       El proyecto Namiki invita a percibir las resonancias de eventos mínimos de
       nuestro entorno y descubrir por medio de su sensado y cristalización

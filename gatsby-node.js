@@ -17,7 +17,7 @@ exports.onCreateWebpackConfig = ({ actions, stage, plugins }) => {
 exports.onCreateNode = ({ node, getNode, actions }) => {
   const { createNodeField } = actions
 
-  if (['ArtistasYaml', 'BiotecnologiaYaml'].includes(node.internal.type)) {
+  if (["ArtistasYaml", "BiotecnologiaYaml"].includes(node.internal.type)) {
     const slug = createFilePath({ node, getNode, basePath: `pages` })
     createNodeField({
       node,
@@ -43,6 +43,8 @@ exports.createPages = async ({ graphql, actions }) => {
             formacion
             bio
             foto
+            obraPrincipalUrl
+            obraBotonLabel
             obras {
               ciudadPais
               foto

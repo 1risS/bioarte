@@ -13,7 +13,9 @@ const FlechaAtras = styled(({ className, title, href }) => (
   height: 80px;
   width: 80px;
   position: relative;
-  display: block;
+  display: flex;
+  flex-direction: row;
+  align-self: flex-start !important;
 
   &:hover {
     cursor: pointer;
@@ -34,7 +36,7 @@ const FlechaAtras = styled(({ className, title, href }) => (
     transition: opacity 0.6s;
 
     top: 20%;
-    left: 195%;
+    left: -110%;
     margin-left: -60px;
   }
 
