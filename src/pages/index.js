@@ -97,6 +97,7 @@ const DivDer360 = styled.div`
   justify-content: center;
   align-items: center;
   margin: 2rem;
+  margin-top: 3rem;
 `
 
 const FadeInOutLoop = Keyframes.Spring(async next => {
