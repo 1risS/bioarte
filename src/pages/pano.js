@@ -220,35 +220,35 @@ const PanoPage = () => {
         "Academia",
         [-758.81, -401.44, -4918.53],
         irAcademia,
-        "/images/vr/Icon_Academia.jpg"
+        "/images/vr/Icon_Academia.png"
       )
 
       const infospotB = createInfoSpot(
         "Biotecnología",
         [2028.64, 1852.36, 4168.97],
         irBiotecnologia,
-        "/images/vr/Icon_Biotecnologia.jpg"
+        "/images/vr/Icon_Biotecnologia.png"
       )
 
       const infospotC = createInfoSpot(
         "Exhibición",
         [4974.46, 324.47, 244.02],
         irArtistas,
-        "/images/360-degrees.png"
+        "/images/Icon_Exhibicion.png"
       )
 
       const infospotD = createInfoSpot(
         "Acerca del Bioarte",
         [-4983.29, 192.27, 174.75],
         irHistoria,
-        "/images/vr/Icon_Historia.jpg"
+        "/images/vr/Icon_Historia.png"
       )
 
       const infospotK = createInfoSpot(
         "Soft Sanctuary",
         [-2029.31, 817.07, 4493.18],
         irBiozen,
-        "/images/vr/Icon_Biozen.jpg",
+        "/images/vr/Icon_Biozen.png",
         true
       )
 
