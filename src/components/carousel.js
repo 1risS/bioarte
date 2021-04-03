@@ -143,14 +143,6 @@ const Carousel = ({ items }) => {
   const first = current === 0
   const last = current === items.length - 1
 
-  const {
-    ciudadPais,
-    foto,
-    titulo,
-    url,
-    descripcion
-  } = items[current]
-
   return (<DetalleObraContainer>
     <MargenIzquierdo>
       {!first && (
@@ -173,14 +165,14 @@ const Carousel = ({ items }) => {
           </ProcedenciaFotosContainer>
           <DescripcionInnerContainer>
             <TituloWebCont>
-              <TituloObra>{titulo}</TituloObra>
-              {url && (
-                <LinkWeb href={url} target="_blank">
+              <TituloObra>{item.titulo}</TituloObra>
+              {item.url && (
+                <LinkWeb href={item.url} target="_blank">
                   Web
                 </LinkWeb>
               )}
             </TituloWebCont>
-            {descripcion.split("\n\n").map((parrafo, i) => (
+            {item.descripcion.split("\n\n").map((parrafo, i) => (
               <ParrafoObra key={i}>{parrafo}</ParrafoObra>
             ))}
           </DescripcionInnerContainer>
