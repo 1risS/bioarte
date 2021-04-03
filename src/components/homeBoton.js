@@ -22,16 +22,19 @@ const Exp = styled.div`
 `
 
 const StyledLink = styled.a`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-decoration: none;
   color: white;
-  font-weight: 900;
 `
 
 const Ingresar = styled.div`
   font-family: ${props => props.theme.fontFamily};
   color: white;
-  font-weight: bold;
-  font-size: 30px;
+  font-weight: 500;
+  font-size: 20px;
 `
 
 const HomeBoton = ({ showText = false }) => {
