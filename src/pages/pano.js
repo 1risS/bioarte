@@ -72,7 +72,7 @@ const Icon360 = styled(({ className, ...props }) => (
   />
 ))`
   position: fixed;
-  top: 50%;
+  top: 60%;
   left: 50%;
   max-width: 200px;
   max-height: 200px;
@@ -165,7 +165,7 @@ const PanoPage = () => {
 
       // Crea infospot para las subpáginas
       const createInfoSpot = (hoverText, position, onClick, image, noFocus) => {
-        const infospot = new Panolens.Infospot(300, image)
+        const infospot = new Panolens.Infospot(350, image)
         const linkDuration = 1250
         const linkEasing = TWEEN.Easing.Quadratic.InOut
         infospot.position.set(...position)
@@ -225,7 +225,7 @@ const PanoPage = () => {
 
       const infospotB = createInfoSpot(
         "Biotecnología",
-        [2028.64, 1852.36, 4168.97],
+        [2069.01, 1315.76, 4347.94],
         irBiotecnologia,
         "/images/vr/Icon_Biotecnologia.png"
       )
@@ -234,7 +234,7 @@ const PanoPage = () => {
         "Exhibición",
         [4974.46, 324.47, 244.02],
         irArtistas,
-        "/images/Icon_Exhibicion.png"
+        "/images/vr/Icon_Exhibicion.png"
       )
 
       const infospotD = createInfoSpot(
@@ -446,7 +446,7 @@ const PanoPage = () => {
       }
 
       const panorama = new Panolens.ImagePanorama(
-        "/images/vr/2DeAbril_DataNode_Denoise_01.jpg"
+        "/images/vr/2DeAbril_Denoising_01.jpg"
       )
 
       panorama.addEventListener("progress", onProgress)
