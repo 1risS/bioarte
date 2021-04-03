@@ -446,7 +446,7 @@ const PanoPage = () => {
       }
 
       const panorama = new Panolens.ImagePanorama(
-        "/images/vr/2DeAbril_DataNode_Denoise_00.jpg"
+        "/images/vr/2DeAbril_DataNode_Denoise_01.jpg"
       )
 
       panorama.addEventListener("progress", onProgress)
