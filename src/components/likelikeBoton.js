@@ -32,7 +32,7 @@ const StyledLink = styled(Link)`
 const likelikeBoton = () => {
   return (
     <LinkWrapper>
-      <StyledLink to="http://likelike.glitch.me/" target="_blank">
+      <StyledLink to="https://galeriabios.glitch.me/" target="_blank">
         <Exp></Exp>
       </StyledLink>
     </LinkWrapper>

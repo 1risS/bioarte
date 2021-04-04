@@ -29,19 +29,23 @@ const BienvenidaContainer = styled.div`
 const ContenidoIzqContainer = styled.div`
   width: 50%;
   height: 100vh;
+  vmin: 110;
+  vmax: 150;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   padding-left: 2.5%;
-  padding-top: 2%;
+  padding-top: 4%;
 `
 
 const ContDerContainer = styled.div`
   width: 50%;
-  height: 100vh;
+  height: 100%;
+  vmin: 110;
+  vmax: 150;
   display: flex;
   flex-direction: column;
-  padding-left: 16%;
+  padding-left: 16.5%;
   padding-top: 2%;
 `
 
@@ -53,6 +57,10 @@ const DivDer = styled.div`
 const DivDerEmpty = styled.img`
   height: 219px;
   width: 400px;
+  @media only screen and (min-height: 1080px) {
+    height: 180px;
+    width: 328px;
+  }
 `
 
 const DivIzq = styled.div`
@@ -77,6 +85,9 @@ const Desc = styled.p`
   font-weight: 50;
   letter-spacing: 0px;
   align-text: justify;
+  @media only screen and (min-height: 1080px) {
+    font-size: 13px;
+  }
 `
 
 // const tagManagerArgs = {
@@ -97,7 +108,10 @@ const DivDer360 = styled.div`
   justify-content: center;
   align-items: center;
   margin: 2rem;
-  margin-top: 3rem;
+  margin-top: 2rem;
+  @media only screen and (min-height: 1080px) {
+    margin: 1rem;
+  }
 `
 
 const FadeInOutLoop = Keyframes.Spring(async next => {
