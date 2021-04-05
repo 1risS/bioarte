@@ -70,7 +70,7 @@ const LibelulaContainer = styled.div`
   align-items: center;
   width: 20% !important;
   margin: 4rem;
-  margin-top: 1rem;
+  margin-top: 0rem;
 `
 
 const Libelulaimg = styled.img`
@@ -88,6 +88,7 @@ const BioArtista = styled.div`
 `
 
 const BioHeader = styled.div`
+  position: relative;
   background-color: #ec6b42;
   color: #fff;
   font-size: 40pt;
@@ -208,11 +209,9 @@ const Subtexto = styled.div`
 
 const AtrasCont = styled.div`
   display: flex;
-  height: 20%;
-  width: 100%;
-  align-items: flex-end;
-  justify-content: flex-end;
-  margin-bottom: 1rem;
+  align-self: flex-start;
+  position: absolute;
+  left: -9rem;
 `
 
 // ponemos una cookie para saber si le usuarix pasó por acá
@@ -248,14 +247,16 @@ const ArtistPageTemplate = ({ pageContext }) => {
         <DAMain>
           <BioArtistaContainer>
             <LibelulaContainer>
-              <AtrasCont>
-                <Atras title="Volver a Artistas" href="/artistas/" />
-              </AtrasCont>
               <FunFactsBalloon />
               <Libelulaimg src={libelula}></Libelulaimg>
             </LibelulaContainer>
             <BioArtista>
-              <BioHeader id="header">{nombre}</BioHeader>
+              <BioHeader id="header">
+                <AtrasCont>
+                  <Atras title="Volver a Artistas" href="/artistas"></Atras>
+                </AtrasCont>
+                <span>{nombre}</span>
+              </BioHeader>
               <BioTexto>
                 <TituloBio>
                   <Titulo>Biografía</Titulo>
