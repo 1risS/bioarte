@@ -259,6 +259,9 @@ const IndexPage = () => {
               </Desc>
             </Block>
           </DivIzq>
+          <DivIzq>
+            <Bold>Contacto: Info@proyectobios.com</Bold>
+          </DivIzq>
         </ContenidoIzqContainer>
         <ContDerContainer>
           <DivDerEmpty
