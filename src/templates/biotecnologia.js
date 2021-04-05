@@ -91,6 +91,7 @@ const BioArtista = styled.div`
 `
 
 const BioHeader = styled.div`
+  position: relative;
   background-color: #ec6b42;
   color: #fff;
   font-size: 40pt;
@@ -135,8 +136,9 @@ const TituloBio = styled.div`
 
 const AtrasCont = styled.div`
   display: flex;
-  height: 20%;
-  align-items: flex-start;
+  align-self: flex-start;
+  position: absolute;
+  left: -9rem;
 `
 
 const BiotecnologiaPageTemplate = ({ pageContext }) => {
@@ -157,14 +159,19 @@ const BiotecnologiaPageTemplate = ({ pageContext }) => {
         <DAMain>
           <BioArtistaContainer>
             <LibelulaContainer>
-              <AtrasCont>
-                <Atras title="Volver a Biotecnología" href="/biotecnologia/" />
-              </AtrasCont>
               <FunFactsBalloon />
               <Libelulaimg src={libelula}></Libelulaimg>
             </LibelulaContainer>
             <BioArtista>
-              <BioHeader id="header">{nombre}</BioHeader>
+              <BioHeader id="header">
+                <AtrasCont>
+                  <Atras
+                    title="Volver a Biotecnología"
+                    href="/biotecnologia"
+                  ></Atras>
+                </AtrasCont>
+                <span>{nombre}</span>
+              </BioHeader>
               <BioTexto>
                 <TituloBio>
                   <Titulo>Descripción</Titulo>
