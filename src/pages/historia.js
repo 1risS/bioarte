@@ -145,16 +145,7 @@ const LineaDeTiempo = () => {
         </HistoriaHeaderContainer>
 
         <TimelineCont>
-          <iframe
-            title="Timeline"
-            src="https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1rs7WEGSPGYaGZ3zqiFY5bPqKAbPwRJEWYa3c81mSLzk&font=Default&lang=es&initial_zoom=2&height=650"
-            width="100%"
-            height="650"
-            webkitallowfullscreen
-            mozallowfullscreen
-            allowfullscreen
-            frameborder="0"
-          ></iframe>
+          <iframe title="Timeline" src='https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1UEOVGHD1R4yDpBpSmqEoO1jdo1QpJHOYSXsTo54giOA&font=Default&lang=en&initial_zoom=2&height=650' width='100%' height='650' webkitallowfullscreen mozallowfullscreen allowfullscreen frameborder='0'></iframe>
         </TimelineCont>
       </Container>
       <SectionTexto>
